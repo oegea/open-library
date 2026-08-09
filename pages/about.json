@@ -1,0 +1,10 @@
+{
+  "id": "page-about",
+  "title": "About this library",
+  "slug": "about",
+  "markdownFile": "about.md",
+  "placement": "footer",
+  "position": 0,
+  "createdAt": "2026-08-09T12:58:55Z",
+  "updatedAt": "2026-08-09T12:58:55Z"
+}

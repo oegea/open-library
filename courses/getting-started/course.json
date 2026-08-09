@@ -1,0 +1,73 @@
+{
+  "id": "course-getting-started",
+  "title": "Getting started with your static library",
+  "slug": "getting-started-with-your-static-library",
+  "description": "A sample course that shows how content is structured in a static Open Knowledge library. Edit it, copy it, or delete it.",
+  "language": "en",
+  "category": "Meta",
+  "coverImage": "media/getting-started-cover.svg",
+  "authors": ["Your name here"],
+  "sources": [
+    { "title": "Open Knowledge documentation", "url": "https://github.com/oegea/open-knowledge" }
+  ],
+  "license": "CC BY-SA 4.0",
+  "aiAssisted": false,
+  "published": true,
+  "createdAt": "2026-08-09T12:58:55Z",
+  "updatedAt": "2026-08-09T12:58:55Z",
+  "sections": [
+    {
+      "id": "section-basics",
+      "title": "The basics",
+      "materials": [
+        {
+          "id": "material-structure",
+          "title": "How this repository is structured",
+          "type": "markdown",
+          "markdownFile": "materials/how-this-repository-is-structured.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "material-exam",
+          "title": "Check what you learned",
+          "type": "exam",
+          "markdown": "",
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.5,
+            "questionsPerAttempt": 2,
+            "questions": [
+              {
+                "id": "q-source-of-truth",
+                "text": "Where does a static Open Knowledge library read its content from?",
+                "choices": [
+                  { "id": "a", "text": "A SQLite database on the server" },
+                  { "id": "b", "text": "A public content repository over HTTP" },
+                  { "id": "c", "text": "A commercial CMS" }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "In static mode the container is stateless: it renders JSON, Markdown and media fetched from the public content repository."
+              },
+              {
+                "id": "q-publishing",
+                "text": "How do you publish a change?",
+                "choices": [
+                  { "id": "a", "text": "Through an admin panel" },
+                  { "id": "b", "text": "By pushing to the content repository" },
+                  { "id": "c", "text": "By redeploying the container" }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Git is the admin panel here: edit, commit, push. The instance picks it up on the next cache refresh."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    }
+  ]
+}
