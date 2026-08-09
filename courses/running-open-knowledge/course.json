@@ -278,6 +278,26 @@
                 ],
                 "correctChoiceId": "a",
                 "explanation": "Permissiveness is how tools spread, and your library depends on nobody's permission. But Open Knowledge was built for the tradition of the public library and free software: give it away."
+              },
+              {
+                "id": "q-testing-effect",
+                "text": "Why do Open Knowledge exams show an explanation after every answer?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Retrieval practice with corrective feedback strengthens memory far more than re-reading — exams here are a learning tool, not a filter"
+                  },
+                  {
+                    "id": "b",
+                    "text": "To make exams longer and harder to pass"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Because scores cannot be computed client-side"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Learning science calls it the testing effect: being made to recall, then immediately corrected, consolidates knowledge better than passive review. The explanation is the most valuable part of the question."
               }
             ]
           }

@@ -15,6 +15,14 @@
       "url": null
     },
     {
+      "title": "Lewis Hyde — The Gift: Imagination and the Erotic Life of Property (1983)",
+      "url": null
+    },
+    {
+      "title": "Richard Titmuss — The Gift Relationship (1970)",
+      "url": null
+    },
+    {
       "title": "Denis Diderot & Jean le Rond d'Alembert — Encyclopédie (1751–1772)",
       "url": null
     },
@@ -477,6 +485,46 @@
                 ],
                 "correctChoiceId": "a",
                 "explanation": "Courses carry an aiAssisted flag shown clearly to learners, and bibliographies credit sources. Transparency is part of the gift."
+              },
+              {
+                "id": "q-nupedia",
+                "text": "What does the Nupedia-to-Wikipedia story demonstrate?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Given good rules and cheap repair tools, an open commons can outproduce a closed expert pipeline"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Encyclopedias require credentialed review to produce anything"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Wikis only work for small projects"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Nupedia's seven-step expert pipeline approved roughly two dozen articles in a year; the 'temporary' wiki bolted onto it outproduced it within a month and became the largest reference work in history — Ostrom's insight at planetary scale."
+              },
+              {
+                "id": "q-titmuss",
+                "text": "What did Richard Titmuss find when comparing blood donation systems?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Voluntary donation produced safer blood and more reliable supply than paying donors — some things work better as gifts"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Paying donors always produces better outcomes"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Donation systems make no measurable difference"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "In The Gift Relationship (1970), Titmuss showed that payment crowded out the very motive that made the gift trustworthy. The lesson generalizes: knowledge, like blood, is something the gift handles better than the market."
               }
             ]
           }

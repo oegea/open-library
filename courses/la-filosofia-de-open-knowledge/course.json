@@ -15,6 +15,14 @@
       "url": null
     },
     {
+      "title": "Lewis Hyde — El don (The Gift, 1983)",
+      "url": null
+    },
+    {
+      "title": "Richard Titmuss — La relación del don (The Gift Relationship, 1970)",
+      "url": null
+    },
+    {
       "title": "Denis Diderot y Jean le Rond d'Alembert — Encyclopédie (1751–1772)",
       "url": null
     },
@@ -477,6 +485,46 @@
                 ],
                 "correctChoiceId": "a",
                 "explanation": "Los cursos llevan un indicador aiAssisted que se muestra con claridad, y las bibliografías acreditan las fuentes. La transparencia es parte del regalo."
+              },
+              {
+                "id": "q-nupedia-es",
+                "text": "¿Qué demuestra la historia de Nupedia y Wikipedia?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Con buenas reglas y herramientas baratas de reparación, un común abierto puede superar en producción a un circuito cerrado de expertos"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Las enciclopedias exigen revisión acreditada para producir algo"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Los wikis solo funcionan para proyectos pequeños"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "El circuito de siete pasos de Nupedia aprobó unas dos docenas de artículos en un año; el wiki 'provisional' que le acoplaron lo superó en un mes y se convirtió en la mayor obra de referencia de la historia — la tesis de Ostrom a escala planetaria."
+              },
+              {
+                "id": "q-titmuss-es",
+                "text": "¿Qué encontró Richard Titmuss al comparar sistemas de donación de sangre?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La donación voluntaria producía sangre más segura y suministro más fiable que pagar a los donantes: algunas cosas funcionan mejor como dones"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Pagar a los donantes siempre produce mejores resultados"
+                  },
+                  {
+                    "id": "c",
+                    "text": "El sistema de donación no supone ninguna diferencia medible"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "En La relación del don (1970), Titmuss mostró que el pago desplazaba el motivo mismo que hacía confiable el regalo. La lección generaliza: el conocimiento, como la sangre, es algo que el don gestiona mejor que el mercado."
               }
             ]
           }

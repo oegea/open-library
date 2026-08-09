@@ -278,6 +278,26 @@
                 ],
                 "correctChoiceId": "a",
                 "explanation": "La permisividad es cómo se extienden las herramientas, y tu librería no depende del permiso de nadie. Pero Open Knowledge se construyó para la tradición de la biblioteca pública y el software libre: regálalo."
+              },
+              {
+                "id": "q-efecto-test",
+                "text": "¿Por qué los exámenes de Open Knowledge muestran una explicación tras cada respuesta?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La práctica de recuperación con corrección inmediata fortalece la memoria mucho más que releer: aquí el examen es herramienta de aprendizaje, no filtro"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Para hacer los exámenes más largos y difíciles de aprobar"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque las notas no pueden calcularse en el navegador"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "La ciencia del aprendizaje lo llama efecto test: verse obligado a recordar, y ser corregido al momento, consolida el conocimiento mejor que el repaso pasivo. La explicación es la parte más valiosa de la pregunta."
               }
             ]
           }
