@@ -1,11 +1,11 @@
 {
-  "libraryName": "My Open Knowledge Library",
+  "libraryName": "Open Knowledge Library",
   "ownerName": "",
   "logoPath": null,
   "certificateLogoPath": null,
   "documentLogoPath": null,
-  "heroTitle": "",
-  "heroText": "",
+  "heroTitle": "The official Open Knowledge library",
+  "heroText": "Learn what Open Knowledge is, where the philosophy of giving knowledge away comes from, and how to run a library of your own.",
   "heroImagePath": null,
   "registrationOpen": false,
   "newsEnabled": true

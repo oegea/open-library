@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1117"/><stop offset="0.55" stop-color="#0e5b64"/><stop offset="1" stop-color="#0e7c86"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <!-- git graph -->
+  <g fill="none" stroke="#f0a92e" stroke-width="10" stroke-linecap="round" opacity="0.95">
+    <path d="M280 560V360c0-60 60-60 60-120"/>
+    <path d="M280 460c0-60 90-40 130-80"/>
+  </g>
+  <circle cx="280" cy="560" r="22" fill="#f0a92e"/>
+  <circle cx="340" cy="240" r="22" fill="#f0a92e"/>
+  <circle cx="410" cy="380" r="22" fill="#f0a92e"/>
+  <circle cx="280" cy="460" r="16" fill="#ffffff" opacity="0.9"/>
+  <!-- arrow to screen -->
+  <path d="M520 400h180m0 0-40-40m40 40-40 40" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+  <!-- browser window -->
+  <g>
+    <rect x="780" y="240" width="360" height="280" rx="24" fill="none" stroke="#ffffff" stroke-width="12" opacity="0.95"/>
+    <path d="M780 310h360" stroke="#ffffff" stroke-width="10" opacity="0.95"/>
+    <circle cx="820" cy="275" r="9" fill="#ffffff" opacity="0.9"/>
+    <circle cx="852" cy="275" r="9" fill="#ffffff" opacity="0.6"/>
+    <rect x="820" y="345" width="160" height="90" rx="12" fill="#f0a92e" opacity="0.9"/>
+    <path d="M820 470h280M820 495h200" stroke="#ffffff" stroke-width="8" opacity="0.5" stroke-linecap="round"/>
+  </g>
+</svg>

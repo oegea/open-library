@@ -1,0 +1,288 @@
+{
+  "id": "course-running-open-knowledge",
+  "title": "Running Open Knowledge",
+  "slug": "running-open-knowledge",
+  "description": "How Open Knowledge works, its two deployment modes — a stateless library served from a public git repository, or a full instance with pseudonymous accounts and certificates — and exactly how to deploy each, step by step.",
+  "language": "en",
+  "category": "Open Knowledge",
+  "coverImage": "media/running-cover.svg",
+  "authors": [
+    "The Open Knowledge project"
+  ],
+  "sources": [
+    {
+      "title": "Open Knowledge source code and documentation",
+      "url": "https://github.com/oegea/open-knowledge"
+    },
+    {
+      "title": "This library's own content repository (a live static-mode example)",
+      "url": "https://github.com/oegea/open-library"
+    }
+  ],
+  "license": "CC BY-SA 4.0",
+  "aiAssisted": true,
+  "published": true,
+  "createdAt": "2026-08-09T12:00:00Z",
+  "updatedAt": "2026-08-09T12:00:00Z",
+  "sections": [
+    {
+      "id": "s1-what",
+      "title": "What Open Knowledge is",
+      "materials": [
+        {
+          "id": "mat-what-is",
+          "title": "A library, a study mode, and a gift",
+          "type": "markdown",
+          "markdownFile": "materials/01-what-open-knowledge-is.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s2-static",
+      "title": "Static content mode",
+      "materials": [
+        {
+          "id": "mat-static-mode",
+          "title": "A library served from a public repository",
+          "type": "markdown",
+          "markdownFile": "materials/02-static-content-mode.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-deploy-static",
+          "title": "Deploying a static library, step by step",
+          "type": "markdown",
+          "markdownFile": "materials/03-deploying-static.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s3-database",
+      "title": "Database mode",
+      "materials": [
+        {
+          "id": "mat-database-mode",
+          "title": "Accounts, certificates and the admin panel",
+          "type": "markdown",
+          "markdownFile": "materials/04-database-mode.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-deploy-database",
+          "title": "Deploying on a VPS, step by step",
+          "type": "markdown",
+          "markdownFile": "materials/05-deploying-database-mode.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s4-choosing",
+      "title": "Choosing, and the spirit of the license",
+      "materials": [
+        {
+          "id": "mat-choosing",
+          "title": "Which mode — and what the MIT license is for",
+          "type": "markdown",
+          "markdownFile": "materials/06-choosing-and-the-license.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-running-final",
+          "title": "Final exam: running Open Knowledge",
+          "type": "exam",
+          "markdown": "",
+          "mediaPath": null,
+          "required": true,
+          "sources": [],
+          "exam": {
+            "passingScore": 0.6,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q-modes",
+                "text": "What fundamentally distinguishes static content mode from database mode?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Static mode renders a public git repository with no server state; database mode keeps state (accounts, progress, certificates) in SQLite"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Static mode is read-only for visitors; database mode lets visitors edit courses"
+                  },
+                  {
+                    "id": "c",
+                    "text": "They are different applications with different interfaces"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "One codebase, one env var: with OK_CONTENT_REPO set the instance becomes a stateless renderer of a public repository; without it, it runs the full stateful experience with identities and an admin panel."
+              },
+              {
+                "id": "q-publish-static",
+                "text": "How do you publish new content in static mode?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Edit the files, commit, and git push — the site updates within about a minute"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Redeploy the application container"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Upload the files through the admin panel"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Git is the admin panel in static mode. The instance caches content for about sixty seconds, so a push goes live without touching the deployment."
+              },
+              {
+                "id": "q-serverless",
+                "text": "Why can static mode run on serverless platforms while database mode cannot?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Static mode keeps no server state, so wiped filesystems don't matter; database mode needs a persistent disk for SQLite and media"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Serverless platforms block SQL for security reasons"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Database mode uses too much CPU for serverless"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Serverless filesystems are ephemeral. A stateless renderer doesn't care; a database does. Database mode wants one machine, one disk, one instance."
+              },
+              {
+                "id": "q-first-account",
+                "text": "In database mode, who administers the instance?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "The first account registered on the fresh instance becomes the administrator"
+                  },
+                  {
+                    "id": "b",
+                    "text": "An account created via a config file with a plaintext password"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Anyone who knows the server's IP address"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "First registration bootstraps the admin — so register immediately after deploying, and guard the recovery code: with no email on file, it is your way back in."
+              },
+              {
+                "id": "q-identity",
+                "text": "What does registering in database mode require?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Nothing personal: you get a pseudonymous identity like Erudito#4821 secured with a TOTP authenticator"
+                  },
+                  {
+                    "id": "b",
+                    "text": "A verified email address"
+                  },
+                  {
+                    "id": "c",
+                    "text": "A full name and phone number"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Accounts exist only to keep learning state. They hold a pseudonym, credentials, progress and results — the learner is never a product, in either mode."
+              },
+              {
+                "id": "q-volume",
+                "text": "What is the one non-negotiable rule of a database-mode deployment?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Mount a persistent volume at /data and run exactly one instance"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Use at least three replicas behind a load balancer"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Run a managed PostgreSQL cluster"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Everything that matters — database, media, encryption key — lives in /data, and SQLite wants a single writer. Lose the volume, lose the library (which is why the one-click backup zip exists)."
+              },
+              {
+                "id": "q-ids",
+                "text": "Why must ids never change once content is published?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Visitor progress is keyed to course and material ids — changing them resets everyone's progress"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Git refuses to commit files whose ids changed"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Ids are cryptographically signed"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "In static mode progress lives in the visitor's browser keyed by those ids; in database mode, in the server. Either way, renaming ids orphans real people's progress."
+              },
+              {
+                "id": "q-license-spirit",
+                "text": "The MIT license allows selling Open Knowledge-based products. What does the project ask of you?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "To understand that the license is a floor, not a compass: the intent is libraries given as gifts, not paywalled knowledge products"
+                  },
+                  {
+                    "id": "b",
+                    "text": "To pay royalties on commercial deployments"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Nothing — the project endorses any use equally"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Permissiveness is how tools spread, and your library depends on nobody's permission. But Open Knowledge was built for the tradition of the public library and free software: give it away."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "news-official-library",
+  "title": "This is the official Open Knowledge library",
+  "slug": "the-official-library",
+  "markdownFile": "the-official-library.md",
+  "imagePath": null,
+  "author": "The Open Knowledge project",
+  "published": true,
+  "createdAt": "2026-08-09T09:00:00Z",
+  "updatedAt": "2026-08-09T09:00:00Z"
+}

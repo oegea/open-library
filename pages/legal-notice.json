@@ -1,0 +1,10 @@
+{
+  "id": "page-legal",
+  "title": "Legal notice",
+  "slug": "legal-notice",
+  "markdownFile": "legal-notice.md",
+  "placement": "footer",
+  "position": 1,
+  "createdAt": "2026-08-09T12:00:00Z",
+  "updatedAt": "2026-08-09T12:00:00Z"
+}

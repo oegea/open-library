@@ -1,0 +1,487 @@
+{
+  "id": "course-philosophy-open-knowledge",
+  "title": "The philosophy of Open Knowledge",
+  "slug": "the-philosophy-of-open-knowledge",
+  "description": "A rigorous journey through twenty-seven centuries of giving knowledge away — from the Library of Alexandria and the Encyclopédie to public libraries, free software, Wikipedia and open access — and how Open Knowledge deliberately joins that tradition.",
+  "language": "en",
+  "category": "Open Knowledge",
+  "coverImage": "media/philosophy-cover.svg",
+  "authors": [
+    "The Open Knowledge project"
+  ],
+  "sources": [
+    {
+      "title": "Marcel Mauss — The Gift (Essai sur le don, 1925)",
+      "url": null
+    },
+    {
+      "title": "Denis Diderot & Jean le Rond d'Alembert — Encyclopédie (1751–1772)",
+      "url": null
+    },
+    {
+      "title": "Andrew Carnegie — The Gospel of Wealth (1889)",
+      "url": null
+    },
+    {
+      "title": "Richard Stallman — Free Software, Free Society",
+      "url": "https://www.gnu.org/philosophy/fsfs/rms-essays.pdf"
+    },
+    {
+      "title": "Eric S. Raymond — The Cathedral and the Bazaar (1997)",
+      "url": null
+    },
+    {
+      "title": "Elinor Ostrom — Governing the Commons (1990)",
+      "url": null
+    },
+    {
+      "title": "Lawrence Lessig — Free Culture (2004)",
+      "url": "https://free-culture.cc/"
+    },
+    {
+      "title": "Budapest Open Access Initiative (2002)",
+      "url": "https://www.budapestopenaccessinitiative.org/"
+    },
+    {
+      "title": "UNESCO Recommendation on Open Educational Resources (2019)",
+      "url": "https://www.unesco.org/en/open-educational-resources"
+    },
+    {
+      "title": "Aaron Swartz — Guerilla Open Access Manifesto (2008)",
+      "url": null
+    }
+  ],
+  "license": "CC BY-SA 4.0",
+  "aiAssisted": true,
+  "published": true,
+  "createdAt": "2026-08-09T12:00:00Z",
+  "updatedAt": "2026-08-09T12:00:00Z",
+  "sections": [
+    {
+      "id": "s1-ancient",
+      "title": "The ancient impulse",
+      "materials": [
+        {
+          "id": "mat-library-impulse",
+          "title": "The library impulse: Nineveh, Alexandria, Baghdad",
+          "type": "markdown",
+          "markdownFile": "materials/01-the-library-impulse.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s2-enlightenment",
+      "title": "The Enlightenment bet",
+      "materials": [
+        {
+          "id": "mat-encyclopedists",
+          "title": "The encyclopedists and the Republic of Letters",
+          "type": "markdown",
+          "markdownFile": "materials/02-the-encyclopedists.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s3-public-libraries",
+      "title": "Knowledge as a public good",
+      "materials": [
+        {
+          "id": "mat-public-libraries",
+          "title": "The public library movement and Carnegie's gift",
+          "type": "markdown",
+          "markdownFile": "materials/03-the-public-library-movement.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-tradition",
+          "title": "Checkpoint: the long tradition",
+          "type": "exam",
+          "markdown": "",
+          "mediaPath": null,
+          "required": true,
+          "sources": [],
+          "exam": {
+            "passingScore": 0.6,
+            "questionsPerAttempt": 4,
+            "questions": [
+              {
+                "id": "q-nineveh",
+                "text": "What did the library of Ashurbanipal at Nineveh demonstrate about libraries?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "That collections should be reserved for kings and priests"
+                  },
+                  {
+                    "id": "b",
+                    "text": "That a library can carry knowledge across a gap of time no single life could bridge"
+                  },
+                  {
+                    "id": "c",
+                    "text": "That clay tablets were superior to papyrus"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Texts like the Epic of Gilgamesh survived two and a half millennia of oblivion because they had been collected: the library outlived its civilization and delivered its knowledge to ours."
+              },
+              {
+                "id": "q-alexandria",
+                "text": "What was the defining ambition of the Library of Alexandria?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "To collect all knowledge and make it available to working scholars"
+                  },
+                  {
+                    "id": "b",
+                    "text": "To protect Egyptian state secrets"
+                  },
+                  {
+                    "id": "c",
+                    "text": "To sell copies of scrolls to visiting merchants"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Alexandria tried to collect everything and functioned as a workshop, not a vault — scholars like Euclid and Eratosthenes worked beside the stacks. Its lesson: a sealed library is a tomb; an open one is an engine."
+              },
+              {
+                "id": "q-encyclopedie",
+                "text": "What made Diderot and d'Alembert's Encyclopédie radical in the eighteenth century?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Its premise that all knowledge, organized and explained, belonged in the hands of anyone who could read"
+                  },
+                  {
+                    "id": "b",
+                    "text": "It was the first book printed with movable type"
+                  },
+                  {
+                    "id": "c",
+                    "text": "It rejected the documentation of practical trades and crafts"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "The Encyclopédie documented crafts alongside philosophy and aimed, in Diderot's words, 'to change the common way of thinking'. Authorities censored it precisely because open knowledge redistributes power."
+              },
+              {
+                "id": "q-carnegie",
+                "text": "Why did Carnegie consider a library the best gift to a community?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Because it gives nothing for nothing — it rewards exactly the effort a learner brings"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Because books were the cheapest goods to donate"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Because libraries generated rental income for the town"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "In The Gospel of Wealth, Carnegie argued the library dignifies the learner: free at the point of use, it asks nothing but effort. He funded more than 2,500 of them — on condition that the community commit to operating them."
+              },
+              {
+                "id": "q-public-libraries",
+                "text": "Which principle did the nineteenth-century public library movement establish?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Access to knowledge should not depend on wealth — libraries free at the point of use, funded as a public good"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Reading rooms should charge a small entry fee to ensure seriousness"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Libraries should record what every citizen reads"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "From the UK Public Libraries Act (1850) to Boston (1854), societies began funding free libraries for everyone — with an ethic of reader privacy that long predates digital privacy debates."
+              },
+              {
+                "id": "q-house-of-wisdom",
+                "text": "What does Baghdad's House of Wisdom illustrate about how knowledge survives?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Knowledge moves because institutions choose to move it, and pay the cost gladly"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Knowledge survives only in its original language"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Translation corrupts knowledge and should be avoided"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "The Abbasid translation movement paid to bring Greek, Persian and Indian science into Arabic — preserving works Europe had lost and adding algebra and algorithms along the way."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "s4-digital-commons",
+      "title": "The digital commons",
+      "materials": [
+        {
+          "id": "mat-free-software",
+          "title": "Free software, copyleft and the engineered commons",
+          "type": "markdown",
+          "markdownFile": "materials/04-free-software-and-copyleft.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s5-open-everything",
+      "title": "Open culture, open education, open science",
+      "materials": [
+        {
+          "id": "mat-open-culture",
+          "title": "Creative Commons, Wikipedia, OER and open access",
+          "type": "markdown",
+          "markdownFile": "materials/05-open-culture-and-open-access.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s6-the-gift",
+      "title": "The gift",
+      "materials": [
+        {
+          "id": "mat-gift-manifesto",
+          "title": "The gift economy and the Open Knowledge manifesto",
+          "type": "markdown",
+          "markdownFile": "materials/06-the-gift-and-the-manifesto.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-philosophy-final",
+          "title": "Final exam: the philosophy of open knowledge",
+          "type": "exam",
+          "markdown": "",
+          "mediaPath": null,
+          "required": true,
+          "sources": [],
+          "exam": {
+            "passingScore": 0.6,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q-four-freedoms",
+                "text": "Which of these is one of free software's four freedoms?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "The freedom to study how a program works and change it"
+                  },
+                  {
+                    "id": "b",
+                    "text": "The freedom to use software without ever paying taxes"
+                  },
+                  {
+                    "id": "c",
+                    "text": "The freedom to keep modifications secret forever"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Stallman's four freedoms are: run for any purpose, study and change (source required), redistribute copies, and distribute modified versions. 'Free as in freedom, not as in free beer.'"
+              },
+              {
+                "id": "q-copyleft",
+                "text": "What is copyleft, as introduced by the GNU GPL?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Using copyright law to require that derivative works remain free — the gift protects itself"
+                  },
+                  {
+                    "id": "b",
+                    "text": "The abolition of copyright for software"
+                  },
+                  {
+                    "id": "c",
+                    "text": "A registry where authors renounce attribution"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "The GPL grants the four freedoms but requires derivatives to carry the same license. It turned copyright — the tool of enclosure — into a mechanism that keeps the commons open."
+              },
+              {
+                "id": "q-ostrom",
+                "text": "What did Elinor Ostrom's Governing the Commons demonstrate?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Communities can govern shared resources sustainably — the 'tragedy of the commons' is a failure of governance, not a law of nature"
+                  },
+                  {
+                    "id": "b",
+                    "text": "All shared resources inevitably collapse"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Only state ownership can protect common goods"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Ostrom's decades of field evidence earned the 2009 Nobel in Economics, just as Linux and Wikipedia were proving her point at planetary scale."
+              },
+              {
+                "id": "q-cc",
+                "text": "What problem did Creative Commons solve for culture and education?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "It gave authors a standard, legally solid way to grant sharing permissions instead of copyright's all-or-nothing default"
+                  },
+                  {
+                    "id": "b",
+                    "text": "It made registering copyright cheaper"
+                  },
+                  {
+                    "id": "c",
+                    "text": "It required all creative work to be sold commercially"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Founded by Lessig and colleagues in 2001, CC did for creative work what the GPL did for code: standardized licenses (attribution, share-alike…) that make deliberate openness practical."
+              },
+              {
+                "id": "q-boai",
+                "text": "What did the Budapest Open Access Initiative (2002) declare?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "That the internet made it possible for peer-reviewed knowledge to reach all curious minds — an unprecedented public good"
+                  },
+                  {
+                    "id": "b",
+                    "text": "That scientific journals should raise subscription prices"
+                  },
+                  {
+                    "id": "c",
+                    "text": "That research should circulate only among universities"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Open access answered the absurdity of publicly funded research locked behind paywalls. arXiv, PLOS and institutional repositories made the declaration real."
+              },
+              {
+                "id": "q-mauss",
+                "text": "According to Marcel Mauss's The Gift, how does a gift differ from a market sale?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "A sale closes the relationship; a gift keeps it open and points forward — pass it on"
+                  },
+                  {
+                    "id": "b",
+                    "text": "A gift always requires equal payment in return"
+                  },
+                  {
+                    "id": "c",
+                    "text": "There is no real difference; both are economic exchanges"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Mauss found gifts create relationships and obligations — to give, to receive, to reciprocate. Status in gift cultures flows to those who give well: the exact economy of free software and Wikipedia."
+              },
+              {
+                "id": "q-mit-spirit",
+                "text": "Open Knowledge uses the highly permissive MIT license. What is the project's stated intent?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "The license is a floor, not a compass: the intent is open libraries given as gifts, not paywalled course products"
+                  },
+                  {
+                    "id": "b",
+                    "text": "The MIT license legally forbids commercial use"
+                  },
+                  {
+                    "id": "c",
+                    "text": "The license requires every library to charge for certificates"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "MIT permits virtually everything — that is how tools spread. But the tradition Open Knowledge joins (Alexandria, the Encyclopédie, Carnegie, GNU, Wikipedia) points one way: give it away."
+              },
+              {
+                "id": "q-learner-product",
+                "text": "What does 'the learner is not a product' mean in practice for Open Knowledge?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "No names, no emails, no profiles, no tracking — reading requires nothing but curiosity"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Learners must pay to avoid advertising"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Only registered users may access courses"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "The public library ethic, ported to the web: free at the point of use, and discreet. Even in database mode, identities are pseudonymous and no personal data is requested."
+              },
+              {
+                "id": "q-ai-disclosure",
+                "text": "What is Open Knowledge's stance on AI-assisted course content?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Welcome, always disclosed, and sources always credited — AI structures knowledge but must never erase where it came from"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Forbidden in all courses"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Allowed as long as it is kept secret from learners"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Courses carry an aiAssisted flag shown clearly to learners, and bibliographies credit sources. Transparency is part of the gift."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
