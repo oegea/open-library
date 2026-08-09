@@ -33,8 +33,9 @@ it possible for peer-reviewed knowledge to reach "all curious minds" —
 "an unprecedented public good". Preprint servers like **arXiv** (1991) and
 open journals like **PLOS** made it real.
 
-This chapter also has a martyr. **Aaron Swartz** — programmer, co-author of
-RSS at fourteen, early builder of Creative Commons — wrote in his 2008
+This chapter also has a martyr. **Aaron Swartz** — the programmer who at
+fourteen had helped author the RSS 1.0 specification, and who built early
+Creative Commons infrastructure — wrote in his 2008
 *Guerilla Open Access Manifesto* that "information is power" and that
 sharing scientific knowledge locked behind paywalls was "a moral
 imperative". Prosecuted with extraordinary harshness for mass-downloading

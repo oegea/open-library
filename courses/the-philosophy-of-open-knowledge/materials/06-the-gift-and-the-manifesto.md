@@ -1,9 +1,10 @@
 Why do people give knowledge away at all? The question has a serious
 anthropological answer.
 
-In his 1925 essay *The Gift*, **Marcel Mauss** studied gift economies from
-the Pacific *kula* exchange to the potlatch of the American Northwest and
-found that gifts are never merely economic. A gift creates a **relationship**
+In his 1925 essay *The Gift*, **Marcel Mauss** synthesized the ethnography
+of gift economies — Malinowski's account of the Pacific *kula* exchange, the
+potlatch of the Pacific Northwest — and found that gifts are never merely
+economic. A gift creates a **relationship**
 — an implicit triad of obligations: to give, to receive, to reciprocate. In
 gift cultures, status flows not to those who hoard but to those who give
 well. Sound familiar? It is precisely the economy of free software, of

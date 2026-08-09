@@ -1,0 +1,487 @@
+{
+  "id": "course-filosofia-open-knowledge",
+  "title": "La filosofía de Open Knowledge",
+  "slug": "la-filosofia-de-open-knowledge",
+  "description": "Un viaje riguroso por veintisiete siglos de regalar conocimiento — de la Biblioteca de Alejandría y la Encyclopédie a las bibliotecas públicas, el software libre, Wikipedia y el acceso abierto — y cómo Open Knowledge se une deliberadamente a esa tradición.",
+  "language": "es",
+  "category": "Open Knowledge",
+  "coverImage": "media/philosophy-cover.svg",
+  "authors": [
+    "El proyecto Open Knowledge"
+  ],
+  "sources": [
+    {
+      "title": "Marcel Mauss — El don (Essai sur le don, 1925)",
+      "url": null
+    },
+    {
+      "title": "Denis Diderot y Jean le Rond d'Alembert — Encyclopédie (1751–1772)",
+      "url": null
+    },
+    {
+      "title": "Andrew Carnegie — El evangelio de la riqueza (1889)",
+      "url": null
+    },
+    {
+      "title": "Richard Stallman — Software libre para una sociedad libre",
+      "url": "https://www.gnu.org/philosophy/fsfs/free_software.es.pdf"
+    },
+    {
+      "title": "Eric S. Raymond — La catedral y el bazar (1997)",
+      "url": null
+    },
+    {
+      "title": "Elinor Ostrom — El gobierno de los bienes comunes (1990)",
+      "url": null
+    },
+    {
+      "title": "Lawrence Lessig — Cultura libre (2004)",
+      "url": "https://free-culture.cc/"
+    },
+    {
+      "title": "Iniciativa de Acceso Abierto de Budapest (2002)",
+      "url": "https://www.budapestopenaccessinitiative.org/read/spanish-translation/"
+    },
+    {
+      "title": "Recomendación de la UNESCO sobre Recursos Educativos Abiertos (2019)",
+      "url": "https://www.unesco.org/es/open-educational-resources"
+    },
+    {
+      "title": "Aaron Swartz — Manifiesto por la Guerrilla del Acceso Abierto (2008)",
+      "url": null
+    }
+  ],
+  "license": "CC BY-SA 4.0",
+  "aiAssisted": true,
+  "published": true,
+  "createdAt": "2026-08-09T12:00:00Z",
+  "updatedAt": "2026-08-09T12:00:00Z",
+  "sections": [
+    {
+      "id": "s1-antiguo",
+      "title": "El impulso antiguo",
+      "materials": [
+        {
+          "id": "mat-impulso-bibliotecario",
+          "title": "El impulso bibliotecario: Nínive, Alejandría, Bagdad",
+          "type": "markdown",
+          "markdownFile": "materials/01-el-impulso-bibliotecario.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s2-ilustracion",
+      "title": "La apuesta ilustrada",
+      "materials": [
+        {
+          "id": "mat-enciclopedistas",
+          "title": "Los enciclopedistas y la República de las Letras",
+          "type": "markdown",
+          "markdownFile": "materials/02-los-enciclopedistas.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s3-bibliotecas",
+      "title": "El conocimiento como bien público",
+      "materials": [
+        {
+          "id": "mat-bibliotecas-publicas",
+          "title": "El movimiento de bibliotecas públicas y el regalo de Carnegie",
+          "type": "markdown",
+          "markdownFile": "materials/03-el-movimiento-de-bibliotecas-publicas.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-tradicion-es",
+          "title": "Control: la larga tradición",
+          "type": "exam",
+          "markdown": "",
+          "mediaPath": null,
+          "required": true,
+          "sources": [],
+          "exam": {
+            "passingScore": 0.6,
+            "questionsPerAttempt": 4,
+            "questions": [
+              {
+                "id": "q-ninive",
+                "text": "¿Qué demostró la biblioteca de Asurbanipal en Nínive sobre las bibliotecas?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Que las colecciones debían reservarse a reyes y sacerdotes"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que una biblioteca puede llevar el conocimiento a través de un abismo de tiempo que ninguna vida puede cruzar"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que las tablillas de arcilla eran superiores al papiro"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Textos como la Epopeya de Gilgamesh sobrevivieron dos milenios y medio de olvido porque habían sido coleccionados: la biblioteca sobrevivió a su civilización y entregó su conocimiento a la nuestra."
+              },
+              {
+                "id": "q-alejandria",
+                "text": "¿Cuál era la ambición que definía a la Biblioteca de Alejandría?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Coleccionar todo el conocimiento y ponerlo a disposición de los sabios que trabajaban en ella"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Proteger los secretos de estado egipcios"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Vender copias de rollos a los mercaderes"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Alejandría intentó coleccionarlo todo y funcionó como taller, no como cámara acorazada — Euclides o Eratóstenes trabajaban junto a los estantes. Su lección: una biblioteca sellada es una tumba; una abierta, un motor."
+              },
+              {
+                "id": "q-encyclopedie",
+                "text": "¿Qué hizo radical a la Encyclopédie de Diderot y d'Alembert en el siglo XVIII?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Su premisa: todo el conocimiento, organizado y explicado, en manos de cualquiera que supiera leer"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Fue el primer libro impreso con tipos móviles"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Se negó a documentar los oficios y saberes prácticos"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "La Encyclopédie documentó los oficios junto a la filosofía y aspiraba, en palabras de Diderot, a 'cambiar la manera común de pensar'. Las autoridades la censuraron precisamente porque el conocimiento abierto redistribuye el poder."
+              },
+              {
+                "id": "q-carnegie",
+                "text": "¿Por qué puso Carnegie la biblioteca gratuita en primer lugar entre los usos dignos de una fortuna?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Porque una biblioteca solo ayuda a quien está dispuesto a ayudarse: recompensa exactamente el esfuerzo del estudiante, y nada más"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque los libros eran lo más barato de donar"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque las bibliotecas generaban ingresos de alquiler para el municipio"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "En El evangelio de la riqueza (1889) Carnegie sostuvo que 'el hombre que muere así de rico, muere deshonrado' y financió más de 2.500 bibliotecas — a condición de que cada comunidad se comprometiera a operar la suya."
+              },
+              {
+                "id": "q-bibliotecas-publicas",
+                "text": "¿Qué principio estableció el movimiento de bibliotecas públicas del siglo XIX?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El acceso al conocimiento no debe depender de la riqueza: bibliotecas gratuitas en el punto de uso, financiadas como bien público"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Las salas de lectura debían cobrar una pequeña entrada para garantizar la seriedad"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Las bibliotecas debían registrar lo que leía cada ciudadano"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "De la Public Libraries Act británica (1850) a Boston — 'Free to All' sobre su puerta —, las sociedades empezaron a financiar bibliotecas gratuitas para todos, con una ética de privacidad del lector muy anterior a los debates digitales."
+              },
+              {
+                "id": "q-casa-sabiduria",
+                "text": "¿Qué ilustra el movimiento de traducción de la Bagdad abasí sobre cómo sobrevive el conocimiento?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El conocimiento se mueve porque alguien decide moverlo, y paga con gusto el coste"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El conocimiento solo sobrevive en su lengua original"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La traducción corrompe el conocimiento y debe evitarse"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "El movimiento de traducción abasí pagó por verter al árabe la ciencia griega, persa e india — preservando obras que Europa había perdido y añadiendo el álgebra y la palabra algoritmo por el camino."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "s4-comunes-digitales",
+      "title": "Los comunes digitales",
+      "materials": [
+        {
+          "id": "mat-software-libre",
+          "title": "Software libre, copyleft y los comunes diseñados",
+          "type": "markdown",
+          "markdownFile": "materials/04-software-libre-y-copyleft.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s5-todo-abierto",
+      "title": "Cultura abierta, educación abierta, ciencia abierta",
+      "materials": [
+        {
+          "id": "mat-cultura-abierta",
+          "title": "Creative Commons, Wikipedia, REA y acceso abierto",
+          "type": "markdown",
+          "markdownFile": "materials/05-cultura-abierta-y-acceso-abierto.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s6-el-don",
+      "title": "El don",
+      "materials": [
+        {
+          "id": "mat-don-manifiesto",
+          "title": "La economía del don y el manifiesto de Open Knowledge",
+          "type": "markdown",
+          "markdownFile": "materials/06-el-don-y-el-manifiesto.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-filosofia-final-es",
+          "title": "Examen final: la filosofía del conocimiento abierto",
+          "type": "exam",
+          "markdown": "",
+          "mediaPath": null,
+          "required": true,
+          "sources": [],
+          "exam": {
+            "passingScore": 0.6,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q-libertades",
+                "text": "¿Cuál de estas es una de las cuatro libertades del software libre?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La libertad de estudiar cómo funciona un programa y cambiarlo"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La libertad de usar software sin pagar impuestos"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La libertad de mantener las modificaciones en secreto para siempre"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Las cuatro libertades de Stallman: ejecutar para cualquier propósito, estudiar y modificar (requiere código fuente), redistribuir copias, y distribuir versiones modificadas. 'Libre como en libertad, no como en barra libre.'"
+              },
+              {
+                "id": "q-copyleft",
+                "text": "¿Qué es el copyleft, introducido por la GPL de GNU?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Usar el copyright para exigir que las obras derivadas sigan siendo libres: el regalo se protege a sí mismo"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La abolición del copyright para el software"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Un registro donde los autores renuncian a la atribución"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "La GPL concede las cuatro libertades pero exige que las derivadas lleven la misma licencia. Convirtió el copyright — la herramienta del cercamiento — en un mecanismo que mantiene abierto el común."
+              },
+              {
+                "id": "q-ostrom",
+                "text": "¿Qué demostró Elinor Ostrom en El gobierno de los bienes comunes?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Que las comunidades pueden gobernar recursos compartidos de forma sostenible: la 'tragedia de los comunes' es un fallo de gobernanza, no una ley natural"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que todo recurso compartido colapsa inevitablemente"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que solo la propiedad estatal protege los bienes comunes"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Décadas de trabajo de campo le valieron el Nobel de Economía en 2009, justo cuando Linux y Wikipedia demostraban su tesis a escala planetaria."
+              },
+              {
+                "id": "q-cc",
+                "text": "¿Qué problema resolvió Creative Commons para la cultura y la educación?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Dio a los autores una forma estándar y legalmente sólida de conceder permisos de compartición, frente al todo-o-nada del copyright por defecto"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Abarató el registro del copyright"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Obligó a comercializar toda obra creativa"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Fundada por Lessig y colegas en 2001, CC hizo por la obra creativa lo que la GPL por el código: licencias estándar (atribución, compartir-igual…) que hacen práctica la apertura deliberada."
+              },
+              {
+                "id": "q-budapest",
+                "text": "¿Qué declaró la Iniciativa de Acceso Abierto de Budapest (2002)?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Que Internet hacía posible que el conocimiento revisado por pares llegara a todas las mentes curiosas: un bien público sin precedentes"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que las revistas científicas debían subir sus suscripciones"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que la investigación debía circular solo entre universidades"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "El acceso abierto respondió al absurdo de la investigación financiada con dinero público encerrada tras muros de pago. arXiv, PLOS y los repositorios institucionales hicieron real la declaración."
+              },
+              {
+                "id": "q-mauss",
+                "text": "Según El don de Marcel Mauss, ¿en qué se diferencia un don de una venta?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La venta cierra la relación; el don la mantiene abierta y apunta hacia delante: pásalo"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Un don siempre exige un pago igual a cambio"
+                  },
+                  {
+                    "id": "c",
+                    "text": "No hay diferencia real; ambos son intercambios económicos"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Mauss encontró que los dones crean relaciones y obligaciones — dar, recibir, corresponder. El estatus en las culturas del don fluye hacia quien da bien: la economía exacta del software libre y de Wikipedia."
+              },
+              {
+                "id": "q-mit-espiritu",
+                "text": "Open Knowledge usa la permisiva licencia MIT. ¿Cuál es la intención declarada del proyecto?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La licencia es un suelo, no una brújula: la intención son librerías abiertas regaladas, no productos de cursos con muro de pago"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La licencia MIT prohíbe legalmente el uso comercial"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La licencia obliga a cobrar por los certificados"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "MIT permite prácticamente todo — así se extienden las herramientas. Pero la tradición a la que Open Knowledge se une (Alejandría, la Encyclopédie, Carnegie, GNU, Wikipedia) apunta en una dirección: regálalo."
+              },
+              {
+                "id": "q-estudiante-producto",
+                "text": "¿Qué significa en la práctica que 'el estudiante no es un producto'?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Sin nombres, sin correos, sin perfiles, sin rastreo: leer no exige más que curiosidad"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Los estudiantes pagan para evitar publicidad"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Solo los usuarios registrados acceden a los cursos"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "La ética de la biblioteca pública llevada a la web: gratuita en el punto de uso, y discreta. Incluso en modo base de datos las identidades son pseudónimas y no se pide ningún dato personal."
+              },
+              {
+                "id": "q-ia",
+                "text": "¿Cuál es la postura de Open Knowledge sobre el contenido asistido por IA?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Bienvenido, siempre declarado, y con las fuentes siempre acreditadas: la IA estructura el conocimiento pero jamás debe borrar su procedencia"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Prohibido en todos los cursos"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Permitido siempre que se oculte a los estudiantes"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Los cursos llevan un indicador aiAssisted que se muestra con claridad, y las bibliografías acreditan las fuentes. La transparencia es parte del regalo."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

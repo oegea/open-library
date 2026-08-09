@@ -1,3 +1,10 @@
+Between the ancient library and the Enlightenment stands one machine:
+**Gutenberg's printing press** (c. 1450). Within a generation, a book was no
+longer a treasure to be chained to a lectern but an object ordinary people
+might own. Every project in the rest of this course — encyclopedias, public
+libraries, free software — is, in a sense, someone noticing that the cost of
+copying knowledge had fallen again and asking: *what should we do with that?*
+
 In 1751, in Paris, a bookseller's project became one of the most subversive
 acts of the eighteenth century: the ***Encyclopédie*** of **Denis Diderot**
 and **Jean le Rond d'Alembert**. Across two decades it grew to twenty-eight

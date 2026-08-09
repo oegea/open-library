@@ -26,8 +26,9 @@ In 1991 a Finnish student, **Linus Torvalds**, released a kernel called
 Linux under the GPL, and the combination — GNU tools plus the Linux kernel,
 built by thousands of volunteers coordinating over the Internet — grew into
 the software that today runs most of the world's servers, phones and
-supercomputers. In 1998 the term **open source** was coined to present the
-model to business; Eric Raymond's *The Cathedral and the Bazaar* (1997)
+supercomputers. In 1998 the term **open source** was coined — proposed by
+Christine Peterson — to present the model to business; Eric Raymond's *The
+Cathedral and the Bazaar* (1997)
 explained why openness was not just ethical but *practically superior*:
 "given enough eyeballs, all bugs are shallow".
 

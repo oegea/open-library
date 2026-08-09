@@ -8,20 +8,22 @@ Britain's **Public Libraries Act of 1850** empowered towns to fund libraries
 from local taxes. The debate around it is instructive because the arguments
 have never gone away: opponents warned that educating workers would make
 them restless; supporters answered that an informed citizenry was precisely
-the point. In the United States, the **Boston Public Library** (opened 1854)
-established the model of the great free municipal library, declaring on its
-facade that it was "built by the people and dedicated to the advancement of
-learning".
+the point. In the United States, the **Boston Public Library** — founded in 1848,
+opened in 1854 — established the model of the great free municipal library.
+The facade of its 1895 McKim building still declares it "built by the people
+and dedicated to the advancement of learning"; over the entrance, more
+simply: **"Free to All"**.
 
 Then came the most spectacular knowledge-philanthropy program ever executed.
 **Andrew Carnegie**, the steel magnate who had educated himself as a poor
 boy in a private library opened to working children, funded **more than
 2,500 libraries** between 1883 and 1929, over 1,600 of them in the United
 States, spending tens of millions of dollars. In his 1889 essay *The Gospel
-of Wealth* he argued that a rich man who dies rich "dies disgraced", and
-that the best gift one could give a community was "a library, because it
-gives nothing for nothing" — it rewards exactly the effort a learner brings
-to it.
+of Wealth* he argued that "the man who dies thus rich dies disgraced", and
+he placed the free library first among the worthy uses of a fortune —
+precisely because, as he saw it, a library helps only those willing to help
+themselves: it rewards exactly the effort a learner brings to it, and
+nothing else.
 
 Carnegie's libraries came with a condition that made them sustainable: the
 community had to provide the site and commit public funds to operate it.

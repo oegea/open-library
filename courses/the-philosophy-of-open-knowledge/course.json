@@ -177,11 +177,11 @@
               },
               {
                 "id": "q-carnegie",
-                "text": "Why did Carnegie consider a library the best gift to a community?",
+                "text": "Why did Carnegie place the free library first among the worthy uses of a fortune?",
                 "choices": [
                   {
                     "id": "a",
-                    "text": "Because it gives nothing for nothing — it rewards exactly the effort a learner brings"
+                    "text": "Because a library helps only those willing to help themselves — it rewards exactly the effort a learner brings, and nothing else"
                   },
                   {
                     "id": "b",
@@ -193,7 +193,7 @@
                   }
                 ],
                 "correctChoiceId": "a",
-                "explanation": "In The Gospel of Wealth, Carnegie argued the library dignifies the learner: free at the point of use, it asks nothing but effort. He funded more than 2,500 of them — on condition that the community commit to operating them."
+                "explanation": "In The Gospel of Wealth (1889) Carnegie argued that 'the man who dies thus rich dies disgraced' and championed free libraries — funding more than 2,500, on condition that each community commit to operating theirs."
               },
               {
                 "id": "q-public-libraries",
@@ -213,7 +213,7 @@
                   }
                 ],
                 "correctChoiceId": "a",
-                "explanation": "From the UK Public Libraries Act (1850) to Boston (1854), societies began funding free libraries for everyone — with an ethic of reader privacy that long predates digital privacy debates."
+                "explanation": "From the UK Public Libraries Act (1850) to Boston — founded 1848, 'Free to All' over its door — societies began funding free libraries for everyone, with an ethic of reader privacy that long predates digital privacy debates."
               },
               {
                 "id": "q-house-of-wisdom",

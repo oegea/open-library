@@ -11,20 +11,25 @@ millennia. A library had done exactly what libraries are for: it had carried
 knowledge across a gap of time no single life could bridge.
 
 A few centuries later, the **Library of Alexandria** attempted something even
-more audacious: to collect *everything*. Under the Ptolemies, ships docking
-at the port were searched for scrolls, which were copied for the collection.
+more audacious: to collect *everything*. Under the Ptolemies — according
+to the physician Galen, writing centuries later — ships docking at the port
+were searched for scrolls, which were seized and copied for the collection.
 Scholars — Euclid, Eratosthenes, Aristarchus — worked beside the stacks,
 measuring the circumference of the Earth and proposing that it orbited the
 Sun. Alexandria's decline was slow and mundane rather than the single
 dramatic fire of legend, but its idea proved indestructible: **a civilization
 is measured by what it makes available to those who want to learn.**
 
-The pattern repeats wherever knowledge flourishes. In ninth-century Baghdad,
-the **House of Wisdom** paid translators to bring Greek, Persian and Indian
-science into Arabic — preserving Aristotle and Euclid through centuries when
-Europe had lost them, and adding algebra and algorithms (both Arabic words)
-along the way. Knowledge moved because institutions *chose to move it*, and
-paid the cost gladly.
+The pattern repeats wherever knowledge flourishes. In eighth- and
+ninth-century Baghdad, the Abbasid caliphs sponsored a massive **translation
+movement** — remembered through the storied *House of Wisdom*, though modern
+historians debate that institution's exact shape — that brought Greek,
+Persian and Indian science into Arabic. It preserved Aristotle and Euclid
+through centuries when Europe had lost them, and it added much of its own:
+*algebra* takes its name from al-Khwārizmī's treatise on *al-jabr*, and the
+word *algorithm* from the Latin rendering of his name. Knowledge moved
+because someone *chose to move it*, and paid translators gladly for the
+work.
 
 Notice what all these projects share:
 

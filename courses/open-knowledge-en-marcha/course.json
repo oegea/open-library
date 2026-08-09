@@ -1,0 +1,288 @@
+{
+  "id": "course-open-knowledge-en-marcha",
+  "title": "Open Knowledge en marcha",
+  "slug": "open-knowledge-en-marcha",
+  "description": "Cómo funciona Open Knowledge, sus dos modos de despliegue — una librería sin estado servida desde un repositorio git público, o una instancia completa con cuentas pseudónimas y certificados — y exactamente cómo desplegar cada uno, paso a paso.",
+  "language": "es",
+  "category": "Open Knowledge",
+  "coverImage": "media/running-cover.svg",
+  "authors": [
+    "El proyecto Open Knowledge"
+  ],
+  "sources": [
+    {
+      "title": "Código fuente y documentación de Open Knowledge",
+      "url": "https://github.com/oegea/open-knowledge"
+    },
+    {
+      "title": "El repositorio de contenido de esta misma librería (un ejemplo vivo del modo estático)",
+      "url": "https://github.com/oegea/open-library"
+    }
+  ],
+  "license": "CC BY-SA 4.0",
+  "aiAssisted": true,
+  "published": true,
+  "createdAt": "2026-08-09T12:00:00Z",
+  "updatedAt": "2026-08-09T12:00:00Z",
+  "sections": [
+    {
+      "id": "s1-que-es",
+      "title": "Qué es Open Knowledge",
+      "materials": [
+        {
+          "id": "mat-que-es",
+          "title": "Una librería, un modo estudio y un regalo",
+          "type": "markdown",
+          "markdownFile": "materials/01-que-es-open-knowledge.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s2-estatico",
+      "title": "Modo de contenido estático",
+      "materials": [
+        {
+          "id": "mat-modo-estatico",
+          "title": "Una librería servida desde un repositorio público",
+          "type": "markdown",
+          "markdownFile": "materials/02-modo-contenido-estatico.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-desplegar-estatico",
+          "title": "Desplegar una librería estática, paso a paso",
+          "type": "markdown",
+          "markdownFile": "materials/03-desplegar-modo-estatico.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s3-bd",
+      "title": "Modo con base de datos",
+      "materials": [
+        {
+          "id": "mat-modo-bd",
+          "title": "Cuentas, certificados y el panel de administración",
+          "type": "markdown",
+          "markdownFile": "materials/04-modo-base-de-datos.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-desplegar-bd",
+          "title": "Desplegar en un VPS, paso a paso",
+          "type": "markdown",
+          "markdownFile": "materials/05-desplegar-en-vps.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s4-elegir",
+      "title": "Elegir, y el espíritu de la licencia",
+      "materials": [
+        {
+          "id": "mat-elegir",
+          "title": "Qué modo elegir — y para qué existe la licencia MIT",
+          "type": "markdown",
+          "markdownFile": "materials/06-elegir-modo-y-licencia.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-en-marcha-final",
+          "title": "Examen final: Open Knowledge en marcha",
+          "type": "exam",
+          "markdown": "",
+          "mediaPath": null,
+          "required": true,
+          "sources": [],
+          "exam": {
+            "passingScore": 0.6,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q-modos",
+                "text": "¿Qué distingue fundamentalmente el modo estático del modo con base de datos?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El estático renderiza un repositorio git público sin estado en el servidor; el de base de datos guarda estado (cuentas, progreso, certificados) en SQLite"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El estático es de solo lectura para visitantes; el otro deja a los visitantes editar cursos"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Son aplicaciones distintas con interfaces distintas"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Un mismo código, una variable de entorno: con OK_CONTENT_REPO la instancia se vuelve un renderizador sin estado de un repositorio público; sin ella, la experiencia completa con identidades y panel."
+              },
+              {
+                "id": "q-publicar",
+                "text": "¿Cómo se publica contenido nuevo en modo estático?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Editas los ficheros, commit y git push: el sitio se actualiza en un minuto"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Redesplegando el contenedor de la aplicación"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Subiendo los ficheros por el panel de administración"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Git es el panel de administración del modo estático. La instancia cachea el contenido alrededor de un minuto, así que un push llega a producción sin tocar el despliegue."
+              },
+              {
+                "id": "q-serverless",
+                "text": "¿Por qué el modo estático puede correr en plataformas serverless y el de base de datos no?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El estático no guarda estado, así que los sistemas de ficheros efímeros no importan; el otro necesita disco persistente para SQLite y los medios"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Las plataformas serverless bloquean SQL por seguridad"
+                  },
+                  {
+                    "id": "c",
+                    "text": "El modo base de datos consume demasiada CPU para serverless"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Los sistemas de ficheros serverless se borran entre invocaciones. A un renderizador sin estado le da igual; a una base de datos no. El modo BD quiere una máquina, un disco, una instancia."
+              },
+              {
+                "id": "q-primera-cuenta",
+                "text": "En modo base de datos, ¿quién administra la instancia?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La primera cuenta registrada en la instancia recién desplegada se convierte en administradora"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Una cuenta creada en un fichero de configuración con contraseña en claro"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Cualquiera que conozca la IP del servidor"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "El primer registro arranca la administración: regístrate inmediatamente tras desplegar, y guarda el código de recuperación — sin correo registrado, es tu camino de vuelta."
+              },
+              {
+                "id": "q-identidad",
+                "text": "¿Qué exige registrarse en modo base de datos?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Nada personal: recibes una identidad pseudónima tipo Erudito#4821 protegida con un autenticador TOTP"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Una dirección de correo verificada"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Nombre completo y número de teléfono"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Las cuentas existen solo para conservar el estado de aprendizaje: un pseudónimo, credenciales, progreso y resultados. Quien aprende no es un producto, en ningún modo."
+              },
+              {
+                "id": "q-volumen",
+                "text": "¿Cuál es la regla innegociable de un despliegue con base de datos?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Montar un volumen persistente en /data y ejecutar exactamente una instancia"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Usar al menos tres réplicas tras un balanceador"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Ejecutar un clúster gestionado de PostgreSQL"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Todo lo que importa — base de datos, medios, clave de cifrado — vive en /data, y SQLite quiere un único escritor. Perder el volumen es perder la librería (por eso existe el zip de copia en un clic)."
+              },
+              {
+                "id": "q-ids",
+                "text": "¿Por qué no deben cambiarse nunca los ids una vez publicado el contenido?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El progreso de los visitantes está anclado a los ids de curso y material: cambiarlos reinicia el progreso de todo el mundo"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Git se niega a confirmar ficheros con ids cambiados"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Los ids están firmados criptográficamente"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "En modo estático el progreso vive en el navegador del visitante anclado a esos ids; en modo BD, en el servidor. En ambos casos, renombrar ids deja huérfano el progreso de personas reales."
+              },
+              {
+                "id": "q-licencia",
+                "text": "La licencia MIT permite vender productos basados en Open Knowledge. ¿Qué te pide el proyecto?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Entender que la licencia es un suelo, no una brújula: la intención son librerías regaladas, no productos de conocimiento con muro de pago"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Pagar regalías por los despliegues comerciales"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Nada: el proyecto respalda cualquier uso por igual"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "La permisividad es cómo se extienden las herramientas, y tu librería no depende del permiso de nadie. Pero Open Knowledge se construyó para la tradición de la biblioteca pública y el software libre: regálalo."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
