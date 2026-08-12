@@ -2,7 +2,7 @@
 
 La lluvia no empezó como empiezan las lluvias. Marina Salvat recordaría después ese detalle absurdo: que a las cinco de la tarde, cuando salió de la escuela con la mochila llena de exámenes de lengua por corregir, el cielo sobre Vallverd era de un gris amarillento que no había visto nunca, y que no llovía. En Vallverd no llovía. Llovía en otra parte, decía la radio del bar Els Tarongers, llovía una barbaridad monstruosa a veinte, treinta kilómetros, tierra adentro, en los pueblos donde nacen los barrancos.
 
-Marina vivía sola en un segundo piso de la calle Mayor, dos portales más allá de la farmacia. A las siete y cuarto le mandó un audio a su madre, Rosa, que vivía en Valencia capital: «Mamá, aquí ni gota, no sé de qué va tanto drama». A las ocho menos veinte le llegó al móvil, con un chirrido que no le conocía, la alerta de Protección Civil. A las ocho y diez se fue la luz.
+Marina vivía sola en un segundo piso de la calle Mayor, dos portales más allá de la farmacia. A las siete y cuarto le mandó un audio a su madre, Rosa, que vivía en Valencia capital: «Mamá, aquí ni gota, no sé de qué va tanto drama». En algún momento le llegó al móvil, con un chirrido que no le conocía, la alerta de Protección Civil. A las ocho y diez se fue la luz.
 
 Y entonces sí. Entonces llegó el agua.
 
