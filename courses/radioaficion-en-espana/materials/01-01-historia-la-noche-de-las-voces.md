@@ -66,4 +66,4 @@ En la sección siguiente, la teoría te contará qué es exactamente eso que hac
 
 ---
 
-*Los personajes y el pueblo de esta historia son ficticios. La noche, por desgracia, no lo es: es la del 29 de octubre de 2024, en la que una DANA arrasó decenas de municipios de la provincia de Valencia y se llevó por delante más de doscientas vidas. Este curso está dedicado a su memoria, y a todas las personas —radioaficionados, sanitarios, bomberos, militares, vecinos con palas— que aquella semana fueron la voz y las manos de los demás.*
+*Los personajes y el pueblo de esta historia son ficticios. La noche, por desgracia, no lo es: es la del 29 de octubre de 2024, en la que una DANA arrasó decenas de municipios de la provincia de Valencia y se llevó por delante más de doscientas vidas. Contamos esta historia con el máximo respeto hacia ellas y hacia todas las personas —radioaficionados, sanitarios, bomberos, militares, vecinos con palas— que aquella semana fueron la voz y las manos de los demás.*

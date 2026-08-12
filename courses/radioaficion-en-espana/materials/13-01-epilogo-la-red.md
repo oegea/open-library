@@ -36,6 +36,6 @@ Le iba a gustar. Empezaba todo por ahí.
 
 ---
 
-*Aquí termina la historia de Marina, que es ficción. No es ficción lo que la rodea: ni la DANA del 29 de octubre de 2024 y sus más de doscientas víctimas, ni la pantanada de Tous de 1982, ni los radioaficionados que en ambas —y en todas las de en medio— fueron el hilo. Este curso está dedicado a ellos: a los que ya no están, a los que perdieron tanto, y a los voluntarios de ayer, de hoy y de mañana que mantienen las baterías cargadas.*
+*Aquí termina la historia de Marina, que es ficción. No es ficción lo que la rodea: ni la DANA del 29 de octubre de 2024 y sus más de doscientas víctimas, ni la pantanada de Tous de 1982, ni los radioaficionados que en ambas —y en todas las de en medio— fueron el hilo. Esta historia se escribió con el máximo respeto hacia todos ellos: los que ya no están, los que perdieron tanto, y los voluntarios de ayer, de hoy y de mañana. Si anima a alguien a formarse, que el resultado sea ese: más baterías cargadas la próxima vez que hagan falta.*
 
 *La próxima voz de la red puede ser la tuya. El último capítulo te dice exactamente cómo.*
