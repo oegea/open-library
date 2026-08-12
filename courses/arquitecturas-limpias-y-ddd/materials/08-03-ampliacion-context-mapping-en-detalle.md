@@ -1,0 +1,39 @@
+La teoría dejó el context map en su principio rector; esta ampliación baja al catálogo completo de relaciones entre contextos — el vocabulario con el que los equipos DDD describen su geopolítica — y a las técnicas de taller modernas para descubrir contextos. Es material de segunda lectura con una excepción: si trabajas integrando sistemas ajenos (el caso Meridian-Vesta), el catálogo te describe la vida diaria con nombres que quizá no sabías que existían.
+
+## El catálogo de relaciones (DDD Reference, CC BY 4.0)
+
+Las relaciones entre dos bounded contexts no son todas iguales: se distinguen por **quién tiene el poder** de cambiar el modelo compartido y quién paga la adaptación. El catálogo canónico de Evans:
+
+- **Partnership (asociación):** dos contextos/equipos que triunfan o fracasan juntos y coordinan sus planes. Facturación y acuerdos comerciales dentro de Meridian: si uno cambia, el otro se entera en la misma sala.
+- **Shared kernel (núcleo compartido):** dos contextos comparten explícitamente un subconjunto del modelo (código común) que solo se cambia con consentimiento mutuo. Potente y peligroso: cada cambio requiere dos aprobaciones. Regla práctica moderna: cuanto más pequeño, mejor; muchos equipos lo reservan para value objects básicos (el `Importe` de Meridian sería candidato).
+- **Customer/Supplier (cliente/proveedor):** aguas arriba y aguas abajo con negociación: el proveedor (upstream) planifica teniendo en cuenta las necesidades del cliente (downstream). Meridian con Ferrán/Vesta cuando el contrato les da voz: Vesta pide, Meridian prioriza.
+- **Conformist (conformista):** aguas abajo *sin* poder de negociación: el proveedor no va a cambiar por ti (un SaaS gigante, un sistema legado intocable), y tú decides **adoptar su modelo tal cual** para eliminar el coste de traducción. Es una decisión legítima y consciente — la palabra suena a derrota pero describe un trato: simplicidad a cambio de soberanía.
+- **Anticorruption layer (ACL):** la alternativa al conformismo cuando el modelo ajeno *no* te puede invadir: una capa de traducción aísla tu modelo del suyo. El módulo nuevo de Meridian frente al MySQL de ATLAS es un ACL de libro: `MySQLRepositorioDePedidos` traduce las tablas quinceañeras del Monstruo a `Pedido` limpios, y el dominio nuevo jamás ve una columna `mc` de la tabla `cfg2`. Estrangular un legacy ES construir un ACL contra tu propio pasado.
+- **Open Host Service (servicio anfitrión abierto) + Published Language (lenguaje publicado):** cuando muchos consumidores dependen de ti, en lugar de un ACL por consumidor defines un protocolo público, documentado y estable — una API con su modelo publicado. La API de facturación que Meridian expone a Vesta va camino de esto.
+- **Separate Ways (caminos separados):** la relación olvidada: si la integración aporta menos de lo que cuesta, *no integrarse*. Cada contexto resuelve lo suyo por su cuenta. Los equipos maduros la eligen más a menudo de lo que se cree.
+
+Dos observaciones de práctica que el catálogo no dice en voz alta:
+
+1. **El context map es un documento político, no técnico.** Describe relaciones de poder y comunicación entre *equipos* (¿quién puede pedirle cambios a quién?, ¿quién paga la traducción?). Por eso levanta conversaciones incómodas — y por eso vale la pena: un mapa que no incomoda a nadie probablemente dibuja la fantasía, no el sistema. Es la ley de Conway usada a favor: si el sistema copiará las comunicaciones, dibuja las comunicaciones primero.
+2. **Las relaciones cambian con los contratos.** Meridian era conformista con Vesta (Vesta dicta, Meridian obedece) y el plan de Ferrán la está moviendo a customer/supplier con un published language. Revisar el mapa una vez al año es mantenimiento de arquitectura tan real como actualizar dependencias.
+
+## Talleres modernos: descubrir contextos sin doctorado
+
+La mañana de pizarra de Júlia tiene hoy metodologías empaquetadas, todas con materiales abiertos:
+
+- **EventStorming** (Alberto Brandolini, ~2013): el taller de descubrimiento más usado de la comunidad DDD. Sobre un rollo de papel continuo, negocio y desarrollo pegan pósits naranjas con los **eventos de dominio** en pasado («abono pactado», «rectificativa emitida», «trimestre liquidado») y los ordenan en el tiempo; después emergen comandos, actores, sistemas… y las **fronteras aparecen solas**: donde el lenguaje de los pósits cambia, donde un grupo de eventos gira alrededor de otro experto, ahí hay un contexto pidiendo frontera. La brutalidad elegante del formato: los expertos no necesitan saber nada de software, y los malentendidos («¿"aplicado" y "liquidado" son el mismo pósit?») explotan delante de todos en minutos, no en producción en años. Brandolini lo cuenta en su libro en progreso (*Introducing EventStorming*, Leanpub) y hay introducciones abiertas por toda la web.
+- **Bounded Context Canvas** (ddd-crew): una plantilla de una página por contexto — nombre, propósito, lenguaje clave, relaciones entrantes/salientes con su tipo del catálogo — publicada con licencia abierta en github.com/ddd-crew. Rellenarla para un contexto existente es un chequeo médico de una hora.
+- **Core Domain Charts** (ddd-crew): responde a la pregunta de inversión que el DDD estratégico trae de serie: no todos los contextos merecen el mismo esfuerzo. **Core domain** (donde el negocio gana o muere: la facturación en Meridian) merece el mejor equipo y el modelo más rico; **supporting** (necesario, no diferencial) merece corrección sin heroísmo; **generic** (resuelto por la industria: autenticación, correo) se compra o se adopta. Gastar el talento en lo genérico y las prisas en lo core es el error de asignación más caro que puede cometer una organización técnica — Fénix, nótese, gastó cuatro meses de su mejor gente en un framework genérico de acceso a datos.
+
+## El anti-patrón final: fronteras sin soberanía
+
+Cierre con la trampa más sutil, porque tiene todas las carpetas correctas: el **monolito distribuido semántico**. Equipos que dibujan módulos/servicios por contexto… y luego comparten el modelo por debajo — la misma clase `Abono` importada por los dos módulos «para no duplicar», la misma tabla leída por los dos servicios «por eficiencia». El resultado combina lo peor de ambos mundos: la burocracia de las fronteras sin su beneficio (cada cambio del modelo compartido atraviesa todos los «contextos» a la vez — shotgun surgery con pasaporte). La regla que lo previene ya la conoces de la teoría: mismo nombre en dos contextos no es duplicación, es soberanía; compartir modelo entre contextos no es eficiencia, es una frontera pintada en el suelo que nadie custodia. Si de verdad hay un fragmento común estable, se declara shared kernel *explícitamente* — pequeño, versionado, con doble consentimiento — y deja de ser un secreto a voces.
+
+## Para llevar
+
+- El catálogo: partnership, shared kernel (pequeño), customer/supplier, conformist (trato consciente), ACL (traducir para no contaminarse), open host + published language (protocolo público), separate ways (no integrarse también es una relación).
+- Estrangular un legacy es un ACL contra el propio pasado: el repositorio que traduce las tablas del Monstruo ya lo es.
+- El context map es política: dibuja poder y comunicación entre equipos; si no incomoda, es fantasía. Las relaciones cambian con los contratos: el mapa se revisa.
+- EventStorming: eventos en pósits + expertos en la sala = fronteras y malentendidos visibles en horas. Canvas y Core Domain Charts (ddd-crew, licencia abierta): el contexto en una página y la inversión donde toca.
+- Core/supporting/generic: el mejor talento al core; lo genérico se compra. Asignarlo al revés es el error más caro.
+- Anti-patrón: fronteras con modelo compartido por debajo — burocracia de contextos sin soberanía. Lo común estable se declara shared kernel explícito o no existe.

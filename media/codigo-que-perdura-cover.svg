@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1d3a"/><stop offset="0.65" stop-color="#123c5c"/><stop offset="1" stop-color="#0e2a3a"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd766" stop-opacity="0.85"/><stop offset="1" stop-color="#ffd766" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a3a4d"/><stop offset="1" stop-color="#062532"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <!-- stars -->
+  <g fill="#ffffff" opacity="0.7">
+    <circle cx="120" cy="90" r="3"/><circle cx="300" cy="60" r="2"/><circle cx="520" cy="120" r="2.5"/>
+    <circle cx="1180" cy="80" r="3"/><circle cx="1010" cy="150" r="2"/><circle cx="700" cy="70" r="2"/>
+    <circle cx="880" cy="110" r="2.5"/><circle cx="180" cy="200" r="2"/><circle cx="1230" cy="210" r="2"/>
+  </g>
+  <!-- sea -->
+  <rect y="540" width="1280" height="180" fill="url(#sea)"/>
+  <g stroke="#7fd4e8" stroke-width="4" opacity="0.35" fill="none" stroke-linecap="round">
+    <path d="M60 590q40 -14 80 0t80 0"/><path d="M420 620q40 -14 80 0t80 0"/>
+    <path d="M900 600q40 -14 80 0t80 0"/><path d="M660 660q40 -14 80 0t80 0"/>
+  </g>
+  <!-- light beams -->
+  <polygon points="330,270 1280,150 1280,330" fill="url(#beam)"/>
+  <!-- rock -->
+  <path d="M180 540 q60 -60 160 -40 q120 20 180 40 l40 60 H140 Z" fill="#12303f"/>
+  <!-- lighthouse -->
+  <g stroke-linejoin="round">
+    <path d="M270 520 L290 300 H350 L370 520 Z" fill="#e8ecef"/>
+    <path d="M278 470 h84 M274 420 h92 M284 370 h72" stroke="#c03b2d" stroke-width="26"/>
+    <rect x="286" y="258" width="68" height="46" rx="6" fill="#25333d"/>
+    <circle cx="320" cy="281" r="16" fill="#ffd766"/>
+    <path d="M282 258 L320 226 L358 258 Z" fill="#c03b2d"/>
+  </g>
+  <!-- code brackets in the sky -->
+  <g fill="none" stroke="#7fd4e8" stroke-width="14" stroke-linecap="round" opacity="0.9">
+    <path d="M700 300 L650 360 L700 420"/>
+    <path d="M980 300 L1030 360 L980 420"/>
+    <path d="M870 290 L810 430"/>
+  </g>
+  <!-- title band -->
+  <text x="64" y="682" font-family="Georgia, 'Times New Roman', serif" font-size="52" fill="#f5f2e8">El código que perdura</text>
+</svg>

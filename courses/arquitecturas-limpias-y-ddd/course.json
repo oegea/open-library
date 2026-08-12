@@ -1,0 +1,3021 @@
+{
+  "id": "course-arquitecturas-limpias-y-ddd",
+  "title": "El código que perdura: código limpio, arquitecturas limpias y DDD",
+  "slug": "arquitecturas-limpias-y-ddd",
+  "description": "Aprende código limpio, arquitecturas limpias y Domain-Driven Design desde cero, siguiendo la historia de una programadora junior que hereda un sistema legacy de quince años. Historia, teoría con ejemplos en JavaScript y Python, y exámenes con explicación en cada sección.",
+  "language": "es",
+  "category": "Desarrollo de Software",
+  "coverImage": "media/codigo-que-perdura-cover.svg",
+  "authors": [
+    "El proyecto Open Knowledge"
+  ],
+  "sources": [
+    {
+      "title": "Eric Evans — Domain-Driven Design Reference (CC BY 4.0)",
+      "url": "https://www.domainlanguage.com/ddd/reference/"
+    },
+    {
+      "title": "Robert C. Martin — The Clean Architecture (2012)",
+      "url": "https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html"
+    },
+    {
+      "title": "Alistair Cockburn — Hexagonal Architecture (Ports and Adapters, 2005)",
+      "url": "https://alistair.cockburn.us/hexagonal-architecture"
+    },
+    {
+      "title": "Martin Fowler — bliki (martinfowler.com)",
+      "url": "https://martinfowler.com/"
+    },
+    {
+      "title": "Ward Cunningham — The WyCash Portfolio Management System (OOPSLA '92)",
+      "url": "http://c2.com/doc/oopsla92.html"
+    },
+    {
+      "title": "Brian Foote y Joseph Yoder — Big Ball of Mud (1997)",
+      "url": "http://www.laputan.org/mud/"
+    },
+    {
+      "title": "Joel Spolsky — Things You Should Never Do, Part I (2000)",
+      "url": "https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/"
+    },
+    {
+      "title": "Michael Nygard — Documenting Architecture Decisions (2011)",
+      "url": "https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions"
+    },
+    {
+      "title": "97 Things Every Programmer Should Know (CC BY-NC-SA 3.0)",
+      "url": "https://github.com/97-things/97-things-every-programmer-should-know"
+    },
+    {
+      "title": "Abel Avram y Floyd Marinescu — Domain Driven Design Quickly (InfoQ)",
+      "url": "https://www.infoq.com/minibooks/domain-driven-design-quickly/"
+    },
+    {
+      "title": "CodelyTV — typescript-ddd-example (AGPL-3.0)",
+      "url": "https://github.com/CodelyTV/typescript-ddd-example"
+    },
+    {
+      "title": "Vaughn Vernon — Effective Aggregate Design (2011)",
+      "url": "https://kalele.io/effective-aggregate-design/"
+    },
+    {
+      "title": "Open Knowledge — ADR 0001: Clean Architecture with DDD-style modules",
+      "url": "https://github.com/oegea/open-knowledge/blob/main/docs/adr/0001-clean-architecture-and-ddd.md"
+    },
+    {
+      "title": "Michael Feathers — Working Effectively with Legacy Code (2004)",
+      "url": null
+    },
+    {
+      "title": "Eric Evans — Domain-Driven Design: Tackling Complexity in the Heart of Software (2003)",
+      "url": null
+    },
+    {
+      "title": "Fred Brooks — The Mythical Man-Month (1975)",
+      "url": null
+    },
+    {
+      "title": "Martin Fowler — Refactoring (2ª ed., 2018)",
+      "url": null
+    }
+  ],
+  "license": "CC BY-SA 4.0",
+  "aiAssisted": true,
+  "published": true,
+  "createdAt": "2026-08-12T12:00:00Z",
+  "updatedAt": "2026-08-12T12:00:00Z",
+  "sections": [
+    {
+      "id": "s00-introduccion",
+      "title": "Introducción",
+      "materials": [
+        {
+          "id": "mat-00-01",
+          "title": "Cómo seguir este curso",
+          "type": "markdown",
+          "markdownFile": "materials/00-01-como-seguir-este-curso.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-00-02",
+          "title": "De dónde vienen estas ideas",
+          "type": "markdown",
+          "markdownFile": "materials/00-02-de-donde-vienen-estas-ideas.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s01",
+      "title": "El coste del código sucio",
+      "materials": [
+        {
+          "id": "mat-01-01",
+          "title": "Historia — La factura de los 4.700",
+          "type": "markdown",
+          "markdownFile": "materials/01-01-historia-la-factura-de-los-4700.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-01-02",
+          "title": "Teoría — El coste del código sucio",
+          "type": "markdown",
+          "markdownFile": "materials/01-02-teoria-el-coste-del-codigo-sucio.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-01-03",
+          "title": "Ampliación — Nombres: un catálogo práctico",
+          "type": "markdown",
+          "markdownFile": "materials/01-03-ampliacion-nombres-un-catalogo-practico.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-01",
+          "title": "Examen: el coste del código sucio",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "¿Cuál es la mejor definición de «código limpio» según esta sección?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Código que pasa todos los tests y no tiene errores."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Código que una persona distinta de su autor puede leer, entender y modificar con seguridad."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Código que sigue las convenciones de estilo del lenguaje."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Código optimizado para ejecutarse con el máximo rendimiento."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La limpieza se define respecto al lector humano, no respecto a la máquina ni a la corrección funcional. La línea 847 de calc2() funcionaba y estaba desastrosamente sucia: nadie podía saber qué quería decir. Pasar tests, seguir el estilo o rendir bien son cosas deseables, pero un código puede cumplirlas y seguir siendo ilegible."
+              },
+              {
+                "id": "q2",
+                "text": "¿Por qué «el código se lee más veces de las que se escribe» justifica invertir en legibilidad?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Porque leer código es más difícil que escribirlo."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque los lectores suelen ser menos expertos que los autores."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque el coste total del código está dominado por las relecturas futuras, así que optimizar la escritura es optimizar la parte pequeña."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Porque los editores modernos facilitan más la lectura que la escritura."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Es un argumento económico. Si por cada hora de escritura hay del orden de diez de lectura (estimación de Robert C. Martin en Clean Code), cualquier minuto ahorrado al escribir de forma críptica se paga multiplicado en cada relectura. La línea del bug tardó un minuto en escribirse y costó jornadas enteras de lectura y una crisis con el cliente."
+              },
+              {
+                "id": "q3",
+                "text": "Según la formulación original de Ward Cunningham (OOPSLA '92), la deuda técnica es…",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El código mal escrito que acumula un proyecto por falta de profesionalidad."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Una decisión consciente de entregar código no-del-todo-correcto para avanzar, que debe devolverse pronto; mientras no se devuelve, cada cambio paga interés."
+                  },
+                  {
+                    "id": "c",
+                    "text": "El coste de las licencias y la infraestructura heredadas."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Cualquier código antiguo que use tecnologías obsoletas."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La metáfora original describe deuda deliberada: entrego, aprendo, y reescribo incorporando lo aprendido. Cunningham insistió en que no era una justificación para escribir código malo. Fowler añade la distinción prudente/imprudente y deliberada/inadvertida: $aux3 es deuda imprudente e inadvertida — la variante que arruina, no la herramienta."
+              },
+              {
+                "id": "q4",
+                "text": "Una variable llamada $aux3 contiene un importe, un cliente o una fecha según la zona de la función. ¿Cuál es el diagnóstico más profundo?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Falta un comentario que documente qué contiene en cada zona."
+                  },
+                  {
+                    "id": "b",
+                    "text": "El nombre debería ser más descriptivo, por ejemplo $datoActual."
+                  },
+                  {
+                    "id": "c",
+                    "text": "La imposibilidad de nombrarla revela que en realidad son varias variables y que la función hace demasiadas cosas."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Debería declararse con un tipo estático para evitar confusiones."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Los nombres son un sistema de alarma del diseño: cuando un nombre honesto es imposible, la pieza está mal dividida. Un comentario o un nombre igualmente vago ($datoActual) maquillan el síntoma; el tipado ayudaría pero no resuelve que una sola variable represente tres conceptos. La solución real es separar variables y, casi seguro, funciones."
+              },
+              {
+                "id": "q5",
+                "text": "¿Cuál de estos nombres viola la regla de «no desinformar»?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "dias_desde_ultimo_pago para un entero de días."
+                  },
+                  {
+                    "id": "b",
+                    "text": "facturasPendientes para una lista de facturas sin emitir."
+                  },
+                  {
+                    "id": "c",
+                    "text": "getCliente() para una función que devuelve el cliente y lo crea si no existe."
+                  },
+                  {
+                    "id": "d",
+                    "text": "IVA_GENERAL para una constante con el tipo impositivo general."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "getCliente() promete una consulta sin efectos y ejecuta una escritura condicional: es una mentira de nombre (y una violación de la separación consulta/acción, CQS). Quien la llame «solo para mirar» provocará efectos que no espera. Los otros tres nombres dicen la verdad sobre su contenido."
+              },
+              {
+                "id": "q6",
+                "text": "La regla del boy scout (Robert C. Martin, 97 Things Every Programmer Should Know) dice…",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Reserva un sprint periódico para limpiar el código acumulado."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Deja cada fichero que toques un poco mejor de lo que lo encontraste, como parte natural del trabajo."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Refactoriza todo módulo en el que encuentres código sucio antes de continuar con tu tarea."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Anota la deuda técnica encontrada en el backlog para priorizarla."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La regla es incremental y silenciosa: mejoras pequeñas (un renombrado, una extracción, borrar código muerto) cada vez que pasas por un fichero, sin pedir permiso, en commits separados de la tarea. No es un rediseño oportunista (opción c: mezcla limpieza y tarea, y agranda el riesgo) ni una actividad aparte que planificar (a y d pueden existir, pero no son esta regla). Su aritmética: el código más tocado recibe más limpieza justo por ser el más leído."
+              },
+              {
+                "id": "q7",
+                "text": "¿Por qué un cambio de nombre debe ir en un commit separado del cambio de comportamiento?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Para que, si algo falla, se pueda distinguir si la causa fue la tarea o la limpieza, y revertir solo lo necesario."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque los sistemas de control de versiones no gestionan bien los renombrados."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque los renombrados requieren aprobación del arquitecto."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Para que el historial tenga más commits y parezca más trabajo."
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Mezclar en un mismo cambio «lo que hace algo nuevo» y «lo que solo cambia la forma» destruye la capacidad de diagnóstico: ante un fallo, no sabes cuál de los dos fue. Separar permite revisar el renombrado en segundos (¿cambia el comportamiento? no debería) y concentrar la atención en el cambio funcional."
+              },
+              {
+                "id": "q8",
+                "text": "El nombre timeoutMs es preferible a timeout porque…",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Es más corto de escribir con autocompletado."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Sigue la convención camelCase de JavaScript."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Lleva la unidad en el nombre y elimina una ambigüedad que ha causado fallos históricos graves."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Los números en los nombres facilitan la búsqueda."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "timeout obliga a adivinar la unidad (¿segundos?, ¿milisegundos?) y cada suposición errónea es un bug silencioso. Codificar la unidad (timeoutMs, plazo_dias, importe_centimos) desactiva la ambigüedad gratis. El caso extremo real es la sonda Mars Climate Orbiter (1999), perdida por una confusión de unidades entre equipos. La solución de fondo (tipos que llevan su unidad) llegará con los value objects en la sección 5."
+              },
+              {
+                "id": "q9",
+                "text": "¿Cuál de estas situaciones describe deuda técnica prudente y deliberada según el cuadrante de Fowler?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Un desarrollador no sabía que existía una función de librería y reimplementó el algoritmo con un bug."
+                  },
+                  {
+                    "id": "b",
+                    "text": "El equipo lanza una integración simplificada para validar el producto con un cliente piloto, documenta el atajo y planifica su sustitución."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Un módulo crece durante años sin que nadie repare en que cada cambio cuesta más que el anterior."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Se copia y pega un bloque de código porque el plazo aprieta y nadie lo registra."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Prudente y deliberada = decisión consciente, con valor a cambio (aprender antes), registrada y con plan de amortización — el espíritu original de Cunningham. La opción a es inadvertida (ignorancia), la c es inadvertida y acumulativa (el caso ATLAS), y la d es deliberada pero imprudente: sin registro ni plan, solo prisa."
+              },
+              {
+                "id": "q10",
+                "text": "En un proyecto Python te encuentras variables en camelCase mezcladas con snake_case. Según la sección, ¿qué debe guiar tu decisión al escribir código nuevo?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Usar siempre PEP 8 (snake_case), porque es la guía oficial del lenguaje."
+                  },
+                  {
+                    "id": "b",
+                    "text": "La consistencia del proyecto: adoptar la convención dominante en el código circundante y, si el equipo acuerda migrar, hacerlo de forma explícita y gradual."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Usar el estilo personal propio, ya que el proyecto no es consistente."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Reescribir todos los nombres del proyecto a PEP 8 antes de continuar."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La convención oficial importa (PEP 8 existe y es la referencia), pero la legibilidad se calibra localmente: un lector dentro del proyecto sufre más la mezcla de estilos que la desviación respecto al estándar externo. Lo profesional es seguir la convención local y, si se quiere corregir, acordarlo en equipo y migrar de forma controlada — no imponer un tercer estilo (c) ni un big-bang de renombrados sin red (d)."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "title": "Funciones, comentarios y la red de seguridad",
+      "materials": [
+        {
+          "id": "mat-02-01",
+          "title": "Historia — El dragón dormido",
+          "type": "markdown",
+          "markdownFile": "materials/02-01-historia-el-dragon-dormido.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-02-02",
+          "title": "Teoría — Funciones, comentarios y la red de seguridad",
+          "type": "markdown",
+          "markdownFile": "materials/02-02-teoria-funciones-comentarios-y-la-red.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-02-03",
+          "title": "Ampliación — Tocar legacy sin morir: el kit de Feathers",
+          "type": "markdown",
+          "markdownFile": "materials/02-03-ampliacion-tocar-legacy-sin-morir.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-02",
+          "title": "Examen: funciones y la red de seguridad",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "Según Michael Feathers (Working Effectively with Legacy Code), ¿qué es código legacy?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Código escrito hace más de cinco años."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Código que usa tecnologías obsoletas."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Código sin tests, independientemente de su edad."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Código heredado de otro equipo o empresa."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La definición de Feathers es operativa: sin tests, cualquier cambio es «editar y rezar», y el síntoma decisivo es el miedo a tocarlo. Un código escrito esta mañana sin tests ya es legacy; uno de hace veinte años con buena cobertura, no. La edad y la tecnología son correlatos frecuentes, no la causa."
+              },
+              {
+                "id": "q2",
+                "text": "¿Qué promete exactamente un test de caracterización?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Que el comportamiento del sistema es correcto según los requisitos."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que el comportamiento actual del sistema, correcto o no, no cambiará sin que el equipo lo sepa."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que los bugs conocidos quedan documentados para su corrección."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Que el código cumple los estándares de calidad del proyecto."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El test de caracterización fotografía lo que el sistema hace hoy, bugs incluidos, y convierte cualquier alteración en una alarma. No juzga corrección — muchas veces nadie sabe ya qué sería «lo correcto» — pero da lo que el legacy no tiene: visibilidad total del efecto de cada cambio. Por eso, al arreglar el redondeo, los doce tests que fallaron eran información, no fracaso: el mapa exacto de lo que dependía del comportamiento viejo."
+              },
+              {
+                "id": "q3",
+                "text": "Júlia arregló un bug real y rompió un informe que duplicaba el cálculo. ¿Qué dinámica del código legacy ilustra la existencia de esa copia?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La falta de documentación hace que los desarrolladores no encuentren el código original."
+                  },
+                  {
+                    "id": "b",
+                    "text": "El miedo a tocar el original produce copias; las copias divergen en silencio y generan más miedo."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Los desarrolladores antiguos eran menos disciplinados con la duplicación."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Sin revisiones de código, la duplicación pasa desapercibida."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La duplicación en legacy suele ser racional: copiar era la única forma de avanzar sin riesgo de romper lo existente. El ciclo miedo→copia→divergencia→más miedo es autoalimentado. Por eso la pregunta útil ante código duplicado no es «¿quién fue el vago?» sino «¿qué daba tanto miedo?» — y la salida es la red de tests, no la valentía."
+              },
+              {
+                "id": "q4",
+                "text": "¿Cuándo puede decirse que una función «hace una sola cosa»?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Cuando tiene menos de veinte líneas."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Cuando solo tiene un punto de retorno."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Cuando todas sus líneas trabajan en el mismo nivel de abstracción."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Cuando no llama a ninguna otra función."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El criterio rector es el nivel de abstracción único: una función que mezcla política de negocio («aplicar descuento») con mecánica de bajo nivel («multiplicar por 100 y redondear») hace más de una cosa aunque sea corta. El tamaño pequeño es consecuencia, no objetivo — perseguir un número de líneas produce indirección laberíntica sin mejorar la legibilidad."
+              },
+              {
+                "id": "q5",
+                "text": "Una función se llama calcular(pedido, true). ¿Qué problema señala el parámetro true?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Los booleanos ocupan memoria innecesaria."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Una bandera booleana confiesa que la función hace dos cosas distintas y obliga al lector a memorizar el significado del valor."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Debería usarse un entero para permitir más de dos modos."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Los parámetros posicionales son siempre preferibles a los booleanos."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "En el punto de llamada, true no significa nada para el lector: hay que ir a la definición a descubrir qué activa. Y dentro habrá un if que parte la función en dos comportamientos — es decir, dos funciones conviviendo bajo un nombre. La solución habitual: dos funciones con nombres honestos (calcularConDescuento / calcularSinDescuento), o un parámetro con nombre expresivo si el lenguaje lo permite."
+              },
+              {
+                "id": "q6",
+                "text": "Según la sección, ¿cuál de estos comentarios es valioso y no reemplazable por código?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "// incrementa el contador"
+                  },
+                  {
+                    "id": "b",
+                    "text": "// comprueba si la factura puede emitirse"
+                  },
+                  {
+                    "id": "c",
+                    "text": "// Redondeamos al total, no por línea: acuerdo con el cliente, acta 2026-09-14"
+                  },
+                  {
+                    "id": "d",
+                    "text": "// función principal del módulo"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El único contenido que el código no puede expresar es el porqué externo: decisiones, acuerdos, contexto del mundo. El acta con el cliente no está en el código ni puede estarlo. Los demás son «qué» redundante: el primero es ruido, el segundo debería ser una función puedeEmitirse(), y el cuarto no aporta información. Recuerda además que los comentarios no se ejecutan: cuanto más digan lo que el código ya dice, más probabilidades de que acaben mintiendo."
+              },
+              {
+                "id": "q7",
+                "text": "¿Qué es un «seam» según Feathers?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Un punto del código con alta probabilidad de contener bugs."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Un punto donde puede alterarse el comportamiento del programa sin editar el código en ese punto."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Una frontera entre dos módulos de la arquitectura."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Un test que cubre una única función."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El seam es el concepto central del trabajo con legacy: para testear necesitas aislar, y los seams son los puntos por donde el aislamiento es posible. El ejemplo canónico es pasar las dependencias como parámetros: en el test entregas sustitutos sin tocar la función. La lección de fondo: la testabilidad es una propiedad del diseño del código, no del framework de tests."
+              },
+              {
+                "id": "q8",
+                "text": "Necesitas añadir cuatro líneas de lógica nueva dentro de una función legacy de mil líneas sin tests. Según la técnica del «sprout method», ¿qué haces?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Añades las cuatro líneas donde corresponda, minimizando el diff."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Caracterizas primero la función entera y luego añades las líneas."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Escribes la lógica nueva en una función nueva con sus tests, y en la función legacy añades solo la llamada."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Reescribes la función entera aprovechando el cambio."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El brote minimiza la superficie de contacto con lo que no tiene red: el monstruo recibe una línea (riesgo casi nulo) y la lógica nueva nace limpia y testeada. Caracterizar la función entera (b) es lo ideal cuando es viable, pero el brote existe precisamente para cuando no lo es todavía. Meter las líneas dentro (a) alimenta al monstruo; reescribir sin red (d) es la receta del desastre."
+              },
+              {
+                "id": "q9",
+                "text": "Las cuatro reglas del diseño simple de Kent Beck, en orden de prioridad, son:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Revela intención, sin duplicación, pasa los tests, mínimos elementos."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Pasa los tests, revela intención, sin duplicación, mínimos elementos."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Sin duplicación, pasa los tests, mínimos elementos, revela intención."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Mínimos elementos, revela intención, sin duplicación, pasa los tests."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El orden importa y zanja debates prácticos: primero que funcione y se sepa que funciona (tests), luego que se entienda (intención), luego que cada conocimiento viva en un solo sitio (sin duplicación), y solo al final la economía de elementos. Júlia y Denís lo siguieron sin saberlo: red primero, nombres después, eliminación de la copia del cálculo al final. Fowler documenta las reglas en su bliki (BeckDesignRules)."
+              },
+              {
+                "id": "q10",
+                "text": "En un «scratch refactoring», la regla de hierro es…",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Hacer commits pequeños para poder revertir."
+                  },
+                  {
+                    "id": "b",
+                    "text": "No renombrar símbolos públicos."
+                  },
+                  {
+                    "id": "c",
+                    "text": "No fusionar nunca la rama: el producto es la comprensión, no el código."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Ejecutar los tests después de cada cambio."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El scratch refactoring se hace sin tests — por eso mismo su resultado no es de fiar y jamás se fusiona. Es una técnica de lectura, no de escritura: refactorizas salvajemente para construir el mapa mental del código y luego tiras la rama. Las otras opciones son buenas prácticas de refactors reales, que es justo lo que un scratch no es."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "title": "Acoplamiento, cohesión y SOLID",
+      "materials": [
+        {
+          "id": "mat-03-01",
+          "title": "Historia — Veintitrés ficheros",
+          "type": "markdown",
+          "markdownFile": "materials/03-01-historia-veintitres-ficheros.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-03-02",
+          "title": "Teoría — Acoplamiento, cohesión y SOLID",
+          "type": "markdown",
+          "markdownFile": "materials/03-02-teoria-acoplamiento-cohesion-solid.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-03-03",
+          "title": "Ampliación — Más allá de SOLID",
+          "type": "markdown",
+          "markdownFile": "materials/03-03-ampliacion-mas-alla-de-solid.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-03",
+          "title": "Examen: acoplamiento, cohesión y SOLID",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "Para mostrar un dato nuevo en la factura hay que modificar veintitrés ficheros. ¿Cómo se llama este síntoma y qué mide?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Divergent change; mide la falta de cohesión."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Shotgun surgery; mide el acoplamiento: el conocimiento de un concepto está desparramado por muchos sitios."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Modelo anémico; mide la falta de comportamiento en los objetos."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Deuda técnica; mide el interés acumulado de los atajos."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Cirugía de escopeta (Fowler, Refactoring): un solo motivo de cambio dispara modificaciones en muchos ficheros, señal de que el conocimiento sobre «impuesto» vive en veinte sitios que saben demasiado unos de otros — acoplamiento. Su síntoma espejo es el cambio divergente: un solo fichero que cambia por muchos motivos distintos (eso era calc2(), y eso sí mide cohesión)."
+              },
+              {
+                "id": "q2",
+                "text": "«Las cosas que cambian juntas deben vivir juntas; las que cambian por motivos distintos deben vivir separadas.» Esta brújula resume…",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La regla del boy scout y el diseño simple."
+                  },
+                  {
+                    "id": "b",
+                    "text": "La Ley de Deméter y Tell, Don't Ask."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Los objetivos gemelos de acoplamiento bajo y cohesión alta."
+                  },
+                  {
+                    "id": "d",
+                    "text": "El principio abierto/cerrado."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La primera mitad pide cohesión (lo que comparte motivo de cambio, junto); la segunda pide bajo acoplamiento y SRP (motivos distintos, piezas distintas). Formalizado por Constantine y Yourdon en Structured Design (1979), es el criterio del que los principios SOLID son instrumentos."
+              },
+              {
+                "id": "q3",
+                "text": "Según la formulación madura del SRP de Robert C. Martin, «una razón para cambiar» es…",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Cada funcionalidad distinta que implementa la clase."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Cada requisito del documento de especificación."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Cada actor: un colectivo humano distinto que pide cambios sobre esa pieza."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Cada dependencia externa que usa la clase."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El SRP no dice «clases pequeñas» sino «no obligues a públicos distintos a compartir pieza»: contabilidad, comercial y sistemas piden cambios sobre calc2() por motivos independientes que acaban colisionando. Contar «razones» como actores hace el principio operativo: pregúntate quién llamará pidiendo el cambio."
+              },
+              {
+                "id": "q4",
+                "text": "¿Cuál de estos hechos sobre el origen de SOLID es cierto?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Los cinco principios fueron formulados por Robert C. Martin desde cero."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Martin recopiló los principios, pero el OCP es de Bertrand Meyer, el LSP de Barbara Liskov, y el acrónimo lo ordenó Michael Feathers."
+                  },
+                  {
+                    "id": "c",
+                    "text": "SOLID aparece por primera vez en el libro Clean Code (2008)."
+                  },
+                  {
+                    "id": "d",
+                    "text": "El acrónimo fue acuñado por Kent Beck en Extreme Programming."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Arqueología útil contra el dogma: OCP viene de Object-Oriented Software Construction (Meyer, 1988), LSP de la keynote de Liskov de 1987, Martin los recopiló en los 90 (Design Principles and Design Patterns, 2000) y Feathers sugirió el orden que forma la palabra. Saber que es una síntesis de décadas — no una revelación — ayuda a tratarlos como herramientas y no como mandamientos."
+              },
+              {
+                "id": "q5",
+                "text": "Una función aplicarDescuento(importe, tipo) con un if por cada tipo de descuento crece en cada release. ¿Qué principio aconseja qué remedio?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "SRP: dividir la función en una por tipo de descuento y que cada llamador elija."
+                  },
+                  {
+                    "id": "b",
+                    "text": "OCP: hacer que la función dependa de una tabla o abstracción de políticas, de modo que un tipo nuevo se añada sin editar lo existente."
+                  },
+                  {
+                    "id": "c",
+                    "text": "LSP: crear una jerarquía de herencia de descuentos."
+                  },
+                  {
+                    "id": "d",
+                    "text": "ISP: mover cada descuento a un módulo separado."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Es el caso de libro del abierto/cerrado (Meyer): el mismo punto del código se edita una y otra vez por el mismo tipo de cambio. La solución es el polimorfismo (tabla de políticas, estrategias): lo nuevo se añade, lo viejo no se toca. Matiz de la sección: se aplica después de que el cambio haya dolido de verdad, no especulativamente — cerrar contra cambios imaginarios es sobre-ingeniería."
+              },
+              {
+                "id": "q6",
+                "text": "Una implementación de un contrato «repositorio de facturas» lanza NotImplementedError en la mitad de sus métodos. ¿Qué principio viola y cuál es el síntoma que provocará?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "ISP; el síntoma es que los clientes importan más de lo que usan."
+                  },
+                  {
+                    "id": "b",
+                    "text": "DIP; el síntoma es que el negocio conoce los detalles de persistencia."
+                  },
+                  {
+                    "id": "c",
+                    "text": "LSP; el síntoma es la aparición de comprobaciones de tipo (isinstance, instanceof) en el código cliente."
+                  },
+                  {
+                    "id": "d",
+                    "text": "OCP; el síntoma es un switch creciente por cada implementación."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Un sustituto que no honra el contrato completo rompe la sustituibilidad de Liskov: quien recibe «un repositorio» ya no puede tratarlos a todos igual y empieza a preguntar «¿y tú de cuál eres?» — las comprobaciones de tipo son las metástasis de la promesa rota. En lenguajes dinámicos el LSP gobierna el duck typing exactamente igual: mismos argumentos, mismos retornos, mismos errores."
+              },
+              {
+                "id": "q7",
+                "text": "¿Qué invierte, exactamente, el principio de inversión de dependencias?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El flujo de llamadas: los detalles pasan a llamar a la política."
+                  },
+                  {
+                    "id": "b",
+                    "text": "La dependencia en el código fuente: el detalle pasa a conocer (implementar) el contrato definido junto a la política, y el alto nivel deja de importar al detalle."
+                  },
+                  {
+                    "id": "c",
+                    "text": "El orden de inicialización de los módulos."
+                  },
+                  {
+                    "id": "d",
+                    "text": "La dirección de los datos: la base de datos pasa a empujar datos hacia el dominio."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Es el matiz que más cuesta y más importa: en ejecución, el emisor de facturas sigue acabando en código MySQL. Lo que gira es la flecha de conocimiento: antes emisor.py importaba el driver; ahora repositorio_mysql.py implementa el contrato RepositorioDeFacturas definido por el lado del negocio. Regalos inmediatos: tests con dobles en memoria, detalles intercambiables, política legible sin vadear infraestructura. La sección 4 lo escala a arquitectura completa."
+              },
+              {
+                "id": "q8",
+                "text": "pedido.getCliente().getDireccion().getProvincia().getCodigoPostal() — ¿cuándo es esto un problema según la Ley de Deméter, y cuándo no?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Siempre es un problema: las cadenas de llamadas están prohibidas."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Nunca es un problema si los getters son públicos."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Es un problema cuando los eslabones son objetos con comportamiento cuya estructura interna queda acoplada; no lo es sobre estructuras de datos inertes."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Solo es un problema por rendimiento, por las llamadas encadenadas."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El «choque de trenes» acopla al llamador a cuatro formas de objeto: cualquier cambio estructural (varias direcciones por cliente, normalización) rompe todos los sitios que repiten la cadena. La solución es preguntar al amigo directo (pedido.codigoPostalDeEnvio()). Pero la ley aplica a objetos con reglas: navegar un JSON de configuración o una estructura inmutable no encapsula nada y es legítimo. El criterio es comportamiento, no sintaxis."
+              },
+              {
+                "id": "q9",
+                "text": "¿Cuál de estos fragmentos sigue «Tell, Don't Ask»?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "if factura.dias_vencida() > 30 and not factura.esta_pagada: factura.estado = \"morosa\""
+                  },
+                  {
+                    "id": "b",
+                    "text": "factura.marcar_morosa_si_procede(notificador)"
+                  },
+                  {
+                    "id": "c",
+                    "text": "if factura.puede_marcarse_morosa(): factura.estado = \"morosa\""
+                  },
+                  {
+                    "id": "d",
+                    "text": "estado = calcular_estado(factura.datos()); factura.estado = estado"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Tell, Don't Ask: expresa la intención y deja que el objeto, que tiene los datos, decida — la regla de morosidad vive en un único sitio. Las opciones a, c y d preguntan estado para decidir fuera y escriben el resultado desde fuera; esa lógica se copiará en el siguiente llamador y nacerá el modelo anémico (sección 5). Nota: c parece mejor porque encapsula la condición, pero sigue dejando la transición de estado en manos del exterior."
+              },
+              {
+                "id": "q10",
+                "text": "De los patrones GRASP, ¿cuál responde a «¿quién debería calcular el total de la factura?» y qué responde?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Controller: un coordinador de casos de uso, para mantener las entidades simples."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Information Expert: la propia factura, porque es quien tiene las líneas necesarias para calcularlo."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Creator: el objeto que creó la factura, porque conoce su ciclo de vida."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Low Coupling: un módulo utilitario independiente, para no acoplar la factura al cálculo."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Information Expert (Larman, Applying UML and Patterns): la responsabilidad va a quien tiene la información — la factura tiene sus líneas, luego calcula su total. Es el padre intelectual de Tell, Don't Ask y el antídoto del modelo anémico. Controller coordina operaciones del sistema (renacerá como «use case» en la sección 7), no cálculos de dominio; y sacar el cálculo a un utilitario «para desacoplar» logra lo contrario: separa los datos de su lógica."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "title": "Arquitecturas: capas, hexágonos y la regla de la dependencia",
+      "materials": [
+        {
+          "id": "mat-04-01",
+          "title": "Historia — El proyecto Fénix",
+          "type": "markdown",
+          "markdownFile": "materials/04-01-historia-el-proyecto-fenix.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-04-02",
+          "title": "Teoría — Arquitecturas limpias: capas, hexágonos y la regla de la dependencia",
+          "type": "markdown",
+          "markdownFile": "materials/04-02-teoria-arquitecturas-limpias.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-04-03",
+          "title": "Ampliación — ¿Reescribir o estrangular?",
+          "type": "markdown",
+          "markdownFile": "materials/04-03-ampliacion-reescribir-o-estrangular.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-04",
+          "title": "Examen: arquitecturas limpias",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "Según esta sección, ¿qué es la arquitectura de un sistema?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El conjunto de tecnologías elegidas: lenguaje, framework y base de datos."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Las decisiones sobre qué piezas existen, qué sabe cada una de las demás y dónde están las fronteras — las decisiones caras de revertir."
+                  },
+                  {
+                    "id": "c",
+                    "text": "El diagrama de despliegue de la infraestructura."
+                  },
+                  {
+                    "id": "d",
+                    "text": "El estilo de código y las convenciones del equipo."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El stack es el material, no el edificio. La arquitectura son las decisiones estructurales difíciles de deshacer: piezas, conocimiento mutuo, fronteras. De ahí el criterio de Martin: una buena arquitectura pospone las decisiones costosas (qué base de datos, qué framework) en lugar de fijarlas cuanto antes — mantener opciones abiertas es mantener el cambio barato."
+              },
+              {
+                "id": "q2",
+                "text": "El paper Big Ball of Mud (Foote & Yoder, 1997) sostiene una tesis incómoda. ¿Cuál?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Que las bolas de barro solo aparecen en equipos sin formación."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que la bola de barro es la arquitectura más frecuente del mundo, porque emerge sola cuando nadie decide fronteras."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que las bolas de barro son irrecuperables y deben reescribirse."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Que los frameworks modernos previenen las bolas de barro."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El barro no es una anomalía de los malos: es el estado por defecto, lo que produce la suma de urgencias resueltas por el camino corto sin fronteras que lo impidan. Es la razón por la que la arquitectura tiene que ser una decisión activa y vigilada (los imports se revisan), no un estado inicial que se da por hecho. Y nótese que el paper no recomienda reescribir: recomienda entender por qué el barro gana."
+              },
+              {
+                "id": "q3",
+                "text": "¿Cuál es el defecto estructural de la arquitectura en capas clásica (presentación → negocio → datos)?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Tiene demasiadas capas para sistemas pequeños."
+                  },
+                  {
+                    "id": "b",
+                    "text": "No permite testear la capa de presentación."
+                  },
+                  {
+                    "id": "c",
+                    "text": "La capa de negocio depende de la capa de datos: la política conoce el detalle, violando la inversión de dependencias a escala de edificio."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Obliga a usar un ORM."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "En capas clásicas, el negocio importa la persistencia (tablas, ORM, transacciones): la flecha apunta de la política al detalle. Consecuencias: el negocio no se puede testear sin base de datos, cambiar el almacenamiento toca las reglas, y la lógica migra gravitatoriamente hacia el SQL. Las arquitecturas modernas (hexagonal, clean) mantienen capas pero giran esa flecha."
+              },
+              {
+                "id": "q4",
+                "text": "En la arquitectura hexagonal de Cockburn, ¿qué es un puerto?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Un endpoint HTTP expuesto por la aplicación."
+                  },
+                  {
+                    "id": "b",
+                    "text": "El número de conexión TCP en el que escucha el servicio."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Un contrato definido por la aplicación, en su vocabulario, que declara una conversación posible con el exterior."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Un módulo de infraestructura que traduce protocolos."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El puerto lo define la aplicación y habla su idioma («guardar factura», «obtener tipo de cambio») — no menciona tecnología. Quien traduce entre el puerto y una tecnología concreta (REST, MySQL, SMTP) es el adaptador, que vive fuera. Confundir puerto con endpoint o con pieza de infraestructura invierte la propiedad del contrato, que es precisamente lo que el patrón corrige."
+              },
+              {
+                "id": "q5",
+                "text": "¿Qué significa la simetría entre actores primarios y secundarios en el patrón puertos-y-adaptadores?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Que debe haber el mismo número de puertos de entrada que de salida."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que la aplicación no distingue quién la conduce (humano, API, test o script): un test automático es un actor de pleno derecho, y por eso la testabilidad es consecuencia geométrica del patrón."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que el frontend y el backend deben desplegarse juntos."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Que cada adaptador debe tener su adaptador inverso."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La intención declarada de Cockburn: que la aplicación pueda ser usada «por igual por usuarios, programas, tests automáticos o scripts por lotes». Los primarios conducen la aplicación; los secundarios son conducidos por ella; ninguno es especial. Detalle histórico: el hexágono no implica seis de nada — Cockburn lo dibujó para escapar del arriba/abajo de las capas."
+              },
+              {
+                "id": "q6",
+                "text": "Enuncia la regla de la dependencia de The Clean Architecture (Martin, 2012) y su método de auditoría práctico.",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Cada capa depende solo de la inmediatamente inferior; se audita con diagramas UML."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Las dependencias del código fuente solo apuntan hacia dentro (nada interior sabe nada de lo exterior); se audita mirando los imports de cada fichero."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Los módulos dependen de abstracciones; se audita contando interfaces."
+                  },
+                  {
+                    "id": "d",
+                    "text": "El dominio depende de la aplicación y esta de la infraestructura; se audita con tests."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La ley única del artículo: source code dependencies can only point inward. Su belleza es que es auditable mecánicamente: un fichero de dominio que importa un driver, un SDK o un framework es una gotera visible en la primera línea del fichero. La opción a describe capas clásicas (que permiten la flecha negocio→datos); la d invierte el orden correcto (infraestructura depende de dominio, no al revés)."
+              },
+              {
+                "id": "q7",
+                "text": "Un proyecto tiene esta estructura raíz: views/, models/, controllers/, templates/. Según la idea de «screaming architecture», ¿cuál es el diagnóstico?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Correcta: sigue el patrón MVC estándar."
+                  },
+                  {
+                    "id": "b",
+                    "text": "La estructura grita el framework, no el negocio: un recién llegado sabe qué tecnología usa el sistema pero no qué hace."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Incorrecta: faltan las carpetas de tests."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Correcta si el equipo domina ese framework."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Martin (Screaming Architecture, 2011): los planos de un edificio gritan «iglesia» o «biblioteca», no «hormigón». La raíz de un proyecto debería gritar facturacion/, clientes/, impuestos/ — el propósito — y dejar la tecnología para dentro. No es una regla estética: es la primera documentación que lee un recién llegado, y decide si su modelo mental inicial se organiza por conceptos de negocio o por piezas de framework."
+              },
+              {
+                "id": "q8",
+                "text": "En el ejemplo ejecutable de la sección, ¿por qué el fichero del caso de uso (application/emitirFactura.js) no importa mysql2?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Por rendimiento: los drivers son pesados de cargar."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque JavaScript no permite imports circulares."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque habla con el contrato (RepositorioDeFacturas, definido en el dominio) y es el adaptador de infraestructura quien importa el driver e implementa el contrato."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Porque el driver se inyecta mediante una variable global."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Es la regla de la dependencia hecha código: domain no importa nada, application importa solo domain, e infrastructure importa el mundo más el contrato interior que implementa. El caso de uso conoce «un repositorio que guarda facturas», no MySQL. Premio inmediato: testear el caso de uso requiere un adaptador en memoria de veinte líneas, no una base de datos."
+              },
+              {
+                "id": "q9",
+                "text": "Según Joel Spolsky (Things You Should Never Do, 2000) y el caso Fénix, ¿cuál es el argumento MENOS obvio y más letal contra la reescritura desde cero?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Cuesta dinero y tiempo que quizá no se tenga."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Los desarrolladores prefieren código nuevo por vanidad."
+                  },
+                  {
+                    "id": "c",
+                    "text": "El código viejo y feo condensa años de conocimiento invisible (arreglos de casos reales que nadie documentó); tirarlo es tirar ese conocimiento, y la paridad exige redescubrirlo a ciegas."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Los frameworks nuevos también envejecerán."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El coste y el plazo son visibles y se presupuestan (mal, pero se presupuestan). Lo que mata es lo invisible: cada condición «absurda» de dos líneas es un bug de un cliente real resuelto en 2019. Fénix murió de céntimos: quince mil verdades que solo existían en el código viejo. Se combina con el blanco móvil (el original sigue cambiando) y con el efecto segundo sistema de Brooks (la reescritura carga con todas las ambiciones aplazadas)."
+              },
+              {
+                "id": "q10",
+                "text": "Describe la mecánica del patrón strangler fig (Fowler, 2004) y su ventaja decisiva sobre la reescritura.",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Congelar el sistema viejo, construir el nuevo en paralelo y migrar a los clientes en una fecha única bien planificada."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Interceptar el tráfico con una fachada, construir una capacidad nueva al lado del monolito, desviar gradualmente (sombra → piloto → todos) y podar lo que muere; el riesgo queda siempre acotado y hay botón de deshacer."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Reescribir módulo a módulo dentro del propio monolito, sin sistema paralelo."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Encapsular el monolito tras una API y no tocarlo nunca más."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La higuera crece mientras el árbol vive: la fachada permite enrutar cada capacidad al sistema nuevo cuando demuestra paridad (la fase en sombra reutiliza el golden master como comparador), y devolver el tráfico al viejo si algo falla — el botón de deshacer que el big-bang no tiene. Entrega valor desde el primer mes y elimina el blanco móvil (cada cambio de negocio se hace una vez). Sus costes honestos: convivencia larga, sincronización de datos y la disciplina de terminar — el anti-patrón del «estrangulamiento eterno»."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "title": "El dominio: entidades y value objects",
+      "materials": [
+        {
+          "id": "mat-05-01",
+          "title": "Historia — El precio de un céntimo",
+          "type": "markdown",
+          "markdownFile": "materials/05-01-historia-el-precio-de-un-centimo.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-05-02",
+          "title": "Teoría — Entidades y value objects: los ladrillos del dominio",
+          "type": "markdown",
+          "markdownFile": "materials/05-02-teoria-entidades-y-value-objects.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-05-03",
+          "title": "Ampliación — El modelo anémico y otras trampas del dominio",
+          "type": "markdown",
+          "markdownFile": "materials/05-03-ampliacion-el-modelo-anemico-y-otras-trampas.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-05",
+          "title": "Examen: entidades y value objects",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "¿Qué distingue fundamentalmente a una entidad de un value object?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Las entidades se guardan en base de datos; los value objects no."
+                  },
+                  {
+                    "id": "b",
+                    "text": "La entidad se define por una identidad que persiste aunque cambien sus atributos; el value object se define solo por sus atributos."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Las entidades tienen métodos; los value objects solo datos."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Las entidades son mutables; los value objects, inmutables."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Es la distinción canónica del DDD Reference de Evans: identidad y ciclo de vida (entidad) frente a «describe algo, sin identidad conceptual» (value object). Dos billetes de 10 € son intercambiables (valor); dos clientes homónimos no (identidad). La persistencia es ortogonal (los value objects también se persisten — como parte de agregados), ambos tienen comportamiento, y la mutabilidad es consecuencia de diseño, no la definición: en este curso las entidades también son inmutables."
+              },
+              {
+                "id": "q2",
+                "text": "¿Por qué 0.1 + 0.2 !== 0.3 en JavaScript (y en Python), y cuál es la solución correcta para dinero?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Es un bug histórico de JavaScript; en Python no ocurre."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Los decimales se almacenan en binario y 0.1 es periódico en binario, así que todos los cálculos arrastran error minúsculo; el dinero se modela con enteros (céntimos) dentro de un tipo que fija las reglas."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Es un problema de precisión de los procesadores antiguos, resuelto en hardware moderno."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Basta con redondear a dos decimales al final de cada cálculo."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "IEEE 754 (el estándar de coma flotante que usan casi todos los lenguajes, Python incluido) representa 0.1 como una fracción binaria periódica truncada: el error nace en el tipo de dato. Redondear al final (d) es exactamente la lotería que produjo descuadres de un céntimo: según el orden de operaciones, el error se cuela o no. La solución profesional: céntimos enteros dentro de un value object que centraliza además la política de redondeo — la lección que el Monstruo llevaba dentro y el código nuevo, limpio y precioso, no."
+              },
+              {
+                "id": "q3",
+                "text": "«Que los datos inválidos no puedan nacer.» ¿Qué práctica concreta materializa este principio?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Validar todos los formularios de la interfaz antes de enviar."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Añadir constraints NOT NULL y CHECK en la base de datos."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Constructores/fábricas que validan las reglas del concepto y lanzan error, de modo que sea imposible tener una instancia inválida en memoria."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Ejecutar un linter con reglas estrictas de tipos."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La autovalidación en el tipo (create llama a ensureXIsValid y rechaza en la puerta) convierte la validación de costumbre en ley: no hay camino — formulario, import masivo, script, test — por el que un Importe negativo llegue a existir. Las validaciones de UI y de BD son complementos legítimos (mejor experiencia; última trinchera), pero ambas se pueden esquivar desde el código, que es donde viven los bugs."
+              },
+              {
+                "id": "q4",
+                "text": "¿Por qué los value objects deben ser inmutables?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Por rendimiento: los objetos inmutables se almacenan en caché de CPU."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque un valor compartido y mutable cambia por debajo a todos los que lo referencian: si dos facturas comparten el objeto «21% IVA» y alguien lo muta, ambas cambian en silencio."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque los lenguajes dinámicos no soportan bien la mutación."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Para que puedan serializarse a JSON."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La inmutabilidad hace el valor seguro de compartir y de razonar: lo que ves al crearlo es lo que habrá siempre; operar devuelve instancias nuevas (sumar no modifica, crea). Un Importe con setCentimos() es «un primitivo con sombrero»: reintroduce exactamente la clase de bug — acción a distancia — que el patrón existe para extinguir."
+              },
+              {
+                "id": "q5",
+                "text": "En la arquitectura destino del curso, ¿qué papel juegan fromPrimitive() y toPrimitive()?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Optimizar la serialización para reducir el tamaño de los JSON."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Permitir que la base de datos guarde los objetos sin conversión."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Son la aduana entre el dominio (objetos ricos autovalidados) y las fronteras (JSON, filas de BD): exportan el dato desnudo y lo reimportan revalidando."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Sustituir a los constructores para evitar el new en el código cliente."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El dominio trabaja con tipos que no saben mentir; el mundo exterior habla primitivos. toPrimitive() es la exportación controlada; fromPrimitive() la importación con revalidación — los datos que vuelven de la BD o de una API no son de fiar por venir «de dentro»: quizá los escribió otra versión del código, u otra mano. Cada XPrimitive (la interfaz del dato desnudo) declara ese contrato de frontera explícitamente."
+              },
+              {
+                "id": "q6",
+                "text": "Una clase Factura tiene getEstado()/setEstado() públicos, y la regla «una factura emitida no se modifica» está comprobada en cuatro controladores. ¿Diagnóstico?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Diseño correcto: la lógica de aplicación pertenece a los controladores."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Falta un FacturaService que centralice las comprobaciones."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Modelo anémico: la entidad no defiende sus invariantes y cada regla se reparte (con divergencias y olvidos) entre los llamadores."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Violación de la Ley de Deméter por acceso encadenado."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Es el retrato de Fowler (AnemicDomainModel): objetos-saco + lógica desparramada = «lo contrario de la idea básica del diseño orientado a objetos». El setEstado sin reglas permite cualquier transición desde cualquier sitio; las cuatro copias de la comprobación divergirán y la quinta se olvidará. Un FacturaService centralizador (b) solo muda el problema de sitio: la solución es que la entidad exponga verbos con reglas (emitir(), anadirLinea()) y que el estado no tenga puerta trasera."
+              },
+              {
+                "id": "q7",
+                "text": "¿Cuál de estos conceptos merece ser value object con más urgencia?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El texto libre de observaciones de una factura."
+                  },
+                  {
+                    "id": "b",
+                    "text": "El par importe+moneda que viaja por el sistema como dos parámetros separados."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Un contador interno de reintentos de un job."
+                  },
+                  {
+                    "id": "d",
+                    "text": "El nombre de pila de un usuario, sin reglas de formato."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La señal es tener reglas u compañeros de viaje inseparables: importe y moneda separados son la receta del «sumé euros con dólares» y del parámetro traspuesto — un Money(centimos, moneda) extingue ambas categorías (sumar comprueba monedas; el par ya no puede separarse). Un texto libre sin reglas y un contador interno son primitivos legítimos: convertir todo en value object es liturgia, no diseño."
+              },
+              {
+                "id": "q8",
+                "text": "En la entidad Factura del curso, equals() compara únicamente los ids. ¿Por qué es correcto?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Por rendimiento: comparar todos los campos sería costoso."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Es un error del ejemplo: deberían compararse todos los atributos."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque la igualdad de entidades ES identidad: la misma factura con distinto estado sigue siendo la misma factura."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Porque los ids son únicos en la base de datos."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Es la definición de entidad ejecutada: identidad por encima de atributos. factura.emitir() devuelve una instancia con otro estado que equals reconoce como la misma factura — exactamente lo que el negocio entiende. En un value object sería lo contrario: igualdad campo a campo. Que la unicidad la garantice además la BD es un refuerzo, no el fundamento."
+              },
+              {
+                "id": "q9",
+                "text": "¿Qué problema resuelve un «list class» (LineaFacturaList) frente a pasear un array desnudo?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Mejora el rendimiento de las iteraciones grandes."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Permite serializar la colección a JSON."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Da domicilio a los invariantes de colección («no vacía», «máximo 500 líneas») y a las operaciones de conjunto (total()), y con copia defensiva impide que un llamador mute el interior por referencia."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Evita los índices fuera de rango."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Un array desnudo no puede defender reglas («no vacía» se comprueba... donde alguien se acuerde) y reparte sus operaciones por los llamadores (el reduce del total copiado cuatro veces = duplicación de conocimiento). La copia defensiva + congelación cierra además la escotilla de entregar el array interno por referencia y sufrir mutaciones externas invisibles. Es el mismo principio de los value objects, aplicado a colecciones."
+              },
+              {
+                "id": "q10",
+                "text": "El método allocate del patrón Money reparte 100 céntimos entre 3 como [34, 33, 33]. ¿Qué problema de negocio resuelve?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La conversión entre monedas con tipos de cambio."
+                  },
+                  {
+                    "id": "b",
+                    "text": "El reparto de un importe (un descuento global entre líneas, una anualidad entre meses) sin perder ni inventar céntimos, con el destino del resto decidido por una política explícita y única."
+                  },
+                  {
+                    "id": "c",
+                    "text": "El redondeo de los tipos impositivos periódicos."
+                  },
+                  {
+                    "id": "d",
+                    "text": "La suma de importes con distinta precisión decimal."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Dividir dinero con / pierde o inventa céntimos según cómo se redondee cada parte — y si dos rincones del sistema lo improvisan con criterios distintos, obtienes exactamente el descuadre de los 4.700,32 € del capítulo 1. allocate conserva la suma total por construcción y asigna el resto según política acordada (al primero, al mayor…), escrita una vez, donde contabilidad pueda leerla. Es el ejemplo perfecto de «decisión delicada con domicilio único»."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "title": "Repositorios: la persistencia es un detalle",
+      "materials": [
+        {
+          "id": "mat-06-01",
+          "title": "Historia — La caja que no se abre",
+          "type": "markdown",
+          "markdownFile": "materials/06-01-historia-la-caja-que-no-se-abre.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-06-02",
+          "title": "Teoría — El patrón repository",
+          "type": "markdown",
+          "markdownFile": "materials/06-02-teoria-el-patron-repository.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-06-03",
+          "title": "Ampliación — Agregados y otras fronteras de la persistencia",
+          "type": "markdown",
+          "markdownFile": "materials/06-03-ampliacion-agregados-y-otras-fronteras.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-06",
+          "title": "Examen: repositorios",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "Según Evans (DDD Reference), ¿qué ilusión proporciona un repositorio?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La de que la base de datos es infinitamente rápida gracias a una caché."
+                  },
+                  {
+                    "id": "b",
+                    "text": "La de una colección en memoria con todos los objetos de un tipo del dominio, ocultando todo el almacenamiento y acceso."
+                  },
+                  {
+                    "id": "c",
+                    "text": "La de que los datos siempre están disponibles aunque falle la red."
+                  },
+                  {
+                    "id": "d",
+                    "text": "La de que el esquema de tablas coincide con el modelo de objetos."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "«Un objeto que dé la ilusión de una colección en memoria»: pides «las facturas vencidas de este cliente» o «guarda esta» como si hablaras con una colección, y el motor, el SQL, las tablas y las conexiones desaparecen de tu vista. Todo lo demás (rendimiento, disponibilidad, esquema) son propiedades del adaptador concreto, no la ilusión que define el patrón."
+              },
+              {
+                "id": "q2",
+                "text": "¿Dónde viven las dos mitades del patrón en la arquitectura del curso, y por qué?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Interfaz e implementaciones en infraestructura, para aislar el dominio de la persistencia."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Interfaz en aplicación e implementaciones en dominio."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Interfaz en el dominio (define el contrato en vocabulario de negocio) e implementaciones en infraestructura (una por tecnología, que lo honran)."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Ambas en el dominio, para que los tests no dependan de otras capas."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El contrato es la mitad que manda y pertenece a quien manda: el dominio declara qué preguntas existen (buscarPendientesDeFacturar) sin saber quién responderá. Las implementaciones (MySQLRepositorioDePedidos, InMemoryRepositorioDePedidos) importan sus drivers en infraestructura e implementan el contrato: la flecha de dependencia apunta hacia dentro. Es el DIP con nombre propio — poner el contrato fuera del dominio invertiría la propiedad y la flecha."
+              },
+              {
+                "id": "q3",
+                "text": "¿Cuál de estos contratos de repositorio está bien redactado?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "query(sql, params) y insertRow(tabla, fila)"
+                  },
+                  {
+                    "id": "b",
+                    "text": "findWhere(criteria) donde criteria es el builder del ORM"
+                  },
+                  {
+                    "id": "c",
+                    "text": "guardar(factura), buscarPorId(id), buscarVencidasDe(clienteId)"
+                  },
+                  {
+                    "id": "d",
+                    "text": "getConnection() y execute(statement)"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El contrato se lee en voz alta: si suena a reunión de facturación, bien; si suena a manual del motor, es una fuga con disfraz. Las opciones a y d hacen al dominio escribir SQL con guantes; la b filtra el vocabulario del ORM (los «criterios» del motor) por el contrato — técnicamente hay interfaz, prácticamente la caja está abierta. La c habla exclusivamente el idioma del negocio."
+              },
+              {
+                "id": "q4",
+                "text": "¿Por qué el repositorio debe reconstruir con fromPrimitive (revalidando) los datos que vienen de la base de datos, si «ya estaban validados al guardarse»?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Por simetría estética con el guardado."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque la base de datos también es una frontera: esos datos pudo escribirlos una versión antigua del código, una migración manual o alguien con un cliente SQL, y la garantía «toda Factura en memoria es válida» exige validar todas las puertas."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Para convertir los tipos de columna a tipos del lenguaje."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Por rendimiento: la validación calienta las cachés del objeto."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La promesa de la sección 5 («lo inválido no nace») se sostiene solo si todas las entradas pasan aduana, y la BD es una entrada — no un anexo de la memoria del programa. El esquema puede haber cambiado, los datos pueden ser de 2019, alguien pudo tocarlos a mano. Revalidar al reconstruir convierte la corrupción silenciosa en un error ruidoso con nombre ([Factura] ...) en el momento más barato de detectarlo."
+              },
+              {
+                "id": "q5",
+                "text": "¿Qué revela un InMemoryRepositorioDeX difícil de escribir?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Que el equipo necesita más práctica con estructuras de datos."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que el dominio tiene demasiados invariantes."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que el contrato ha dejado escapar detalles de almacenamiento (SQL, cursores, semántica de ORM) que un array no puede fingir."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Que hacen falta mocks generados por framework en lugar de implementaciones manuales."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La implementación en memoria es el detector de fugas del patrón: un contrato que de verdad habla dominio («dame las vencidas de este cliente») se finge con un array y un filter en treinta líneas. Si para fingirlo necesitas interpretar SQL o imitar el comportamiento de un ORM, el contrato está contaminado de tecnología. Además de tests rápidos, la in-memory es documentación ejecutable del contrato."
+              },
+              {
+                "id": "q6",
+                "text": "La arquitectura destino exige que TODA clase que hable con el exterior se llame Repository (nada de Manager, Client, Service, Connector). ¿Cuál es la justificación?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Es la nomenclatura estándar del DDD de Evans para cualquier sistema externo."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Economía de lectura: una sola palabra para «frontera con el exterior» da al lector certezas inmediatas (toca el mundo, tiene contrato fingible, no contiene negocio) sin abrir el fichero; la consistencia compra más que la taxonomía."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Los gateways y los repositorios son técnicamente idénticos."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Evita conflictos de nombres con los frameworks."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La objeción purista es correcta: en la taxonomía de Fowler, la API de divisas sería un gateway, no un repositorio. La regla la aplana adrede: los patrones valen por repetidos, y setenta y tres sinónimos (el censo de ATLAS) son setenta y tres deducciones manuales para cada lector. «Un pasillo con todas las puertas iguales se recorre a oscuras.» Además, el nombre Repository arrastra la disciplina de redactar contratos como colecciones del dominio."
+              },
+              {
+                "id": "q7",
+                "text": "El adaptador PostgreSQL decide qué facturas están «vencidas» con WHERE estado = 'vencida' AND dias > 30 y esa definición no existe en ningún otro sitio. ¿Cuál es el problema?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Ninguno: el SQL es el lugar más eficiente para filtrar."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Una regla de negocio vive escrita en la cocina de un adaptador: cuando cambie, se actualizará en PostgreSQL y se olvidará en MySQL y en la in-memory, y las implementaciones divergirán en silencio."
+                  },
+                  {
+                    "id": "c",
+                    "text": "El SQL debería usar parámetros preparados."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Los días de vencimiento deberían ser configurables."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "«Qué significa vencida» es dominio; el adaptador debe traducir la pregunta, no interpretarla. Con la regla en el dominio, las tres implementaciones responden lo mismo por construcción. Matiz honesto de la sección: empujar el filtro al SQL por rendimiento es legítimo si la definición canónica queda en el dominio y el SQL se trata (y documenta) como optimización de esa regla — el pecado no es el WHERE, es que el WHERE sea el único dueño de la verdad."
+              },
+              {
+                "id": "q8",
+                "text": "¿Por qué no debe existir un RepositorioDeLineasFactura?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Porque las líneas son demasiado pequeñas para justificar una clase."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque las líneas se almacenan en la misma tabla que las facturas."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque LineaFactura no es raíz de agregado: los invariantes factura-líneas solo se garantizan si todo acceso pasa por la raíz, y un repositorio de líneas sería una puerta trasera."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Porque los repositorios solo pueden contener entidades, no value objects."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Evans: «proporciona repositorios solo para las raíces de agregado». La regla «el total es la suma de las líneas» se garantiza porque nadie puede tocar una línea sin pasar por factura.anadirLinea(...); si cualquiera puede cargar y guardar líneas sueltas, la guardiana pierde la puerta. El agregado además se carga y guarda entero: guardar la factura persiste sus líneas. El almacenamiento físico (misma tabla o no) es un asunto del adaptador."
+              },
+              {
+                "id": "q9",
+                "text": "Según Effective Aggregate Design (Vernon), ¿cómo se relacionan dos agregados distintos, y qué consistencia hay entre ellos?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Referencia directa de objeto y consistencia transaccional inmediata."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Referencia por id y consistencia eventual: la regla que cruza la frontera se satisface «ya llegará», no en la misma transacción."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Herencia de una raíz común y consistencia por bloqueo pesimista."
+                  },
+                  {
+                    "id": "d",
+                    "text": "No pueden relacionarse: cada agregado es completamente independiente."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Agregados pequeños que protegen solo invariantes verdaderos (los que exigen coherencia en el mismo instante); entre agregados, factura.clienteId — no el objeto Cliente entero — y la coordinación viaja por eventos o procesos con consistencia eventual. El mega-agregado con referencias directas (a) carga medio grafo de objetos, colisiona en cada escritura y protege reglas que el negocio nunca pidió. La servilleta: «¿debe ser cierto a la vez? → juntos; ¿puede esperar un segundo? → separados»."
+              },
+              {
+                "id": "q10",
+                "text": "El listado de administración necesita datos de seis tablas, paginación y ordenación por columnas. Según el «CQRS modesto» de la sección, ¿qué haces?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Añadir buscarParaListadoDeAdministracion(pagina, orden) al repositorio de facturas."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Cargar todos los agregados y componer el listado en memoria."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Crear un camino de solo-lectura (consulta directa que devuelve DTOs planos para la vista) separado del modelo de dominio, reservando casos de uso + agregados + repositorios para los comandos."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Desnormalizar la base de datos para que una sola tabla sirva el listado."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Leer-para-mostrar no ejecuta reglas de negocio: hacerlo pasar por el modelo de dominio es puro peaje (y engorda el repositorio con métodos-de-pantalla, opción a). La separación comando/consulta (CQRS en su versión mínima, sin buses ni proyecciones) permite un camino de lectura pragmático que sigue respetando la regla de dependencia. La línea roja única: ninguna escritura usa jamás el camino de lectura — ahí sí se rompió la arquitectura."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "title": "Casos de uso y factorías",
+      "materials": [
+        {
+          "id": "mat-07-01",
+          "title": "Historia — Tres veces la misma mentira",
+          "type": "markdown",
+          "markdownFile": "materials/07-01-historia-tres-veces-la-misma-mentira.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-07-02",
+          "title": "Teoría — Casos de uso y factorías: la capa de aplicación",
+          "type": "markdown",
+          "markdownFile": "materials/07-02-teoria-casos-de-uso-y-factorias.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-07-03",
+          "title": "Ampliación — Inyección de dependencias sin magia",
+          "type": "markdown",
+          "markdownFile": "materials/07-03-ampliacion-inyeccion-de-dependencias-sin-magia.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-07",
+          "title": "Examen: casos de uso y factorías",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "¿Qué contiene un caso de uso, y qué no debe contener?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Reglas de negocio; no debe contener llamadas a repositorios."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Los pasos (coreografía) de una operación del negocio; no debe contener ni reglas de dominio (viven en las entidades) ni asuntos de puerta (autenticación, formatos)."
+                  },
+                  {
+                    "id": "c",
+                    "text": "La validación de formularios y la orquestación de vistas."
+                  },
+                  {
+                    "id": "d",
+                    "text": "El SQL optimizado de la operación."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La línea divisoria: «una emitida no se modifica» es regla → entidad; «recupera el pedido, comprueba, construye descontando abonos, guarda» es coreografía → caso de uso. Autenticar y validar formas de petición es trabajo de la puerta; el SQL, del adaptador. La única sabiduría del caso de uso es el orden de los pasos — por eso puede ser una función humilde."
+              },
+              {
+                "id": "q2",
+                "text": "El bug de la historia: la regla de abonos se aplicaba en la remesa nocturna pero no en la pantalla interna. ¿Cuál era la causa raíz?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Falta de comunicación entre los desarrolladores de las dos puertas."
+                  },
+                  {
+                    "id": "b",
+                    "text": "La regla estaba en el dominio pero la pantalla no llamaba al dominio."
+                  },
+                  {
+                    "id": "c",
+                    "text": "La operación «emitir factura» estaba escrita tres veces (una coreografía por puerta), y las copias divergieron."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Faltaban tests de interfaz para la pantalla interna."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El dominio estaba limpio y las tres puertas lo llamaban — pero cada una con su propia coreografía de pasos, y el paso «descontar abonos» solo se añadió a una. Es el patrón del informe duplicado de la sección 2, reencarnado en la capa de operaciones: lo que se escribe N veces diverge N-1 veces. La solución no es más comunicación ni más tests de pantalla: es que la historia se escriba una vez y las puertas la invoquen."
+              },
+              {
+                "id": "q3",
+                "text": "¿Cuál es la prueba de que un caso de uso está bien cortado respecto a sus puertas?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Tiene menos de cincuenta líneas."
+                  },
+                  {
+                    "id": "b",
+                    "text": "No lanza excepciones hacia las puertas."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Puede invocarse idéntico desde la pantalla, el job nocturno, la API y un test, sin versiones especiales para ninguna puerta."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Devuelve DTOs distintos según el consumidor."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Las cuatro puertas de Cockburn (humano, programa, test, lote) deben poder conducir la misma operación. Si una puerta «necesita su versión», o la puerta hace trabajo de operación o la operación hace trabajo de puerta (por ejemplo, devolver formatos por consumidor — opción d — es trabajo de traducción, es decir, de puerta/adaptador). El tamaño y el manejo de errores no miden el corte."
+              },
+              {
+                "id": "q4",
+                "text": "¿Qué es una «puerta tonta» (entrypoint fino) y cuál es la señal de alarma de su violación?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Autentica, traduce lo que llega, delega en UN caso de uso y traduce lo que sale; la alarma es un if de negocio en el controlador, por pequeño que sea."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Un endpoint sin documentación OpenAPI; la alarma son los parámetros sin tipar."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Un controlador que no accede a la base de datos; la alarma es un import de SQL."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Una ruta que solo acepta GET; la alarma son los efectos secundarios."
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "La puerta es frontera, no cerebro: guardas básicas + traducción + delegación en un caso de uso. Un solo if de negocio («si es de Vesta, añade X») es una decisión escondida donde las demás puertas no la verán — la semilla exacta de la divergencia de la historia. No acceder a la BD (c) es necesario pero no suficiente: se puede violar la regla sin tocar la BD, decidiendo negocio."
+              },
+              {
+                "id": "q5",
+                "text": "En la arquitectura destino, la factoría es «wiring only». ¿Cuáles son sus dos prohibiciones?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "No importar infraestructura y no usar new."
+                  },
+                  {
+                    "id": "b",
+                    "text": "No declarar interfaces/tipos (los contratos pertenecen al dominio o al caso de uso) y no coordinar dos o más casos de uso."
+                  },
+                  {
+                    "id": "c",
+                    "text": "No exponer más de diez métodos y no tener estado."
+                  },
+                  {
+                    "id": "d",
+                    "text": "No ser asíncrona y no capturar excepciones."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La factoría es el único sitio que conoce a la vez aplicación e infraestructura, y por gravedad tiende a acumular decisiones; las dos prohibiciones la mantienen tonta. Declarar contratos la convertiría en capa; encadenar casos de uso la convertiría en narradora de historias — y las historias son casos de uso. (Importar infraestructura y usar new es exactamente su trabajo, opción a al revés.)"
+              },
+              {
+                "id": "q6",
+                "text": "Una factoría tiene un método que llama a emitirFactura y después a enviarNotificacion. Según la regla del curso, ¿qué ha pasado y qué se hace?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Es correcto: la factoría existe para componer operaciones."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Se mueve la secuencia al controlador HTTP, que es quien conoce el flujo."
+                  },
+                  {
+                    "id": "c",
+                    "text": "«Una cadena de casos de uso en la factoría es un caso de uso que falta»: se crea el caso de uso que posee el flujo y se le inyecta el otro caso de uso como puerto."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Se fusionan los dos casos de uso en uno para eliminar la cadena."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La secuencia «emitir y notificar» es una operación del negocio con nombre propio: merece su fichero (emitirYNotificarFactura), sus tests y su invocabilidad desde cualquier puerta. En la factoría sería una historia contada en la fontanería (invisible, no testeable como operación); en el controlador (b), una historia contada en una puerta (invisible para las demás). Fusionar (d) destruye la operación simple, que sigue siendo legítima por separado."
+              },
+              {
+                "id": "q7",
+                "text": "¿Qué diferencia hay entre inyección de dependencias (DI) y el principio de inversión de dependencias (DIP)?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Ninguna: son el mismo concepto con dos nombres."
+                  },
+                  {
+                    "id": "b",
+                    "text": "DI es para objetos y DIP para funciones."
+                  },
+                  {
+                    "id": "c",
+                    "text": "DIP dice quién posee los contratos (la política define, el detalle implementa); DI es la técnica de construcción (los colaboradores se reciben, no se fabrican). Puede haber cada una sin la otra, y valen poco separadas."
+                  },
+                  {
+                    "id": "d",
+                    "text": "DIP requiere un contenedor; DI puede hacerse a mano."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Pasarle a una función el driver concreto de MySQL es DI sin DIP (recibe, pero recibe un detalle: sigue acoplada). Un contrato precioso que cada clase esquiva fabricando dentro su implementación es DIP sin DI (letra muerta). La arquitectura sana necesita ambas: contratos del dominio (DIP) servidos desde fuera (DI). Ningún contenedor es necesario para ninguna de las dos."
+              },
+              {
+                "id": "q8",
+                "text": "¿Qué es la «composition root» y cuál es la auditoría exprés asociada?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El módulo raíz del repositorio; se audita revisando el package.json."
+                  },
+                  {
+                    "id": "b",
+                    "text": "El único lugar (factorías, cerca del main) donde se construye la infraestructura; se audita buscando new de adaptadores fuera de las factorías."
+                  },
+                  {
+                    "id": "c",
+                    "text": "La rama principal de Git; se audita con protección de ramas."
+                  },
+                  {
+                    "id": "d",
+                    "text": "El primer test que se ejecuta; se audita midiendo cobertura."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Si nadie fabrica sus colaboradores, toda la fabricación se concentra en un sitio visible (Seemann, Dependency Injection in .NET). La regla operativa: new PostgreSQLRepositorioDeX solo en factorías. Encontrarlo en un caso de uso o — peor — en otro adaptador significa un segundo cerebro de cableado que nadie vigila. Es la auditoría hermana de «mira los imports» (sección 4): treinta segundos, grep mediante."
+              },
+              {
+                "id": "q9",
+                "text": "Según la ampliación, ¿cuál es el coste MENOS obvio de los contenedores de inyección automáticos?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Son lentos en el arranque de la aplicación."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Cuestan licencias en sus versiones empresariales."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Los decoradores del contenedor se infiltran en las capas puras (@Injectable() sobre un caso de uso es un import de infraestructura en la capa de aplicación): una gotera pequeña y oficial de la regla de dependencia."
+                  },
+                  {
+                    "id": "d",
+                    "text": "No funcionan con lenguajes dinámicos."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Los costes visibles (grafo invisible, errores en resolución en lugar de en lectura) se sufren pronto; la infiltración es silenciosa: parece inocua, pero ata application/ al framework — exactamente la soldadura que la arquitectura existe para impedir. Es evitable (registro sin anotaciones) pero a contracorriente. Criterio del curso: factorías manuales hasta que duelan; contenedor, si llega, confinado en infraestructura."
+              },
+              {
+                "id": "q10",
+                "text": "¿En qué sentido son los tests de casos de uso «la especificación ejecutable del sistema»?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Sustituyen a los requisitos formales firmados con el cliente."
+                  },
+                  {
+                    "id": "b",
+                    "text": "El directorio de tests de application/ enumera, en frases de negocio verificadas en cada ejecución, todo lo que el sistema hace — un documento completo, al día y con garantía de verdad."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Generan automáticamente la documentación de la API."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Cubren el cien por cien de las líneas del dominio."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "«Emite con los datos del pedido», «descuenta los abonos pendientes», «rechaza pedidos ya facturados»: cada test es una frase de la especificación, y a diferencia de un documento, no puede quedar obsoleto sin ponerse en rojo. Fénix no tuvo nunca «un sitio donde leer qué significa emitir una factura»; el directorio de tests de operaciones es exactamente ese sitio. No sustituye los acuerdos con el cliente (a) — los encarna y verifica."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "title": "DDD estratégico: el lenguaje es el sistema",
+      "materials": [
+        {
+          "id": "mat-08-01",
+          "title": "Historia — La palabra «abono»",
+          "type": "markdown",
+          "markdownFile": "materials/08-01-historia-la-palabra-abono.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-08-02",
+          "title": "Teoría — DDD estratégico: el lenguaje es el sistema",
+          "type": "markdown",
+          "markdownFile": "materials/08-02-teoria-ddd-estrategico.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-08-03",
+          "title": "Ampliación — Context mapping en detalle",
+          "type": "markdown",
+          "markdownFile": "materials/08-03-ampliacion-context-mapping-en-detalle.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-08",
+          "title": "Examen: DDD estratégico",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "¿Cuál es la tesis central del libro azul de Eric Evans (2003)?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La arquitectura hexagonal es superior a la de capas."
+                  },
+                  {
+                    "id": "b",
+                    "text": "La complejidad más dura del software está en el dominio, no en la tecnología; por tanto el activo central es el modelo del dominio, construido conversando con sus expertos."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Los objetos deben combinar datos y comportamiento."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Los sistemas grandes deben dividirse en microservicios."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Tackling Complexity in the Heart of Software: el corazón de la complejidad es el negocio mismo — sus conceptos, reglas y excepciones. De ahí todo lo demás: si lo difícil es el dominio, el modelo es el activo, y la fuente del modelo son los expertos (Marta), no los frameworks. Fénix invirtió dos años en tecnología y media hora en expertos: la proporción exactamente inversa a la tesis."
+              },
+              {
+                "id": "q2",
+                "text": "¿Qué exige exactamente el «lenguaje ubicuo»?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Que toda la documentación técnica esté en el idioma del equipo."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Un glosario corporativo mantenido por los analistas."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que negocio y código usen las mismas palabras con el mismo significado — en el habla, los diagramas y las clases — y que un cambio en el lenguaje sea un cambio en el modelo y el código."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Que los nombres de las clases estén en inglés estandarizado."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Evans (DDD Reference): el modelo como columna vertebral del lenguaje, «ejercitado sin descanso» en toda comunicación, y especialmente en el código. Sin traductores intermedios: cada traducción (negocio dice «abono», código dice NegativeAmountAdjustment) es un sitio donde mentir sin saberlo. El glosario separado (b) muere en dos meses; el diccionario real es el código y sus tests. Y la discusión incómoda sobre qué significa una palabra no es una distracción: es el trabajo."
+              },
+              {
+                "id": "q3",
+                "text": "«Abono» significa cosas distintas para comercial, para contabilidad y para el sistema. Según DDD, ¿cuál es el planteamiento correcto?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Convocar una reunión para acordar la definición oficial única de «abono»."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Renombrar los conceptos para que ninguno se llame «abono»."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Reconocer que no existe el modelo único: dibujar bounded contexts donde cada acepción es soberana, y traducir explícitamente en las fronteras."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Dejar que el departamento con más peso imponga su definición en el sistema."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El concepto que Evans salvaría del libro si solo pudiera salvar uno: la consistencia del modelo solo es posible dentro de una frontera. «Abono» es legítimamente un compromiso (acuerdos comerciales), un documento legal (facturación) — y forzar una definición ganadora (a, d) fabrica el modelo único corporativo: la unión de todos los atributos y la intersección de ningún significado. Renombrar (b) esquiva la conversación en lugar de mapearla."
+              },
+              {
+                "id": "q4",
+                "text": "En la arquitectura destino del curso, ¿cómo se materializa un bounded context?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Como un microservicio con su propia base de datos."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Como un módulo (src/modules/{contexto}/) con sus capas completas dentro; dos módulos pueden tener clases homónimas con contenido distinto, y eso es soberanía, no duplicación."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Como un esquema separado en la base de datos."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Como un namespace de la capa de dominio compartida."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El módulo es el contexto hecho carpeta: su lenguaje, entidades y reglas viven dentro de su frontera con domain/application/infrastructure propios. Abono en acuerdos/ y Abono en facturacion/ modelan conceptos distintos: unificarlos «para no duplicar» obligaría a una clase a mentir en dos países. Los microservicios son una materialización posible (con costes de red y operación), no la definición; y una «capa de dominio compartida» (d) es el anti-patrón del modelo único con otro nombre."
+              },
+              {
+                "id": "q5",
+                "text": "¿Cuáles son las señales prácticas de que una frontera de bounded context pasa por un sitio?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Cambia el lenguaje de programación o el framework."
+                  },
+                  {
+                    "id": "b",
+                    "text": "La misma palabra cambia de significado, cambian los expertos de referencia y cambian los motivos y ritmos de cambio."
+                  },
+                  {
+                    "id": "c",
+                    "text": "El equipo supera las ocho personas."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Los datos pasan de una base de datos a otra."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Los contextos cortan por el significado: donde «abono» muta al cruzar un pasillo, donde la autoridad pasa de Marta a contabilidad de Vesta, donde lo que cambia por negociación se separa de lo que cambia por ley (el SRP a escala de sistema). Los cortes técnicos (lenguaje, base de datos) y organizativos (tamaño de equipo) pueden acompañar a una frontera, pero nunca la definen — «el módulo de APIs» no es un contexto."
+              },
+              {
+                "id": "q6",
+                "text": "¿Qué es una anticorruption layer y cuál era su encarnación manual en la historia?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Un firewall que filtra peticiones maliciosas; el antivirus corporativo."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Una pieza de software cuyo único trabajo es traducir entre dos contextos para que un modelo no contamine al otro; la lámina plastificada con la que Marta traducía entre comercial, Vesta y ATLAS a mano desde hacía años."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Una capa de caché que evita lecturas corruptas; el registro de auditoría."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Un conjunto de validaciones de entrada; los formularios de la pantalla interna."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El ACL (Evans) traduce en la aduana para que ningún modelo importe el vocabulario del otro. La piedra Rosetta de Marta — LO QUE DIGO YO / LO QUE DICE VESTA / LO QUE HACE ATLAS — era exactamente eso, ejecutado por una persona, dos días por trimestre, sin que nadie lo llamara arquitectura. Un sistema sin traducciones explícitas también las tiene: manuales, invisibles y pagadas en horas de alguien."
+              },
+              {
+                "id": "q7",
+                "text": "¿Por qué fracasó Fénix, según la autopsia completa de esta sección?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Por elegir un stack tecnológico equivocado."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Por falta de tests automatizados."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Le faltaba entera la mitad estratégica: sin lenguaje compartido ni relación con los expertos, copió a limpio los malentendidos de ATLAS, y cuando los céntimos delataron las reglas no documentadas, no había a quién preguntar."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Por el efecto segundo sistema exclusivamente."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Fénix tenía (a medias) la táctica — capas, framework, código nuevo — y cero estrategia: veinte meses sin conversar con el negocio. El Monstruo, sin una capa limpia, contenía el conocimiento real; por eso ganaba la única competición que importa. El blanco móvil y el segundo sistema (secciones anteriores) agravaron, pero la causa raíz la formula el faro: el sistema acaba pareciéndose a las conversaciones que lo construyeron, y Fénix modeló un silencio."
+              },
+              {
+                "id": "q8",
+                "text": "En el catálogo de context mapping, ¿qué diferencia al «conformista» del que construye una «anticorruption layer»?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El conformista está aguas arriba; el ACL, aguas abajo."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Ambos están aguas abajo sin poder de negociación; el conformista adopta el modelo ajeno tal cual (simplicidad a cambio de soberanía) y el ACL paga una capa de traducción para mantener su modelo limpio."
+                  },
+                  {
+                    "id": "c",
+                    "text": "El conformista es temporal; el ACL, permanente."
+                  },
+                  {
+                    "id": "d",
+                    "text": "El conformista aplica a APIs públicas; el ACL, a bases de datos."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La disyuntiva del débil frente a un upstream que no va a cambiar (SaaS gigante, legacy intocable): conformarse — decisión legítima y consciente: cero coste de traducción, tu lenguaje es el suyo — o aislarse con un ACL — pagas la aduana y conservas tu modelo. Se elige por el valor del modelo propio: si tu contexto es core, el ACL suele compensar; si es supporting, conformarse ahorra. El módulo de Meridian frente al MySQL del Monstruo es un ACL contra el propio pasado."
+              },
+              {
+                "id": "q9",
+                "text": "¿Qué hace el taller de EventStorming y por qué funciona con expertos no técnicos?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Modela el esquema de base de datos con los DBAs."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Negocio y desarrollo ordenan en una pared los eventos del dominio en pasado («abono pactado», «rectificativa emitida»); las fronteras y los malentendidos afloran donde el lenguaje de los pósits cambia — y hablar de «cosas que pasan» no requiere saber software."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Genera diagramas UML a partir del código existente."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Prioriza el backlog mediante votación con puntos."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Brandolini: los eventos en pasado son el idioma común perfecto — cualquier experto sabe qué pasa en su negocio, en qué orden, y qué palabra lo nombra. Sobre la línea temporal emergen comandos, actores y, sobre todo, las costuras: donde un grupo de eventos cambia de vocabulario o de experto hay un contexto pidiendo frontera. El malentendido («¿\"aplicado\" y \"liquidado\" son el mismo evento?») explota en la sala en minutos, no en producción en años — la versión metodológica de la mañana de pizarra de Júlia."
+              },
+              {
+                "id": "q10",
+                "text": "Según los Core Domain Charts, ¿cómo se asigna el esfuerzo entre contextos, y cuál fue el error de asignación de Fénix?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Uniformemente: todos los contextos merecen la misma calidad."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Core (donde el negocio se juega la vida) recibe el mejor talento y el modelo más rico; supporting, corrección sin heroísmo; generic, comprar o adoptar. Fénix gastó cuatro meses de su mejor gente en un framework genérico de datos."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Por tamaño: los contextos con más código reciben más gente."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Por riesgo técnico: lo más difícil de programar, primero."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "No todos los contextos valen lo mismo: la facturación de Meridian es core (ahí se gana o muere); la autenticación es generic (la industria ya la resolvió: se compra). Invertir el talento en lo genérico y las prisas en lo core es el error de asignación más caro de una organización técnica — y Fénix lo cometió de libro: una catedral genérica de acceso a datos (que además acabó esquivada) mientras las reglas core del negocio quedaban sin conversar ni modelar."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "title": "Tests que sostienen la arquitectura",
+      "materials": [
+        {
+          "id": "mat-09-01",
+          "title": "Historia — La víspera",
+          "type": "markdown",
+          "markdownFile": "materials/09-01-historia-la-vispera.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-09-02",
+          "title": "Teoría — Tests que sostienen la arquitectura",
+          "type": "markdown",
+          "markdownFile": "materials/09-02-teoria-tests-por-capas.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-09",
+          "title": "Examen: tests por capas",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "¿Qué tipo de test corresponde de forma natural a cada capa de la arquitectura?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Dominio: tests de integración; aplicación: unitarios; infraestructura: e2e."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Dominio: unitarios puros a cientos; aplicación: casos de uso con fakes a decenas; infraestructura: tests de contrato contra tecnología real; extremo a extremo: pocos, para el cableado."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Todas las capas: tests e2e, porque son los únicos que prueban el sistema real."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Dominio y aplicación no se testean; solo la infraestructura toca el mundo real."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La arquitectura dicta la estrategia: el dominio no tiene dependencias (unitarios puros y velocísimos), la aplicación recibe contratos fingibles (tests de operación con repositorios en memoria — el corazón de la estrategia), los adaptadores hacen exactamente lo que los dobles fingen (hay que probarlos contra la tecnología real), y el e2e queda para el error de fontanería que ninguna capa ve sola. La pirámide sale de ahí, no de una cuota."
+              },
+              {
+                "id": "q2",
+                "text": "¿Qué es un test de contrato de repositorio y qué principio garantiza mecánicamente?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Un test que verifica el esquema SQL contra el modelo de datos."
+                  },
+                  {
+                    "id": "b",
+                    "text": "La misma batería de tests, escrita contra la interfaz, ejecutada contra todas las implementaciones (PostgreSQL, MySQL, in-memory): garantiza la sustituibilidad de Liskov — todas las cajas responden igual, incluida la de mentira."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Un test que comprueba los términos del contrato con el cliente."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Un mock que verifica que el repositorio fue llamado con los parámetros pactados."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "«Guarda y recupera una factura idéntica», «devuelve null si no existe»: se escribe una vez y corre contra cada implementación del contrato. Si la in-memory no pasa el mismo contrato que la de PostgreSQL, todos los tests de aplicación que la usan están validando contra una mentira. Es el LSP (sección 3) convertido en verificación automática, y la respuesta seria a «¿y si el fake se comporta distinto del real?»."
+              },
+              {
+                "id": "q3",
+                "text": "¿Por qué el curso prefiere tests «sociables» a tests «solitarios» de cada clase con mocks de sus vecinas?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Porque los tests sociables requieren menos código de preparación."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque los mocks son lentos de ejecutar."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque el test solitario extremo se acopla a la estructura (secuencias de llamadas entre clases) y se rompe con cada refactor sin haber pillado bugs; el sociable valida comportamiento con las piezas reales y solo finge la frontera — sobrevive justo cuando la red hace falta."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Porque los tests solitarios no pueden medir cobertura."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Una suite que se pone roja cada vez que reorganizas el interior — sin que el comportamiento cambie — castiga el refactor en lugar de protegerlo, que era su única misión. El caso de uso probado con sus entidades de verdad y fakes solo en los contratos mantiene el verde mientras la conducta se mantenga. La distinción sociable/solitario es de Fowler (bliki, UnitTest)."
+              },
+              {
+                "id": "q4",
+                "text": "Según la taxonomía de Meszaros, el InMemoryRepositorioDeFacturas es un…",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Stub, porque devuelve valores preparados."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Mock, porque sustituye al repositorio real."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Fake: una implementación funcional pero simplificada del contrato."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Spy, porque permite consultar qué se guardó."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El fake funciona de verdad (guarda, busca, filtra — con un array en vez de un motor); el stub solo recita respuestas fijas; el mock verifica expectativas programadas por adelantado; el spy registra interacciones para preguntarle después. La dieta del curso: fakes para contratos, spies para efectos («¿se notificó?»), mocks estrictos casi nunca — acoplan el test a la secuencia exacta de llamadas, es decir, a la estructura."
+              },
+              {
+                "id": "q5",
+                "text": "¿Qué problema resuelve el patrón Object Mother?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Generar datos aleatorios para tests de propiedades."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que cada test arrastre líneas de construcción irrelevante y que el conocimiento de «cómo se construye un ejemplar válido» se repita por toda la suite: la mother centraliza ejemplares canónicos con nombre (emitida(), conAbonoParcial())."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Evitar que los tests compartan estado entre ejecuciones."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Crear los esquemas de base de datos antes de cada test."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "FacturaMother.emitida() deja al test decir solo lo que importa; cuando Factura.create cambie de firma, se toca la mother y no doscientos tests; y los casos con nombre (el pósit de Marta como conAbonoParcial()) se vuelven cultura reutilizable — el catálogo de mothers acaba siendo el bestiario del dominio. Patrón documentado por Fowler (bliki, ObjectMother), nacido en ThoughtWorks; en la arquitectura destino vive en test/helpers/."
+              },
+              {
+                "id": "q6",
+                "text": "¿Cuál es la regla de higiene de las Object Mothers y por qué?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Deben vivir en el mismo fichero que la entidad que fabrican."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Construyen siempre por la puerta oficial (create, métodos de dominio), jamás esquivando validaciones: un ejemplar imposible en producción es una mentira con cobertura."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Solo pueden fabricar objetos válidos, nunca casos límite."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Deben regenerar sus ejemplares con datos aleatorios en cada ejecución."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Si la mother fabrica ejemplares saltándose create (tocando campos privados, deserializando a pelo), la suite entera valida comportamiento sobre estados que el sistema real no puede alcanzar: verde sobre mentira. Construir por la puerta garantiza que todo ejemplar de test es un ciudadano legal del dominio. (Los casos límite inválidos también se prueban — pero explícitamente, esperando el error del constructor, no fabricando el estado ilegal.)"
+              },
+              {
+                "id": "q7",
+                "text": "¿Por qué el reloj («ahora») debe inyectarse en los casos de uso que lo usan?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Por rendimiento: leer la hora del sistema es costoso."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque el tiempo real hace los tests no deterministas (fallan a medianoche, en cambios de año, en otras zonas) y esconde una dependencia: se inyecta un reloj fijo igual que se inyecta un repositorio."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque los frameworks de test no soportan fechas del sistema."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Para poder acelerar el tiempo en las demos."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Es la lección del determinismo de la sección 2 ascendida a norma: toda fuente de variación oculta (hora, azar, orden de diccionario) rompe la reproducibilidad de la red. El reloj es una dependencia como la base de datos — entra por la puerta (relojFijo(FECHA_FIJA)) y el fixture FECHA_FIJA le da domicilio único. Un test que depende de «ahora» de verdad es un flaky en incubación."
+              },
+              {
+                "id": "q8",
+                "text": "Un test falla «a veces» y el equipo aprende a relanzar hasta que pasa. Según la sección, ¿cuál es el coste real?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Los minutos perdidos en relanzamientos."
+                  },
+                  {
+                    "id": "b",
+                    "text": "La métrica de cobertura deja de ser fiable."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Devalúa la moneda entera: enseña al equipo a ignorar el rojo, y el día que el rojo es real (el pósit de Marta, la víspera) nadie mira la pantalla."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Los pipelines de CI consumen más recursos."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El valor de una suite no está en los tests individuales sino en el significado del color: «verde = se puede confiar, rojo = parar y mirar». Un solo intermitente tolerado rompe esa semántica para todos los tests a la vez — es deuda con el interés más alto que existe. Por eso la regla es quirúrgica: el flaky se arregla o se borra ese mismo día. Y su gemela: la suite rápida o muerta — la red que tarda veinte minutos se lanza «luego», y luego es nunca."
+              },
+              {
+                "id": "q9",
+                "text": "La víspera del despliegue, un test se puso rojo y evitó cobrar 150 € de más en la primera remesa. ¿Qué cadena de prácticas hizo posible esa salvación?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Suerte: el bug coincidió con un caso testeado."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Conversación con la experta (los casos reales de Marta) → test que encarna el caso (conAbonoParcial) → costumbre de pasar la suite entera antes de desplegar → cultura de tratar el rojo pre-despliegue como la red ganando."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Un framework de mocking que detectó la regresión."
+                  },
+                  {
+                    "id": "d",
+                    "text": "La revisión de código del refactor del jueves."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Cada eslabón era necesario: sin la reunión de la lámina plastificada no existiría el caso; sin convertir el caso en test, el conocimiento se quedaría en un pósit; sin la manía de pasarlo todo siempre, el test no se habría ejecutado a tiempo; y sin la cultura del «veinte minutos y gracias», la tentación habría sido desplegar igual. «El pósit sin la costumbre no vale nada. Y la costumbre sin el pósit tampoco valía» — la red es la manía, no la suite."
+              },
+              {
+                "id": "q10",
+                "text": "«Los tests son la diferencia entre creer y saber.» ¿Qué distingue operativamente a un sistema donde se «sabe»?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Tiene una cobertura de líneas superior al 90%."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Su documentación está siempre actualizada."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Cualquier afirmación sobre su comportamiento («este cambio es inocente», «se puede desplegar») es comprobable en minutos ejecutando la red, en lugar de descansar en la fe de alguien."
+                  },
+                  {
+                    "id": "d",
+                    "text": "No tiene bugs en producción."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La diferencia no es la ausencia de errores (imposible) ni una métrica (la cobertura mide ejecución, no verdad), sino el mecanismo epistemológico: creer es «el programador confía en que su cambio no rompe nada»; saber es «la suite lo comprueba en un minuto cuarenta, antes de cada cambio». El consejero de la historia lo tradujo a su idioma en una frase: quince años yendo sin frenos y sin saberlo. Todo el utillaje del capítulo — pirámide, dobles, mothers, fixtures — es técnica al servicio de ese cambio de estado: de la fe al conocimiento."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "El plano completo: leyendo un ADR real",
+      "materials": [
+        {
+          "id": "mat-10-01",
+          "title": "Historia — La arquitecta",
+          "type": "markdown",
+          "markdownFile": "materials/10-01-historia-la-arquitecta.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-10-02",
+          "title": "Teoría — El plano completo: un ADR real, pieza a pieza",
+          "type": "markdown",
+          "markdownFile": "materials/10-02-teoria-el-adr-pieza-a-pieza.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-10",
+          "title": "Examen de síntesis: el plano completo",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "¿Qué es un ADR y cuáles son sus propiedades esenciales?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Un diagrama de arquitectura actualizado en cada release."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Un documento breve que captura una decisión estructural (contexto, decisión, consecuencias); corto, inmutable (se sustituye, no se edita), versionado junto al código y escrito cuando se decide."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Un acta de reunión del comité de arquitectura."
+                  },
+                  {
+                    "id": "d",
+                    "text": "La documentación generada automáticamente desde el código."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Architecture Decision Record (Nygard, 2011): su razón de ser es que quien llegue después no tenga que elegir entre «aceptar la decisión sin entenderla o rechazarla sin entenderla». De ahí sus propiedades: breve (se mantiene), inmutable con sustitución explícita (el historial de decisiones se conserva, como las entidades del curso), en docs/adr/ con el código (se revisa en los mismos PRs), y a tiempo — un ADR póstumo, como faro, es el síntoma de que faltó la práctica."
+              },
+              {
+                "id": "q2",
+                "text": "En el ADR 0001, la capa de dominio no puede depender «de otras capas ni de librerías externas». ¿Qué compra esa segunda prohibición?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Reducir el tamaño del bundle de producción."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Evitar vulnerabilidades de dependencias transitivas."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que la pureza del dominio sea auditable con un vistazo a los imports, y que las reglas de negocio no queden esposadas al ciclo de vida (versiones, deprecaciones, abandono) de código ajeno."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Obligar a reimplementar utilidades estándar por rendimiento."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La regla de la dependencia se vigila mirando imports (sección 4); extenderla a toda librería hace la auditoría binaria: en domain/, la lista de imports externos debe estar vacía, sin debates caso a caso. Y protege lo más longevo del sistema (las reglas del negocio sobreviven a frameworks y drivers) de lo más volátil (el ecosistema de paquetes). Beneficios colaterales (bundle, seguridad) existen, pero el motivo es arquitectónico."
+              },
+              {
+                "id": "q3",
+                "text": "src/modules/assessment/domain/Exam.ts — descomponiendo esta ruta del proyecto real, ¿qué dice cada nivel?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "modules/assessment = bounded context de evaluación (frontera de significado, sección 8); domain = capa interior sin dependencias (sección 4); Exam.ts = una entidad o value object del modelo (sección 5)."
+                  },
+                  {
+                    "id": "b",
+                    "text": "modules = los microservicios; assessment = el equipo responsable; domain = el dominio de internet del despliegue."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Es una convención de Next.js sin significado arquitectónico."
+                  },
+                  {
+                    "id": "d",
+                    "text": "assessment = la tabla de base de datos; domain/Exam = su ORM."
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "La ruta entera es arquitectura legible: un contexto de negocio (evaluación, con su lenguaje soberano — módulo = bounded context hecho carpeta), su capa más interior (cero imports hacia fuera), y dentro un habitante del modelo con su API estándar. Screaming architecture funcionando: sin abrir un solo fichero ya sabes qué hace el sistema, dónde están sus reglas y qué te vas a encontrar."
+              },
+              {
+                "id": "q4",
+                "text": "¿Por qué el ADR exige que la API de los value objects sea estándar (siempre create/fromPrimitive/ensureXIsValid/toPrimitive/equals, con esos nombres)?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Porque TypeScript requiere esas firmas para la serialización."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Para facilitar la generación automática de código."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Por la economía de lectura: quien conoce un value object los conoce todos — la misma razón del sufijo único Repository. La consistencia elimina fatiga de decisión y deducción manual."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Porque son los nombres del libro de Evans."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Es el «pasillo con todas las puertas iguales» aplicado al dominio: cinco métodos, siempre los mismos, y el lector entra a oscuras en cualquier clase del modelo. La consecuencia la enuncia el propio ADR: «la estructura consistente reduce la fatiga de decisión». Los nombres concretos no vienen de Evans (que define el patrón, no la API); son una convención del proyecto — y por eso necesitan estar escritas en el ADR: las convenciones no escritas duran un fichaje."
+              },
+              {
+                "id": "q5",
+                "text": "El ADR permite inyectar «otros casos de uso como puertos» en un caso de uso. ¿Qué problema del curso resuelve exactamente esa cláusula?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Permite reutilizar consultas SQL entre casos de uso."
+                  },
+                  {
+                    "id": "b",
+                    "text": "La composición de operaciones: cuando un flujo necesita dos operaciones («emitir y notificar»), se crea el caso de uso que posee el flujo y recibe la otra operación inyectada — la alternativa a la cadena en la factoría, que es «un caso de uso que falta»."
+                  },
+                  {
+                    "id": "c",
+                    "text": "La herencia entre casos de uso para compartir pasos."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Los tests de integración entre módulos."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La regla anti-cadena de la factoría (sección 7) necesita una vía legal para componer, y es esta: la operación pequeña entra por la misma puerta que los repositorios — como contrato, fingible en tests. Así el flujo compuesto es una operación de primera clase (con fichero, nombre, tests e invocabilidad desde cualquier puerta), y no una historia contada en la fontanería ni en un controlador."
+              },
+              {
+                "id": "q6",
+                "text": "Según el ADR, «incrustar flujo de negocio en un entrypoint es una violación de arquitectura». ¿Cuál de estos handlers la comete?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Uno que comprueba la sesión y devuelve 401 si no hay usuario."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Uno que convierte el JSON del body en los parámetros del caso de uso."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Uno que, antes de llamar al caso de uso, comprueba si el curso tiene exámenes pendientes y en ese caso llama a otro caso de uso distinto."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Uno que captura el error del caso de uso y lo traduce a un código HTTP 422."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Autenticar, traducir la entrada y traducir la salida (incluidos errores→HTTP) es exactamente el trabajo de una puerta tonta. Decidir qué operación ejecutar según el estado del negocio es coreografía: un paso de la historia escondido en una puerta, invisible para las otras puertas (el job, la CLI, el test) — la semilla de la divergencia de «tres veces la misma mentira». Ese if pertenece a un caso de uso que posea el flujo."
+              },
+              {
+                "id": "q7",
+                "text": "El párrafo del frontend del ADR pide HttpXRepository, contenedor/presentador y hooks que encapsulan casos de uso. ¿Cuál es la idea de fondo?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Que el frontend debe usar la misma tecnología que el backend."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que la arquitectura limpia es una manera de tratar cualquier frontera: para el cliente, la API del backend es «el exterior», así que se repite el patrón — adaptador HTTP implementando un contrato, coreografía en hooks, componentes-puerta que solo pintan."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que el frontend no debe tener lógica de ningún tipo."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Que hay que compartir las entidades del dominio entre backend y frontend."
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Las ideas no eran de backend: eran sobre fronteras y dependencias. En el cliente, el HttpCourseRepository es el adaptador (sabe de fetch y endpoints), los hooks son los casos de uso (coreografía testeable con el repositorio fingido), y el par contenedor/presentador reproduce puerta-tonta/decisión. Compartir entidades entre lados (d) sería, de hecho, acoplar dos contextos por debajo — el anti-patrón de la sección 8; cada lado modela lo que necesita."
+              },
+              {
+                "id": "q8",
+                "text": "¿Por qué la sección «Consecuencias» es obligatoria en un ADR honesto?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Para que dirección apruebe el presupuesto asociado."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Para poder medir el éxito del proyecto a posteriori."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque toda decisión tiene costes además de beneficios, y escribir ambos es lo que distingue una elección razonada de una moda; además arma al futuro lector para reevaluarla cuando el contexto cambie."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Para enumerar los riesgos de seguridad de la decisión."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "«Más ficheros, más indirección, peaje de aprendizaje» son consecuencias tan reales como «testeable aislado» y «almacenamiento intercambiable» — el criterio de la sección 3 (toda abstracción es una inversión) exige ver las dos columnas. Y como las decisiones se sustituyen cuando el contexto cambia, el lector futuro necesita saber qué se pagó y qué se compró para juzgar si el trato sigue siendo bueno. Un ADR sin costes documenta propaganda."
+              },
+              {
+                "id": "q9",
+                "text": "Silvia formula la «última lección» así: «la experiencia propia está sobrevalorada; lo profesional es aprender de las cicatrices de otro». ¿Qué práctica del curso NO es una encarnación de esa lección?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Leer los ADRs de un proyecto antes de proponer cambios de arquitectura."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Estudiar los patrones con su historia (por qué y de qué dolor nació cada uno)."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Convertir los casos reales de los expertos de dominio en tests con nombre."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Reescribir el sistema desde cero para aprender de los errores del anterior."
+                  }
+                ],
+                "correctChoiceId": "d",
+                "explanation": "Las tres primeras son transferencia de cicatrices ajenas: los ADRs transmiten decisiones con su porqué, los patrones son dolor destilado por la comunidad (cada uno existe porque algo se quemó), y el pósit de Marta hecho test (conAbonoParcial) es conocimiento de quince años convertido en red. La reescritura desde cero es exactamente lo contrario: tirar el conocimiento acumulado (las quince mil verdades) para redescubrirlo a base de quemarse uno mismo — la lección de Fénix, aprendida al precio máximo."
+              },
+              {
+                "id": "q10",
+                "text": "«Los nombres, los tests y los ADRs son tres tamaños del mismo acto.» ¿Cuál es ese acto?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Documentar el sistema para las auditorías."
+                  },
+                  {
+                    "id": "b",
+                    "text": "Reducir el número de bugs en producción."
+                  },
+                  {
+                    "id": "c",
+                    "text": "Escribir para el que viene después: hacer legible una intención (nombre), comprobable una promesa (test) y comprensible una decisión (ADR), para alguien que no estuvo allí."
+                  },
+                  {
+                    "id": "d",
+                    "text": "Estandarizar el estilo del equipo."
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Es el hilo que abre el curso («escribe para el que llegue detrás, cansado, a las nueve de la noche de un martes malo») y lo cierra («decisiones con su porqué, a tiempo y a la luz del día»). El nombre hace visible qué quiere decir una línea; el test convierte una creencia sobre el comportamiento en conocimiento renovable; el ADR hace lo mismo con las decisiones estructurales. Menos bugs y mejor documentación son consecuencias; el acto es uno: dejar la luz encendida."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s11-cierre",
+      "title": "Cierre",
+      "materials": [
+        {
+          "id": "mat-11-01",
+          "title": "El código que perdura: síntesis, bibliografía y agradecimientos",
+          "type": "markdown",
+          "markdownFile": "materials/11-01-cierre-el-codigo-que-perdura.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        }
+      ]
+    }
+  ]
+}
