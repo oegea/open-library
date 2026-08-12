@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1b3a"/><stop offset="1" stop-color="#1e3a5c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#cbg)"/>
+  <!-- radiating waves -->
+  <g stroke="#7fb8ff" fill="none" stroke-linecap="round">
+    <path d="M560 300 a120 120 0 0 1 0 170" stroke-width="10" opacity="0.85"/>
+    <path d="M600 260 a180 180 0 0 1 0 250" stroke-width="10" opacity="0.6"/>
+    <path d="M640 220 a240 240 0 0 1 0 330" stroke-width="10" opacity="0.4"/>
+    <path d="M520 300 a120 120 0 0 0 0 170" stroke-width="10" opacity="0.85" transform="translate(-80 0)"/>
+    <path d="M480 260 a180 180 0 0 0 0 250" stroke-width="10" opacity="0.6" transform="translate(-80 0)"/>
+    <path d="M440 220 a240 240 0 0 0 0 330" stroke-width="10" opacity="0.4" transform="translate(-80 0)"/>
+  </g>
+  <!-- mast -->
+  <g stroke="#e8eef6" stroke-linecap="round">
+    <line x1="510" y1="560" x2="510" y2="330" stroke-width="14"/>
+    <line x1="454" y1="382" x2="566" y2="382" stroke-width="9"/>
+    <line x1="466" y1="420" x2="554" y2="420" stroke-width="9"/>
+    <line x1="478" y1="458" x2="542" y2="458" stroke-width="9"/>
+  </g>
+  <circle cx="510" cy="330" r="14" fill="#ffd766"/>
+  <!-- morse dots -->
+  <g fill="#ffd766" opacity="0.9">
+    <circle cx="760" cy="560" r="8"/><rect x="790" y="552" width="46" height="16" rx="8"/>
+    <circle cx="860" cy="560" r="8"/><circle cx="890" cy="560" r="8"/>
+    <rect x="920" y="552" width="46" height="16" rx="8"/><circle cx="990" cy="560" r="8"/>
+  </g>
+</svg>

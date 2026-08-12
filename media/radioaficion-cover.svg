@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#070f26"/><stop offset="0.55" stop-color="#101c40"/><stop offset="1" stop-color="#1b2a4a"/>
+    </linearGradient>
+    <linearGradient id="iono" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3ec9a7" stop-opacity="0"/><stop offset="0.5" stop-color="#3ec9a7" stop-opacity="0.28"/><stop offset="1" stop-color="#3ec9a7" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12233d"/><stop offset="1" stop-color="#0a1730"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <!-- ionosphere band -->
+  <rect y="60" width="1280" height="130" fill="url(#iono)"/>
+  <path d="M0 125 q320 -34 640 0 t640 0" stroke="#3ec9a7" stroke-width="3" fill="none" opacity="0.5"/>
+  <!-- stars -->
+  <g fill="#ffffff" opacity="0.75">
+    <circle cx="90" cy="240" r="2.5"/><circle cx="240" cy="300" r="2"/><circle cx="420" cy="250" r="2.5"/>
+    <circle cx="610" cy="290" r="2"/><circle cx="820" cy="240" r="2.5"/><circle cx="1000" cy="300" r="2"/>
+    <circle cx="1180" cy="260" r="2.5"/><circle cx="140" cy="360" r="2"/><circle cx="1230" cy="380" r="2"/>
+    <circle cx="700" cy="210" r="2"/><circle cx="330" cy="200" r="2"/><circle cx="920" cy="330" r="2"/>
+  </g>
+  <!-- skywave: up from antenna, bounce on ionosphere, down far away -->
+  <g stroke="#ffd766" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.9">
+    <path d="M300 470 Q 480 120 660 128" stroke-dasharray="2 14"/>
+    <path d="M660 128 Q 860 140 1060 480" stroke-dasharray="2 14"/>
+  </g>
+  <circle cx="660" cy="128" r="7" fill="#ffd766"/>
+  <!-- radiating rings from antenna tip -->
+  <g stroke="#7fb8ff" fill="none" stroke-width="3">
+    <circle cx="300" cy="470" r="34" opacity="0.75"/>
+    <circle cx="300" cy="470" r="62" opacity="0.45"/>
+    <circle cx="300" cy="470" r="92" opacity="0.25"/>
+  </g>
+  <!-- hills -->
+  <path d="M0 640 q200 -70 420 -20 q240 55 500 10 q200 -34 360 20 v70 H0 Z" fill="url(#hill)"/>
+  <!-- distant receiving mast -->
+  <g stroke="#8fa8c8" stroke-width="6" stroke-linecap="round">
+    <line x1="1060" y1="620" x2="1060" y2="480"/>
+    <line x1="1038" y1="502" x2="1082" y2="502"/>
+    <line x1="1044" y1="522" x2="1076" y2="522"/>
+  </g>
+  <circle cx="1060" cy="480" r="6" fill="#ffd766"/>
+  <!-- main antenna mast -->
+  <g stroke="#c9d6e8" stroke-width="10" stroke-linecap="round">
+    <line x1="300" y1="655" x2="300" y2="470"/>
+  </g>
+  <g stroke="#c9d6e8" stroke-width="7" stroke-linecap="round">
+    <line x1="248" y1="508" x2="352" y2="508"/>
+    <line x1="258" y1="540" x2="342" y2="540"/>
+    <line x1="268" y1="572" x2="332" y2="572"/>
+  </g>
+  <circle cx="300" cy="470" r="9" fill="#ffd766"/>
+  <!-- guy wires -->
+  <g stroke="#5d7590" stroke-width="3" opacity="0.8">
+    <line x1="300" y1="500" x2="200" y2="655"/>
+    <line x1="300" y1="500" x2="400" y2="655"/>
+  </g>
+  <!-- small house with light -->
+  <g>
+    <rect x="430" y="596" width="120" height="62" fill="#132a45"/>
+    <path d="M420 598 L490 556 L560 598 Z" fill="#1d3b5e"/>
+    <rect x="466" y="616" width="26" height="24" fill="#ffd766" opacity="0.95"/>
+    <rect x="510" y="616" width="24" height="42" fill="#0c1c33"/>
+  </g>
+  <!-- wire from house to mast -->
+  <path d="M310 486 Q 380 560 452 596" stroke="#8fa8c8" stroke-width="3" fill="none" opacity="0.85"/>
+  <!-- title -->
+  <text x="640" y="388" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="bold" fill="#f4f7fb">Cuando todo falla</text>
+  <text x="640" y="438" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#bcd0e8">Curso completo de radioafición en España</text>
+</svg>

@@ -1,0 +1,3633 @@
+{
+  "id": "course-radioaficion-en-espana",
+  "title": "Cuando todo falla: curso completo de radioafición en España",
+  "slug": "radioaficion-en-espana",
+  "description": "De cero absoluto al diploma de operador: la ciencia de la radio, el arte de operar y la normativa española del examen oficial, contadas a través de la historia de una maestra que decidió no volver a quedarse muda cuando caen todas las redes. Con exámenes tipo test al estilo oficial en cada sección.",
+  "language": "es",
+  "category": "Radio y Comunicaciones",
+  "coverImage": "media/radioaficion-cover.svg",
+  "authors": [
+    "El proyecto Open Knowledge"
+  ],
+  "sources": [
+    {
+      "title": "Orden IET/1311/2013 — Reglamento de uso del dominio público radioeléctrico por radioaficionados (BOE)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-7624"
+    },
+    {
+      "title": "Ley 11/2022, General de Telecomunicaciones (BOE)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-10757"
+    },
+    {
+      "title": "Real Decreto 123/2017 — Reglamento sobre el uso del dominio público radioeléctrico (BOE)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-2460"
+    },
+    {
+      "title": "Ley 19/1983 — Derecho a instalar antenas de estaciones de aficionado (BOE)",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-1983-30039"
+    },
+    {
+      "title": "Resolución de 3 de junio de 2014 — Bases de los exámenes de radioaficionado (BOE)",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2014-6461"
+    },
+    {
+      "title": "John Devoldere (ON4UN) y Mark Demeuleneere (ON4WW) — Ética y procedimientos operativos para el radioaficionado (IARU, libre distribución)",
+      "url": "https://www.iaru-r1.org/wp-content/uploads/2019/10/2-ETHICS-OPERATING-IARU-R2spanish-final.pdf"
+    },
+    {
+      "title": "Plan de bandas de la IARU Región 1",
+      "url": "https://www.iaru-r1.org/"
+    },
+    {
+      "title": "Reglamento de Radiocomunicaciones de la UIT (art. 25, servicio de aficionados)",
+      "url": "https://www.itu.int/pub/R-REG-RR"
+    },
+    {
+      "title": "Recomendaciones CEPT T/R 61-01 (licencia CEPT) y T/R 61-02 (HAREC)",
+      "url": "https://docdb.cept.org/"
+    },
+    {
+      "title": "REMER — Red Radio de Emergencia de Protección Civil",
+      "url": "https://www.proteccioncivil.es/coordinacion/redes/remer"
+    },
+    {
+      "title": "Ministerio — Radioaficionados y CB-27 (trámites y exámenes)",
+      "url": "https://digital.gob.es/telecomunicaciones-infraestructuras-digitales/areas-interes/espectro-radioelectrico/radioaficionados-cb27"
+    },
+    {
+      "title": "Unión de Radioaficionados Españoles (URE) — Exámenes y formación",
+      "url": "https://www.ure.es/examenes/"
+    },
+    {
+      "title": "OpenStax — Física universitaria, vols. 1 y 2 (CC BY 4.0)",
+      "url": "https://openstax.org/subjects/science"
+    },
+    {
+      "title": "Radioaficionados y la DANA de Valencia (EA1URO, crónica)",
+      "url": "https://ea1uro.com/radio/sosvalencia/"
+    },
+    {
+      "title": "Wikipedia — artículos de historia de la radio citados en las ampliaciones (CC BY-SA)",
+      "url": "https://es.wikipedia.org/"
+    },
+    {
+      "title": "Clinton B. DeSoto — Two Hundred Meters and Down: The Story of Amateur Radio (ARRL, 1936)",
+      "url": null
+    },
+    {
+      "title": "ARRL Handbook y ARRL Antenna Book (obras de referencia)",
+      "url": null
+    }
+  ],
+  "license": "CC BY-SA 4.0",
+  "aiAssisted": true,
+  "published": true,
+  "createdAt": "2026-08-12T20:00:00Z",
+  "updatedAt": "2026-08-12T20:00:00Z",
+  "sections": [
+    {
+      "id": "s00-introduccion",
+      "title": "Introducción",
+      "materials": [
+        {
+          "id": "mat-00-01",
+          "title": "Cómo seguir este curso",
+          "type": "markdown",
+          "markdownFile": "materials/00-01-como-seguir-este-curso.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-00-02",
+          "title": "El mapa del viaje",
+          "type": "markdown",
+          "markdownFile": "materials/00-02-el-mapa-del-viaje.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s01",
+      "title": "La radio cuando todo falla",
+      "materials": [
+        {
+          "id": "mat-01-01",
+          "title": "Historia — La noche de las voces",
+          "type": "markdown",
+          "markdownFile": "materials/01-01-historia-la-noche-de-las-voces.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-01-02",
+          "title": "Teoría — Qué es el servicio de aficionados",
+          "type": "markdown",
+          "markdownFile": "materials/01-02-teoria-que-es-el-servicio-de-aficionados.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-01-03",
+          "title": "Ampliación — Historias que casi nadie cuenta",
+          "type": "markdown",
+          "markdownFile": "materials/01-03-ampliacion-historias-que-casi-nadie-cuenta.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-01-04",
+          "title": "Examen — El servicio de aficionados",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "Según la definición del Reglamento de Radiocomunicaciones de la UIT, el servicio de aficionados tiene por objeto:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La radiodifusión de contenidos culturales sin ánimo de lucro"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La instrucción individual, la intercomunicación y los estudios técnicos"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Las comunicaciones de emergencia y protección civil"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La experimentación comercial con nuevas tecnologías de radio"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La definición 1.56 del Reglamento de Radiocomunicaciones enumera exactamente tres fines: instrucción individual, intercomunicación y estudios técnicos, efectuados por personas autorizadas con carácter personal y sin fines de lucro. Las emergencias son una función real e importantísima de la radioafición, pero no forman parte de la definición del servicio; la radiodifusión es un servicio distinto (y prohibido para aficionados); y «experimentación comercial» contradice el «sin fines de lucro» de la definición."
+              },
+              {
+                "id": "q2",
+                "text": "¿Cuál de estas actividades está permitida a un radioaficionado con su autorización en vigor?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Retransmitir un partido de fútbol comentado para el público general"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Cobrar una pequeña tarifa por pasar mensajes a familiares de vecinos"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Construir su propio equipo transmisor y utilizarlo en las bandas de aficionado"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Cifrar sus conversaciones para proteger su privacidad"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La experimentación técnica es uno de los fines del servicio: el radioaficionado puede construir y modificar sus propios transmisores, algo casi único entre los servicios de radio. Emitir para el público general es radiodifusión (otro servicio, con otras licencias); cobrar por comunicaciones vulnera el carácter no lucrativo; y las comunicaciones de aficionado deben cursarse en lenguaje claro, sin cifrado que oculte su significado."
+              },
+              {
+                "id": "q3",
+                "text": "Un radioaficionado puede transmitir mensajes de personas que no son radioaficionados (tráfico de terceros):",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Nunca, bajo ninguna circunstancia"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Siempre que no cobre por ello"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Únicamente en casos de emergencia o desastre"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Solo si el tercero está presente en la estación"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El artículo 30 del Reglamento español (Orden IET/1311/2013) permite cursar tráfico de terceros únicamente en casos de emergencia o desastre. Es exactamente lo que legitimaba a Vicente a pasar mensajes de sus vecinos la noche de la DANA. Fuera de esas situaciones, las comunicaciones deben ser entre radioaficionados; la gratuidad es necesaria pero no suficiente."
+              },
+              {
+                "id": "q4",
+                "text": "El orden correcto de los pasos administrativos para operar como radioaficionado en España es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Autorización → examen → distintivo de llamada"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Distintivo de llamada → diploma de operador → autorización"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Diploma de operador (examen) → autorización administrativa → distintivo de llamada"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Basta con el diploma de operador para comenzar a transmitir"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Primero se aprueba el examen, que otorga el diploma de operador (con certificado HAREC); con él se solicita la autorización administrativa; y la Administración asigna entonces el distintivo de llamada. El diploma por sí solo no habilita para transmitir: acredita capacitación, pero la habilitación llega con la autorización."
+              },
+              {
+                "id": "q5",
+                "text": "La escucha de las bandas de radioaficionado (radioescucha o SWL) en España:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Es libre y no requiere licencia, respetando el secreto de las comunicaciones"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Requiere aprobar la prueba de normativa del examen oficial"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Requiere una autorización específica de radioescucha"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Está prohibida sin distintivo de llamada"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Recibir es libre: cualquiera puede escuchar las bandas de aficionado sin trámite alguno. Lo que la ley protege es el secreto de las comunicaciones: puedes escuchar, pero no divulgar el contenido de comunicaciones que no te estén destinadas. La licencia es necesaria para transmitir."
+              },
+              {
+                "id": "q6",
+                "text": "El examen español para el diploma de operador consiste en:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Una única prueba de 60 preguntas con 30 aciertos necesarios"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Dos pruebas independientes de 30 preguntas cada una, superándose cada una con 15 aciertos"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Dos pruebas: una escrita y una práctica de telegrafía"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Una prueba oral ante tribunal sobre electricidad y normativa"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Son dos pruebas independientes tipo test —electricidad/radioelectricidad y normativa—, de 30 preguntas con cuatro opciones cada una; cada prueba se supera con 15 aciertos y el tiempo total es de 90 minutos. La prueba de telegrafía (morse) se exigió durante décadas, pero ya no existe como requisito."
+              },
+              {
+                "id": "q7",
+                "text": "¿Qué es la REMER?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La asociación nacional de radioaficionados españoles"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El registro estatal de distintivos de llamada"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La Red Radio de Emergencia de Protección Civil, formada por radioaficionados voluntarios"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El organismo europeo que armoniza los exámenes de radioaficionado"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La REMER es la Red Radio de Emergencia de la Dirección General de Protección Civil y Emergencias: una red estatal complementaria y alternativa formada por radioaficionados voluntarios con sus propios equipos, constituida como red nacional en 1986 tras la experiencia de la pantanada de Tous. La asociación nacional es la URE, y la armonización europea de exámenes corresponde a la CEPT."
+              },
+              {
+                "id": "q8",
+                "text": "El certificado HAREC que acompaña al diploma de operador español sirve para:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Poder participar en concursos internacionales"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Acreditar el conocimiento del código morse"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Obtener la licencia de radioaficionado en otros países que aplican la Recomendación CEPT T/R 61-02 sin repetir examen"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Aumentar la potencia máxima autorizada de la estación"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "HAREC (Harmonised Amateur Radio Examination Certificate) es el certificado armonizado europeo definido en la Recomendación CEPT T/R 61-02: acredita que has superado un examen conforme al programa común, y permite obtener licencia en decenas de países sin volver a examinarte. No tiene relación con el morse, los concursos ni la potencia."
+              },
+              {
+                "id": "q9",
+                "text": "¿Por qué una estación de radioaficionado puede seguir comunicando cuando cae la red de telefonía móvil?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Porque utiliza frecuencias protegidas que no se saturan"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque las antenas de radioaficionado son más resistentes a las inundaciones"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque es autónoma de extremo a extremo: no depende de infraestructura intermedia y puede alimentarse de una batería"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Porque la ley le da prioridad sobre la telefonía móvil"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La clave es la arquitectura. La telefonía móvil depende de una cadena de infraestructuras (estaciones base con suministro eléctrico, enlaces, centrales); si un eslabón cae, no hay servicio. Una estación de aficionado se comunica directamente con otra: transmisor, antena y una fuente de energía tan simple como una batería de coche. No hay nada en medio que se pueda romper."
+              },
+              {
+                "id": "q10",
+                "text": "Un radioaficionado capta una señal de socorro en una banda de aficionados. Según el Reglamento español, debe:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Ignorarla si no va dirigida a su estación"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Responder solo si pertenece a la REMER"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Comunicarla de inmediato a las autoridades (Protección Civil)"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Esperar a que otra estación con más experiencia la atienda"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El artículo 30 del Reglamento impone a quien capte una señal de socorro el deber de ponerla de inmediato en conocimiento de las autoridades competentes de protección civil. El socorro tiene prioridad absoluta sobre cualquier otro tráfico y el deber alcanza a todo titular de autorización, pertenezca o no a la REMER."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "title": "La electricidad desde el átomo",
+      "materials": [
+        {
+          "id": "mat-02-01",
+          "title": "Historia — Doce voltios de vida",
+          "type": "markdown",
+          "markdownFile": "materials/02-01-historia-doce-voltios-de-vida.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-02-02",
+          "title": "Teoría — La electricidad desde el átomo",
+          "type": "markdown",
+          "markdownFile": "materials/02-02-teoria-electricidad-desde-el-atomo.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-02-03",
+          "title": "Ampliación — Lo que la electricidad no cuenta",
+          "type": "markdown",
+          "markdownFile": "materials/02-03-ampliacion-lo-que-la-electricidad-no-cuenta.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-02-04",
+          "title": "Examen — Electricidad básica",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "¿Qué es la corriente eléctrica en un conductor metálico?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La acumulación de electrones en un extremo del conductor"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El flujo ordenado de electrones libres a través del conductor"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La vibración térmica de los átomos del metal"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El intercambio de protones entre átomos vecinos"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "En los metales existen electrones libres desligados de sus átomos; cuando una tensión los empuja a avanzar todos en el mismo sentido, ese flujo ordenado de cargas es la corriente eléctrica, medida en amperios. La acumulación estática de carga no es corriente (no hay flujo), la vibración térmica es calor, y los protones están fijos en los núcleos: en un metal solo se mueven los electrones."
+              },
+              {
+                "id": "q2",
+                "text": "La unidad de resistencia eléctrica es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El voltio"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El amperio"
+                  },
+                  {
+                    "id": "c",
+                    "text": "El ohmio"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El vatio"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La resistencia se mide en ohmios (Ω), en honor a Georg Simon Ohm. El voltio mide la tensión, el amperio la intensidad de corriente y el vatio la potencia. Tener las cuatro magnitudes y sus unidades bien asociadas es requisito para casi cualquier pregunta técnica del examen."
+              },
+              {
+                "id": "q3",
+                "text": "Una resistencia de 60 Ω se conecta a una batería de 12 V. La corriente que circula es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "5 A"
+                  },
+                  {
+                    "id": "b",
+                    "text": "720 mA"
+                  },
+                  {
+                    "id": "c",
+                    "text": "200 mA"
+                  },
+                  {
+                    "id": "d",
+                    "text": "0,5 A"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Ley de Ohm: I = U / R = 12 / 60 = 0,2 A = 200 mA. El distractor «5 A» resulta de dividir al revés (60/12): recuerda que la corriente es tensión dividida entre resistencia, y comprueba que el resultado sea razonable (a más resistencia, menos corriente)."
+              },
+              {
+                "id": "q4",
+                "text": "¿Qué tensión hay entre los extremos de una resistencia de 2 kΩ por la que circulan 5 mA?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "0,4 V"
+                  },
+                  {
+                    "id": "b",
+                    "text": "10 V"
+                  },
+                  {
+                    "id": "c",
+                    "text": "400 V"
+                  },
+                  {
+                    "id": "d",
+                    "text": "2,5 V"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Primero se convierten las unidades: 2 kΩ = 2.000 Ω y 5 mA = 0,005 A. Después, U = I × R = 0,005 × 2.000 = 10 V. Este es el patrón favorito del examen: la fórmula es trivial, la trampa está en las unidades. Los «kilo» y los «mili» se compensan aquí (10³ × 10⁻³), truco que agiliza el cálculo mental."
+              },
+              {
+                "id": "q5",
+                "text": "La resistencia de un hilo conductor aumenta cuando:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Aumenta su sección"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Aumenta su longitud"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Disminuye su temperatura"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Se sustituye el hierro por cobre"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La resistencia crece con la longitud (más camino con obstáculos), decrece al aumentar la sección (más carriles para los electrones), crece con la temperatura en los metales (los átomos vibran más y estorban más) y depende del material: el cobre es mucho mejor conductor que el hierro, así que sustituir hierro por cobre la reduciría."
+              },
+              {
+                "id": "q6",
+                "text": "Un transceptor consume 8 A a 12 V durante la transmisión. La potencia consumida es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "1,5 W"
+                  },
+                  {
+                    "id": "b",
+                    "text": "20 W"
+                  },
+                  {
+                    "id": "c",
+                    "text": "96 W"
+                  },
+                  {
+                    "id": "d",
+                    "text": "0,67 W"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "P = U × I = 12 × 8 = 96 W. Los distractores provienen de dividir en vez de multiplicar (12/8 = 1,5; 8/12 = 0,67) o de sumar (12+8 = 20). La potencia consumida es siempre el producto de la tensión por la corriente."
+              },
+              {
+                "id": "q7",
+                "text": "¿Qué potencia disipa en forma de calor una resistencia de 10 Ω atravesada por una corriente de 3 A?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "30 W"
+                  },
+                  {
+                    "id": "b",
+                    "text": "3,3 W"
+                  },
+                  {
+                    "id": "c",
+                    "text": "90 W"
+                  },
+                  {
+                    "id": "d",
+                    "text": "900 W"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "P = I² × R = 3² × 10 = 9 × 10 = 90 W. El error típico es olvidar elevar al cuadrado la corriente (lo que daría 30 W). Esta fórmula explica por qué los cables finos se calientan: duplicar la corriente cuadruplica el calor generado."
+              },
+              {
+                "id": "q8",
+                "text": "Una batería de 40 Ah alimenta un receptor que consume 0,5 A. ¿Cuánto tiempo podrá funcionar, idealmente?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "20 horas"
+                  },
+                  {
+                    "id": "b",
+                    "text": "8 horas"
+                  },
+                  {
+                    "id": "c",
+                    "text": "80 horas"
+                  },
+                  {
+                    "id": "d",
+                    "text": "40 horas"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La capacidad en amperios-hora se divide entre el consumo: 40 Ah / 0,5 A = 80 h. El distractor de 20 horas resulta de multiplicar 40 × 0,5. En la práctica la autonomía real es menor (las baterías no deben descargarse por completo y pierden capacidad con la edad y el frío), pero el cálculo ideal es este."
+              },
+              {
+                "id": "q9",
+                "text": "Para medir la corriente que circula por un circuito y la tensión de su fuente, se conecta:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El amperímetro en paralelo y el voltímetro en serie"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El amperímetro en serie y el voltímetro en paralelo"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Ambos instrumentos en serie"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Ambos instrumentos en paralelo"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El amperímetro debe ser atravesado por la corriente que quiere medir, así que se intercala en serie en el circuito; el voltímetro mide la diferencia de potencial entre dos puntos, así que se conecta en paralelo entre ellos. Conectar un amperímetro en paralelo es además peligroso: su resistencia interna es casi nula y provocaría un cortocircuito."
+              },
+              {
+                "id": "q10",
+                "text": "¿Cuál de los siguientes materiales es un semiconductor?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El cobre"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La cerámica"
+                  },
+                  {
+                    "id": "c",
+                    "text": "El silicio"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La plata"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El silicio (como el germanio) es un semiconductor: conduce peor que un metal y mejor que un aislante, y su conducción puede controlarse mediante impurezas y tensiones, lo que lo convierte en la base de diodos, transistores y circuitos integrados. El cobre y la plata son conductores; la cerámica es un aislante."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "title": "Corriente alterna, frecuencia y decibelios",
+      "materials": [
+        {
+          "id": "mat-03-01",
+          "title": "Historia — El idioma del dial",
+          "type": "markdown",
+          "markdownFile": "materials/03-01-historia-el-idioma-del-dial.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-03-02",
+          "title": "Teoría — Alterna, frecuencia y decibelios",
+          "type": "markdown",
+          "markdownFile": "materials/03-02-teoria-alterna-frecuencia-y-decibelios.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-03-03",
+          "title": "Ampliación — Guerras, ondas y logaritmos",
+          "type": "markdown",
+          "markdownFile": "materials/03-03-ampliacion-guerras-ondas-y-logaritmos.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-03-04",
+          "title": "Examen — Corriente alterna y frecuencia",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "La frecuencia de una corriente alterna es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El tiempo que dura un ciclo completo"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El número de ciclos completos por segundo"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La distancia que recorre la onda en un ciclo"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El valor máximo que alcanza la tensión"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La frecuencia (f, en hercios) cuenta cuántos ciclos completos ocurren cada segundo. El tiempo de un ciclo es el periodo (T = 1/f), la distancia recorrida por ciclo es la longitud de onda y el valor máximo es la amplitud de pico. Cuatro conceptos distintos que el examen adora intercambiar en los distractores."
+              },
+              {
+                "id": "q2",
+                "text": "Una señal tiene un periodo de 0,1 milisegundos. Su frecuencia es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "100 Hz"
+                  },
+                  {
+                    "id": "b",
+                    "text": "1 kHz"
+                  },
+                  {
+                    "id": "c",
+                    "text": "10 kHz"
+                  },
+                  {
+                    "id": "d",
+                    "text": "100 kHz"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "f = 1/T. Primero las unidades: 0,1 ms = 0,0001 s = 10⁻⁴ s. Entonces f = 1/10⁻⁴ = 10.000 Hz = 10 kHz. La conversión de milisegundos a segundos es donde se pierde esta pregunta: 0,1 ms no es 0,1 s ni 0,001 s."
+              },
+              {
+                "id": "q3",
+                "text": "¿Cuál es la longitud de onda de una señal de 14,2 MHz?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "2,11 metros"
+                  },
+                  {
+                    "id": "b",
+                    "text": "21,1 metros"
+                  },
+                  {
+                    "id": "c",
+                    "text": "42,2 metros"
+                  },
+                  {
+                    "id": "d",
+                    "text": "14,2 metros"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "λ = 300 / f(MHz) = 300 / 14,2 ≈ 21,1 m. Es la banda de aficionados de «20 metros» (los nombres de banda son redondeos). La fórmula de los trescientos aparece en prácticamente todos los exámenes en uno u otro sentido: automatízala."
+              },
+              {
+                "id": "q4",
+                "text": "La banda de frecuencias de 3 a 30 MHz se denomina:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "VHF"
+                  },
+                  {
+                    "id": "b",
+                    "text": "MF"
+                  },
+                  {
+                    "id": "c",
+                    "text": "HF"
+                  },
+                  {
+                    "id": "d",
+                    "text": "UHF"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "HF (High Frequency, alta frecuencia) abarca de 3 a 30 MHz: es la «onda corta», el territorio de los grandes contactos a distancia mundial. MF va de 300 kHz a 3 MHz, VHF de 30 a 300 MHz y UHF de 300 MHz a 3 GHz. La escala completa avanza multiplicando por diez en cada escalón."
+              },
+              {
+                "id": "q5",
+                "text": "Una tensión alterna senoidal tiene un valor eficaz de 230 V. Su valor de pico es aproximadamente:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "163 V"
+                  },
+                  {
+                    "id": "b",
+                    "text": "230 V"
+                  },
+                  {
+                    "id": "c",
+                    "text": "325 V"
+                  },
+                  {
+                    "id": "d",
+                    "text": "460 V"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "V pico = V eficaz × √2 ≈ 230 × 1,414 ≈ 325 V. El valor eficaz es el que produce el mismo calentamiento que una continua igual; en una senoide siempre es menor que el pico (pico = eficaz × 1,414; eficaz = pico × 0,707). 460 V sería el valor pico a pico, otra magnitud distinta."
+              },
+              {
+                "id": "q6",
+                "text": "El valor eficaz (RMS) de una corriente alterna es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El valor de una corriente continua que produciría el mismo efecto calorífico"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El valor medio de la corriente durante un ciclo"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La mitad del valor de pico"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El valor máximo alcanzado en cada ciclo"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Esa es exactamente la definición: la continua equivalente en capacidad de calentar. Para una senoide vale 0,707 veces el pico (no la mitad). El valor medio de una senoide completa es cero (medio ciclo positivo y medio negativo se cancelan), lo que hace ese distractor doblemente falso."
+              },
+              {
+                "id": "q7",
+                "text": "Un transmisor emite en 7 MHz. Su tercer armónico aparecerá en:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "10 MHz"
+                  },
+                  {
+                    "id": "b",
+                    "text": "14 MHz"
+                  },
+                  {
+                    "id": "c",
+                    "text": "21 MHz"
+                  },
+                  {
+                    "id": "d",
+                    "text": "28 MHz"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Los armónicos son múltiplos enteros de la frecuencia fundamental: el segundo armónico está en 2×7 = 14 MHz, el tercero en 3×7 = 21 MHz, el cuarto en 28 MHz. Cuidado con el matiz de numeración: la fundamental es el «primer armónico», así que «tercer armónico» = 3 × fundamental."
+              },
+              {
+                "id": "q8",
+                "text": "Un amplificador aumenta la potencia de una señal en 3 dB. Esto significa que la potencia:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Aumenta un 3 %"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Se multiplica por 3"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Se duplica"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Se multiplica por 10"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "+3 dB corresponde a multiplicar la potencia por 2 (y −3 dB a dividirla por 2). Los valores que conviene memorizar: 3 dB = ×2, 6 dB = ×4, 10 dB = ×10, 20 dB = ×100. El decibelio es una escala logarítmica: los dB se suman cuando las proporciones se multiplican."
+              },
+              {
+                "id": "q9",
+                "text": "Una potencia de 100 W atraviesa un cable que pierde 6 dB. ¿Qué potencia llega al final?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "50 W"
+                  },
+                  {
+                    "id": "b",
+                    "text": "25 W"
+                  },
+                  {
+                    "id": "c",
+                    "text": "94 W"
+                  },
+                  {
+                    "id": "d",
+                    "text": "6 W"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "−6 dB = −3 dB −3 dB = dividir por 2 dos veces = dividir por 4. 100/4 = 25 W. El distractor de 94 W trata los decibelios como si fueran vatios que se restan: error conceptual clásico. Los decibelios expresan proporciones, no cantidades absolutas."
+              },
+              {
+                "id": "q10",
+                "text": "Una potencia de 30 dBm equivale a:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "30 mW"
+                  },
+                  {
+                    "id": "b",
+                    "text": "100 mW"
+                  },
+                  {
+                    "id": "c",
+                    "text": "1 W"
+                  },
+                  {
+                    "id": "d",
+                    "text": "30 W"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El dBm es una medida absoluta referida a 1 mW: 0 dBm = 1 mW. Como +30 dB significa ×1000, 30 dBm = 1 mW × 1000 = 1000 mW = 1 W. Es la unidad estándar de los instrumentos de medida de radio; conviene dominar las equivalencias 0 dBm = 1 mW, 30 dBm = 1 W, 60 dBm = 1 kW."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "title": "Las piezas del rompecabezas: componentes",
+      "materials": [
+        {
+          "id": "mat-04-01",
+          "title": "Historia — La caja de Amparo",
+          "type": "markdown",
+          "markdownFile": "materials/04-01-historia-la-caja-de-amparo.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-04-02",
+          "title": "Teoría — Componentes",
+          "type": "markdown",
+          "markdownFile": "materials/04-02-teoria-componentes.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-04-03",
+          "title": "Ampliación — El bestiario y sus leyendas",
+          "type": "markdown",
+          "markdownFile": "materials/04-03-ampliacion-el-bestiario-y-sus-leyendas.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-04-04",
+          "title": "Examen — Componentes",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "Una resistencia tiene las franjas de colores marrón, negro, rojo y dorado. Su valor es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "100 Ω ±5 %"
+                  },
+                  {
+                    "id": "b",
+                    "text": "1.000 Ω ±5 %"
+                  },
+                  {
+                    "id": "c",
+                    "text": "10.000 Ω ±5 %"
+                  },
+                  {
+                    "id": "d",
+                    "text": "102 Ω ±10 %"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Marrón = 1, negro = 0, rojo = multiplicador ×100: 10 × 100 = 1.000 Ω = 1 kΩ. La franja dorada indica tolerancia del ±5 %. El código se lee: dos cifras (tres en resistencias de cinco franjas), un multiplicador y la tolerancia; la franja de tolerancia (dorada o plateada) marca el extremo por el que NO se empieza a leer."
+              },
+              {
+                "id": "q2",
+                "text": "¿Qué componente bloquea el paso de la corriente continua pero permite el de la corriente alterna?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La bobina"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El condensador"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La resistencia"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El diodo"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El condensador tiene un aislante (dieléctrico) entre sus placas: la corriente continua lo carga y luego no puede seguir circulando. Con alterna, las continuas cargas y descargas mantienen la circulación de corriente en el circuito. La bobina hace exactamente lo contrario (pasa la CC, frena la CA); la resistencia trata igual a ambas; el diodo distingue sentidos, no tipos de corriente."
+              },
+              {
+                "id": "q3",
+                "text": "La reactancia de una bobina, al aumentar la frecuencia de la señal:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Aumenta"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Disminuye"
+                  },
+                  {
+                    "id": "c",
+                    "text": "No varía"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Se hace cero"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "La reactancia inductiva crece proporcionalmente con la frecuencia (XL = 2πfL): cuanto más rápido cambia la corriente, más se opone la bobina, debido a la inercia de su campo magnético. En el condensador ocurre lo contrario: su reactancia disminuye al subir la frecuencia. Este comportamiento espejo es la base de todos los filtros."
+              },
+              {
+                "id": "q4",
+                "text": "La unidad de capacidad de un condensador es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El henrio"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El ohmio"
+                  },
+                  {
+                    "id": "c",
+                    "text": "El faradio"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El siemens"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La capacidad se mide en faradios (F); como es una unidad enorme, en la práctica se usan microfaradios (µF), nanofaradios (nF) y picofaradios (pF). El henrio es la unidad de inductancia de las bobinas, el ohmio mide resistencia y reactancia, y el siemens, conductancia."
+              },
+              {
+                "id": "q5",
+                "text": "Un transformador tiene 2.000 espiras en el primario y 100 en el secundario. Si se aplican 230 V de alterna al primario, el secundario entrega aproximadamente:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "4.600 V"
+                  },
+                  {
+                    "id": "b",
+                    "text": "23 V"
+                  },
+                  {
+                    "id": "c",
+                    "text": "11,5 V"
+                  },
+                  {
+                    "id": "d",
+                    "text": "230 V"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La relación de tensiones es igual a la relación de espiras: 100/2000 = 1/20, así que 230/20 = 11,5 V. Es un transformador reductor. Recuerda además que los transformadores solo funcionan con corriente alterna: con continua el campo magnético no varía y no se induce tensión en el secundario."
+              },
+              {
+                "id": "q6",
+                "text": "Un diodo de silicio polarizado en directa comienza a conducir apreciablemente a partir de una tensión de aproximadamente:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "0,1 V"
+                  },
+                  {
+                    "id": "b",
+                    "text": "0,3 V"
+                  },
+                  {
+                    "id": "c",
+                    "text": "0,7 V"
+                  },
+                  {
+                    "id": "d",
+                    "text": "1,5 V"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La unión PN de silicio necesita vencer una barrera de unos 0,6-0,7 V para conducir en directa. Los diodos de germanio, más antiguos, conducen desde ~0,3 V (por eso se apreciaban como detectores de señales débiles). En inversa, un diodo normal bloquea la corriente."
+              },
+              {
+                "id": "q7",
+                "text": "¿Cuál es la función característica de un diodo zéner?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Emitir luz al conducir"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Variar su capacidad con la tensión aplicada"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Mantener una tensión estable trabajando en la zona de ruptura inversa"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Rectificar grandes potencias"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El zéner está diseñado para conducir en inversa a una tensión precisa y estable (su tensión de zéner), lo que lo convierte en referencia y regulador de tensión. Emitir luz es el LED; variar la capacidad con la tensión es el varicap; la rectificación de potencia usa diodos rectificadores comunes."
+              },
+              {
+                "id": "q8",
+                "text": "Los tres terminales de un transistor bipolar son:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Fuente, puerta y drenador"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Emisor, base y colector"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Ánodo, cátodo y rejilla"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Primario, secundario y núcleo"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El transistor bipolar (BJT) tiene emisor, base y colector: una pequeña corriente de base controla una corriente mucho mayor entre colector y emisor. Fuente, puerta y drenador son los terminales del transistor de efecto de campo (FET); ánodo, cátodo y rejilla pertenecen a las válvulas; primario y secundario, al transformador."
+              },
+              {
+                "id": "q9",
+                "text": "En un transistor de efecto de campo (FET), la corriente entre fuente y drenador se controla mediante:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La corriente inyectada en la base"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La tensión aplicada a la puerta"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La resistencia del núcleo"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La luz que incide sobre el encapsulado"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El FET es un dispositivo controlado por tensión: el campo eléctrico creado por la tensión de puerta estrecha o ensancha el canal de conducción, casi sin consumir corriente. El bipolar, en cambio, se controla por corriente de base. Esa diferencia hace al FET ideal donde se necesita no cargar al circuito anterior."
+              },
+              {
+                "id": "q10",
+                "text": "¿Cuál de estas afirmaciones sobre el condensador electrolítico es correcta?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Puede conectarse indistintamente en cualquier polaridad"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Tiene polaridad y debe respetarse al conectarlo"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Su capacidad es siempre menor de 1 nF"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Solo funciona con corriente alterna pura"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El electrolítico consigue grandes capacidades (típicamente de microfaradios hacia arriba) gracias a una fina capa de óxido que actúa de dieléctrico, y esa capa exige una polaridad concreta: conectado al revés se degrada, se calienta y puede llegar a explotar. Se usa precisamente donde hay componente continua, como el filtrado de fuentes de alimentación."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "title": "Circuitos que hacen magia",
+      "materials": [
+        {
+          "id": "mat-05-01",
+          "title": "Historia — El club de las goteras",
+          "type": "markdown",
+          "markdownFile": "materials/05-01-historia-el-club-de-las-goteras.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-05-02",
+          "title": "Teoría — Circuitos",
+          "type": "markdown",
+          "markdownFile": "materials/05-02-teoria-circuitos.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-05-03",
+          "title": "Ampliación — Columpios, cristales y bombillas",
+          "type": "markdown",
+          "markdownFile": "materials/05-03-ampliacion-columpios-cristales-y-bombillas.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-05-04",
+          "title": "Examen — Circuitos",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "Dos resistencias de 100 Ω conectadas en serie presentan una resistencia total de:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "50 Ω"
+                  },
+                  {
+                    "id": "b",
+                    "text": "100 Ω"
+                  },
+                  {
+                    "id": "c",
+                    "text": "200 Ω"
+                  },
+                  {
+                    "id": "d",
+                    "text": "10.000 Ω"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "En serie las resistencias se suman: 100 + 100 = 200 Ω. La corriente debe atravesar ambas, una tras otra, como un pasillo que se alarga. En paralelo, dos iguales darían la mitad (50 Ω): el par de resultados 200/50 para el mismo par de resistencias es el contraste favorito del examen."
+              },
+              {
+                "id": "q2",
+                "text": "Dos resistencias de 60 Ω y 30 Ω se conectan en paralelo. La resistencia equivalente es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "90 Ω"
+                  },
+                  {
+                    "id": "b",
+                    "text": "45 Ω"
+                  },
+                  {
+                    "id": "c",
+                    "text": "20 Ω"
+                  },
+                  {
+                    "id": "d",
+                    "text": "15 Ω"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Producto entre suma: (60 × 30) / (60 + 30) = 1800 / 90 = 20 Ω. Comprobación de cordura: el paralelo siempre da menos que la menor de las resistencias (20 < 30). El distractor de 90 Ω es la suma (serie), y el de 45, la media aritmética: ninguno vale para el paralelo."
+              },
+              {
+                "id": "q3",
+                "text": "Dos condensadores de 10 µF conectados en paralelo equivalen a:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "5 µF"
+                  },
+                  {
+                    "id": "b",
+                    "text": "10 µF"
+                  },
+                  {
+                    "id": "c",
+                    "text": "20 µF"
+                  },
+                  {
+                    "id": "d",
+                    "text": "100 µF"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Los condensadores son el cruce traicionero: en PARALELO se suman (10 + 10 = 20 µF), porque es como juntar las placas en una superficie mayor; en serie se combinan por inversos (dos iguales darían 5 µF). Justo al revés que las resistencias. Memoriza la tabla cruzada: cae constantemente."
+              },
+              {
+                "id": "q4",
+                "text": "En un divisor formado por R1 = 6 kΩ y R2 = 3 kΩ en serie sobre 18 V, la tensión sobre R2 es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "12 V"
+                  },
+                  {
+                    "id": "b",
+                    "text": "6 V"
+                  },
+                  {
+                    "id": "c",
+                    "text": "9 V"
+                  },
+                  {
+                    "id": "d",
+                    "text": "3 V"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "U2 = U × R2/(R1+R2) = 18 × 3/(6+3) = 18 × 1/3 = 6 V. La tensión se reparte proporcionalmente a las resistencias: R1, que es el doble, se lleva el doble (12 V). La suma de ambas tensiones reconstruye siempre el total (12 + 6 = 18 V), lo que sirve de comprobación."
+              },
+              {
+                "id": "q5",
+                "text": "Si en un circuito resonante LC se aumenta la capacidad del condensador, la frecuencia de resonancia:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Disminuye"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Aumenta"
+                  },
+                  {
+                    "id": "c",
+                    "text": "No cambia"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Se duplica exactamente"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "f = 1/(2π√LC): la frecuencia es inversamente proporcional a la raíz de L por C, de modo que aumentar la capacidad (o la inductancia) hace bajar la frecuencia. El columpio más grande se mece más despacio. Es la esencia de la sintonía con condensador variable: girar el mando cambia C y recorre las frecuencias."
+              },
+              {
+                "id": "q6",
+                "text": "Un circuito resonante LC paralelo, a su frecuencia de resonancia, presenta:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Impedancia mínima"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Impedancia máxima"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Impedancia igual a cero"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La misma impedancia que a cualquier otra frecuencia"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "En resonancia, las reactancias de bobina y condensador son iguales y opuestas: en el circuito PARALELO el conjunto presenta impedancia máxima hacia el exterior (ideal para seleccionar esa frecuencia), mientras que el resonante SERIE presenta impedancia mínima (ideal para absorberla o eliminarla). El par máxima/mínima según paralelo/serie es pregunta recurrente."
+              },
+              {
+                "id": "q7",
+                "text": "Para atenuar los armónicos a la salida de un transmisor se utiliza un filtro:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Paso alto"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Paso bajo"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Rechazo de banda sintonizado a la frecuencia de trabajo"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Paso banda centrado en el segundo armónico"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Los armónicos aparecen siempre POR ENCIMA de la frecuencia de trabajo (en sus múltiplos: 2f, 3f...), de modo que un filtro paso bajo con corte justo sobre la frecuencia de emisión deja pasar la señal útil y atenúa todos los armónicos a la vez. Un rechazo de banda en la frecuencia de trabajo eliminaría la propia señal, y un paso banda en el armónico haría lo contrario de lo deseado."
+              },
+              {
+                "id": "q8",
+                "text": "El orden correcto de las etapas de una fuente de alimentación lineal es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Rectificador → transformador → regulador → filtro"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Transformador → rectificador → filtro → regulador"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Filtro → rectificador → transformador → regulador"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Transformador → filtro → rectificador → regulador"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Primero el transformador baja la tensión alterna; después el rectificador (diodos) elimina los semiciclos negativos dejando continua pulsante; los condensadores de filtro alisan ese pulso; y el regulador estabiliza el valor final. Cada etapa necesita el trabajo de la anterior: el orden no es convencional sino funcional."
+              },
+              {
+                "id": "q9",
+                "text": "El rizado residual a la salida de una fuente alimentada a 50 Hz con puente rectificador de onda completa tiene una frecuencia de:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "25 Hz"
+                  },
+                  {
+                    "id": "b",
+                    "text": "50 Hz"
+                  },
+                  {
+                    "id": "c",
+                    "text": "100 Hz"
+                  },
+                  {
+                    "id": "d",
+                    "text": "200 Hz"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El puente de onda completa invierte los semiciclos negativos, de modo que a la salida hay dos crestas por cada ciclo de red: 2 × 50 = 100 Hz. Con rectificación de media onda (un solo diodo) el rizado quedaría a 50 Hz. Reconocer 100 Hz frente a 50 Hz permite incluso diagnosticar de oído qué tipo de fuente zumba."
+              },
+              {
+                "id": "q10",
+                "text": "¿Qué oscilador ofrece la mayor estabilidad de frecuencia?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El oscilador LC con bobina de núcleo de aire"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El oscilador controlado por cristal de cuarzo"
+                  },
+                  {
+                    "id": "c",
+                    "text": "El oscilador RC de audiofrecuencia"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El oscilador con circuito resonante ajustable"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El cristal de cuarzo vibra mecánicamente a una frecuencia fijada por sus dimensiones físicas (efecto piezoeléctrico), con un factor Q de decenas de miles: su estabilidad supera en órdenes de magnitud a cualquier LC con componentes discretos, cuyos valores derivan con la temperatura. Por eso los equipos modernos sintetizan todas sus frecuencias (PLL, DDS) a partir de un cristal patrón."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "title": "Ondas que viajan: modulación",
+      "materials": [
+        {
+          "id": "mat-06-01",
+          "title": "Historia — Las voces de pato",
+          "type": "markdown",
+          "markdownFile": "materials/06-01-historia-las-voces-de-pato.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-06-02",
+          "title": "Teoría — Ondas y modulación",
+          "type": "markdown",
+          "markdownFile": "materials/06-02-teoria-ondas-y-modulacion.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-06-03",
+          "title": "Ampliación — La guerra de los modos",
+          "type": "markdown",
+          "markdownFile": "materials/06-03-ampliacion-la-guerra-de-los-modos.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-06-04",
+          "title": "Examen — Modulación",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "En una onda electromagnética, los campos eléctrico y magnético:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Son paralelos entre sí y perpendiculares a la dirección de propagación"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Son perpendiculares entre sí y perpendiculares a la dirección de propagación"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Son paralelos a la dirección de propagación"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Solo existe campo eléctrico durante la propagación"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La onda electromagnética es transversal: el campo eléctrico E y el magnético H oscilan perpendiculares entre sí, y ambos perpendiculares a la dirección de avance. Los dos campos se regeneran mutuamente (un E variable crea H, un H variable crea E), lo que permite a la onda propagarse incluso por el vacío a la velocidad de la luz."
+              },
+              {
+                "id": "q2",
+                "text": "La polarización de una onda electromagnética viene determinada por:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La orientación de su campo eléctrico"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La frecuencia de la portadora"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La potencia del transmisor"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El tipo de modulación empleado"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Por convenio, la polarización es la orientación del campo eléctrico, que coincide con la orientación del elemento radiante: una antena vertical produce polarización vertical. En enlaces directos (VHF/UHF sin rebotes), cruzar polarizaciones entre emisor y receptor puede costar hasta 20 dB de pérdida; en HF ionosférica la polarización se revuelve y pierde importancia."
+              },
+              {
+                "id": "q3",
+                "text": "Modular una portadora consiste en:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Amplificar la señal de audio antes de transmitirla"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Convertir la corriente alterna en continua"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Variar alguna de sus características (amplitud, frecuencia o fase) al ritmo de la información"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Filtrar los armónicos de la señal transmitida"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La portadora es una senoide pura de RF que actúa de vehículo; modular es alterar su amplitud (AM), su frecuencia (FM) o su fase (PM) siguiendo la señal de información. El receptor realiza la operación inversa (demodulación) para recuperar la información original."
+              },
+              {
+                "id": "q4",
+                "text": "Una señal de AM modulada con audio de hasta 3 kHz ocupa un ancho de banda de:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "3 kHz"
+                  },
+                  {
+                    "id": "b",
+                    "text": "6 kHz"
+                  },
+                  {
+                    "id": "c",
+                    "text": "12 kHz"
+                  },
+                  {
+                    "id": "d",
+                    "text": "1,5 kHz"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La AM genera dos bandas laterales simétricas, cada una réplica del audio: el ancho total es el doble de la frecuencia máxima de modulación (2 × 3 = 6 kHz). Esta anatomía —portadora central más dos bandas laterales— es también la clave para entender la SSB, que elimina la portadora y una de las dos bandas."
+              },
+              {
+                "id": "q5",
+                "text": "En la modulación de banda lateral única (SSB) se suprimen:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Las dos bandas laterales"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La banda lateral superior siempre"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La portadora y una de las dos bandas laterales"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Los armónicos de la portadora"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La SSB transmite únicamente una banda lateral: se suprime la portadora (que consume la mayor parte de la potencia sin aportar información) y la banda lateral redundante. Resultado: la mitad de ancho de banda que la AM y toda la potencia dedicada a la información. El receptor debe reinsertar la portadora localmente para demodular."
+              },
+              {
+                "id": "q6",
+                "text": "En la banda de 40 metros (7 MHz), la fonía SSB se opera por convenio en:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Banda lateral inferior (LSB)"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Banda lateral superior (USB)"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Doble banda lateral"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Cualquiera de las dos, indistintamente"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "El convenio internacional usa LSB en las bandas por debajo de 10 MHz (160, 80 y 40 metros) y USB por encima (20, 17, 15, 12 y 10 metros, y todo VHF/UHF). Es una tradición heredada de los primeros generadores de SSB, pero universalmente respetada: sintonizar con la banda lateral equivocada convierte la voz en sonido ininteligible."
+              },
+              {
+                "id": "q7",
+                "text": "La principal ventaja de la modulación de frecuencia (FM) es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Ocupar menos ancho de banda que la SSB"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Su inmunidad frente al ruido y las perturbaciones de amplitud"
+                  },
+                  {
+                    "id": "c",
+                    "text": "No necesitar oscilador en el receptor"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Concentrar toda la potencia en 200 Hz"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Casi todo el ruido eléctrico (tormentas, motores, chispas) afecta a la amplitud de las señales. El receptor de FM limita la amplitud antes de demodular y solo atiende a las variaciones de frecuencia: el ruido queda eliminado y el audio resulta limpio. A cambio, la FM ocupa mucho más ancho de banda que la SSB (10-16 kHz frente a menos de 3 kHz), por lo que se reserva para VHF/UHF, donde el espectro abunda."
+              },
+              {
+                "id": "q8",
+                "text": "Ordenados de menor a mayor ancho de banda ocupado, los modos son:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "SSB < CW < FM < AM"
+                  },
+                  {
+                    "id": "b",
+                    "text": "CW < SSB < AM < FM"
+                  },
+                  {
+                    "id": "c",
+                    "text": "FM < AM < SSB < CW"
+                  },
+                  {
+                    "id": "d",
+                    "text": "AM < SSB < FM < CW"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "CW ocupa unos 100-200 Hz (solo una portadora conmutada); SSB unos 2,4-2,7 kHz (una banda lateral de voz); AM unos 6 kHz (dos bandas laterales más portadora); y la FM de radioaficionado unos 10-16 kHz. La regla de fondo es de Fourier: más información por segundo (o más redundancia) exige más espectro."
+              },
+              {
+                "id": "q9",
+                "text": "¿Para qué sirve el BFO de un receptor?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Para amplificar las señales débiles"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Para generar un tono audible al recibir señales de CW, batiéndose con ellas"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Para eliminar el ruido atmosférico"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Para estabilizar la frecuencia del transmisor"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Una portadora de morse encendiéndose y apagándose no contiene audio: demodulada directamente, apenas sonarían chasquidos. El BFO (oscilador de frecuencia de batido) es un oscilador local que se mezcla con la señal recibida y produce, por diferencia de frecuencias, el tono musical característico. El mismo principio sirve para reinsertar la portadora en la recepción de SSB."
+              },
+              {
+                "id": "q10",
+                "text": "La característica más notable del modo digital FT8 es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Transmitir voz con calidad de FM en solo 3 kHz"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Sustituir al código morse en las comunicaciones de socorro"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Completar contactos con señales tan débiles que resultan inaudibles para el oído humano"
+                  },
+                  {
+                    "id": "d",
+                    "text": "No necesitar antena para funcionar"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "FT8 usa mensajes estructurados de 15 segundos en apenas 50 Hz de ancho de banda, y su decodificación matemática funciona con relaciones señal/ruido de hasta unos −20 dB: señales muy por debajo del umbral de audición humana. Es un modo de datos (no de voz) y ha transformado el DX con antenas modestas, al precio de un intercambio mínimo y muy automatizado."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "title": "Dentro de la caja: receptores y transmisores",
+      "materials": [
+        {
+          "id": "mat-07-01",
+          "title": "Historia — Lo que guarda una caja",
+          "type": "markdown",
+          "markdownFile": "materials/07-01-historia-lo-que-guarda-una-caja.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-07-02",
+          "title": "Teoría — Receptores y transmisores",
+          "type": "markdown",
+          "markdownFile": "materials/07-02-teoria-receptores-y-transmisores.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-07-03",
+          "title": "Ampliación — El insomnio de Armstrong",
+          "type": "markdown",
+          "markdownFile": "materials/07-03-ampliacion-el-insomnio-de-armstrong.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-07-04",
+          "title": "Examen — Receptores y transmisores",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "La sensibilidad de un receptor es su capacidad de:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Separar señales muy próximas en frecuencia"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Recibir y hacer utilizables señales muy débiles"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Mantenerse en la frecuencia sintonizada sin derivar"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Soportar señales muy fuertes sin distorsión"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Sensibilidad = capacidad de oír lo débil (se expresa en microvoltios o dBm: cuanto menor la señal utilizable, mejor). Separar señales próximas es la selectividad; no derivar es la estabilidad; y aguantar señales fuertes sin generar fantasmas es el rango dinámico. El examen pregunta estas definiciones del derecho y del revés: conviene tenerlas afiladas."
+              },
+              {
+                "id": "q2",
+                "text": "En un receptor superheterodino, la función del mezclador y el oscilador local es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Amplificar la señal de antena sin añadir ruido"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Eliminar la frecuencia imagen"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Trasladar la señal recibida a la frecuencia intermedia fija"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Demodular la señal para obtener el audio"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El mezclador combina la señal entrante con la del oscilador local y produce la suma y la diferencia de frecuencias; se aprovecha la diferencia, elegida para caer siempre en la misma frecuencia intermedia (FI). Así, sea cual sea la emisora sintonizada, el trabajo fino de filtrado y amplificación se hace en una frecuencia fija con filtros óptimos: la gran idea de Armstrong de 1918."
+              },
+              {
+                "id": "q3",
+                "text": "Un receptor tiene una FI de 9 MHz y su oscilador local trabaja en 23,2 MHz para recibir 14,2 MHz. Su frecuencia imagen es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "5 MHz"
+                  },
+                  {
+                    "id": "b",
+                    "text": "18 MHz"
+                  },
+                  {
+                    "id": "c",
+                    "text": "32,2 MHz"
+                  },
+                  {
+                    "id": "d",
+                    "text": "9 MHz"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La imagen es la otra frecuencia cuya diferencia con el oscilador local también da la FI: 23,2 + 9 = 32,2 MHz (la deseada era 23,2 − 9 = 14,2). La imagen está siempre a 2×FI de la señal deseada (14,2 + 18 = 32,2). Se combate con el filtro paso banda de entrada y eligiendo FI altas que alejen la imagen."
+              },
+              {
+                "id": "q4",
+                "text": "La selectividad de un receptor superheterodino se consigue principalmente en:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El amplificador de audio"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La antena"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Los filtros de la etapa de frecuencia intermedia"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El altavoz"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Como la FI es fija, en ella pueden usarse filtros de cristal de cuarzo de gran calidad y ancho preciso (2,4 kHz para SSB, 500 Hz o menos para CW), imposibles de construir sintonizables. Esa es precisamente la razón de ser del superheterodino: llevar todas las señales al «taller» donde están las mejores herramientas fijas."
+              },
+              {
+                "id": "q5",
+                "text": "En un transmisor de SSB, la portadora y la banda lateral no deseada se eliminan, respectivamente, mediante:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Un modulador balanceado y un filtro de cristal"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Un filtro paso bajo y un amplificador de clase C"
+                  },
+                  {
+                    "id": "c",
+                    "text": "El ALC y el oscilador local"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Un limitador y un discriminador"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "El modulador balanceado mezcla voz y portadora cancelando la portadora a su salida (quedan solo las dos bandas laterales), y un filtro de cristal estrecho deja pasar únicamente la banda lateral deseada. El limitador y el discriminador pertenecen al receptor de FM, y el filtro paso bajo de salida combate armónicos, no bandas laterales."
+              },
+              {
+                "id": "q6",
+                "text": "¿Qué clase de amplificador de potencia NO debe usarse para amplificar una señal de SSB?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Clase A"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Clase AB"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Clase C"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Cualquiera es válida"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "En SSB la información está en la forma (amplitud) de la envolvente: el amplificador debe ser lineal (clase A o, en la práctica, AB, que equilibra linealidad y rendimiento). La clase C amplifica a golpes durante menos de medio ciclo: gran rendimiento, pero deforma la envolvente y destrozaría la señal generando distorsión e interferencias. La clase C se reserva para FM y CW, donde la amplitud no lleva información."
+              },
+              {
+                "id": "q7",
+                "text": "La potencia PEP de un transmisor es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La potencia media consumida de la red eléctrica"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La potencia mínima necesaria para establecer contacto"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La potencia de cresta de la envolvente en los picos de modulación"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La potencia disipada en calor por la etapa final"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "PEP (Peak Envelope Power) es la potencia media durante un ciclo de RF en la cresta máxima de la envolvente de modulación. Es la medida natural para SSB (cuya potencia varía continuamente con la voz) y la que emplea la normativa española para fijar los límites por banda (por ejemplo, 1 kW de potencia de cresta en las bandas de HF autorizadas)."
+              },
+              {
+                "id": "q8",
+                "text": "La sobremodulación de un transmisor produce:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Mayor alcance sin efectos negativos"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Distorsión y ensanchamiento de la señal, interfiriendo frecuencias vecinas (splatter)"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Una reducción del ancho de banda ocupado"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La supresión automática de los armónicos"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Al exceder el nivel de modulación admisible, las crestas de la señal se recortan; ese recorte genera componentes de frecuencia nuevas que ensanchan la emisión sobre los canales adyacentes (splatter) y degradan la inteligibilidad. Se evita ajustando la ganancia de micrófono para que el ALC apenas actúe en los picos. Más micrófono no es más alcance: es más suciedad."
+              },
+              {
+                "id": "q9",
+                "text": "A la salida de la etapa final de un transmisor se coloca un filtro paso bajo para:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Mejorar la sensibilidad del receptor"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Aumentar la potencia radiada"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Atenuar los armónicos generados en la amplificación"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Estabilizar la frecuencia del oscilador"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Los amplificadores de potencia, especialmente los de alto rendimiento, generan armónicos (múltiplos de la frecuencia de trabajo, siempre por encima de ella). El filtro paso bajo, con su corte justo encima de la banda de emisión, los atenúa antes de que lleguen a la antena. Es la última aduana de limpieza espectral y su presencia es exigible tanto técnica como reglamentariamente."
+              },
+              {
+                "id": "q10",
+                "text": "Un receptor sufre interferencias de señales fantasma cuando dos emisoras muy fuertes cercanas a la banda se mezclan en sus primeras etapas. Este fenómeno se llama:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Efecto captura"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Frecuencia imagen"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Intermodulación"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Rizado"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Cuando señales fuertes atraviesan una etapa que trabaja al límite de su linealidad, esta actúa como mezclador involuntario y genera productos de intermodulación; los de tercer orden caen típicamente dentro de la propia banda, creando señales fantasma. Se combate con atenuador de entrada, mejores filtros y receptores de buen rango dinámico. El efecto captura es propio de la FM, la imagen es un problema de arquitectura superheterodina y el rizado, de las fuentes de alimentación."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "title": "Antenas: el alma de la estación",
+      "materials": [
+        {
+          "id": "mat-08-01",
+          "title": "Historia — La azotea en discordia",
+          "type": "markdown",
+          "markdownFile": "materials/08-01-historia-la-azotea-en-discordia.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-08-02",
+          "title": "Teoría — Antenas y líneas de transmisión",
+          "type": "markdown",
+          "markdownFile": "materials/08-02-teoria-antenas-y-lineas.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-08-03",
+          "title": "Ampliación — El derecho a la antena",
+          "type": "markdown",
+          "markdownFile": "materials/08-03-ampliacion-el-derecho-a-la-antena.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-08-04",
+          "title": "Examen — Antenas y líneas",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "La longitud aproximada de un dipolo de media onda para 7,1 MHz, teniendo en cuenta el factor de acortamiento práctico, es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "42,3 metros"
+                  },
+                  {
+                    "id": "b",
+                    "text": "20,1 metros"
+                  },
+                  {
+                    "id": "c",
+                    "text": "10,05 metros"
+                  },
+                  {
+                    "id": "d",
+                    "text": "14,25 metros"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Fórmula práctica del dipolo: L = 142,5 / f(MHz) = 142,5 / 7,1 ≈ 20,1 m en total (dos brazos de unos 10 m). Los 42,3 m serían la longitud de onda completa (300/7,1), y 10,05 m, el monopolo de cuarto de onda. Lee siempre qué antena pide el enunciado: onda completa, media onda o cuarto de onda."
+              },
+              {
+                "id": "q2",
+                "text": "La impedancia aproximada en el punto de alimentación de un dipolo de media onda en el espacio libre es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "36 Ω"
+                  },
+                  {
+                    "id": "b",
+                    "text": "50 Ω"
+                  },
+                  {
+                    "id": "c",
+                    "text": "73 Ω"
+                  },
+                  {
+                    "id": "d",
+                    "text": "300 Ω"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El dipolo de media onda alimentado al centro presenta unos 73 Ω (en la práctica varía con la altura sobre el suelo, acercándose a menudo a 50-60 Ω). Los 36 Ω corresponden al monopolo vertical de cuarto de onda sobre plano de tierra (la mitad: es media antena), y 50 Ω es la impedancia estándar de equipos y cables, no la natural del dipolo."
+              },
+              {
+                "id": "q3",
+                "text": "Una antena vertical de cuarto de onda necesita para funcionar correctamente:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Un reflector y varios directores"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Un buen plano de tierra o sistema de radiales"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Un rotor de orientación"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Estar alimentada por sus dos extremos"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El monopolo es «medio dipolo»: la otra mitad la aporta el reflejo eléctrico en el plano de tierra. Sin un plano conductor decente (radiales, chapa del vehículo, suelo mejorado), el rendimiento se hunde y los vatios se pierden calentando el suelo. El reflector y los directores pertenecen a la yagi; el rotor solo tiene sentido en antenas directivas."
+              },
+              {
+                "id": "q4",
+                "text": "En una antena yagi, el elemento situado detrás del dipolo activo, algo más largo que él, se denomina:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Director"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Reflector"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Radiante secundario"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Balun"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La yagi consta del elemento activo (dipolo alimentado), un reflector detrás (más largo) y uno o varios directores delante (más cortos). Reflector y directores son elementos parásitos: no están conectados al cable, pero re-radian la energía con las fases adecuadas para concentrar la radiación hacia delante, dando ganancia direccional."
+              },
+              {
+                "id": "q5",
+                "text": "Una antena anunciada con 8,15 dBi de ganancia tiene, respecto al dipolo:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "8,15 dBd"
+                  },
+                  {
+                    "id": "b",
+                    "text": "6 dBd"
+                  },
+                  {
+                    "id": "c",
+                    "text": "10,3 dBd"
+                  },
+                  {
+                    "id": "d",
+                    "text": "2,15 dBd"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El dipolo tiene 2,15 dBi de ganancia sobre el radiador isotrópico ideal, así que dBd = dBi − 2,15 = 8,15 − 2,15 = 6 dBd. Los fabricantes prefieren anunciar en dBi porque el número es mayor; comparar antenas exige unificar la referencia. Recuerda además que la ganancia no crea energía: concentra la tuya en una dirección a costa de las demás."
+              },
+              {
+                "id": "q6",
+                "text": "Una ROE de 1:1 en la línea de transmisión indica:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Adaptación perfecta: toda la potencia incidente se entrega a la antena"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que la mitad de la potencia se refleja"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Un cortocircuito en la antena"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Que el cable tiene pérdidas nulas"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "ROE 1:1 significa que las impedancias están perfectamente adaptadas y no hay onda reflejada. No dice nada de las pérdidas propias del cable (un cable malo con ROE 1:1 sigue perdiendo lo suyo en calor). Un cortocircuito o un circuito abierto darían ROE infinita: reflexión total."
+              },
+              {
+                "id": "q7",
+                "text": "Trabajar con una ROE muy elevada (por ejemplo 5:1) es desaconsejable principalmente porque:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La antena radia en la polarización contraria"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La etapa final del transmisor se ve sometida a esfuerzos peligrosos y el equipo reduce potencia para protegerse"
+                  },
+                  {
+                    "id": "c",
+                    "text": "El receptor pierde sensibilidad de forma permanente"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La frecuencia de emisión se desplaza"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La energía reflejada crea en la línea máximos de tensión y corriente que estresan la etapa final del transmisor; los equipos modernos se autoprotegen recortando potencia drásticamente. Además, la energía que viaja de ida y vuelta paga las pérdidas del cable en cada trayecto. La solución es adaptar el sistema (ajustar la antena o usar acoplador), no ignorar el medidor."
+              },
+              {
+                "id": "q8",
+                "text": "Las pérdidas de un cable coaxial:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Son independientes de la frecuencia"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Disminuyen al aumentar la frecuencia"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Aumentan con la frecuencia y con la longitud del cable"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Solo dependen del conector utilizado"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La atenuación del coaxial (dB por cada 100 m) crece con la frecuencia: un cable aceptable en 7 MHz puede comerse dos tercios de la potencia en 145 MHz. Y al ser «dB por metro», crece con la longitud. Por eso en VHF/UHF se usan coaxiales de baja pérdida y tiradas cortas, y por eso invertir en cable rinde más que invertir en vatios."
+              },
+              {
+                "id": "q9",
+                "text": "¿Cuál es la función de un balun en la alimentación de un dipolo con cable coaxial?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Amplificar la señal antes de radiarla"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Filtrar los armónicos del transmisor"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Adaptar la línea asimétrica (coaxial) a la antena simétrica, evitando que la malla del cable radie"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Proteger la antena de los rayos"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El coaxial es asimétrico (vivo + malla a tierra) y el dipolo simétrico (dos brazos iguales). Sin balun, parte de la corriente de RF regresa por el exterior de la malla, convirtiendo el cable en antena involuntaria: radia hacia la vivienda, causa interferencias y deforma el diagrama. El balun (a menudo un choque de ferrita) bloquea esa corriente de modo común."
+              },
+              {
+                "id": "q10",
+                "text": "Una carga artificial (dummy load) es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Una antena de emergencia para emisiones cortas"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Una resistencia de 50 Ω capaz de disipar la potencia del transmisor sin radiar, usada para pruebas y ajustes"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Un filtro que simula la impedancia de la ionosfera"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Un atenuador para el receptor"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La carga artificial sustituye a la antena durante pruebas y ajustes: presenta 50 Ω resistivos perfectos (ROE 1:1) y convierte la potencia en calor sin apenas radiar, de modo que puedes ajustar el equipo sin ocupar frecuencia ni causar interferencias. Probar transmitiendo por la antena es mala práctica: la carga artificial es parte del equipamiento básico de toda estación."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "title": "El cielo como espejo: propagación",
+      "materials": [
+        {
+          "id": "mat-09-01",
+          "title": "Historia — La noche que el cielo fue un espejo",
+          "type": "markdown",
+          "markdownFile": "materials/09-01-historia-la-noche-que-el-cielo-fue-un-espejo.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-09-02",
+          "title": "Teoría — Propagación",
+          "type": "markdown",
+          "markdownFile": "materials/09-02-teoria-propagacion.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-09-03",
+          "title": "Ampliación — Crónicas del espejo",
+          "type": "markdown",
+          "markdownFile": "materials/09-03-ampliacion-cronicas-del-espejo.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-09-04",
+          "title": "Examen — Propagación",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "La ionosfera se forma principalmente por:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Las tormentas eléctricas de la troposfera"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La radiación solar que ioniza los gases de la alta atmósfera"
+                  },
+                  {
+                    "id": "c",
+                    "text": "El campo magnético terrestre concentrando electrones del viento solar"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Las emisiones de radio de alta potencia"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La radiación solar (ultravioleta y rayos X) arranca electrones a los átomos y moléculas de la atmósfera superior, creando capas de gas ionizado entre unos 60 y 400 km de altura. Por eso la ionosfera tiene ciclo diario (día/noche), estacional y solar (ciclo de 11 años): es literalmente hija del sol."
+              },
+              {
+                "id": "q2",
+                "text": "La capa D de la ionosfera se caracteriza por:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Reflejar las frecuencias más altas durante la noche"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Existir solo de día y absorber las señales de las bandas bajas de HF"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Producir los saltos más largos, de hasta 4.000 km"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Permanecer estable durante todo el ciclo solar"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La capa D (60-90 km) aparece con el sol y se disuelve en minutos al anochecer. Por su baja altura y densidad de aire, no refleja: ABSORBE, y tanto más cuanto más baja la frecuencia. Es la razón de que 160, 80 y 40 metros solo den larga distancia de noche, cuando la D desaparece y deja el camino libre hasta la capa F. Confundir «absorbe» con «refleja» es la trampa clásica de esta pregunta."
+              },
+              {
+                "id": "q3",
+                "text": "La capa responsable de las comunicaciones de HF a larga distancia durante la noche es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La capa D"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La capa E"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La capa F (F2)"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La troposfera"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La capa F, y en particular la F2 (130-400 km), es la que refleja las frecuencias más altas y produce los saltos más largos (~4.000 km por rebote). Al encontrarse en aire muy tenue, sus iones tardan horas en recombinarse: por eso el «espejo» sigue funcionando toda la noche aunque el sol se haya ido, y las bandas bajas se llenan de DX de madrugada."
+              },
+              {
+                "id": "q4",
+                "text": "La MUF (frecuencia máxima utilizable) es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La frecuencia más alta que la ionosfera devuelve a tierra para un trayecto dado"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La frecuencia mínima que atraviesa la capa D sin absorberse"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La potencia máxima permitida en una banda"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La frecuencia de resonancia de la antena"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "La MUF depende del estado de la ionosfera y del trayecto (con incidencia oblicua se reflejan frecuencias mayores que con incidencia vertical, hasta ~3 veces la frecuencia crítica). Trabajar justo por debajo de la MUF ofrece las mejores señales, con mínima absorción. La frecuencia mínima utilizable es la LUF: entre ambas queda la ventana útil de cada momento."
+              },
+              {
+                "id": "q5",
+                "text": "La distancia máxima aproximada de un solo salto ionosférico vía capa F2 es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "500 km"
+                  },
+                  {
+                    "id": "b",
+                    "text": "1.000 km"
+                  },
+                  {
+                    "id": "c",
+                    "text": "4.000 km"
+                  },
+                  {
+                    "id": "d",
+                    "text": "12.000 km"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Con la altura de la F2 y la geometría terrestre, un salto rasante alcanza unos 4.000 km (vía capa E, unos 2.000). Distancias mayores, como los 11.000 km hasta Argentina, requieren varios saltos sucesivos tierra-ionosfera-tierra, cada uno con sus pérdidas: por eso las señales de gran DX llegan con ese característico eco debilitado y ondulante."
+              },
+              {
+                "id": "q6",
+                "text": "La «zona de silencio» de una estación de HF es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La franja horaria en que la banda está cerrada"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El anillo de distancias donde no llega ni su onda de superficie ni su primer salto ionosférico"
+                  },
+                  {
+                    "id": "c",
+                    "text": "El área bajo la vertical de su antena"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La zona apantallada por montañas"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Entre donde muere la onda de superficie (decenas de km) y donde cae el primer rebote ionosférico (cientos o miles de km) queda un anillo sin cobertura: la zona de silencio o de salto. Explica la paradoja habitual de oír una estación a 2.000 km y no oír a otra a 300. Puede reducirse usando ángulos de radiación muy altos (técnica NVIS con antenas bajas y frecuencias bajas)."
+              },
+              {
+                "id": "q7",
+                "text": "El ciclo de actividad solar, que afecta decisivamente a la propagación en HF, tiene una duración aproximada de:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "1 año"
+                  },
+                  {
+                    "id": "b",
+                    "text": "5 años"
+                  },
+                  {
+                    "id": "c",
+                    "text": "11 años"
+                  },
+                  {
+                    "id": "d",
+                    "text": "27 días"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La actividad solar (medida por las manchas y el flujo solar) oscila en ciclos de aproximadamente 11 años. En los máximos, la ionización intensa eleva las MUF y abre las bandas altas (15, 12, 10 m) al DX mundial con potencias mínimas; en los mínimos, esas bandas languidecen y la actividad se concentra en las bandas medias y bajas. Los 27 días son la rotación solar (modulación menor), no el ciclo."
+              },
+              {
+                "id": "q8",
+                "text": "Un índice geomagnético K elevado (por ejemplo K=7) indica:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Condiciones óptimas de propagación en todas las bandas"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Una perturbación geomagnética que degrada la propagación ionosférica"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que la capa D ha desaparecido"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Actividad de esporádica-E garantizada"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El índice K (0-9) mide la agitación del campo magnético terrestre, normalmente causada por eyecciones y viento solar. Valores altos significan tormenta geomagnética: ionosfera revuelta, absorción aumentada, rutas polares cerradas y señales degradadas. La combinación deseable es flujo solar (SFI) alto con K bajo: mucho «azogue» en el espejo y el espejo quieto."
+              },
+              {
+                "id": "q9",
+                "text": "La propagación por esporádica-E se caracteriza por:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Ser el modo normal de propagación en 20 metros"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Aperturas impredecibles, sobre todo en verano, que permiten contactos de 1.000-2.000 km en bandas altas y VHF (50 y hasta 144 MHz)"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Requerir siempre el máximo del ciclo solar"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Afectar únicamente a las bandas de 160 y 80 metros"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Las nubes de ionización intensa que se forman esporádicamente en la capa E (mayormente de mayo a agosto en el hemisferio norte) reflejan frecuencias muy superiores a lo habitual, abriendo los 50 MHz (la «banda mágica») e incluso los 144 MHz a distancias de 1.000-2.000 km durante minutos u horas. Es independiente del ciclo solar y una de las propagaciones más celebradas por su carácter imprevisible."
+              },
+              {
+                "id": "q10",
+                "text": "En VHF y UHF, el alcance puede aumentar excepcionalmente hasta cientos de kilómetros debido a:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La reflexión en la capa D"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La onda de superficie"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Los conductos troposféricos formados por inversiones térmicas"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La absorción de la capa F"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "VHF/UHF no se reflejan normalmente en la ionosfera: su propagación es esencialmente por onda directa (línea de vista ampliada ~15 % por la refracción troposférica normal). Pero con anticiclones estables se forman inversiones térmicas que actúan como guías de onda (ductos troposféricos), llevando las señales a cientos de kilómetros: el clásico Valencia-Baleares-Italia de los veranos mediterráneos. El desvanecimiento lento y profundo (QSB) suele acompañar a estas aperturas."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "Medir, protegerse y convivir",
+      "materials": [
+        {
+          "id": "mat-10-01",
+          "title": "Historia — La tormenta y el televisor",
+          "type": "markdown",
+          "markdownFile": "materials/10-01-historia-la-tormenta-y-el-televisor.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-10-02",
+          "title": "Teoría — Medidas, seguridad y EMC",
+          "type": "markdown",
+          "markdownFile": "materials/10-02-teoria-medidas-seguridad-emc.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-10-03",
+          "title": "Ampliación — Historias de supervivencia",
+          "type": "markdown",
+          "markdownFile": "materials/10-03-ampliacion-historias-de-supervivencia.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-10-04",
+          "title": "Examen — Medidas, seguridad y EMC",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "Para medir la tensión entre dos puntos de un circuito, el voltímetro se conecta:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "En paralelo, y debe tener una resistencia interna muy alta"
+                  },
+                  {
+                    "id": "b",
+                    "text": "En serie, y debe tener una resistencia interna muy alta"
+                  },
+                  {
+                    "id": "c",
+                    "text": "En paralelo, y debe tener una resistencia interna muy baja"
+                  },
+                  {
+                    "id": "d",
+                    "text": "En serie, y debe tener una resistencia interna muy baja"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "El voltímetro mide diferencia de potencial entre dos puntos, así que se conecta entre ellos (en paralelo) sin interrumpir el circuito; su resistencia interna debe ser altísima para que apenas desvíe corriente y no altere lo que mide. El amperímetro es el caso simétrico: en serie y con resistencia interna casi nula."
+              },
+              {
+                "id": "q2",
+                "text": "Conectar un amperímetro en paralelo con una fuente de alimentación es un error grave porque:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "No mediría nada al no circular corriente por él"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Su bajísima resistencia interna provoca un cortocircuito"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La lectura saldría negativa"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Descalibra el instrumento permanentemente"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El amperímetro está diseñado para intercalarse en serie y no estorbar: su resistencia interna es casi cero. Puesto directamente entre los bornes de una fuente, esa resistencia mínima se convierte en un cortocircuito franco: corriente enorme, fusible del instrumento fundido en el mejor caso. Es el accidente de taller más clásico con el polímetro."
+              },
+              {
+                "id": "q3",
+                "text": "La resistencia de un componente debe medirse con el ohmímetro:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Con el circuito funcionando a tensión nominal"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Solo en circuitos de corriente alterna"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Con el circuito sin tensión (y preferiblemente el componente desconectado)"
+                  },
+                  {
+                    "id": "d",
+                    "text": "A través de la carga artificial"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El ohmímetro funciona inyectando una pequeña corriente propia y midiendo la caída de tensión resultante: cualquier tensión externa presente falsea la medida y puede dañar el instrumento. Además, medir un componente sin desconectarlo del circuito puede dar lecturas falsas por los caminos paralelos que ofrecen los demás componentes."
+              },
+              {
+                "id": "q4",
+                "text": "¿Qué instrumento permite observar la forma de onda de una señal?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El frecuencímetro"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El vatímetro"
+                  },
+                  {
+                    "id": "c",
+                    "text": "El osciloscopio"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El medidor de ROE"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El osciloscopio dibuja la tensión en función del tiempo: con él se ve la senoide, el recorte por sobremodulación, el rizado de una fuente o cualquier deformación. El frecuencímetro solo cuenta ciclos por segundo (un número), y el vatímetro y el medidor de ROE miden potencias en la línea de antena."
+              },
+              {
+                "id": "q5",
+                "text": "El interruptor diferencial de una vivienda protege a las personas cortando el circuito cuando detecta:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Un consumo superior al contratado"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Una corriente de fuga a tierra superior a su sensibilidad (típicamente 30 mA)"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Armónicos en la instalación"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Una subida de tensión de la red"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El diferencial compara la corriente que entra por la fase con la que vuelve por el neutro: si difieren (porque parte se está fugando a tierra, quizá a través de una persona), corta en milisegundos. El umbral doméstico de 30 mA está elegido bajo el nivel de fibrilación cardíaca. Contra sobrecargas y cortocircuitos protegen los magnetotérmicos, no el diferencial."
+              },
+              {
+                "id": "q6",
+                "text": "Antes de manipular el interior de una fuente de alimentación recién desenchufada, debe comprobarse que:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El fusible está en su sitio"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El transformador se ha enfriado"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Los condensadores de filtro están descargados, verificándolo con un voltímetro"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La toma de tierra sigue conectada"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Los condensadores electrolíticos de filtro almacenan carga y pueden conservar tensiones peligrosas (letales en equipos de válvulas) durante horas o días después de desconectar. La única garantía es medir con el voltímetro y, si procede, descargarlos de forma controlada. Desenchufar no equivale a desenergizar."
+              },
+              {
+                "id": "q7",
+                "text": "Ante la proximidad de una tormenta eléctrica, la medida de protección fundamental para la estación es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Reducir la potencia de transmisión a la mitad"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Cambiar a una banda de frecuencia más alta"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Desconectar las antenas de los equipos y alejar los cables, dejando la instalación derivada a tierra si se dispone de descargadores"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Conectar el acoplador de antena"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Un rayo cercano (no hace falta impacto directo) induce en cables y antenas impulsos capaces de destruir equipos y dañar personas. La protección eficaz es la desconexión física y la distancia, complementada en instalaciones fijas con descargadores de gas y una buena tierra de tormentas con conductor corto y grueso. Ninguna maniobra operativa (potencia, banda) protege de la inducción."
+              },
+              {
+                "id": "q8",
+                "text": "La tensión inducida y las quemaduras por radiofrecuencia se caracterizan porque:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Solo se producen con potencias superiores a 1 kW"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Pueden producirse al tocar elementos radiantes o conductores con RF, causando quemaduras profundas"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Únicamente afectan a los circuitos, nunca a las personas"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Se evitan usando guantes de lana"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La RF de potencia produce quemaduras características (profundas y dolorosas) al tocar antenas o conductores durante la transmisión, incluso con potencias moderadas. Además existen límites normativos de exposición a campos electromagnéticos que se traducen en distancias de seguridad entre antenas y personas. La regla práctica: nadie cerca de los elementos radiantes al transmitir, y potencias altas solo con las distancias adecuadas."
+              },
+              {
+                "id": "q9",
+                "text": "Un vecino sufre interferencias en su televisor solo cuando transmites, pese a que tu emisión es limpia y legal (sin armónicos apreciables). El fenómeno más probable es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Intermodulación en tu amplificador final"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Rizado en tu fuente de alimentación"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Sobrecarga del fundamental (fundamental overload): el receptor del vecino, mal protegido, admite tu señal por donde no debe"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Frecuencia imagen en tu receptor"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Cuando la emisión es limpia, el problema suele estar en la inmunidad insuficiente del aparato afectado: cables que actúan de antena y etapas sin filtrado que se saturan con un fundamental fuerte y legal. La solución práctica está en el lado del receptor doméstico: ferritas en sus cables, filtros en su antena. Si la causa fueran tus armónicos, la corrección (filtro paso bajo, revisión del equipo) sería obligación tuya (art. 32 del Reglamento)."
+              },
+              {
+                "id": "q10",
+                "text": "Los anillos y núcleos de ferrita colocados sobre los cables sirven para:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Aumentar la ganancia de la antena"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Mejorar el contacto eléctrico de los conectores"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Bloquear las corrientes de radiofrecuencia que circulan por el exterior de los cables, reduciendo interferencias"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Proteger contra los rayos"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Un cable que atraviesa una ferrita se convierte, para las corrientes de RF de modo común que viajan por su superficie exterior, en una bobina con pérdidas que las frena y disipa; la señal útil del interior no se ve afectada. Es el remedio universal y barato tanto para dejar de interferir (ferritas en los cables del aparato afectado) como para dejar de recibir ruido (ferritas en los cables de las fuentes conmutadas culpables)."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "El arte de operar",
+      "materials": [
+        {
+          "id": "mat-11-01",
+          "title": "Historia — El simulacro",
+          "type": "markdown",
+          "markdownFile": "materials/11-01-historia-el-simulacro.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-11-02",
+          "title": "Teoría — El arte de operar",
+          "type": "markdown",
+          "markdownFile": "materials/11-02-teoria-el-arte-de-operar.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-11-03",
+          "title": "Ampliación — Arqueología del éter",
+          "type": "markdown",
+          "markdownFile": "materials/11-03-ampliacion-arqueologia-del-eter.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-11-04",
+          "title": "Examen — Procedimientos de operación",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "El indicativo EA5JMS se deletrea correctamente en el alfabeto fonético internacional como:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "España Alemania Cinco Japón Madrid Suecia"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Eco Alfa Cinco Juliett Mike Sierra"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Eco Able Cinco Juliett Metro Sierra"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Echo Alpha Cinco Julio Mike Santiago"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El alfabeto OACI asigna: E=Eco, A=Alfa, J=Juliett, M=Mike, S=Sierra. Los deletreos con nombres de países o ciudades son costumbres locales antiguas, y mezclas como «Julio» o «Santiago» no pertenecen al estándar. En condiciones muy difíciles se toleran alternativas más largas, pero el examen y la buena práctica piden el alfabeto internacional puro."
+              },
+              {
+                "id": "q2",
+                "text": "El código Q «QRM» significa:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Ruido atmosférico de origen natural"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Interferencia producida por otras señales o estaciones"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Desvanecimiento de la señal"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Cambio de frecuencia"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "QRM es la interferencia de origen artificial (otras estaciones o señales); QRN es el ruido natural (estática de tormentas); QSB el desvanecimiento (la señal que sube y baja); y QSY el cambio de frecuencia. Este cuarteto de códigos parecidos es de los favoritos del examen: conviene distinguirlos sin dudar."
+              },
+              {
+                "id": "q3",
+                "text": "Si una estación transmite «QSY 7150», está indicando:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Que su ubicación es la cuadrícula 7150"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que cesa definitivamente sus emisiones"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que cambia de frecuencia a 7.150 kHz"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Que reduce su potencia a la mínima"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "QSY significa cambio de frecuencia. La ubicación se indica con QTH, el cese de la transmisión con QRT y la baja potencia con QRP. Es habitual tras un contacto en una frecuencia de llamada: se llama, se establece contacto y se hace QSY a otra frecuencia para dejar libre la de llamada."
+              },
+              {
+                "id": "q4",
+                "text": "En un reporte RST de telegrafía «579», la cifra central indica:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La calidad del tono"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La fuerza de la señal (escala 1 a 9)"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La comprensibilidad (escala 1 a 5)"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La velocidad de manipulación"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "RST = Readability (comprensibilidad, 1-5), Strength (fuerza, 1-9), Tone (tono, 1-9, solo telegrafía). En «579»: perfectamente legible (5), fuerza moderada (7), tono puro (9). En fonía se omite la T y se dan solo dos cifras («59»). La correspondencia posición-significado se pregunta en ambos sentidos."
+              },
+              {
+                "id": "q5",
+                "text": "Antes de lanzar una llamada CQ en una frecuencia que parece libre, el operador debe:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Transmitir una portadora durante unos segundos para reservarla"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Escuchar y preguntar si la frecuencia está en uso (¿QRL?)"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Pedir permiso al radioclub más cercano"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Emitir su indicativo en morse"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La escucha previa y la pregunta «¿QRL?» (¿está ocupada la frecuencia?) son obligadas: por la propagación, puedes no oír a una de las partes de un QSO en marcha. Transmitir portadora para «reservar» frecuencia es exactamente lo contrario de la buena práctica. La frecuencia no se posee: se comparte, y el primero en usarla tiene preferencia."
+              },
+              {
+                "id": "q6",
+                "text": "Según el Reglamento español, una estación de aficionado debe transmitir su distintivo de llamada:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Solo al finalizar cada comunicado"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Una vez al día como mínimo"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Al inicio y al final de cada emisión, y al menos cada 10 minutos en emisiones prolongadas"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Únicamente cuando otra estación lo solicite"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El artículo 29 de la Orden IET/1311/2013 exige identificarse al principio y al final de la emisión y, en transmisiones largas, a intervalos que no superen los 10 minutos. La identificación es la base del orden en el espectro: una emisión sin identificar es anónima y, por tanto, irregular."
+              },
+              {
+                "id": "q7",
+                "text": "Una estación escucha «MAYDAY, MAYDAY, MAYDAY» en la frecuencia donde iba a operar. Debe:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Cambiar de frecuencia y continuar su actividad normal"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Guardar silencio, ponerse a disposición del tráfico de socorro, anotar los datos y avisar de inmediato a las autoridades (112/Protección Civil)"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Responder solo si es miembro de la REMER"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Retransmitir la llamada en todas las bandas"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El tráfico de socorro tiene prioridad absoluta sobre cualquier otro. Lo correcto es cesar la actividad propia, escuchar, anotar con exactitud (hora, posición, naturaleza del socorro), responder si nadie más lo hace o si se está en condiciones de ayudar, y comunicar de inmediato a las autoridades competentes, obligación que el art. 30 del Reglamento impone a todo titular, pertenezca o no a la REMER."
+              },
+              {
+                "id": "q8",
+                "text": "Un repetidor de 2 metros transmite en 145.6875 MHz con un desplazamiento estándar. Para acceder a él hay que transmitir en:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "145.6875 MHz"
+                  },
+                  {
+                    "id": "b",
+                    "text": "146.2875 MHz"
+                  },
+                  {
+                    "id": "c",
+                    "text": "145.0875 MHz"
+                  },
+                  {
+                    "id": "d",
+                    "text": "144.6875 MHz"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El desplazamiento estándar en la banda de 2 metros en la Región 1 es de −600 kHz: se transmite 600 kHz por debajo de la frecuencia de salida del repetidor (145.6875 − 0.600 = 145.0875 MHz). En 70 cm el desplazamiento habitual es de −7,6 MHz. Los equipos aplican el shift automáticamente al programar el repetidor, pero el concepto y el cálculo caen en el examen."
+              },
+              {
+                "id": "q9",
+                "text": "El subtono CTCSS que requieren muchos repetidores es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Un tono subaudible que la estación añade a su emisión y sin el cual el repetidor no se activa"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Una señal digital con el indicativo del usuario"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Un aviso acústico de fin de transmisión"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El tono de llamada selectiva a otra estación concreta"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "El CTCSS es un tono continuo de baja frecuencia (67-250 Hz), inaudible en la práctica, que acompaña a la transmisión: el repetidor solo se abre si lo detecta. Sirve de llave para evitar activaciones por ruido o por señales lejanas de otros repetidores en la misma frecuencia. Cada repetidor publica su subtono, que debe programarse en el equipo."
+              },
+              {
+                "id": "q10",
+                "text": "El libro de guardia (log) de una estación de aficionado debe registrar las horas:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "En hora local peninsular"
+                  },
+                  {
+                    "id": "b",
+                    "text": "En la hora local del corresponsal"
+                  },
+                  {
+                    "id": "c",
+                    "text": "En tiempo universal coordinado (UTC)"
+                  },
+                  {
+                    "id": "d",
+                    "text": "En cualquier formato, siempre que sea coherente"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El estándar universal es UTC: un contacto entre continentes tiene así una única fecha y hora en ambos registros, lo que permite casarlos (imprescindible para confirmaciones y diplomas vía LoTW y similares). España peninsular está en UTC+1 en invierno y UTC+2 en verano. Aunque el log ya no sea legalmente obligatorio para el aficionado español común, llevarlo en UTC es práctica universal y muy recomendable."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "La ley de la radio",
+      "materials": [
+        {
+          "id": "mat-12-01",
+          "title": "Historia — El día del examen",
+          "type": "markdown",
+          "markdownFile": "materials/12-01-historia-el-dia-del-examen.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-12-02",
+          "title": "Teoría — La ley de la radio",
+          "type": "markdown",
+          "markdownFile": "materials/12-02-teoria-la-ley-de-la-radio.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-12-03",
+          "title": "Ampliación — El pacto y sus letras",
+          "type": "markdown",
+          "markdownFile": "materials/12-03-ampliacion-el-pacto-y-sus-letras.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-12-04",
+          "title": "Examen — Normativa",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "España pertenece a la Región de la UIT:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Región 1 (Europa, África y Oriente Medio)"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Región 2 (Américas)"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Región 3 (Asia y Pacífico)"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Región 4 (Mediterráneo)"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "La UIT divide el mundo en tres Regiones para la atribución de frecuencias: la 1 (Europa, África, Oriente Medio y el norte de Asia), la 2 (Américas) y la 3 (resto de Asia y Pacífico). No existe una Región 4. España está en la Región 1: por eso nuestro plan de bandas es el de la IARU Región 1 y algunas atribuciones difieren de las americanas."
+              },
+              {
+                "id": "q2",
+                "text": "Que el servicio de aficionados tenga una banda atribuida «a título secundario» significa que:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Solo puede usarla en horario nocturno"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Puede usarla sin causar interferencia a los servicios primarios y sin protección frente a ellos"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Necesita una autorización adicional para cada transmisión"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La banda está reservada a estaciones de radioclub"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El estatuto secundario es la condición de invitado: se puede operar, pero sin interferir a los servicios con atribución primaria y aceptando sus interferencias sin derecho a protección. Ejemplo típico español: 430-440 MHz, compartida con otros servicios primarios. En las bandas primarias (7.000-7.100 kHz, 144-146 MHz...) la relación se invierte."
+              },
+              {
+                "id": "q3",
+                "text": "La Recomendación CEPT T/R 61-01 permite:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Convalidar el examen de otro país para obtener el diploma español"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Operar temporalmente en otros países adheridos con la licencia española, sin trámites adicionales"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Aumentar la potencia autorizada en concursos internacionales"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Usar indicativos especiales en eventos"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La T/R 61-01 es la «licencia CEPT»: habilita para operar en visitas temporales a los países que la aplican usando la autorización propia (con el prefijo del país visitado: F/EA5JMS desde Francia). La que armoniza los exámenes y permite convalidar la formación es la T/R 61-02 (certificado HAREC). Distinguirlas es pregunta clásica."
+              },
+              {
+                "id": "q4",
+                "text": "En España, la edad mínima para obtener la autorización de radioaficionado es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "18 años en todos los casos"
+                  },
+                  {
+                    "id": "b",
+                    "text": "16 años con autorización paterna"
+                  },
+                  {
+                    "id": "c",
+                    "text": "14 años cumplidos, con consentimiento de quien ejerza la patria potestad o tutela"
+                  },
+                  {
+                    "id": "d",
+                    "text": "No existe edad mínima"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Pueden ser titulares los mayores de edad y también los menores que hayan cumplido 14 años, con el consentimiento de sus padres o tutores. El diploma de operador se obtiene superando el mismo examen en todos los casos: la edad no cambia las pruebas ni las atribuciones posteriores."
+              },
+              {
+                "id": "q5",
+                "text": "El prefijo reservado en España para las estaciones automáticas desatendidas (repetidores, balizas) es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "EA"
+                  },
+                  {
+                    "id": "b",
+                    "text": "EC"
+                  },
+                  {
+                    "id": "c",
+                    "text": "ED"
+                  },
+                  {
+                    "id": "d",
+                    "text": "EH"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El reglamento reparte los bloques españoles así: EA, EB y EC para estaciones individuales y de radioclub; ED para automáticas desatendidas; y EE, EF, EG y EH para indicativos especiales temporales. Además, dentro de los sufijos, las combinaciones que comienzan por Y o Z están también reservadas a las estaciones automáticas."
+              },
+              {
+                "id": "q6",
+                "text": "Un radioaficionado de Valencia tendrá un distintivo con el número de distrito:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "3"
+                  },
+                  {
+                    "id": "b",
+                    "text": "4"
+                  },
+                  {
+                    "id": "c",
+                    "text": "5"
+                  },
+                  {
+                    "id": "d",
+                    "text": "7"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "España se divide en 9 distritos para los distintivos. El 5 corresponde a la Comunidad Valenciana y Murcia (el 3 es Cataluña, el 4 la zona centro con Madrid, el 7 Andalucía). El número refleja la residencia en el momento de la asignación; el distintivo es personal e intransferible y no cambia si el titular se muda posteriormente."
+              },
+              {
+                "id": "q7",
+                "text": "La potencia máxima autorizada con carácter general para las estaciones de aficionado españolas en las bandas de HF es:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "100 W"
+                  },
+                  {
+                    "id": "b",
+                    "text": "600 W"
+                  },
+                  {
+                    "id": "c",
+                    "text": "1.000 W de potencia de cresta (PEP)"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Sin límite, si no se causan interferencias"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El anexo 1 del Reglamento fija los máximos en potencia de cresta de envolvente: 1 kW en las bandas de HF, 600 W en 50 MHz y 144-146 MHz, y 300 W en 430-440 MHz. Como principio general debe emplearse siempre la potencia mínima necesaria para el enlace: el máximo legal es un techo, no una recomendación."
+              },
+              {
+                "id": "q8",
+                "text": "Según el artículo 30 del Reglamento, si las autoridades de protección civil requieren la colaboración de un radioaficionado en una emergencia, este:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Puede negarse si no pertenece a la REMER"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Tiene el deber de colaborar con sus equipos y conocimientos"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Solo debe colaborar si se le compensa económicamente"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Debe ceder sus equipos pero no operarlos"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El artículo 30 impone a los titulares el deber de colaborar con las autoridades de protección civil cuando se requiera, además de permitir en emergencias el tráfico de terceros y de obligar a comunicar de inmediato cualquier señal de socorro captada. La pertenencia a la REMER es voluntaria; los deberes del artículo 30 alcanzan a todos los titulares de autorización."
+              },
+              {
+                "id": "q9",
+                "text": "Las comunicaciones entre radioaficionados deben cursarse:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "En lenguaje claro (admitiéndose los códigos y abreviaturas propios del servicio), sobre asuntos del servicio y sin interés económico"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Cifradas cuando traten asuntos personales"
+                  },
+                  {
+                    "id": "c",
+                    "text": "En cualquier idioma excepto los oficiales de la UIT"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Únicamente en los idiomas oficiales de España"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "El lenguaje claro es obligatorio: nada de cifrados ni mensajes ocultos (los códigos Q y abreviaturas internacionales del servicio se consideran lenguaje claro, pues su significado es público). El contenido debe ser propio del servicio de aficionados y sin ánimo de lucro. No hay restricción de idioma: puedes hacer un QSO en japonés si te alcanza."
+              },
+              {
+                "id": "q10",
+                "text": "Transmitir en las bandas de aficionado sin ninguna autorización administrativa constituye:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Una simple falta administrativa sin sanción económica"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Una actividad permitida si la potencia es inferior a 5 W"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Una infracción sancionable conforme a la Ley General de Telecomunicaciones, que puede acarrear multa e incautación de equipos"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Una actividad legal en fines de semana"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El uso del dominio público radioeléctrico exige título habilitante: transmitir sin él es infracción tipificada en la Ley 11/2022 (grave o muy grave según las circunstancias), con multas de cuantía considerable, cese de la actividad y posible precinto o incautación de los equipos. No existe excepción por baja potencia ni por horario: la que es libre sin licencia es la escucha, nunca la emisión."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "Cierre",
+      "materials": [
+        {
+          "id": "mat-13-01",
+          "title": "Epílogo — La red",
+          "type": "markdown",
+          "markdownFile": "materials/13-01-epilogo-la-red.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-13-02",
+          "title": "Y ahora qué",
+          "type": "markdown",
+          "markdownFile": "materials/13-02-y-ahora-que.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        }
+      ]
+    }
+  ]
+}
