@@ -20,6 +20,8 @@ settings.json                        site identity and configuration
 courses/index.json                   course directory names, catalog order
 courses/<name>/course.json           one course (metadata + structure)
 courses/<name>/materials/<file>.md   one Markdown file per text lesson
+categories/index.json                category entry names
+categories/<name>.json               one category card (name + image)
 news/index.json                      news entry names, newest first
 news/<name>.json  +  news/<name>.md  one news post each
 pages/index.json                     page entry names
@@ -92,7 +94,11 @@ Field notes:
 
 - `language`: one of `es en fr de it zh ru uk ca gl eu pt ja`. The catalog
   filters by it.
-- `category`: free text or `null`. Courses sharing a category get a filter chip.
+- `category`: free text or `null`. Courses sharing a category get a filter
+  chip, and every category with at least one published course gets a card on
+  the home page. To give that card an image, add a category entry (see
+  "Adding a category" below) — without one the card shows an auto-generated
+  gradient.
 - `coverImage`: required in practice — the catalog is visual. 16:9 works best.
 - `sources`: the bibliography shown on the course page. `url` may be `null`
   for offline references (books).
@@ -165,6 +171,33 @@ The four material types:
   every visitor a different exam.
 - Write real `explanation`s: the product's exam philosophy is feedback, not
   scores.
+
+## Adding a category
+
+Categories are derived from the courses themselves: any `category` string
+used by a published course appears on the home page as a card and in the
+catalog as a filter chip. A category *entry* is optional decoration — it
+attaches a card image to one of those names:
+
+1. Create `categories/<name>.json`.
+2. Add `"<name>"` to `categories/index.json`.
+
+```json
+{
+  "id": "category-unique-id",
+  "name": "Science",
+  "imagePath": "media/category-science.jpg",
+  "createdAt": "2026-08-09T12:00:00Z",
+  "updatedAt": "2026-08-09T12:00:00Z"
+}
+```
+
+- `name` must match the courses' `category` string **exactly**
+  (case-sensitive) — the association is by name.
+- `imagePath`: the home page card image, 16:9 works best. `null` falls back
+  to the auto-generated gradient card.
+- An entry whose name no published course uses shows nothing — cards only
+  exist for categories with at least one published course.
 
 ## Adding a news post
 

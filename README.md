@@ -57,6 +57,7 @@ One file per thing; long-form text lives in Markdown, never inside JSON:
 | `courses/index.json` | Course directory names, in catalog order |
 | `courses/<name>/course.json` | One course: metadata, sections, materials, exams |
 | `courses/<name>/materials/*.md` | One Markdown file per text lesson |
+| `categories/<name>.json` | Optional card image per category, listed in `categories/index.json` |
 | `news/<name>.json` + `.md` | One news post each, listed in `news/index.json` |
 | `pages/<name>.json` + `.md` | One auxiliary page each, listed in `pages/index.json` |
 | `media/` | Images and files, referenced as `media/<file>` |
