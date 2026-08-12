@@ -6,7 +6,7 @@ El cuarto de radio de Vicente Roig olía a polvo bueno: a libros, a barniz viejo
 
 —El principio es... ¿esto? —Marina señaló los aparatos apagados.
 
-—El principio es la pregunta que me hiciste en diciembre. Me preguntaste por qué mi equipo funcionaba la noche de la DANA cuando todo lo demás estaba muerto. Todo el mundo cree que la respuesta es «porque la radio es mágica». La respuesta de verdad es más bonita: es porque yo entiendo de dónde sale la energía de mis aparatos, cuánta necesitan y cuánto me queda. Eso es lo primero que aprende un radioaficionado. No antenas. No frecuencias. **Electricidad.**
+—El principio es la pregunta que me hiciste en diciembre. Me preguntaste por qué mi equipo funcionaba la noche de la DANA cuando todo lo demás se había apagado. Todo el mundo cree que la respuesta es «porque la radio es mágica». La respuesta de verdad es más bonita: es porque yo entiendo de dónde sale la energía de mis aparatos, cuánta necesitan y cuánto me queda. Eso es lo primero que aprende un radioaficionado. No antenas. No frecuencias. **Electricidad.**
 
 Sacó de debajo de la mesa una caja de plástico y fue poniendo objetos sobre la madera como quien reparte cartas: una pila de petaca, una bombilla pequeña con dos cables, un trozo de hilo de cobre, una goma elástica, un destornillador con mango de plástico y una cosa rectangular con una pantallita y dos cables, uno rojo y uno negro.
 

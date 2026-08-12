@@ -12,7 +12,7 @@ Cogió el móvil para llamar a su madre.
 
 **No hay servicio.**
 
-Probó con datos. Nada. Probó desde la ventana del patio, desde el rellano, con el brazo en alto como una antena humana, ese gesto inútil y universal. Nada. La red fija de la vecina del primero, muerta. A las nueve de la noche, Vallverd de l'Horta —cuatro mil doscientos habitantes, un colegio, dos farmacias, un club de jubilados— era un agujero negro. Ni luz, ni teléfono, ni Internet, ni manera humana de decirle a nadie *estoy viva*.
+Probó con datos. Nada. Probó desde la ventana del patio, desde el rellano, con el brazo en alto como una antena humana, ese gesto inútil y universal. Nada. El teléfono fijo de la vecina del primero, mudo. A las nueve de la noche, Vallverd de l'Horta —cuatro mil doscientos habitantes, un colegio, dos farmacias, un club de jubilados— era un agujero negro. Ni luz, ni teléfono, ni Internet, ni manera humana de decirle a nadie *estoy viva*.
 
 Después Marina sabría que esa noche no fue solo su pueblo: que cayeron antenas de telefonía a docenas, que las que no cayeron se quedaron sin fluido y agotaron sus baterías en pocas horas, que media provincia gritaba hacia dentro. Pero a las nueve de la noche del 29 de octubre no sabía nada de eso. Solo sabía que su madre, en Valencia, estaría viendo las noticias.
 
@@ -40,7 +40,7 @@ Vicente tachó la línea siete de la libreta y escribió al lado, con su letra d
 
 —Te manda un beso tu madre —le dijo a Marina, sin levantar la vista.
 
-Marina Salvat, treinta y un años, maestra de primaria, una persona que hasta ese martes creía que «la radio» era una app de podcasts, se echó a llorar en un portal a oscuras que olía a barro. Lloró de alivio y de otra cosa. De vergüenza, casi: de haber vivido toda la vida encima de una infraestructura ajena, delicadísima, sin saberlo. Su móvil, tan listo, era una losa negra. Y el trasto de Vicente, con sus pinzas de batería, seguía hablando.
+Marina Salvat, treinta y un años, maestra de primaria, una persona que hasta ese martes creía que «la radio» era una app de podcasts, se echó a llorar en un portal a oscuras que olía a barro. Lloró de alivio y de otra cosa. De vergüenza, casi: de haber vivido toda la vida encima de una infraestructura ajena, delicadísima, sin saberlo. Su móvil, tan listo, era un cristal negro sin nada dentro. Y el trasto de Vicente, con sus pinzas de batería, seguía hablando.
 
 Los días siguientes fueron los que fueron. No los vamos a contar aquí: quien los vivió no necesita que se los cuenten, y quien no, merece oírlos de quien los vivió. Baste decir que la luz tardó, que el agua potable tardó más, que llegaron miles de voluntarios con botas y palas, y que durante casi una semana, en muchos pueblos, el tablón de anuncios más fiable siguió siendo una libreta cuadriculada junto a una batería de coche.
 
@@ -50,7 +50,7 @@ Fue en diciembre, con el pueblo aún lleno de contenedores y de barro seco, cuan
 
 —Cientos —dijo Vicente—. En toda la provincia. Gente en su casa, gente subida a un monte con una batería, gente al otro lado de España tomando nota y haciendo llamadas. Hay hasta una red oficial de Protección Civil hecha de radioaficionados voluntarios, la REMER. ¿Por qué?
 
-—Porque quiero aprender. —Le salió más brusco de lo que quería, y lo suavizó—: Quiero entenderlo. Quiero saber por qué tu aparato funcionaba cuando todo lo demás estaba muerto. Y quiero... —buscó las palabras exactas, porque era maestra y las palabras exactas eran su oficio— no volver a quedarme muda. Nunca más. Si el mundo se vuelve a apagar, quiero ser de las que hablan.
+—Porque quiero aprender. —Le salió más brusco de lo que quería, y lo suavizó—: Quiero entenderlo. Quiero saber por qué tu aparato funcionaba cuando todo lo demás se había apagado. Y quiero... —buscó las palabras exactas, porque era maestra y las palabras exactas eran su oficio— no volver a quedarme muda. Nunca más. Si el mundo se vuelve a apagar, quiero ser de las que hablan.
 
 Vicente se quedó un momento callado, con la mano en la puerta. Por encima del hombro del viejo, Marina vio el pasillo en penumbra y, al fondo, una puerta cerrada con una placa pequeña de latón: **EA5RKV — EA5YLA**.
 
