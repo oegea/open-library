@@ -71,6 +71,44 @@ Para crear una imagen nueva: copia el prompt base y sustituye la línea
 `Subject:`. No cambies la parte del estilo — es lo que mantiene la colección
 coherente. Regla de oro: un solo objeto, grande, que se reconozca en miniatura.
 
+## Logo
+
+El logo es la excepción al estilo pictórico: debe ser **plano, de colores
+sólidos y con fondo transparente**, porque se ve a ~30 px en el header y como
+favicon. Misma paleta, distinto tratamiento.
+
+Prompt base de logo (sustituir `<MARK>` por la descripción del símbolo y
+`<COLORS>` por la variante de color):
+
+```
+Minimalist flat vector logo mark for a digital library. Solid flat colors
+only, clean bold geometric shapes, no gradients, no outlines, no shadows, no
+3D, absolutely no text or letters. <COLORS> Transparent background. The mark
+must remain perfectly legible at 24 pixels: one simple bold silhouette, no
+fine details. Centered with generous empty margins around it.
+
+The mark: <MARK>
+```
+
+Variantes de color:
+
+- Para header claro: `Two colors: deep teal (#123c43) as the main color and
+  warm amber (#f0a92e) as the accent.`
+- Para header oscuro: `Two colors: soft cream (#f5efe0) as the main color and
+  warm amber (#f0a92e) as the accent.`
+
+Marks definidos (los tres conceptos):
+
+- **Libro amanecer:** `a simple open book seen from the front as one solid
+  bold shape, with five short sun rays fanning out from behind its spine like
+  a sunrise, each ray shaped like a small page.`
+- **Motas de luz:** `a simple open book drawn as one bold shape, with three
+  round dots of light rising from its pages in a gentle diagonal, decreasing
+  in size as they rise (dots in amber).`
+- **La llama:** `a simple rounded flame (in amber) centered inside a thick
+  circular ring that is deliberately open at the top, as if the light escapes
+  upward.`
+
 ## Prompts ya definidos
 
 ### Portadas de curso
