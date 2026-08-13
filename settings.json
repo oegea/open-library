@@ -2,6 +2,8 @@
   "libraryName": "Open Knowledge Library",
   "ownerName": "",
   "logoPath": "media/logo.png",
+  "logoDarkPath": null,
+  "invertLogoInDarkMode": true,
   "certificateLogoPath": null,
   "documentLogoPath": null,
   "heroTitle": "The official Open Knowledge library",
