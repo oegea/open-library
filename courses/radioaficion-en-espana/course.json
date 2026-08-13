@@ -5,7 +5,7 @@
   "description": "De cero absoluto al diploma de operador: la ciencia de la radio, el arte de operar y la normativa española del examen oficial, contadas a través de la historia de una maestra que decidió no volver a quedarse muda cuando caen todas las redes. Con exámenes tipo test al estilo oficial en cada sección.",
   "language": "es",
   "category": "Radio y Comunicaciones",
-  "coverImage": "media/radioaficion-cover.svg",
+  "coverImage": "media/radioaficion-cover.jpg",
   "authors": [
     "El proyecto Open Knowledge"
   ],
@@ -83,7 +83,7 @@
   "aiAssisted": true,
   "published": true,
   "createdAt": "2026-08-12T20:00:00Z",
-  "updatedAt": "2026-08-12T20:00:00Z",
+  "updatedAt": "2026-08-13T10:10:00Z",
   "sections": [
     {
       "id": "s00-introduccion",

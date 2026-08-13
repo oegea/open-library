@@ -5,7 +5,7 @@
   "description": "Aprende código limpio, arquitecturas limpias y Domain-Driven Design desde cero, siguiendo la historia de una programadora junior que hereda un sistema legacy de quince años. Historia, teoría con ejemplos en JavaScript y Python, y exámenes con explicación en cada sección.",
   "language": "es",
   "category": "Desarrollo de Software",
-  "coverImage": "media/codigo-que-perdura-cover.svg",
+  "coverImage": "media/codigo-que-perdura-cover.jpg",
   "authors": [
     "El proyecto Open Knowledge"
   ],
@@ -83,7 +83,7 @@
   "aiAssisted": true,
   "published": true,
   "createdAt": "2026-08-12T12:00:00Z",
-  "updatedAt": "2026-08-12T12:00:00Z",
+  "updatedAt": "2026-08-13T10:10:00Z",
   "sections": [
     {
       "id": "s00-introduccion",

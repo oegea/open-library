@@ -5,7 +5,7 @@
   "description": "Cómo funciona Open Knowledge, sus dos modos de despliegue — una librería sin estado servida desde un repositorio git público, o una instancia completa con cuentas pseudónimas y certificados — y exactamente cómo desplegar cada uno, paso a paso.",
   "language": "es",
   "category": "Open Knowledge",
-  "coverImage": "media/running-cover.svg",
+  "coverImage": "media/running-cover.jpg",
   "authors": [
     "El proyecto Open Knowledge"
   ],
@@ -23,7 +23,7 @@
   "aiAssisted": true,
   "published": true,
   "createdAt": "2026-08-09T12:00:00Z",
-  "updatedAt": "2026-08-09T12:00:00Z",
+  "updatedAt": "2026-08-13T10:10:00Z",
   "sections": [
     {
       "id": "s1-que-es",

@@ -5,7 +5,7 @@
   "description": "A rigorous journey through twenty-seven centuries of giving knowledge away — from the Library of Alexandria and the Encyclopédie to public libraries, free software, Wikipedia and open access — and how Open Knowledge deliberately joins that tradition.",
   "language": "en",
   "category": "Open Knowledge",
-  "coverImage": "media/philosophy-cover.svg",
+  "coverImage": "media/philosophy-cover.jpg",
   "authors": [
     "The Open Knowledge project"
   ],
@@ -63,7 +63,7 @@
   "aiAssisted": true,
   "published": true,
   "createdAt": "2026-08-09T12:00:00Z",
-  "updatedAt": "2026-08-09T12:00:00Z",
+  "updatedAt": "2026-08-13T10:10:00Z",
   "sections": [
     {
       "id": "s1-ancient",

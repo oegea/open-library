@@ -5,7 +5,7 @@
   "description": "How Open Knowledge works, its two deployment modes — a stateless library served from a public git repository, or a full instance with pseudonymous accounts and certificates — and exactly how to deploy each, step by step.",
   "language": "en",
   "category": "Open Knowledge",
-  "coverImage": "media/running-cover.svg",
+  "coverImage": "media/running-cover.jpg",
   "authors": [
     "The Open Knowledge project"
   ],
@@ -23,7 +23,7 @@
   "aiAssisted": true,
   "published": true,
   "createdAt": "2026-08-09T12:00:00Z",
-  "updatedAt": "2026-08-09T12:00:00Z",
+  "updatedAt": "2026-08-13T10:10:00Z",
   "sections": [
     {
       "id": "s1-what",

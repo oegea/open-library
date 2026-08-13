@@ -5,7 +5,7 @@
   "description": "Un viaje riguroso por veintisiete siglos de regalar conocimiento — de la Biblioteca de Alejandría y la Encyclopédie a las bibliotecas públicas, el software libre, Wikipedia y el acceso abierto — y cómo Open Knowledge se une deliberadamente a esa tradición.",
   "language": "es",
   "category": "Open Knowledge",
-  "coverImage": "media/philosophy-cover.svg",
+  "coverImage": "media/philosophy-cover.jpg",
   "authors": [
     "El proyecto Open Knowledge"
   ],
@@ -63,7 +63,7 @@
   "aiAssisted": true,
   "published": true,
   "createdAt": "2026-08-09T12:00:00Z",
-  "updatedAt": "2026-08-09T12:00:00Z",
+  "updatedAt": "2026-08-13T10:10:00Z",
   "sections": [
     {
       "id": "s1-antiguo",
