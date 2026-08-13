@@ -1,4 +1,4 @@
-*Vallverd de l'Horta, julio de 2025.*
+*Vallverd de l'Horta, julio.*
 
 La guerra de la azotea empezó, como todas las guerras civilizadas, con un orden del día. Punto cuarto de la junta ordinaria de la comunidad de vecinos de Calle Mayor 14: «Solicitud de instalación de antena en cubierta (Sra. Salvat, 2.º)». Marina llegó a la reunión con una carpeta, el corazón a 120 y el apoyo logístico de Vicente, que se había autoinvitado en calidad de «asesor técnico y vecino más viejo que el ascensor».
 

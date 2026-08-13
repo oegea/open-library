@@ -1,4 +1,4 @@
-*Vallverd de l'Horta, junio de 2025.*
+*Vallverd de l'Horta, junio.*
 
 El examen de octubre dejó de ser una idea abstracta el día que Marina imprimió el temario oficial y lo subrayó entero en la sala de profesores, entre exámenes finales de sus propios alumnos. Aquel folio lleno de fosforito fue también la causa de la primera discusión seria con Vicente.
 

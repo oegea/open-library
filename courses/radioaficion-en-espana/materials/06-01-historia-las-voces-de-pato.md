@@ -1,6 +1,6 @@
-*Vallverd de l'Horta, mayo de 2025.*
+*Vallverd de l'Horta, mayo.*
 
-La feria de mayo trajo a Vallverd tres días de orquesta, buñuelos y un apagón de cuarenta minutos que nadie se tomó a mal porque coincidió con la mascletà. La normalidad, once meses antes impensable, se había vuelto a instalar en el pueblo con esa tozudez amable de las cosas pequeñas. Solo quedaban dos cicatrices a la vista: la marca parda en la pared del frontón, a metro y medio del suelo, que el ayuntamiento había decidido no pintar —debajo habían puesto una placa diminuta: *29-X-2024. Para no olvidar*—, y la costumbre nueva de que en el bar Els Tarongers ya nadie se reía del «club de los antenas».
+La feria de mayo trajo a Vallverd tres días de orquesta, buñuelos y un apagón de cuarenta minutos que nadie se tomó a mal porque coincidió con la mascletà. La normalidad, impensable apenas unos meses atrás, se había vuelto a instalar en el pueblo con esa tozudez amable de las cosas pequeñas. Solo quedaban dos cicatrices a la vista: la marca parda en la pared del frontón, a metro y medio del suelo, que el ayuntamiento había decidido no pintar —debajo habían puesto una placa diminuta: *Para no olvidar*—, y la costumbre nueva de que en el bar Els Tarongers ya nadie se reía del «club de los antenas».
 
 En el club, aquella tarde de sábado, Marina tenía una cita pendiente con un pato.
 

@@ -1,4 +1,4 @@
-*Vallverd de l'Horta, finales de agosto de 2025.*
+*Vallverd de l'Horta, finales de agosto.*
 
 La tormenta llegó un miércoles a media tarde, anunciada desde el mediodía por ese aire quieto y amarillo que en Vallverd, desde octubre, nadie volvería a mirar con inocencia. No fue una DANA: fue una tormenta de verano normal, ruidosa y breve. Pero Marina descubrió que su cuerpo ya no entendía de matices meteorológicos: cuando el primer trueno rodó sobre la Serra Perenxisa, estaba subiendo las escaleras de casa con la compra, y tuvo que pararse en el rellano un momento, la mano en la barandilla, hasta que el corazón volvió a su sitio.
 
@@ -40,7 +40,7 @@ El sábado, Morientes paró a Marina en el portal.
 
 Aquella noche, Marina escribió en el cuaderno la entrada que meses después le contaría a Lucía como el momento exacto en que entendió de qué iba realmente este oficio:
 
-*Hoy hemos arreglado unas rayas en una tele con cuatro anillos de ferrita y algo de método. Nadie ha gritado y hemos ganado un aliado. Vicente dice que el examen le llama a esto «compatibilidad electromagnética» y que el nombre técnico de lo que hemos hecho es «medir antes de opinar». Dice también que el instrumento más caro del cuarto de radio es el polímetro y el más valioso, la libreta. Empiezo a creerle. Nota: el mes que viene, el examen. Los nervios, ta-ta-tá.*
+*Hoy hemos arreglado unas rayas en una tele con cuatro anillos de ferrita y algo de método. Nadie ha gritado y hemos ganado un aliado. Vicente dice que el examen le llama a esto «compatibilidad electromagnética» y que el nombre técnico de lo que hemos hecho es «medir antes de opinar». Dice también que el instrumento más caro del cuarto de radio es el polímetro y el más valioso, la libreta. Empiezo a creerle. Nota: queda nada para el examen. Los nervios, ta-ta-tá.*
 
 ---
 

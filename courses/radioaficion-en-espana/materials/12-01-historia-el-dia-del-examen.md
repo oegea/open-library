@@ -1,4 +1,4 @@
-*Valencia, octubre de 2025.*
+*Valencia, octubre.*
 
 La Jefatura Provincial de Inspección de Telecomunicaciones ocupaba una planta de edificio administrativo con luz de fluorescente y ese silencio de moqueta que tienen los sitios donde se deciden cosas pequeñas que son enormes. Marina llegó veinticinco minutos antes, con el DNI, el justificante de la tasa y un bolígrafo que no iba a necesitar, porque el examen era por ordenador, pero que llevaba igual, porque era maestra y una maestra sin bolígrafo es una contradicción andante.
 

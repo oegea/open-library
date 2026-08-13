@@ -1,4 +1,4 @@
-*Vallverd de l'Horta, abril de 2025.*
+*Vallverd de l'Horta, abril.*
 
 El Radio Club Túria ocupaba un local municipal junto al polideportivo, con una puerta metálica verde, un mástil de antenas que era el segundo punto más alto del pueblo tras el campanario, y una gotera histórica sobre la que había, literalmente, un libro de firmas: «Yo también puse el cubo», ponía en la tapa, con firmas desde 1994.
 

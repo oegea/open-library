@@ -1,4 +1,4 @@
-*Vallverd de l'Horta, enero de 2025.*
+*Vallverd de l'Horta, enero.*
 
 El cuarto de radio de Vicente Roig olía a polvo bueno: a libros, a barniz viejo y a algo eléctrico que Marina no supo nombrar. Era una habitación pequeña orientada al este, con una mesa de madera maciza, dos aparatos grandes apagados, un mapa del mundo lleno de chinchetas descoloridas y, colgada en la pared, una llave de telégrafo de latón que brillaba como si alguien la limpiara cada semana.
 

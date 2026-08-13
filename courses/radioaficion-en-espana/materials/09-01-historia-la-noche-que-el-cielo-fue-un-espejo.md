@@ -1,4 +1,4 @@
-*Vallverd de l'Horta, agosto de 2025.*
+*Vallverd de l'Horta, agosto.*
 
 La convocatoria llegó por el Telegram bueno, un martes de agosto: «Vigilia de propagación. Viernes 23:00 a lo que aguante el cuerpo. Se buscan: Sudamérica en 40, gris line en 80, café y algo de picar. Firmado: la directiva (Salva)».
 
@@ -44,7 +44,7 @@ Marina cerró el cuaderno.
 
 El club, alrededor, recogía tazas y apuntaba el QSO argentino en el libro de guardia con dos signos de exclamación.
 
-—Cuando murió... —Vicente giró la taza, la dejó—. Cuando murió, la gente creía que no encendía la radio por pena. No era pena, Marina, era una cosa más tonta y más honda: era que la radio éramos los dos. Ella la escucha, yo la voz. Encenderla solo era como poner la mesa para uno. Así que dos años en silencio. Y entonces vino la DANA. —Se encogió de hombros, como quien admite algo elemental—. A las nueve de la noche del veintinueve, con el pueblo a oscuras, yo estaba sentado en el salón, oyendo el agua. Y pensé: en algún sitio hay alguien copiando listas. Alguien tiene que ser la voz. Y subí a por la batería. No fue valentía ni servicio, no me hagas el monumento que me hace Salva. Fue que por primera vez en dos años poner la mesa tenía sentido, porque había gente que necesitaba cenar. —Miró a Marina—. Y a la semana apareció en mi puerta una maestra empeñada en no volver a quedarse muda. La radio es esto que has visto esta noche: física del cielo y personas abajo. Las dos cosas o nada. Amparo lo decía mejor: «el cielo pone el espejo; los modales los pones tú».
+—Cuando murió... —Vicente giró la taza, la dejó—. Cuando murió, la gente creía que no encendía la radio por pena. No era pena, Marina, era una cosa más tonta y más honda: era que la radio éramos los dos. Ella la escucha, yo la voz. Encenderla solo era como poner la mesa para uno. Así que dos años en silencio. Y entonces vino la DANA. —Se encogió de hombros, como quien admite algo elemental—. Aquella noche, con el pueblo a oscuras, yo estaba sentado en el salón, oyendo el agua. Y pensé: en algún sitio hay alguien copiando listas. Alguien tiene que ser la voz. Y subí a por la batería. No fue valentía ni servicio, no me hagas el monumento que me hace Salva. Fue que por primera vez en dos años poner la mesa tenía sentido, porque había gente que necesitaba cenar. —Miró a Marina—. Y a la semana apareció en mi puerta una maestra empeñada en no volver a quedarse muda. La radio es esto que has visto esta noche: física del cielo y personas abajo. Las dos cosas o nada. Amparo lo decía mejor: «el cielo pone el espejo; los modales los pones tú».
 
 A las cinco y media, cuando salieron del club, el cielo sobre Vallverd empezaba a clarear por el este. Vicente señaló la línea donde la noche y el día se estaban negociando el turno.
 

@@ -1,4 +1,4 @@
-*Vallverd de l'Horta, marzo de 2025.*
+*Vallverd de l'Horta, marzo.*
 
 El primer domingo de marzo, Vicente madrugó a Marina con un mensaje seco: «Rastro de Xenillet a las 8. Trae monedas y desconfianza». Lucía se autoinvitó por el grupo, como siempre, con tres exclamaciones y cero signos de apertura.
 

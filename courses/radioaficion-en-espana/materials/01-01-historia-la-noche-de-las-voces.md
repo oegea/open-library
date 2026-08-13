@@ -1,4 +1,4 @@
-*Vallverd de l'Horta, martes 29 de octubre de 2024.*
+*Vallverd de l'Horta, una noche de finales de octubre.*
 
 La lluvia no empezó como empiezan las lluvias. Marina Salvat recordaría después ese detalle absurdo: que a las cinco de la tarde, cuando salió de la escuela con la mochila llena de exámenes de lengua por corregir, el cielo sobre Vallverd era de un gris amarillento que no había visto nunca, y que no llovía. En Vallverd no llovía. Llovía en otra parte, decía la radio del bar Els Tarongers, llovía una barbaridad monstruosa a veinte, treinta kilómetros, tierra adentro, en los pueblos donde nacen los barrancos.
 
@@ -14,7 +14,7 @@ Cogió el móvil para llamar a su madre.
 
 Probó con datos. Nada. Probó desde la ventana del patio, desde el rellano, con el brazo en alto como una antena humana, ese gesto inútil y universal. Nada. El teléfono fijo de la vecina del primero, mudo. A las nueve de la noche, Vallverd de l'Horta —cuatro mil doscientos habitantes, un colegio, dos farmacias, un club de jubilados— era un agujero negro. Ni luz, ni teléfono, ni Internet, ni manera humana de decirle a nadie *estoy viva*.
 
-Después Marina sabría que esa noche no fue solo su pueblo: que cayeron antenas de telefonía a docenas, que las que no cayeron se quedaron sin fluido y agotaron sus baterías en pocas horas, que media provincia gritaba hacia dentro. Pero a las nueve de la noche del 29 de octubre no sabía nada de eso. Solo sabía que su madre, en Valencia, estaría viendo las noticias.
+Después Marina sabría que esa noche no fue solo su pueblo: que cayeron antenas de telefonía a docenas, que las que no cayeron se quedaron sin fluido y agotaron sus baterías en pocas horas, que media provincia gritaba hacia dentro. Pero a las nueve de aquella noche no sabía nada de eso. Solo sabía que su madre, en Valencia, estaría viendo las noticias.
 
 Su madre, que tenía setenta y un años y el corazón regular. Viendo las noticias. Sin poder llamarla.
 
@@ -42,7 +42,7 @@ Vicente tachó la línea siete de la libreta y escribió al lado, con su letra d
 
 Marina Salvat, treinta y un años, maestra de primaria, una persona que hasta ese martes creía que «la radio» era una app de podcasts, se echó a llorar en un portal a oscuras que olía a barro. Lloró de alivio y de otra cosa. De vergüenza, casi: de haber vivido toda la vida encima de una infraestructura ajena, delicadísima, sin saberlo. Su móvil, tan listo, era un cristal negro sin nada dentro. Y el trasto de Vicente, con sus pinzas de batería, seguía hablando.
 
-Los días siguientes fueron los que fueron. No los vamos a contar aquí: quien los vivió no necesita que se los cuenten, y quien no, merece oírlos de quien los vivió. Baste decir que la luz tardó, que el agua potable tardó más, que llegaron miles de voluntarios con botas y palas, y que durante casi una semana, en muchos pueblos, el tablón de anuncios más fiable siguió siendo una libreta cuadriculada junto a una batería de coche.
+Los días siguientes fueron los que fueron; no hace falta contarlos aquí. Baste decir que la luz tardó, que el agua potable tardó más, que llegaron miles de voluntarios con botas y palas, y que durante casi una semana, en muchos pueblos, el tablón de anuncios más fiable siguió siendo una libreta cuadriculada junto a una batería de coche.
 
 Fue en diciembre, con el pueblo aún lleno de contenedores y de barro seco, cuando Marina llamó al timbre de Vicente. El hombre abrió con un delantal de cocina y cara de sorpresa.
 
@@ -63,7 +63,3 @@ Vicente se quedó un momento callado, con la mano en la puerta. Por encima del h
 Y así, en una cocina que olía a puchero, con el pueblo todavía en obras al otro lado de la ventana, empezó esta historia. La de cómo una maestra de primaria aprendió, desde el átomo hasta el Boletín Oficial del Estado, el oficio más antiguo del aire.
 
 En la sección siguiente, la teoría te contará qué es exactamente eso que hacía Vicente en el portal: qué es el **servicio de radioaficionados**, de dónde viene, qué permite la ley y por qué un siglo después de su invención sigue siendo, cuando todo falla, lo último que queda en pie.
-
----
-
-*Los personajes y el pueblo de esta historia son ficticios. La noche, por desgracia, no lo es: es la del 29 de octubre de 2024, en la que una DANA arrasó decenas de municipios de la provincia de Valencia y se llevó por delante más de doscientas vidas. Contamos esta historia con el máximo respeto hacia ellas y hacia todas las personas —radioaficionados, sanitarios, bomberos, militares, vecinos con palas— que aquella semana fueron la voz y las manos de los demás.*

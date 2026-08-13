@@ -1,4 +1,4 @@
-*Vallverd de l'Horta, febrero de 2025.*
+*Vallverd de l'Horta, febrero.*
 
 El segundo sábado de febrero, Marina llegó al cuarto de radio con los deberes hechos y una intrusa.
 

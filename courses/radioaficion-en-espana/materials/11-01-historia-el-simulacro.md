@@ -1,4 +1,4 @@
-*Vallverd de l'Horta, septiembre de 2025.*
+*Vallverd de l'Horta, septiembre.*
 
 La circular llegó al club a primeros de septiembre, con membrete de la Delegación del Gobierno: simulacro provincial de emergencias, tercer sábado del mes, ejercicio conjunto de comunicaciones con activación de la red de radioaficionados voluntarios. Escenario ficticio: episodio de lluvias torrenciales con fallo parcial de comunicaciones en tres comarcas. A nadie en el local hizo falta explicarle por qué ese escenario, ni por qué este año el simulacro era el doble de grande.
 
