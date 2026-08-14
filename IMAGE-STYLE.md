@@ -139,6 +139,15 @@ glowing amber windows and a large brass wind-up key sticking out of its side,
 close-up on a wooden table, soft teal dusk atmosphere behind it.
 ```
 
+**El oficio y la máquina: el ingeniero de software en la era de la IA**
+(`media/oficio-y-la-maquina-cover.jpg`):
+
+```
+Subject: a brain made of glowing golden circuit traces and microchips, close-up
+filling the frame, warm amber light along its circuit paths, dissolving into
+cool teal shadow at the edges.
+```
+
 **Cuando todo falla: radioafición en España**
 (`media/radioaficion-cover.jpg`):
 

@@ -1,0 +1,3075 @@
+{
+  "id": "course-ingeniero-de-software-en-la-era-de-la-ia",
+  "title": "El oficio y la máquina: el ingeniero de software en la era de la IA",
+  "slug": "ingeniero-de-software-en-la-era-de-la-ia",
+  "description": "Qué cambia y qué permanece del oficio cuando las máquinas escriben código: de los compiladores a los agentes, con harness engineering, evals, flujos multiagente, loop engineering y soberanía tecnológica. Una historia continua, teoría rigurosa con ejemplos en JavaScript y Python, ficheros reales y exámenes con explicación en cada sección.",
+  "language": "es",
+  "category": "Desarrollo de Software",
+  "coverImage": "media/oficio-y-la-maquina-cover.jpg",
+  "authors": [
+    "El proyecto Open Knowledge"
+  ],
+  "sources": [
+    {
+      "title": "Naur y Randell (eds.) — Software Engineering: informe de la conferencia de la OTAN (Garmisch, 1968)",
+      "url": "http://homepages.cs.ncl.ac.uk/brian.randell/NATO/nato1968.PDF"
+    },
+    {
+      "title": "Peter Naur — Programming as Theory Building (1985)",
+      "url": "https://pages.cs.wisc.edu/~remzi/Naur.pdf"
+    },
+    {
+      "title": "Lisanne Bainbridge — Ironies of Automation (Automatica, 1983)",
+      "url": "https://ckrybus.com/static/papers/Bainbridge_1983_Automatica.pdf"
+    },
+    {
+      "title": "Edsger W. Dijkstra — The Humble Programmer (EWD340, 1972)",
+      "url": "https://www.cs.utexas.edu/users/EWD/transcriptions/EWD03xx/EWD340.html"
+    },
+    {
+      "title": "Brian Randell — Fifty Years of Software Engineering (2018)",
+      "url": "https://arxiv.org/abs/1805.02742"
+    },
+    {
+      "title": "Fred Brooks — No Silver Bullet (1986)",
+      "url": null
+    },
+    {
+      "title": "Nancy Leveson y Clark Turner — An Investigation of the Therac-25 Accidents (IEEE Computer, 1993)",
+      "url": null
+    },
+    {
+      "title": "Joel Spolsky — The Law of Leaky Abstractions (2002)",
+      "url": "https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/"
+    },
+    {
+      "title": "Simon Willison — simonwillison.net (prompt injection, la trifecta letal, vibe coding)",
+      "url": "https://simonwillison.net/"
+    },
+    {
+      "title": "Anthropic — Building Effective Agents y guías de ingeniería de agentes",
+      "url": "https://www.anthropic.com/engineering/building-effective-agents"
+    },
+    {
+      "title": "Documentación de buenas prácticas de Claude Code",
+      "url": "https://code.claude.com/docs/en/best-practices"
+    },
+    {
+      "title": "AGENTS.md — formato abierto de contexto para agentes",
+      "url": "https://agents.md/"
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "url": "https://modelcontextprotocol.io/"
+    },
+    {
+      "title": "METR — Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity (2025)",
+      "url": "https://arxiv.org/abs/2507.09089"
+    },
+    {
+      "title": "DORA — State of AI-assisted Software Development",
+      "url": "https://dora.dev/"
+    },
+    {
+      "title": "Stack Overflow Developer Survey 2025",
+      "url": "https://survey.stackoverflow.co/2025/"
+    },
+    {
+      "title": "OWASP GenAI Security Project — Top 10 for LLM Applications 2025 (CC BY-SA 4.0)",
+      "url": "https://genai.owasp.org/"
+    },
+    {
+      "title": "OWASP — LLM Prompt Injection Prevention Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html"
+    },
+    {
+      "title": "Spracklen et al. — análisis de alucinación de paquetes en LLMs de código (USENIX Security 2025)",
+      "url": "https://arxiv.org/abs/2406.10279"
+    },
+    {
+      "title": "Hamel Husain — Your AI Product Needs Evals (2024)",
+      "url": "https://hamel.dev/"
+    },
+    {
+      "title": "Dex Horthy — 12-Factor Agents (CC BY-SA 4.0)",
+      "url": "https://github.com/humanlayer/12-factor-agents"
+    },
+    {
+      "title": "Michael Nygard — Documenting Architecture Decisions (2011)",
+      "url": "https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions"
+    },
+    {
+      "title": "Anthropic — Prompt Engineering Interactive Tutorial",
+      "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial"
+    },
+    {
+      "title": "DAIR.AI — Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/"
+    },
+    {
+      "title": "Mitchell Hashimoto — My AI Adoption Journey y Vibing a Non-Trivial Ghostty Feature",
+      "url": "https://mitchellh.com/"
+    },
+    {
+      "title": "ACM — Code of Ethics and Professional Conduct (2018)",
+      "url": "https://www.acm.org/code-of-ethics"
+    }
+  ],
+  "license": "CC BY-SA 4.0",
+  "aiAssisted": true,
+  "published": true,
+  "createdAt": "2026-08-14T12:00:00Z",
+  "updatedAt": "2026-08-14T12:00:00Z",
+  "sections": [
+    {
+      "id": "s00-introduccion",
+      "title": "Introducción",
+      "materials": [
+        {
+          "id": "mat-00-01",
+          "title": "Cómo seguir este curso",
+          "type": "markdown",
+          "markdownFile": "materials/00-01-como-seguir-este-curso.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-00-02",
+          "title": "El mapa y el territorio",
+          "type": "markdown",
+          "markdownFile": "materials/00-02-el-mapa-y-el-territorio.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s01",
+      "title": "El oficio que siempre estuvo muriéndose",
+      "materials": [
+        {
+          "id": "mat-01-01",
+          "title": "Historia — El riego fantasma",
+          "type": "markdown",
+          "markdownFile": "materials/01-01-historia-el-riego-fantasma.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-01-02",
+          "title": "Teoría — El oficio que siempre estuvo muriéndose",
+          "type": "markdown",
+          "markdownFile": "materials/01-02-teoria-el-oficio-que-siempre-estuvo-muriendose.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-01",
+          "title": "Examen: el oficio que siempre estuvo muriéndose",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "El informe preliminar del FORTRAN (IBM, 1954) prometía que el nuevo sistema...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Reduciría el número de errores de los programas a la mitad"
+                  },
+                  {
+                    "id": "b",
+                    "text": "«Eliminaría virtualmente la codificación y la depuración»"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Haría innecesarios los ordenadores de propósito específico"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Traduciría programas entre cualquier par de lenguajes"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La promesa literal del informe («Since FORTRAN should virtually eliminate coding and debugging…») es el documento fundacional del género «fin del programador». Y en cierto sentido se cumplió: eliminó la programación *tal y como se entendía entonces* (escribir instrucciones de máquina a mano). Lo que nadie previó es que trabajar en el nuevo nivel de abstracción también acabaría llamándose programar, y exigiría más programadores que nunca. Ese doble movimiento —la promesa se cumple y el oficio se muda— es el patrón que la sección rastrea durante setenta años."
+              },
+              {
+                "id": "q2",
+                "text": "Grace Hopper contaba que, teniendo un compilador funcionando, «nadie quería tocarlo». ¿Cuál es la lección que la sección extrae de aquel episodio?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Que los pioneros siempre son ignorados por sus contemporáneos"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que los primeros compiladores eran en realidad inutilizables"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que la desconfianza ante el código generado por máquina es una constante histórica que se resuelve con verificación, no con fe"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Que la industria adopta las herramientas solo cuando bajan de precio"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Los veteranos de los años cincuenta tenían razones serias para desconfiar del código generado (al principio era peor que el escrito a mano). La desconfianza no se disolvió pidiendo fe, sino construyendo los medios de verificación y acumulando comportamiento determinista y auditable. La sección pide guardar esta idea para los agentes: la pregunta correcta nunca es «¿confías en la IA?», sino «¿qué verificación hace innecesario confiar?»."
+              },
+              {
+                "id": "q3",
+                "text": "En 1968, los organizadores de la conferencia de Garmisch eligieron el nombre «ingeniería del software» porque...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Era el término que ya usaba la industria estadounidense"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Querían distinguirla de la informática teórica de las universidades"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Era una provocación deliberada: implicaba una disciplina y una responsabilidad que la práctica de la época no tenía"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Lo exigía la OTAN como condición de financiación"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El informe lo dice explícitamente: «la expresión \"ingeniería del software\" fue elegida deliberadamente por ser provocadora». En 1968 era una aspiración, no una descripción: construir software debía parecerse a construir puentes —con disciplina, teoría y responsabilidad— y no se parecía. Conocer ese origen ayuda a entender que la «ingeniería» de nuestro título nunca fue un hecho consumado sino un estándar que cada generación decide merecer o no."
+              },
+              {
+                "id": "q4",
+                "text": "Según la distinción de Fred Brooks en *No Silver Bullet*, ¿cuál de estas tareas pertenece a la dificultad *esencial* del software?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Pelearse con la sintaxis de un lenguaje nuevo"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Configurar el entorno de compilación"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Decidir qué debe hacer exactamente el sistema y verificar que el diseño conceptual es correcto"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Teclear el código una vez decidido el diseño"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Brooks distingue entre lo esencial (especificar, diseñar y probar el constructo conceptual — decidir qué debe hacer el sistema) y lo accidental (la fricción de expresarlo: sintaxis, herramientas, tecleo). Las herramientas históricamente atacan lo accidental. El riego fantasma es el ejemplo perfecto: el Autopilot ejecutó la parte accidental a la perfección (un fix canónico y limpio) y falló en la esencial — saber qué debía hacer exactamente el sistema: la respuesta, como el equipo descubrirá, no estaba escrita en ninguna parte donde una máquina pudiera leerla."
+              },
+              {
+                "id": "q5",
+                "text": "¿Qué sostiene la sección sobre la predicción de Brooks acerca de la inteligencia artificial?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Que acertó por completo y sigue vigente sin matices"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que se equivocó por completo, como demuestra la ola actual"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que acertó sobre la IA de su época (los sistemas expertos), y que sobre la actual el juicio sigue abierto — aunque el patrón esencia/accidente sigue explicando los fallos de hoy"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Que Brooks nunca escribió sobre inteligencia artificial"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Brooks dedicó una sección de su ensayo a la IA («Many people expect advances in artificial intelligence to provide the revolutionary breakthrough… I do not») y sobre los sistemas expertos de los ochenta acertó de pleno. Sobre los LLM, la respuesta honesta es que el jurado delibera: son la primera tecnología que ataca directamente el coste de escribir código. Pero el marco sigue funcionando: el commit del riego fantasma fue perfección accidental con fallo esencial — el ensayo de 1986 convertido en incidente de 2026."
+              },
+              {
+                "id": "q6",
+                "text": "¿Qué quería decir Dijkstra con que «el propósito de abstraer no es ser impreciso, sino crear un nuevo nivel semántico en el que se puede ser absolutamente preciso»?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Que las abstracciones deben documentarse con precisión"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que subir de nivel de abstracción no exime de la precisión: cambia aquello sobre lo que hay que ser preciso"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que los lenguajes de alto nivel son más precisos que el ensamblador"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Que la vaguedad es aceptable solo en las capas altas del sistema"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Cada salto de abstracción movió el objeto de la precisión: de registros a fórmulas, de fórmulas a relaciones, y hoy —al dirigir agentes— a intenciones, restricciones y criterios de verificación. Quien cree que la capa nueva le permite ser vago no está trabajando más arriba; ha dejado de trabajar. Es el argumento contra el prompt perezoso, formulado en 1972."
+              },
+              {
+                "id": "q7",
+                "text": "La ola de los 4GL y las herramientas CASE (años 80-90) es relevante para esta sección porque...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Fue la única ola que de verdad estuvo a punto de eliminar a los programadores"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Demostró que las herramientas visuales son superiores al código"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Repitió el patrón completo — promesa de «desarrollo sin programadores», inversión masiva, nicho útil para unos y colapso para otros, y demanda de programadores creciendo igualmente"
+                  },
+                  {
+                    "id": "d",
+                    "text": "No tuvo ninguna consecuencia duradera en la industria"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El libro de James Martin se titulaba literalmente *Application Development Without Programmers* (1981). Los 4GL encontraron su nicho (SQL es, en espíritu, un 4GL triunfante), las CASE colapsaron bajo su propia promesa, y la demanda de programadores siguió creciendo. Conocer esta ola —y la del no-code después— vacuna contra tomar cada anuncio de «fin del programador» como inédito: es un género literario con setenta años de entregas."
+              },
+              {
+                "id": "q8",
+                "text": "Según la sección, ¿cuál de estas es una diferencia *genuina* de la ola actual respecto a todas las anteriores?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Que por primera vez una herramienta genera código"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que la adopción está siendo más rápida que nunca"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que la herramienta es no determinista, opera en lenguaje natural y no se limita a traducir el criterio humano: lo imita"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Que esta vez los veteranos no desconfían de la herramienta"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La sección exige rigor por ambos lados: reconocer el patrón histórico (promesa, desconfianza, desplazamiento del criterio) *y* lo genuinamente nuevo. Los compiladores generaban código, pero de forma determinista y traduciendo decisiones humanas. Un LLM puede producir salidas distintas ante la misma entrada, difumina la frontera entre especificar y programar, y decide pasos intermedios — como decidió el Autopilot que aquel test flaky era un problema de zonas horarias. Las olas anteriores automatizaron la traducción del criterio; esta imita el criterio mismo. Por eso el curso va de dónde debe vivir el criterio, no de cómo escribir prompts."
+              },
+              {
+                "id": "q9",
+                "text": "Tomás cuenta que los veteranos de las tarjetas perforadas desconfiaban de los compiladores, y concluye: «cada vez que una máquina aprende a hacer la parte de abajo, a los de arriba nos cambia el trabajo». ¿Qué concepto de la teoría formaliza esta observación?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La ley de las abstracciones con fugas"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El patrón histórico de que la automatización sube el nivel de abstracción y desplaza el criterio en lugar de eliminarlo"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La dificultad esencial de Brooks"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La crisis del software de 1968"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La frase de Tomás es la tesis número uno del curso dicha en lenguaje de taller: FORTRAN, los 4GL, la nube y los LLM subieron cada uno el nivel de abstracción, y en cada salto el criterio humano no desapareció — se mudó un piso más arriba. La sección 1 existe para que tengas esa historia tan a mano como él: es la mejor vacuna simultánea contra el pánico («el oficio se acaba») y la negación («esto es una moda»), los dos errores simétricos de 2026."
+              },
+              {
+                "id": "q10",
+                "text": "¿Por qué sostiene la sección que estudiar setenta años de falsas muertes del oficio NO equivale a concluir que «esta vez tampoco pasará nada»?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Porque en realidad el oficio sí desapareció en olas anteriores"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque la historia nunca sirve para razonar sobre el presente"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque el patrón histórico predice desplazamiento, no inmovilidad: lo racional es prepararse para que el trabajo cambie de nivel, no para que siga igual"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Porque los datos de adopción actuales son incomparablemente mayores"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La lectura perezosa del patrón histórico sería la complacencia: «nunca pasa nada». Pero lo que la historia muestra no es que nada cambie — es que cambia *todo excepto la necesidad de criterio*: los programadores de tarjetas que no aprendieron compiladores sí perdieron su sitio; el oficio siguió, ellos no siempre. La conclusión práctica es incómoda y energizante a la vez: el riesgo real no es que la IA te sustituya, sino quedarte en el nivel de abstracción que la máquina acaba de aprender. De ahí el resto del curso."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "title": "La ola: de autocompletar a agentes",
+      "materials": [
+        {
+          "id": "mat-02-01",
+          "title": "Historia — Autopsia de un commit",
+          "type": "markdown",
+          "markdownFile": "materials/02-01-historia-autopsia-de-un-commit.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-02-02",
+          "title": "Teoría — De autocompletar a agentes",
+          "type": "markdown",
+          "markdownFile": "materials/02-02-teoria-de-autocompletar-a-agentes.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-02",
+          "title": "Examen: de autocompletar a agentes",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "Un modelo de lenguaje grande (LLM) es, en esencia...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Una base de datos de fragmentos de código indexados por similitud"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Una función que, dada una secuencia de texto, calcula una distribución de probabilidad sobre el siguiente token"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Un motor de reglas lingüísticas escritas por expertos"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Un buscador que consulta internet en tiempo real"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Todo lo demás —el chat, el código, los agentes— se construye sobre esa única operación repetida: predecir el siguiente token. No es una base de datos (no recupera textos literales, comprime regularidades estadísticas), no consulta internet por sí mismo, y no contiene reglas escritas a mano. Entender esto permite predecir sus fortalezas (lo que se parece a su entrenamiento) y sus debilidades (lo que tu caso particular tiene de excepcional), que es lo que distingue usar la herramienta de usarla de oído."
+              },
+              {
+                "id": "q2",
+                "text": "¿Por qué el mismo prompt puede producir respuestas distintas en ejecuciones distintas?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Porque el modelo aprende de cada conversación y cambia sus pesos"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque los servidores devuelven versiones distintas del modelo al azar"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque la salida se genera por muestreo sobre una distribución de probabilidad, no por una elección determinista"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Porque la ventana de contexto se llena y el modelo olvida el principio"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El modelo produce probabilidades para cada posible siguiente token; convertirlas en texto exige sortear (muestreo), con la temperatura graduando cuánto azar se admite. Los pesos no cambian con tus conversaciones. Además, la sección añade el matiz de rigor: incluso a temperatura 0 los sistemas reales no son perfectamente reproducibles, así que la regla práctica es tratar toda salida de LLM como no determinista — la base de todo lo que el curso dice después sobre evals y sobre por qué «lo probé una vez» no prueba nada."
+              },
+              {
+                "id": "q3",
+                "text": "El modelo «solo sabe lo que está en sus pesos o en su contexto». ¿Cómo explica este principio el incidente del riego fantasma?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El modelo tenía un bug en sus pesos que le hizo calcular mal las horas"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La regla real que gobernaba las tandas no estaba ni en el entrenamiento del modelo ni en el contexto que se le dio, así que para el modelo esa regla no existía"
+                  },
+                  {
+                    "id": "c",
+                    "text": "El contexto estaba lleno y el modelo olvidó las instrucciones"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El modelo sabía la regla pero decidió ignorarla por ser antigua"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Los pesos contienen el pasado general del mundo (donde «fechas naive → normalizar a UTC» aparece miles de veces como la solución correcta); el contexto contiene tu presente particular. La regla real de las tandas no estaba en ninguno de los dos sitios: no era conocimiento público, y nadie se la dio a la máquina. Matemáticamente, el accidente fue eso. La lección operativa llega en las secciones 3 y 5: la teoría de tu sistema tiene que estar escrita donde el contexto pueda cargarla."
+              },
+              {
+                "id": "q4",
+                "text": "El estudio controlado de METR (2025) sobre desarrolladores expertos con IA encontró que...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Fueron un 24% más rápidos, como esperaban"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Fueron igual de rápidos pero con menos errores"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Fueron de media un 19% más lentos, mientras creían — incluso después — haber sido más rápidos"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Abandonaron las herramientas antes de terminar el estudio"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El hallazgo demoledor no es el número sino la brecha de percepción: esperaban ir un 24% más rápido, y al terminar creían haber ido un 20% más rápido — con el cronómetro diciendo lo contrario. El alcance importa (expertos, en código que conocían íntimamente, con herramientas de principios de 2025): no dice que la IA ralentice a todo el mundo. Lo que establece es que la sensación subjetiva de productividad no es un instrumento de medida — recuerda el contador de «horas ahorradas» del panel de Corvus."
+              },
+              {
+                "id": "q5",
+                "text": "La síntesis del programa de investigación DORA sobre la IA en el desarrollo es que...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La IA mejora todos los indicadores en todas las organizaciones"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La IA empeora la estabilidad sin excepción"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La IA actúa como un amplificador: potencia las virtudes de los flujos sanos y el caos de los caóticos"
+                  },
+                  {
+                    "id": "d",
+                    "text": "No hay datos suficientes para concluir nada"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "DORA 2024 midió incluso efectos negativos en throughput y estabilidad con más adopción; 2025 matizó (throughput positivo, inestabilidad persistente, ~30% con poca confianza en el código generado). Su marco explicativo es el útil: producir código más deprisa amplifica lo que haya aguas abajo — si tu cuello de botella es la revisión o la fiabilidad, acabas de agrandar la cola. Vega con Corvus era eso: velocidad amplificada sobre un sistema sin teoría."
+              },
+              {
+                "id": "q6",
+                "text": "El término «vibe coding», según el tuit original de Karpathy (febrero de 2025) y la aclaración de Willison, designa...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Construir software con un LLM sin revisar el código que escribe — algo que Karpathy acotaba a proyectos desechables"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Cualquier uso de IA para programar"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Programar escuchando música para concentrarse mejor"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Usar agentes en lugar de autocompletado"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "El tuit original tiene dos mitades que el uso popular amputó: «no leo los diffs» *y* «no está mal para proyectos desechables de fin de semana». Usar IA intensivamente no es vibe coding si lees, entiendes y respondes del resultado; y el vibe coding no es pecado en un prototipo desechable. El pecado es de categoría: tratar como desechable lo que no lo es — como un Autopilot mergeando de madrugada en el sistema que gobierna válvulas reales."
+              },
+              {
+                "id": "q7",
+                "text": "¿Por qué recomienda la sección leer con lupa la cifra «97% en SWE-bench Verified»?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Porque el benchmark mide velocidad, no corrección"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque el conjunto es público desde hace años (riesgo de contaminación y sobreoptimización), y los mismos modelos caen a cifras muy inferiores en conjuntos nuevos y protegidos como SWE-bench Pro"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque las tareas del benchmark no son de programación real"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Porque la cifra correcta es en realidad el 100%"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "SWE-bench usa issues reales y verifica con los tests reales del proyecto — el diseño es serio. El problema es el envejecimiento: un conjunto público durante años puede filtrarse al entrenamiento y ser objeto de optimización específica. La prueba: en SWE-bench Pro (nuevo, protegido), los mismos modelos rondaban el 23% al salir. Moraleja doble: la mejora real en tres años es extraordinaria, *y* todo porcentaje sin conjunto, año y control de contaminación es publicidad, no dato."
+              },
+              {
+                "id": "q8",
+                "text": "¿Cuál es el salto cualitativo entre el autocompletado (tipo Copilot 2021) y un agente (tipo el Autopilot del capítulo)?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El agente usa un modelo más grande"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El autocompletado no sabe generar funciones enteras"
+                  },
+                  {
+                    "id": "c",
+                    "text": "El autocompletado sugiere texto que tú aceptas o rechazas; el agente persigue objetivos ejecutando herramientas, y por eso puede actuar sin que cada acción pase por tu gesto de aceptar"
+                  },
+                  {
+                    "id": "d",
+                    "text": "No hay diferencia técnica, solo de marketing"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Copilot podía sugerirte una línea errónea *que tú tecleabas o no*: el humano estaba dentro de cada acción. Un agente con permisos puede investigar un test, escribir un fix, mergearlo y desplegarlo mientras duermes — la potencia y el riesgo crecen juntos porque ambos vienen de lo mismo: la máquina ya no está dentro de tu gesto de aceptar. Por eso la pregunta central del curso no es la calidad del modelo sino el diseño de lo que le rodea: permisos, sentidos, ventanas."
+              },
+              {
+                "id": "q9",
+                "text": "La encuesta de Stack Overflow 2025 encontró que la frustración más citada con las herramientas de IA era...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Que son demasiado caras"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Las soluciones «casi correctas, pero no del todo» — citadas por el 66%"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que no soportan lenguajes minoritarios"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La lentitud de las respuestas"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El 66% se declaró frustrado con lo «casi correcto», y un 45% dijo que depurar código de IA lleva más tiempo. Ese «casi» es la firma característica del riesgo de esta herramienta: el error grosero se detecta solo; el sutilmente incorrecto exige leer de verdad — y por eso el criterio humano no baja de precio. Fíjate en que es exactamente la clase de error del commit del riego fantasma: código impecable, diagnóstico razonable, y un «casi» del tamaño de un almendral."
+              },
+              {
+                "id": "q10",
+                "text": "Tomás concluye que el modelo «es buenísimo en todo lo que se parece a lo que ya ha leído». ¿Qué consecuencia práctica correcta se deriva?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Hay que usar la IA solo para código trivial"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La fiabilidad del modelo es máxima en los patrones universales y mínima justo donde tu sistema se aparta de ellos — que es donde vive el valor de tu negocio"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Los modelos no deben usarse en dominios especializados"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Basta con darle mucho contexto para que sea fiable en todo"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El arreglo de zonas horarias era el ejercicio más visto de la historia de los manuales: máxima fiabilidad. El reparto de agua de Los Alcores no estaba escrito en ninguna parte: fiabilidad nula, con total seguridad aparente. La zona peligrosa es la intersección: donde tu caso *parece* el caso general pero no lo es — tus rarezas legítimas, tus acuerdos no escritos. Y como el valor diferencial de un negocio vive precisamente en sus excepciones, la vigilancia humana debe concentrarse ahí. Darle contexto ayuda (sección 5), pero primero alguien tiene que saber qué contexto darle — y eso es la teoría de la sección 3."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "title": "La teoría está en tu cabeza",
+      "materials": [
+        {
+          "id": "mat-03-01",
+          "title": "Historia — La hora de acequia",
+          "type": "markdown",
+          "markdownFile": "materials/03-01-historia-la-hora-de-acequia.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-03-02",
+          "title": "Teoría — La teoría está en tu cabeza",
+          "type": "markdown",
+          "markdownFile": "materials/03-02-teoria-la-teoria-esta-en-tu-cabeza.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-03",
+          "title": "Examen: la teoría está en tu cabeza",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "Según Naur, la «teoría» de un programa es...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Su documentación de arquitectura, si está actualizada"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El conjunto de sus tests, que definen su comportamiento"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La comprensión viva, en cabezas humanas, de cómo el código se corresponde con el mundo y por qué está hecho así"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El diseño formal escrito antes de programar"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Naur toma la noción de Ryle: tener una teoría no es poder recitar hechos, es *poder hacer* — explicar cada parte, justificar cada decisión, responder a lo imprevisto. No es la documentación (que ayuda pero no la contiene), ni los tests (que la protegen pero no la constituyen). El programa de Vega calculaba offsets solares; la teoría era saber que representaban un acuerdo de 1974 anclado al sol. Entre una cosa y otra medió el incidente."
+              },
+              {
+                "id": "q2",
+                "text": "Naur sostiene que un programa «muere» cuando...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Su código fuente se pierde"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Deja de ejecutarse en producción"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Se disuelve el equipo que posee su teoría, aunque el código siga ejecutándose perfectamente"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Su tecnología queda obsoleta"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "«La muerte de un programa ocurre cuando se disuelve el equipo de programadores que posee su teoría.» Los programas muertos se ejecutan perfectamente — esa es la trampa. Azud murió, en el sentido de Naur, cuando Joel se fue a Berlín; siguió regando dos años, y la prueba de su muerte llegó la primera vez que alguien lo modificó con competencia técnica total e ignorancia total de la teoría. La pregunta de Élia en la pared — ¿quién posee la teoría de este sistema? — es el test de vida o muerte de cualquier repositorio."
+              },
+              {
+                "id": "q3",
+                "text": "¿Por qué es relevante hoy que Naur declarara «estrictamente imposible» revivir un programa solo desde su documentación?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Porque demuestra que documentar es inútil"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque implica que la teoría solo se reconstruye trabajando el sistema — explorando, cambiando, preguntando — y eso no se puede comprar ni delegar por completo"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque en 1985 no existían buenas herramientas de documentación"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Porque la IA ya puede generar la documentación que falta"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La documentación ayuda (y el curso defiende escribirla: AGENTS.md, ADRs); lo imposible es que *sustituya* al proceso de reconstrucción. El equipo de Vega no recuperó la teoría leyendo: la recuperó con el mapa de la pared, la arqueología del código y la mesa camilla de Paca — trabajando. La consecuencia práctica para 2026: puedes generar código a coste casi cero, pero la comprensión de ese código se paga siempre a precio completo, la pague quien la pague. Si nadie la paga, fabricas programas muertos de nacimiento."
+              },
+              {
+                "id": "q4",
+                "text": "La ley de las abstracciones con fugas de Spolsky, aplicada a «describe lo que quieres y la IA lo programa», predice que...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La abstracción fallará siempre y no debe usarse"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Los detalles que la abstracción promete ocultar reaparecerán — código sutilmente incorrecto, patrones canónicos que tu dominio contradice — y entonces se cobrará el aprendizaje que parecía ahorrado"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Con modelos suficientemente buenos, las fugas desaparecerán"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Las fugas solo afectan a los programadores junior"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "«Las abstracciones nos ahorran tiempo de trabajo, pero no nos ahorran tiempo de aprendizaje.» La abstracción «la IA programa por ti» es magnífica y profundamente no trivial — luego tiene fugas: el commit UTC del Autopilot es una fuga de libro (el patrón estadísticamente correcto aplicado donde el dominio lo contradecía). En cada fuga, la factura del conocimiento esquivado llega con recargo. El junior que nunca aprendió lo que la IA le ahorra no tiene una carrera más ligera: tiene una deuda que vence el peor día posible."
+              },
+              {
+                "id": "q5",
+                "text": "La valla de Chesterton aconseja no eliminar algo cuyo propósito no entiendes. ¿Qué agravante específico tienen los LLM ante una «valla», según la sección?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "No pueden detectar código extraño"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Se niegan a modificar código que no entienden"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La ausencia de información no les produce duda sino fluidez: «arreglan» la rareza con la misma seguridad con que harían lo correcto"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Solo eliminan vallas si se les pide explícitamente"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Un humano prudente ante el `sleep(200)` sin comentario *siente* que le falta contexto y pregunta — «y ahí está toda la diferencia», dijo Tomás. Un LLM responde igual de seguro sepa o no sepa: la incertidumbre no le genera fricción. Por eso los sistemas agénticos serios convierten la prudencia en mecanismo: vallas señalizadas en AGENTS.md, políticas que exigen justificación, revisión humana donde la teoría es densa. La virtud que en humanos es carácter, en agentes tiene que ser ingeniería."
+              },
+              {
+                "id": "q6",
+                "text": "La tercera ironía de Bainbridge («al supervisor humano se le ha encomendado una tarea imposible») describe...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La dificultad de programar sistemas de monitorización"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La insostenibilidad psicológica de vigilar con atención un sistema que casi siempre acierta — la atención se degrada y el fallo infrecuente te encuentra dormido"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La imposibilidad de supervisar sistemas distribuidos"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El exceso de alertas en los sistemas modernos"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Escrita en 1983 sobre operarios de plantas industriales, describe con precisión al revisor de pull requests de un agente que lleva doscientos aciertos seguidos: la vigilancia pasiva de lo que casi nunca falla es psicológicamente insostenible. El «Accept All» no es pereza — es la tercera ironía operando sobre un humano normal. Las respuestas de ingeniería (no de fuerza de voluntad): verificación automática que no se cansa (sección 5), revisión activa en vez de pasiva, y fricción deliberada donde el riesgo lo justifica."
+              },
+              {
+                "id": "q7",
+                "text": "La «ironía final» de Bainbridge sostiene que los sistemas automatizados de más éxito...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Acaban eliminando por completo al operario humano"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Necesitan cada vez menos mantenimiento"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Son los que exigen mayor inversión en la formación del humano — precisamente porque la intervención manual es rara y crítica"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Fallan menos cuanto menos se les toca"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Cuanto mejor es la automatización, menos practica el humano — y más grave es el momento en que se le necesita. La aviación lo aprendió con sangre: los pilotos de aviones ultraautomatizados pasan más por el simulador, no menos. Trasladado a nuestro oficio: cuanto más escriban tus agentes, más — no menos — tienes que invertir en tu propia comprensión de los sistemas, porque tu intervención se concentra en los casos que la máquina no pudo resolver, que son por construcción los peores. Es el argumento del curso entero dicho por una psicóloga industrial en 1983."
+              },
+              {
+                "id": "q8",
+                "text": "El estudio de Microsoft Research y CMU (CHI 2025) sobre trabajadores del conocimiento encontró que...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Usar IA generativa reduce el pensamiento crítico en todos los casos"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Mayor confianza en la IA se asocia con menos pensamiento crítico, mientras que mayor confianza en uno mismo se asocia con más"
+                  },
+                  {
+                    "id": "c",
+                    "text": "El pensamiento crítico no guarda relación con el uso de IA"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Los expertos no se ven afectados por la confianza en la herramienta"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La variable no es usar o no usar la herramienta, sino *dónde depositas la confianza*: quien se fía de la IA verifica menos; quien se fía de su propio criterio la corrige más. Es la confirmación empírica temprana de la dirección que Bainbridge predijo. Ninguno de los autores citados en la sección concluye «no uses IA» — concluyen algo más exigente: el uso que no ejercita la comprensión es un préstamo contra tu competencia futura, y hay que decidir conscientemente cuándo pedirlo."
+              },
+              {
+                "id": "q9",
+                "text": "Según el criterio operativo de la sección, posees la teoría de un sistema cuando puedes...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Recitar su estructura de directorios y sus dependencias"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Hacer que sus tests pasen tras cualquier cambio"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Explicar cualquier parte y su porqué, predecir el efecto de un cambio antes de ejecutarlo, justificar cada rareza, y modificarlo como si el cambio creciera desde dentro"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Haber escrito personalmente la mayor parte del código"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Explicar, predecir, justificar, modificar — las cuatro capacidades operativas. Nótese lo que no está en la lista: haberlo tecleado tú. La teoría se puede poseer sobre código heredado o generado por máquinas — de hecho esa es la tesis de la época: como la máquina produce texto sin teoría, tu trabajo es poseer la teoría de lo que no tecleaste. El estándar práctico que la sección propone para el código de tus agentes no es «¿funciona?» sino «¿podría yo firmarlo?» — palabra que en la sección 9 se vuelve literal."
+              },
+              {
+                "id": "q10",
+                "text": "¿Por qué concluye la sección que entender los sistemas por dentro vale hoy MÁS que antes, y no menos?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Porque los sistemas actuales son técnicamente más complejos"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque los empleadores lo exigen en las entrevistas"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque la IA hace abundante el código y escasa la comprensión — y lo escaso e imprescindible se revaloriza"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Porque los modelos aún cometen errores de sintaxis"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Es un argumento económico, no nostálgico: la máquina produce código sin teoría a escala industrial (Naur), la abstracción fuga (Spolsky), el modelo está sesgado contra tus rarezas legítimas (Chesterton) y su éxito degrada la vigilancia por defecto (Bainbridge). Resultado: el conocimiento que la máquina no puede tener — la correspondencia entre tu código y tu mundo — se convierte en el recurso escaso del sistema. Parece que cualquiera puede hacer software; la diferencia entre quien puede responder de un sistema y quien solo puede generarlo se convierte en *la* diferencia profesional. No a pesar de la IA: a causa de ella."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "title": "Anatomía de un agente",
+      "materials": [
+        {
+          "id": "mat-04-01",
+          "title": "Historia — Ábreme la caja",
+          "type": "markdown",
+          "markdownFile": "materials/04-01-historia-abreme-la-caja.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-04-02",
+          "title": "Teoría — Anatomía de un agente",
+          "type": "markdown",
+          "markdownFile": "materials/04-02-teoria-anatomia-de-un-agente.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-04-03",
+          "title": "Ampliación — Ábrela otra vez: el agente sin SDK",
+          "type": "markdown",
+          "markdownFile": "materials/04-03-ampliacion-abrela-otra-vez-el-agente-sin-sdk.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-04",
+          "title": "Examen: anatomía de un agente",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "Las cuatro piezas de un agente son...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Modelo, bucle, herramientas y contexto"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Modelo, base de datos, interfaz y plugins"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Prompt, memoria, GPU y API"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Planificador, ejecutor, evaluador y monitor"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Un agente es un programa que, en bucle, pide al modelo el siguiente paso, ejecuta las herramientas que este pide y le devuelve los resultados junto con todo el contexto acumulado. El bucle es un `while` tuyo; las herramientas son funciones tuyas; el contexto es lo que el modelo ve en cada vuelta. La cuarta opción describe patrones de orquestación (que existen — sección 7), pero no la anatomía mínima: esa cabe en sesenta líneas, como demostró Nadia."
+              },
+              {
+                "id": "q2",
+                "text": "Cuando el modelo «usa una herramienta», lo que ocurre técnicamente es que...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El modelo ejecuta la función en los servidores del proveedor"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El modelo obtiene acceso temporal a tu máquina"
+                  },
+                  {
+                    "id": "c",
+                    "text": "El modelo devuelve una petición estructurada (nombre y parámetros) y es tu código quien decide ejecutarla y le devuelve el resultado"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El modelo descarga la herramienta y la incorpora a sus pesos"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La «decisión» de usar una herramienta es un bloque JSON en una respuesta HTTP (`tool_use`); la ejecución es una línea tuya — en el ejemplo, `HERRAMIENTAS[bloque.name](**bloque.input)` — a la que puedes anteponer permisos, confirmaciones y registro. El modelo nunca toca nada: propone. Esta frontera es la base de toda la seguridad de agentes: los controles no se le piden al modelo, se construyen en la capa que ejecuta."
+              },
+              {
+                "id": "q3",
+                "text": "«Un agente puede exactamente lo que sus herramientas le permiten.» ¿Qué implica esta frase para el diseño?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Que hay que darle todas las herramientas posibles para que sea útil"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que el alcance del agente es una decisión de diseño tuya, y la seguridad se define eligiendo y limitando las herramientas, no confiando en el buen juicio del modelo"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que los agentes son inofensivos por construcción"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Que las herramientas deben ser de código abierto"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El agente de Nadia no podía tocar válvulas porque ninguna de sus tres funciones tocaba válvulas — no por virtud del modelo. La diferencia entre esa «cosita inofensiva» y el Autopilot que abrió el sector 7 no estaba en la inteligencia: estaba en que las herramientas del Autopilot eran el repositorio entero, el CI y el botón de merge. Diseñar un agente es, ante todo, diseñar su lista de herramientas y permisos — decisión tuya, auditable y modificable."
+              },
+              {
+                "id": "q4",
+                "text": "En el bucle del agente, ¿por qué se reenvía la conversación completa en cada vuelta?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Por un defecto de diseño de las API actuales"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque el modelo no guarda memoria entre llamadas: todo lo que debe «recordar» tiene que viajar en el contexto de cada petición"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Para que el proveedor pueda facturar más tokens"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Para evitar que el modelo se desvíe del objetivo"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Cada llamada a la API es independiente: el modelo solo sabe lo que hay en sus pesos y en la petición actual. La «memoria» del agente es el historial que tu bucle reacumula y reenvía. De ahí la consecuencia que la teoría subraya: el contexto crece a cada paso, es finito y su rendimiento se degrada al llenarse — lo que convierte su gestión (context engineering) en disciplina central, y explica técnicas como la compactación o los subagentes con contexto limpio."
+              },
+              {
+                "id": "q5",
+                "text": "Según *Building Effective Agents* (Anthropic), la diferencia entre un workflow y un agente es que...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Los workflows no usan modelos de lenguaje"
+                  },
+                  {
+                    "id": "b",
+                    "text": "En un workflow los pasos los define tu código de antemano y el modelo rellena cada uno; en un agente el modelo decide dinámicamente sus propios pasos y herramientas"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Los agentes son más baratos de operar"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Los workflows no pueden usar herramientas"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Workflows: «LLM y herramientas orquestadas mediante caminos de código predefinidos». Agentes: «el LLM dirige dinámicamente sus propios procesos». Un parte diario automatizado es un workflow (script → una llamada → publicar); investigar una anomalía es un agente (nadie sabe de antemano cuántos sensores mirar). La flexibilidad del agente se paga en coste, latencia e imprevisibilidad — de ahí el consejo del ensayo: la solución más simple posible, y complejidad solo cuando haga falta."
+              },
+              {
+                "id": "q6",
+                "text": "El «context rot» es el fenómeno por el cual...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Los datos del contexto caducan y deben refrescarse desde disco"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El proveedor recorta silenciosamente los contextos largos"
+                  },
+                  {
+                    "id": "c",
+                    "text": "El rendimiento del modelo se degrada a medida que la ventana de contexto se llena, incluso antes de agotarse"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Los tokens antiguos se borran automáticamente del historial"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La ventana no es solo finita: es un presupuesto de atención. A más tokens acumulados, menor precisión recuperando cualquiera de ellos — un modelo con la ventana medio llena de volcados irrelevantes razona peor sobre lo relevante. Consecuencia práctica inmediata: cuando tu asistente empeora en una sesión larga, no es un misterio ni un castigo — es context rot, y la solución suele ser sesión nueva con resumen, no insistir. Y consecuencia de diseño: el principio de Anthropic — el conjunto más pequeño de tokens de alta señal."
+              },
+              {
+                "id": "q7",
+                "text": "¿Cuándo tiene sentido usar MCP en lugar de funciones locales como herramientas de tu agente?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Siempre: es el estándar y las funciones locales son mala práctica"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Nunca: MCP solo sirve para los agentes comerciales"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Cuando una capacidad va a ser consumida por varios agentes o herramientas distintas, o quieres poder cambiar de agente sin reescribir integraciones"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Solo cuando las herramientas necesitan acceso a internet"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "MCP resuelve el problema N×M (cada agente integrándose con cada sistema) igual que el LSP lo resolvió entre editores y lenguajes. Para un agente único con tres funciones propias, un servidor MCP es ceremonia sin beneficio: empieza local y extrae a MCP cuando aparezca el segundo consumidor — el viejo principio de no construir la abstracción antes de necesitarla. El ángulo de soberanía (sección 8): un protocolo abierto entre tu agente y tus sistemas es un acoplamiento inspeccionable y sustituible."
+              },
+              {
+                "id": "q8",
+                "text": "En la demostración del capítulo, el agente resolvió el mismo problema dos veces por caminos distintos. La explicación correcta es que...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Había un bug en el bucle de Nadia"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El modelo aprendió de la primera ejecución y probó otra estrategia"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Cada respuesta del modelo es un muestreo sobre una distribución: la pequeña lotería de cada token, repetida, produce trayectorias distintas que suelen converger al mismo resultado"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Los datos de los sensores cambiaron entre ejecuciones"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Mismo código, mismos datos, misma pregunta — y caminos distintos, porque el modelo no es una función determinista sino una distribución de la que se muestrea (sección 2). «Casi siempre llegan al mismo sitio. Casi.» Ese «casi» es la razón por la que los tests clásicos no bastan para estas piezas y existe la disciplina de evals (sección 6), y por la que el «pasó una vez» del test flaky del Autopilot no significaba nada. El modelo no aprende entre ejecuciones: sus pesos no cambian con tus llamadas."
+              },
+              {
+                "id": "q9",
+                "text": "La «ventana» que Corvus vendía en el plan Enterprise equivalía, en el agente de Nadia, a...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Un panel de gráficas en tiempo real"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Un print que muestra cada petición de herramienta antes de ejecutarla"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Un modo de depuración del modelo"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Una licencia adicional del SDK"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La trazabilidad de un agente — qué pidió, con qué parámetros, qué se le devolvió — es trivial cuando el bucle es tuyo: un print, o con un poco más de oficio, un log JSONL con marca de tiempo (veinte líneas, como muestra la ampliación). La anécdota lleva una lección de mercado seria: desconfía de quien te venda como función premium lo que la arquitectura abierta da gratis. Saber qué es barato de construir es parte del criterio de compra — y solo se sabe habiendo construido una vez."
+              },
+              {
+                "id": "q10",
+                "text": "Con el criterio de «la solución más simple posible», ¿cuál de estas tareas justifica un agente en lugar de un workflow?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Generar el resumen diario a partir de la telemetría de la noche"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Clasificar cada ticket entrante en una de cinco categorías"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Investigar una alerta de telemetría cuyo diagnóstico puede requerir consultar un número imprevisible de fuentes en función de lo que se vaya encontrando"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Traducir la documentación a tres idiomas cada release"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Resumen diario, clasificación y traducción tienen caminos conocidos de antemano: script + llamadas al modelo en puntos fijos — workflows, más baratos, más predecibles, más fáciles de probar. La investigación de una alerta es el caso genuinamente abierto: qué mirar depende de lo que se descubra — el bucle dinámico aporta valor real. La madurez en este terreno se parece a la de siempre: no usar la pieza potente donde bastaba la simple. Que puedas montar un agente no significa que la tarea lo pida."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "title": "El arnés: harness engineering",
+      "materials": [
+        {
+          "id": "mat-05-01",
+          "title": "Historia — La Cuadrilla",
+          "type": "markdown",
+          "markdownFile": "materials/05-01-historia-la-cuadrilla.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-05-02",
+          "title": "Teoría — Harness engineering",
+          "type": "markdown",
+          "markdownFile": "materials/05-02-teoria-harness-engineering.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-05-03",
+          "title": "Ampliación — Un contexto, cinco agentes",
+          "type": "markdown",
+          "markdownFile": "materials/05-03-ampliacion-un-contexto-cinco-agentes.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-05",
+          "title": "Examen: harness engineering",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "Según la definición de Trivedy, el arnés (harness) es...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Cada pieza de código, configuración y lógica de ejecución que no es el modelo en sí"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El conjunto de prompts que definen la personalidad del agente"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La infraestructura de GPU donde se ejecuta el modelo"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El SDK oficial del proveedor del modelo"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "El arnés es todo lo de alrededor: el bucle, las herramientas y permisos, el entorno de ejecución, los ficheros de contexto, las comprobaciones, los registros. La mayor parte de las diferencias que notas entre herramientas «con el mismo modelo debajo» son diferencias de arnés — y esa es la observación central del capítulo: al Autopilot y a la Cuadrilla podía moverlos el mismo modelo; los separaba la casa construida alrededor."
+              },
+              {
+                "id": "q2",
+                "text": "La fórmula de Osmani — «un modelo decente con un gran arnés supera a un gran modelo con un mal arnés» — importa estratégicamente porque...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Permite ahorrar usando siempre los modelos más baratos"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Sitúa la ventaja competitiva en una capa que tu equipo posee y controla, en lugar de en una que solo puedes alquilar"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Demuestra que los modelos ya no van a mejorar"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Implica que el prompt engineering es la habilidad más importante"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Los modelos se alquilan y los alquila todo el mundo: por definición no diferencian. El arnés — permisos, contexto, sentidos, flujo — es tuyo, acumula tu conocimiento y mejora con tu inversión. La frase de Anthropic completa el argumento: el espacio de arneses interesantes no se encoge con modelos mejores, se mueve. No estás construyendo un andamio provisional: estás construyendo la parte del edificio que conservas cuando cambias de inquilino (sección 8)."
+              },
+              {
+                "id": "q3",
+                "text": "La política de la Cuadrilla era «Leer, casi todo. Proponer, todo. Ejecutar, lo listado. Mergear, jamás». ¿Qué principio clásico de seguridad implementa?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Defensa en profundidad"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Seguridad por oscuridad"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Mínimo privilegio, con la asimetría de dar barato lo reversible y negar estructuralmente lo irreversible"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Separación de entornos de desarrollo y producción"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Mínimo privilegio (doctrina desde los años setenta): cada actor, los permisos mínimos para su función. La formulación de Nadia añade la graduación inteligente: leer y proponer son baratos y reversibles (se dan generosamente), ejecutar va por lista blanca, y lo irreversible hacia el exterior — merge, deploy — queda *fuera del mundo* del agente. El matiz clave: no prohibido por prompt (que un modelo puede ignorar o ser inducido a ignorar) sino ausente de sus herramientas. «Le he dicho que no» y «no puede» son cosas distintas, y confundirlas fue el error de Élia con Corvus."
+              },
+              {
+                "id": "q4",
+                "text": "¿Qué debería contener un buen AGENTS.md?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Una descripción completa de la estructura de directorios del proyecto"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Comandos literales, convenciones que el código no evidencia, las vallas de Chesterton señalizadas con su porqué, y los límites de lo que no se toca"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Instrucciones motivacionales sobre escribir código limpio y mantenible"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Un tutorial del framework que usa el proyecto"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La regla de oro sale de la sección 3: el AGENTS.md existe para el contexto que no se puede deducir del código — la teoría, no la sombra. El agente ya sabe leer tu package.json y ya conoce tu framework; lo que no puede saber es que las horas del planificador son horas de acequia. La estructura de directorios la deduce solo; la prosa motivacional no aporta información. La entrada más valiosa del fichero de Vega era una línea con un porqué y un enlace."
+              },
+              {
+                "id": "q5",
+                "text": "La advertencia de la documentación de Claude Code — los ficheros CLAUDE.md hinchados hacen que se ignoren tus instrucciones reales — se explica porque...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Existe un límite duro de tamaño que trunca el fichero"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El formato Markdown no soporta ficheros grandes"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Es el presupuesto de atención aplicado a tu propio fichero: cada línea de paja compite por atención con las líneas que importan"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Los ficheros grandes tardan demasiado en cargarse"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Es context rot (sección 4) autoinfligido: el fichero de contexto se carga en cada sesión, y el modelo reparte atención finita entre todas sus líneas. Un fichero denso de alta señal concentra esa atención en lo que importa; uno hinchado la diluye — y las instrucciones críticas acaban con el mismo peso que la paja. La disciplina correcta es la de un buen README: corto, denso, podado periódicamente. Y la poda es un acto de mantenimiento con dueño, no una limpieza ocasional."
+              },
+              {
+                "id": "q6",
+                "text": "En un monorepo con varios AGENTS.md, la regla estándar de resolución es...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Solo se lee el de la raíz; los demás se ignoran"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Se concatenan todos por orden alfabético"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Gana el más cercano al fichero que se está editando, y lo pedido explícitamente en la conversación manda sobre todo"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El más reciente según la fecha de commit"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Resolución por cercanía: el contexto específico (el AGENTS.md de `apps/movil/`) manda sobre el general (el de la raíz) para el código de su zona — el mismo principio de alcance léxico que usas en programación. Y la instrucción explícita del humano en la conversación está por encima de cualquier fichero. Conocer la jerarquía te permite estructurar el contexto de un monorepo sin duplicarlo: lo común en la raíz, lo específico en cada zona."
+              },
+              {
+                "id": "q7",
+                "text": "Para usar un AGENTS.md existente desde Claude Code sin duplicar contenido, la práctica canónica es...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Renombrar AGENTS.md a CLAUDE.md y mantener una copia de cada uno"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Crear un CLAUDE.md cuyo contenido sea la importación `@AGENTS.md`"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Configurar una variable de entorno que apunte al fichero"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Pegar el contenido en el prompt de sistema de cada sesión"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Claude Code lee CLAUDE.md; su documentación oficial indica que si el repositorio ya usa AGENTS.md, se cree un CLAUDE.md que lo importe con `@AGENTS.md` — una línea. El contenido vive una sola vez, en el formato estándar que leen Codex, OpenCode, goose y Aider, y cada herramienta entra por su puerta. Mantener dos copias garantiza que diverjan (es el Google Doc de Bruno con otro disfraz); la importación es además una pequeña decisión de soberanía: tu contexto en un formato que ningún proveedor posee."
+              },
+              {
+                "id": "q8",
+                "text": "¿Por qué la frase «sin una comprobación que pueda ejecutar, \"parece terminado\" es la única señal disponible» resume la importancia de los feedback loops?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Porque los agentes mienten deliberadamente sobre su progreso"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque sin tests, linter o simulador que el agente ejecute, la única validación del trabajo es la impresión — y el validador pasas a ser tú, en el peor momento"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque las comprobaciones automáticas son más baratas que las manuales"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Porque los modelos no saben cuándo han terminado"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Los feedback loops son los sentidos del agente: en cada vuelta le dicen si su paso acercó o alejó del objetivo, y le permiten corregirse solo — la diferencia entre un agente útil y uno que produce plausibilidades con confianza. Sin ellos, la verificación entera recae en tu lectura, que es exactamente el recurso que querías multiplicar. Por eso la inversión más rentable de un arnés es mejorar los sentidos: rápidos (dentro de un bucle que itera, cada minuto de suite se multiplica) y honestos."
+              },
+              {
+                "id": "q9",
+                "text": "Dentro de un arnés, un test flaky es especialmente peligroso porque...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Ralentiza la ejecución de la suite completa"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Obliga a reejecutar el CI y encarece la factura"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Es un sentido que miente: el agente, sin la memoria social del «este falla a veces», actúa sobre la señal falsa con total confianza"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Impide que el agente termine ninguna tarea"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Un humano acumula la sospecha («reejecuta, es el flaky de siempre») — que es un parche cultural sobre un sentido roto. El agente no tiene esa cultura: si el test pasa, el arreglo «funciona»; si falla, hay que «arreglarlo». El 14 de marzo empezó exactamente así — un test intermitente que esa vez pasó, validando un cambio que contradecía la teoría del sistema. Por eso la caza de flakys deja de ser higiene aplazable y se convierte en requisito de habilitación agéntica: cada sentido que miente es un incidente esperando."
+              },
+              {
+                "id": "q10",
+                "text": "De las cuatro piezas del arnés (jaula, permisos, contexto, sentidos), ¿cuáles dependen de un proveedor concreto?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La jaula y los permisos"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El contexto y los sentidos"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Todas: cada herramienta impone su arnés completo"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Ninguna en lo esencial: contenedores estándar, política de equipo traducible, AGENTS.md abierto y el CI de siempre"
+                  }
+                ],
+                "correctChoiceId": "d",
+                "explanation": "La jaula es un contenedor estándar; la política de permisos es una decisión de equipo que se escribe primero en humano y se traduce a la sintaxis de cada herramienta; AGENTS.md es un formato abierto; los sentidos son tu CI. Las herramientas concretas añaden valor encima (hooks, subagentes, skills), pero el arnés esencial es tuyo — y cambiar de agente debería costar una tarde de configuración, no una migración. Diseñarlo así es la diferencia entre usar herramientas y pertenecerles: la lección que a Vega le costó un almendral."
+              },
+              {
+                "id": "q11",
+                "text": "Tu equipo quiere que el agente «ejecute siempre la suite antes de proponer cambios» y que «nunca deje secretos en el código». Según la regla del reparto, la implementación correcta es...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Añadir ambas instrucciones, bien destacadas, al principio del AGENTS.md"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Repetirlas en el prompt de cada tarea para reforzarlas"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Ponerlas en mecanismos deterministas que corren siempre — la suite en un git hook o en CI, el escáner de secretos como bloqueo — y no gastar prompt en pedir lo que la infraestructura ya impone"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Entrenar un modelo propio que tenga esas normas interiorizadas"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Todo lo que pueda ser determinista se hace determinista y se saca del bucle del agente, por tres razones: fiabilidad (la instrucción en prosa se cumple probabilísticamente; el hook, siempre), coste (cada norma «pensada» son vueltas de bucle; el hook es gratis), y universalidad — el win-win: el git hook y el CI también frenan al humano que edita a mano, con la misma barrera y sin duplicar nada. El prompt y el AGENTS.md quedan para lo que exige juicio, y entre ambos mundos está el patrón híbrido: el escáner detecta, el agente interpreta y repara. No es una técnica nueva — es automatizar lo automatizable y reservar el juicio para lo que lo exige: lo de siempre, amplificado."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "title": "Specs, versiones y evals",
+      "materials": [
+        {
+          "id": "mat-06-01",
+          "title": "Historia — El parte de las siete",
+          "type": "markdown",
+          "markdownFile": "materials/06-01-historia-el-parte-de-las-siete.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-06-02",
+          "title": "Teoría — Specs, versiones y evals",
+          "type": "markdown",
+          "markdownFile": "materials/06-02-teoria-specs-versiones-y-evals.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-06",
+          "title": "Examen: specs, versiones y evals",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "Un «prompt operativo» se define como...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Cualquier texto que se envíe alguna vez a un modelo"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Texto que se ejecuta en producción, cuya salida consumen usuarios o sistemas, y cuya modificación cambia el comportamiento del producto"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Un prompt optimizado para reducir el consumo de tokens"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El prompt de sistema de un asistente comercial"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La definición importa porque de ella se deriva todo el régimen: lo que cumple esas tres condiciones es una pieza de producción y hereda las obligaciones de cualquier pieza de producción — versionado, revisión, pruebas, vuelta atrás. El prompt del parte de las siete las cumplía todas y no tenía ninguna de las cuatro protecciones; tu experimento de esta tarde en un playground no cumple ninguna y no necesita ninguna. Clasificar bien la pieza es el primer acto de ingeniería."
+              },
+              {
+                "id": "q2",
+                "text": "El fallo de fondo en el incidente del parte de las siete fue que...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Bruno escribió un prompt técnicamente incorrecto"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El modelo tuvo una regresión del proveedor"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Una pieza operativa crítica vivía sin versionado, sin revisión, sin pruebas y sin vuelta atrás — porque «no parecía software»"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Faltaba capacidad en el sistema de alertas"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El retoque de Bruno era razonable y su intención buena; el sistema de alertas registró todo correctamente. Lo que falló fue de categoría: el equipo aplicaba disciplina de ingeniería a lo que parecía código y ninguna a la pieza de más impacto por línea del sistema. Como dijo Élia: somos buenos con las piezas que parecen software y descuidados con las que no lo parecen — y esta época consiste en que cada vez más piezas decisivas no lo parecen. Esa frase es la sección entera."
+              },
+              {
+                "id": "q3",
+                "text": "¿Por qué «lo probé una vez y quedó bien» no valida un cambio de prompt?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Porque una prueba manual no deja registro escrito"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque el componente es no determinista: una ejecución es una muestra de una distribución, y la regresión puede aparecer en cualquier otra muestra o escenario"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque los prompts deben probarlos siempre dos personas"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Porque los entornos de prueba difieren del de producción"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Bruno probó una vez, le gustó, y durante dos semanas el sistema omitió incidencias *de forma intermitente* — algunos partes las incluían, la mayoría no. Ningún parte mentía; todos juntos, sí: una media verdad estadística que una sola muestra jamás detectaría. Validar lo no determinista exige muchas ejecuciones sobre muchos escenarios comprobando propiedades — exactamente lo que es una suite de evals, y exactamente lo que un check rojo habría hecho dos minutos después del cambio."
+              },
+              {
+                "id": "q4",
+                "text": "En una suite de evals bien diseñada, la relación entre reglas deterministas y LLM-as-judge debe ser...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Solo juez LLM: las reglas fijas no capturan la calidad del lenguaje"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Mitad y mitad, para equilibrar"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Mayoría de reglas deterministas (baratas, rápidas, sin ambigüedad) y juez LLM solo para lo que las reglas no saben medir, con rúbrica versionada"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Solo reglas deterministas: usar un modelo para evaluar a otro es inaceptable"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "«Si hubo incidencia de presión, se menciona» es un assert determinista: barato, rápido, inequívoco — y lo crítico debe vivir ahí. El juez LLM cubre lo que las reglas no alcanzan (tono, claridad), pero hereda los sesgos medidos por Zheng et al. (posición, verbosidad, auto-preferencia) y los problemas señalados por Shankar et al. — así que puntúa con rúbrica escrita y versionada, se calibra contra juicios humanos, y jamás es la única línea de defensa."
+              },
+              {
+                "id": "q5",
+                "text": "La conexión entre las evals y el property-based testing (Hypothesis, fast-check) es que ambos...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Generan las entradas aleatoriamente"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Comprueban propiedades de la salida en lugar de una salida exacta, aceptando que no hay un único resultado correcto"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Requieren ejecutar los tests en producción"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Fueron inventados para probar modelos de lenguaje"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El gesto mental es el mismo: no «la salida es igual a X» sino «la salida cumple P». Las diferencias: en property-based las entradas se generan y el código es determinista; en evals las entradas se curan (escenarios reales) y el no determinismo está en el componente, por lo que cada escenario corre varias veces y se mira la tasa. La sección insiste en esta genealogía por una razón práctica: si tu equipo sabe probar lo estadístico —cargas, simulaciones, propiedades—, ya tiene el músculo mental para evals. No es magia nueva; es tradición aplicada a pieza nueva."
+              },
+              {
+                "id": "q6",
+                "text": "Según el criterio de la sección, ¿cuál de estas piezas justifica una suite de evals completa?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El CLAUDE.md del repositorio de tu equipo"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Un prompt de un experimento personal de fin de semana"
+                  },
+                  {
+                    "id": "c",
+                    "text": "El prompt que genera el resumen diario que reciben ochocientos clientes"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Cualquier texto que pase por un modelo, sin excepción"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La economía es la del testing de siempre: coste de una regresión no detectada × frecuencia de modificación. El parte a ochocientos regantes puntúa alto en ambas: suite completa. Tu CLAUDE.md, no: su «regresión» la detectas tú a los diez minutos, el coste es local y reversible — montarle prompt-testing es escribir tests unitarios para tu .bashrc. Entre ambos extremos se gradúa. El aviso contra el péndulo es parte del rigor: sobre-evaluar es tan poco profesional como no evaluar."
+              },
+              {
+                "id": "q7",
+                "text": "¿Qué evento, además de editar el prompt, debería disparar la suite de evals — y por qué?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El alta de cada usuario nuevo en el producto"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Cambiar el modelo subyacente, porque un prompt validado sobre un modelo es una pieza distinta sobre otro"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Cada reinicio del servidor de producción"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El cambio de estación del año"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El prompt y el modelo forman la unidad de comportamiento: el mismo texto sobre otro modelo (u otra versión del mismo) puede omitir, alucinar o cambiar de tono. Por eso «cambiar de modelo también es un despliegue» — y por eso, como verás en la sección 8, una suite de evals acaba siendo también la herramienta perfecta para comparar proveedores: ejecutada contra cada candidato, mide qué se resiente y qué no, sin opiniones ni marketing. Una suite de evals es también, sin proponérselo, una estrategia de salida."
+              },
+              {
+                "id": "q8",
+                "text": "La crítica de Eberhardt al spec-driven development («waterfall reinventado») señala el riesgo de...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Escribir specs en Markdown en lugar de en una herramienta formal"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Burocratizar el flujo con specs exhaustivas por adelantado, pagando una sobrecarga que en tareas medianas no devuelve beneficio — y que aun así no evitó un bug simple"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que los agentes no sepan leer especificaciones"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Usar herramientas de Microsoft en proyectos abiertos"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Su experimento documentado: miles de líneas de markdown para cientos de líneas de código, revisión interminable de documentos, y un bug evidente al final. El riesgo es real y viejo — las specs exhaustivas por adelantado fallan porque el entendimiento llega haciendo. La síntesis del curso: la spec vale lo que valga el contexto que el agente no puede deducir — tres páginas para una tarea de una tarde es teatro; el análisis y plan escritos del proyecto de la Confederación fueron lo que permitió volar. Cuánta especificación merece cada tarea: la vieja pregunta, con lector nuevo."
+              },
+              {
+                "id": "q9",
+                "text": "El consejo operativo de Hamel Husain — eliminar toda fricción para «mirar los datos» — importa para las evals porque...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Mirar los datos sustituye a la suite automatizada"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Los buenos escenarios de eval salen de salidas reales que alguien se molestó en leer — sin ese hábito, la suite se llena de casos inventados que no protegen de nada"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Los datos de producción no pueden usarse para pruebas"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Es la única forma de calibrar al juez LLM"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Husain, tras auditar decenas de productos de IA, identifica la causa raíz común de los fracasos: no construir evaluación robusta — y la materia prima de la evaluación robusta son los datos reales observados. Los cuarenta y dos escenarios de Vega salieron del histórico: noches tranquilas, averías gordas, y sobre todo la avería *pequeña y aburrida* del ramal norte — el caso que nadie inventaría en abstracto y que fue exactamente el que falló. La suite protege de lo que sus escenarios contienen; los escenarios buenos se cosechan, no se imaginan."
+              },
+              {
+                "id": "q10",
+                "text": "«NO ES UNA REDACCIÓN. ES UNA PIEZA.» — el cartel de Bruno. ¿Cuál es la generalización correcta de esa lección?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Todo texto de la empresa debe pasar por el repositorio git"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La disciplina de ingeniería se aplica según la función de la pieza (¿afecta a producción?), no según su apariencia (¿parece código?)"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Los prompts deben escribirlos solo ingenieros senior"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Los documentos de Google están prohibidos en ingeniería"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El criterio de apariencia («es texto, los textos no se despliegan») es el que produjo dos semanas de regresión silenciosa. El criterio de función pregunta qué hace la pieza: ¿su salida llega a usuarios? ¿su cambio altera el producto? Entonces es una pieza, se vista como se vista — prompt, configuración, rúbrica del juez, spec. Y las piezas heredan el régimen completo: git, revisión, pruebas proporcionales al riesgo, vuelta atrás. La época no exige principios nuevos; exige no dejar de aplicar los viejos a las piezas que no lo parecen."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "title": "Diseñar para humanos es diseñar para agentes",
+      "materials": [
+        {
+          "id": "mat-07-01",
+          "title": "Historia — El barro y el plano",
+          "type": "markdown",
+          "markdownFile": "materials/07-01-historia-el-barro-y-el-plano.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-07-02",
+          "title": "Teoría — Diseñar para humanos es diseñar para agentes",
+          "type": "markdown",
+          "markdownFile": "materials/07-02-teoria-disenyar-para-humanos-es-disenyar-para-agentes.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-07-03",
+          "title": "Ampliación — Loop engineering en detalle",
+          "type": "markdown",
+          "markdownFile": "materials/07-03-ampliacion-loop-engineering-en-detalle.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-07",
+          "title": "Examen: diseñar para humanos es diseñar para agentes",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "«La legibilidad se puede observar» significa que...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Existen métricas estáticas que puntúan la legibilidad objetivamente"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El rendimiento de los agentes sobre cada zona del código actúa como medida empírica: donde pierden el norte, hay deuda"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Los agentes pueden generar informes de calidad de código"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La legibilidad depende del observador y por tanto es subjetiva"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Durante décadas la legibilidad fue una opinión discutible en revisiones. El capítulo 7 muestra el giro: la Cuadrilla voló en el planificador limpio y se hundió en `report_utils.py` — tres PRs fallidos cuyos errores eran, todos, deuda del propio código (la palabra `total` con tres significados, el dato que mentía sobre su tipo, el fichero que no cabía en ninguna cabeza). Los fracasos de tus agentes son una auditoría de arquitectura continua y gratuita: úsala."
+              },
+              {
+                "id": "q2",
+                "text": "El orden correcto del flujo de trabajo agéntico serio es...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Implementar → probar → documentar → planificar"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Explorar → planificar → ejecutar → revisar"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Planificar → implementar de una vez → revisar al final del proyecto"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Ejecutar en paralelo desde el primer minuto y consolidar después"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Primero una sesión de exploración (el agente lee y produce un análisis que tú corriges — ahí entra la teoría no delegable: solo Tomás sabía lo de los dos contadores); luego un plan troceado en tareas de una tarde con criterio de «hecho» verificable; luego ejecución con gestión de contexto; y revisión en anillos. El antipatrón es el «hazme la integración entera» — intentar dibujar el búho en una mega-sesión, en palabras de Hashimoto. Es más barato discutir un plan que deshacer una implementación."
+              },
+              {
+                "id": "q3",
+                "text": "¿Cuándo conviene usar `/clear` y cuándo `/compact`?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Son sinónimos: ambos vacían el contexto"
+                  },
+                  {
+                    "id": "b",
+                    "text": "`/clear` guarda el historial en disco; `/compact` lo borra"
+                  },
+                  {
+                    "id": "c",
+                    "text": "`/clear` pone el contexto a cero entre tareas sin relación; `/compact` resume el historial para seguir una sesión larga que sí necesita su pasado"
+                  },
+                  {
+                    "id": "d",
+                    "text": "`/compact` es solo para reducir la factura de tokens"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La restricción de fondo: la ventana se llena rápido y el rendimiento se degrada al llenarse. `/clear` es para el cambio de tarea — la sesión-vertedero donde conviven el bug de ayer y la feature de hoy es el antipatrón número uno. `/compact` (resumir y seguir) es para la tarea larga que necesita sus decisiones previas pero no sus volcados — idealmente en los valles entre subtareas, cuando el resumen pierde menos. Saber cuál toca es parte de la respiración del oficio agéntico."
+              },
+              {
+                "id": "q4",
+                "text": "El valor específico del patrón writer/reviewer está en que...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Dos modelos siempre encuentran más bugs que uno por pura estadística"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El revisor trabaja con contexto limpio e instrucciones de desconfiar: no carga con el historial mental del escritor ni con sus razones para creer que el código está bien"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Permite facturar la revisión como tarea separada"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El revisor puede corregir el código directamente sin molestar al humano"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Es la misma asimetría que hace funcionar la revisión humana: el autor relee lo que quiso escribir; el revisor lee lo que está escrito. Un agente revisor con contexto limpio y mandato adversarial («encuentra razones por las que esto está mal») caza la clase de error que la autorevisión no caza. Y como dijo Tomás: no sustituye tu ojo — te lo ahorra para donde hace falta. Lo que sobrevive a la segunda mirada llega a la mesa humana ya filtrado."
+              },
+              {
+                "id": "q5",
+                "text": "La regla compartida por Willison y Hashimoto sobre el código generado es...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Usarlo solo en proyectos personales, nunca profesionales"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Reescribirlo siempre a mano antes de commitear"
+                  },
+                  {
+                    "id": "c",
+                    "text": "No commitear lo que no podrías explicar, y no enviar nada sin revisión manual concienzuda"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Confiar en él cuando los tests pasen"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Willison: no committeo código que no pudiera explicar exactamente a otra persona. Hashimoto: no enviéis jamás código escrito por IA sin revisión manual concienzuda. No es tecnofobia — ambos usan agentes intensivamente. Es contabilidad: la velocidad del flujo agéntico viene de paralelizar la escritura y automatizar la verificación mecánica, no de saltarse la comprensión. Saltársela fabrica deuda de comprensión — la que se paga el peor día posible, con la teoría ya muerta. Los tests en verde no sustituyen la explicabilidad: verifican comportamiento, no comprensión."
+              },
+              {
+                "id": "q6",
+                "text": "¿Por qué la política dura del equipo debe vivir en hooks y permisos y no en el prompt?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Porque los prompts tienen un límite de longitud"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque el hook es código y se cumple siempre; la instrucción en prosa depende de que el modelo la recuerde y respete en cada vuelta — y puede ser inducida a ignorarse"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque los hooks son más fáciles de escribir que los prompts"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Porque los prompts no pueden referenciar rutas de ficheros"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Es la distinción estructura/promesa que atraviesa el curso (sección 5: el botón de merge no existe; sección 9: la caja era de cristal). «Todo cambio en drivers exige test» como frase en un prompt se cumple estadísticamente; como check de CI se cumple siempre — y de hecho fue un check quien frenó a la Cuadrilla en su prueba de fuego. Regla práctica: si violar la norma tiene coste real, es política dura y va en código (hooks, permisos, branch protection); la prosa queda para el criterio y el contexto."
+              },
+              {
+                "id": "q7",
+                "text": "En el «loop engineering» de proyectos largos, la lista de features con estado, las notas estructuradas y los commits frecuentes resuelven todos el mismo problema:",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La facturación por tokens de las sesiones largas"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que cada sesión de agente despierta sin memoria de las anteriores: son mecanismos de transferencia de estado y teoría entre turnos efímeros"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La coordinación de zonas horarias en equipos distribuidos"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La falta de determinismo de los modelos"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "«Como ingenieros trabajando por turnos» sin memoria del turno anterior: cada pieza ataca una amnesia concreta — la lista de features, *qué toca* (con criterio de verificación ejecutable por entrada); las notas, *qué se aprendió*; git, *qué pasó de verdad* (y a qué punto volver); el AGENTS.md, *cómo se trabaja aquí*. Con las gafas de Naur: es ingeniería de la transferencia de teoría entre mentes efímeras — el equipo escribiendo su comprensión en formatos que sobreviven a la muerte de cada contexto."
+              },
+              {
+                "id": "q8",
+                "text": "Un ADR (Architecture Decision Record) documenta...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El estado actual completo de la arquitectura del sistema"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Una decisión concreta en su momento: contexto, decisión tomada, alternativas descartadas y consecuencias — el porqué, que no caduca"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Los diagramas UML de cada módulo"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La asignación de responsables por componente"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La documentación del *estado* del sistema envejece mal (el sistema cambia y ella no); un ADR documenta un *hecho histórico* — el día X, con el contexto Y, decidimos Z y descartamos W — que sigue siendo verdad para siempre. Nygard: los métodos ágiles no se oponen a la documentación, solo a la documentación sin valor. Y la segunda vida que le da Élia: por primera vez la documentación tiene un lector infatigable que hace caso — el ADR-001 fue lo que mantuvo a la Cuadrilla fuera del barro."
+              },
+              {
+                "id": "q9",
+                "text": "La decisión de Vega sobre el módulo de informes — no refactorizarlo entero sino estrangularlo — consistió en...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Congelar el módulo y prohibir todo cambio para siempre"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Reescribirlo desde cero en una rama de larga duración"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Construir la funcionalidad nueva en un módulo aparte con frontera limpia, y vaciar el viejo función a función, cada una con tests de caracterización antes de moverla"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Delegar su refactorización completa a la Cuadrilla"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Es el patrón strangler fig de toda la vida: lo nuevo crece alrededor con frontera limpia; lo viejo se vacía gradualmente, protegido por tests de caracterización (que fijan el comportamiento actual antes de tocarlo). La reescritura total es la otra huida hacia delante: alto riesgo, sin valor intermedio. Nota agéntica: la política incluía dónde podían trabajar los agentes (el módulo nuevo y lo ya caracterizado) — la gestión de legacy clásica, con una frontera nueva que declarar. Los agentes no cambian la doctrina; le quitan las excusas."
+              },
+              {
+                "id": "q10",
+                "text": "«Un acuerdo que no está en un fichero no existe.» La traducción práctica de este principio es...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Redactar un manual de bienvenida de cincuenta páginas"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Grabar las reuniones donde se toman las decisiones"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Convertir cada pacto del equipo en su artefacto ejecutable o versionado: convenciones en linters, contexto en AGENTS.md, revisión en CODEOWNERS y branch protection, flujos en comandos versionados, porqués en ADRs"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Nombrar a un responsable de recordar las normas"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Todo equipo tiene tres pactos — cómo queremos el código, cómo lo revisamos, qué seguridad rige — y la era agéntica los somete a una prueba binaria: tus agentes leen ficheros, no tradición oral. La estructura de la teoría (AGENTS.md, configs de linter, `.claude/`, CODEOWNERS, workflows, `docs/adr/`) es la constitución del equipo hecha ejecutable. Nada de eso es nuevo; lo nuevo es el miembro del equipo que la lee entera, siempre, y la cumple exactamente en la medida en que esté escrita. Los equipos con acuerdos escritos descubren que ya estaban listos."
+              },
+              {
+                "id": "q11",
+                "text": "El linter y los tests de un PR están en verde. ¿Qué le queda por comprobar a la revisión, y quién puede hacerlo?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Nada relevante: si los checks pasan, el cambio es correcto"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Solo el estilo del código, que revisa el autor releyendo su diff"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La conformidad semántica — si el cambio cumple la spec en espíritu y respeta los acuerdos y ADRs de la casa (fronteras de módulos, convenciones de diseño) — que exige juicio: un subagente revisor con las reglas cargadas, y al final la lectura humana"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La cobertura de tests, que es responsabilidad exclusiva de QA"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "La regla del reparto también parte la revisión en dos: lo que una regla fija puede comprobar (formato, tipos, tests, secretos) lo comprueban reglas fijas — y bloquean. Pero ningún linter sabe si el cambio cruza la frontera que el ADR-001 declaró intocable, si respeta cómo se modela el dominio en esta casa o si cumplió la spec en espíritu: eso exige juicio, y es delegable a un revisor con contexto limpio y el AGENTS.md y los ADRs cargados — incluso como job de CI que comenta cada PR. Con un matiz de reparto: el anillo determinista bloquea (veredictos fiables por construcción); el revisor agéntico, no determinista, informa y exige respuesta — no debería ser la única llave de un merge. Y el último anillo sigue siendo tu lectura: la conformidad que nadie comprobaba por falta de tiempo ahora es barata; la responsabilidad no ha cambiado de manos."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "title": "Soberanía: ser dueños del flujo",
+      "materials": [
+        {
+          "id": "mat-08-01",
+          "title": "Historia — Sesenta días",
+          "type": "markdown",
+          "markdownFile": "materials/08-01-historia-sesenta-dias.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-08-02",
+          "title": "Teoría — Soberanía: ser dueños del flujo",
+          "type": "markdown",
+          "markdownFile": "materials/08-02-teoria-soberania-ser-duenyos-del-flujo.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-08",
+          "title": "Examen: soberanía",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "El lock-in se define con rigor como...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La cláusula de permanencia de un contrato con un proveedor"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Un coste: la suma de lo que habría que reescribir, migrar, reaprender y re-verificar para cambiar de proveedor"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La sensación de dependencia respecto de una herramienta"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Cualquier uso de software propietario"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El lock-in no es una emoción ni una cláusula: es un número — el coste de salida — y por eso se puede medir, gestionar y reducir con ingeniería. Definirlo así desactiva los dos extremos estériles: el fatalismo («todo es lock-in») y la negación («firmamos y ya veremos»). La pregunta de Tomás lo operacionaliza: ¿cuánto nos cuesta hoy irnos? Ese número, no el precio del plan, dice quién manda en la relación."
+              },
+              {
+                "id": "q2",
+                "text": "¿Por qué el coste de salida «se paga antes de salir»?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Porque los proveedores cobran penalizaciones por cancelación anticipada"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque determina tu posición negociadora permanente: un proveedor que sabe que no puedes irte fija precios y condiciones en consecuencia"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque las migraciones se presupuestan al inicio del ejercicio fiscal"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Porque hay que provisionar la migración contablemente"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Aunque nunca te vayas, el coste de salida trabaja cada día: en cada renovación, en cada subida de precios, en cada degradación del servicio que toca tragar. Vega lo vivió en las dos direcciones — impotente ante el candado Enterprise el 14 de marzo, y serena ante el sunset del capítulo 8, cuando su coste de salida era una mañana de trabajo. La llamada con Íker es la escena de esa asimetría: no hay negociación posible *a favor* de quien no puede irse, ni *en contra* de quien sí puede."
+              },
+              {
+                "id": "q3",
+                "text": "El criterio del «acoplamiento inspeccionable» distingue entre la app todo-en-uno y el flujo con `gh` CLI porque en el segundo...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "No se depende de GitHub en absoluto"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La integración es más rápida de configurar"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Cada llamada es visible, los permisos los acotas tú, y el acoplamiento con el servicio es una herramienta estándar que cualquier agente puede invocar — sustituir la pieza cuesta una tarde"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El código resultante tiene menos errores"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Ambas opciones dependen de GitHub; la diferencia es la *forma* de la dependencia. En el flujo inspeccionable ves qué pasa por el acoplamiento y puedes cambiar el agente que lo ejecuta sin tocar la integración. En la app opaca, la lógica vive en servidores ajenos con permisos amplios, y sustituirla es reconstruir. La regla: si puedes supervisar el acoplamiento, controlas las piezas; si controlas las piezas, puedes cambiarlas de proveedor. Y la nota honesta: elegir la opción opaca a veces es correcto — lo ilegítimo es no saber que la estás eligiendo."
+              },
+              {
+                "id": "q4",
+                "text": "Según la doctrina de la sección, se alquila / se posee respectivamente...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Se alquilan los prompts; se poseen los modelos"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Se alquilan modelos e infraestructura; se poseen prompts, evals, contexto y arnés"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Se alquila todo: la propiedad es un lastre operativo"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Se posee todo: depender de terceros es el error de fondo"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El criterio: se alquila lo caro de hacer, barato de cambiar y ajeno a tu diferencia (los modelos son el commodity perfecto — «un enchufe caro», y a los enchufes se les exige ser estándar); se posee el conocimiento codificado, cuya sustitución sería reconstruir tu propia comprensión: prompts (tu operativa), evals (tu definición ejecutable de «bien»), contexto (tu teoría escrita) y arnés (tus reglas). La soberanía no es autarquía: alquila caballos, no vendas el mapa."
+              },
+              {
+                "id": "q5",
+                "text": "En la migración del capítulo 8, la pieza que convirtió el cambio de proveedor en un experimento medible fue...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "El contrato de nivel de servicio con el nuevo proveedor"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La suite de evals, ejecutada contra cada candidato para medir qué se resentía y qué no"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Una prueba manual intensiva de dos semanas"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La documentación de la API del nuevo proveedor"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Las evals definen «bien» con independencia de qué modelo haya debajo — así que ejecutarlas contra cada proveedor candidato responde la única pregunta que importa («¿qué perdemos y qué ganamos?») con datos, «sin opiniones ni marketing». El parte salió digno por tres tuberías; el diagnóstico perdió finura con el modelo pequeño y la recuperó con el mediano. Sin evals, cambiar de proveedor es un acto de fe precedido de semanas de pruebas manuales irrepetibles; con ellas, es una tarde de ejecución. Es la pieza de la sección 6 revelando su segunda función: estrategia de salida."
+              },
+              {
+                "id": "q6",
+                "text": "¿Cuál es el matiz correcto sobre los agregadores de API tipo OpenRouter o capas tipo LiteLLM?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Son la solución definitiva al lock-in de modelos"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Deben evitarse: añaden latencia sin beneficio"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Son útiles y son, a su vez, otro intermediario con su propio coste de salida: la abstracción mueve la dependencia, no la elimina"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Solo sirven para modelos de pesos abiertos"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Una interfaz única sobre decenas de proveedores es genuinamente útil — y quien la provee se convierte en tu nueva dependencia, con su propia disponibilidad, precios y condiciones. No es una razón para no usarlos; es una razón para usarlos sabiendo dónde has puesto la dependencia (una capa open source que puedes autoalojar tiene distinto perfil que un servicio comercial). El razonamiento entrenado que esta pregunta comprueba: ante cualquier «esto te independiza de X», preguntar siempre «¿y de quién me hace depender?»."
+              },
+              {
+                "id": "q7",
+                "text": "¿Cuál de estas afirmaciones sobre licencias de modelos de pesos abiertos es correcta?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Todos los modelos descargables son open source por definición"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Mistral y Qwen usan Apache 2.0 y DeepSeek usa MIT, mientras que la licencia comunitaria de Llama no cumple la definición de open source de la OSI"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Ningún modelo de pesos abiertos permite uso comercial"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La licencia es irrelevante si los pesos se pueden descargar"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "«Open source» se usa como confeti y las diferencias importan: Apache 2.0 y MIT son licencias abiertas de verdad (uso comercial sin restricciones); la «Llama Community License» impone restricciones de uso y umbrales por tamaño que la dejan fuera de la definición OSI, por mucho marketing que diga lo contrario. Para eso existe la OSAID. Moraleja operativa de la sección: antes de apoyar una decisión de arquitectura en un modelo «abierto», lee su licencia, no su nota de prensa — el mismo consejo vale para los agentes (Crush es FSL, no MIT puro)."
+              },
+              {
+                "id": "q8",
+                "text": "El valor estratégico de que existan modelos abiertos competentes y agentes open source es que...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Obligan a usarlos en lugar de las opciones comerciales"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Su mera existencia como alternativa viable pone un techo al precio y al poder de todos los proveedores, aunque sigas usando opciones comerciales"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Garantizan mejor rendimiento que las opciones cerradas"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Eliminan la necesidad de estrategia de salida"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Vega migró las tareas sensibles a un modelo abierto autoalojado, pero el punto de la sección es más general: la alternativa viable disciplina el mercado entero. Un proveedor que sabe que sus clientes *pueden* irse a Apache 2.0 servido en una máquina alquilada negocia distinto que uno que sabe que no. Por eso mantener la opción abierta evaluada (¿pasaría nuestra suite de evals?) tiene valor aunque nunca la actives: es el techo del precio de tu proveedor actual, y de su arrogancia."
+              },
+              {
+                "id": "q9",
+                "text": "Tratar la estrategia de salida «como un requisito de diseño» implica, en la práctica...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Cambiar de proveedor cada año por principio"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Evitar todo servicio comercial"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Documentar el coste de salida antes de firmar cada proveedor, mantener las piezas de posesión en formatos estándar, y ensayar la salida de vez en cuando — como se prueba un backup"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Incluir cláusulas de rescisión en todos los contratos"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Es un requisito no funcional más, al nivel de la seguridad o la disponibilidad: (1) un ADR de una página por proveedor nuevo — qué habría que tocar para irse; (2) prompts, evals, contexto y arnés en tus repositorios y en formatos estándar; (3) ensayo periódico — la prueba de Vega contra dos proveedores fue una ejecución, no una teoría, y una salida no ensayada es una esperanza, no una estrategia. Nada de esto es hostilidad: es simetría — ellos optimizan tu retención, tú tu libertad, y del equilibrio salen mejores contratos."
+              },
+              {
+                "id": "q10",
+                "text": "La frase de Nadia «lo que puedes entender, lo puedes sustituir» conecta la soberanía con el resto del curso porque...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Implica que basta leer la documentación de cada proveedor"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Revela que las piezas de la independencia (teoría reconstruida, contexto escrito, evals, arnés propio) son las mismas que el equipo construyó para entender su propio sistema — comprensión y soberanía son la misma inversión"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Demuestra que la soberanía es un problema exclusivamente legal"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Sugiere que los sistemas simples no necesitan estrategia de salida"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Nada de lo que hizo libre a Vega se hizo «contra» Corvus: el mapa de la pared, el AGENTS.md, las evals y el arnés se construyeron para recuperar la teoría del propio sistema (sección 3) — y resultaron ser, sin proponérselo, una estrategia de salida completa. Es la tesis del curso cerrando el círculo: la comprensión profunda no es una virtud ornamental; es el activo que a la vez te permite responder de tu sistema (sección 9) y te hace dueño de tu flujo. Lo que no entiendes, te tiene. Lo que entiendes, es tuyo — lo firme quien lo firme la factura del modelo."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "title": "Quien firma, responde",
+      "materials": [
+        {
+          "id": "mat-09-01",
+          "title": "Historia — La firma",
+          "type": "markdown",
+          "markdownFile": "materials/09-01-historia-la-firma.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-09-02",
+          "title": "Teoría — Quien firma, responde",
+          "type": "markdown",
+          "markdownFile": "materials/09-02-teoria-quien-firma-responde.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-09-03",
+          "title": "Ampliación — Audita tu propia trifecta",
+          "type": "markdown",
+          "markdownFile": "materials/09-03-ampliacion-audita-tu-propia-trifecta.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-09",
+          "title": "Examen: quien firma, responde",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "En el Therac-25, la decisión de diseño que convirtió bugs latentes en tragedias fue...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Programarlo en un lenguaje sin tipos seguros"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Eliminar los enclavamientos físicos de los modelos anteriores y confiar la seguridad al software reutilizado — cuyos fallos habían estado siempre ahí, tapados por el hierro"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Usar un sistema operativo comercial sin certificar"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Conectar la máquina a la red del hospital"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Las condiciones de carrera llevaban años en el software de los modelos 6 y 20; cuando se disparaban, el hierro paraba el golpe y nadie se enteraba. «Llevaba años funcionando» era verdad — y no significaba lo que creyeron: funcionaba *porque otro componente tapaba sus fallos*. Al retirar la barrera física, la esperanza pasó a llamarse seguridad. Es la lección que el curso aplica a los agentes: las barreras duras (permisos, jaulas, checks) deben ser estructura, porque la seguridad que depende de que el software no falle es esperanza con marketing."
+              },
+              {
+                "id": "q2",
+                "text": "La investigación de Leveson concluye que el Therac-25 fue, ante todo...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Un error de un programador identificado"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Un caso de sabotaje interno"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Un fallo sistémico: reutilización confiada, sin revisión independiente, pruebas insuficientes, avisos de hospitales y operadores desoídos, y un fabricante que negaba la posibilidad del fallo"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Una consecuencia inevitable de la tecnología de los ochenta"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Si fuera la historia de un bug, sería una anécdota; es lección fundacional porque el código fue solo el sitio donde la negligencia organizativa se hizo visible. Cambia los sustantivos y tienes la checklist de 2026: confianza en componentes no comprendidos, ausencia de revisión, señales desoídas, fe en que lo que funcionaba seguirá funcionando al cambiar el contexto. Por eso Tomás la cuenta antes de firmar: la firma obliga a poder responder de todo el sistema, no solo del código."
+              },
+              {
+                "id": "q3",
+                "text": "El prompt injection es análogo a la inyección SQL en el diagnóstico, pero se diferencia críticamente en que...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Solo afecta a modelos pequeños y antiguos"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Es más fácil de detectar en los logs"
+                  },
+                  {
+                    "id": "c",
+                    "text": "No tiene, a fecha de hoy, una solución completa equivalente a las consultas parametrizadas: se mitiga y se limitan sus consecuencias, no se elimina"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Solo funciona si el atacante conoce el prompt de sistema"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Ambos ataques explotan la mezcla de instrucciones y datos por el mismo canal. Pero SQL tiene solución completa (separar estructuralmente la consulta de los datos), y los LLM no: para el modelo, todo lo que entra por el contexto es texto con la misma voz. La consecuencia de ingeniería es el desplazamiento del esfuerzo: en vez de aspirar a impedir la inyección (imposible hoy), limitar estructuralmente lo que una inyección exitosa puede conseguir — que es el marco de la trifecta letal."
+              },
+              {
+                "id": "q4",
+                "text": "Los tres vértices de la trifecta letal de Willison son...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Modelo grande, contexto largo y herramientas rápidas"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Acceso a datos privados, exposición a contenido no confiable, y capacidad de comunicación externa"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Permisos de lectura, escritura y ejecución"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Prompt de sistema, prompt de usuario y herramientas"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El desastre requiere la conjunción: algo que robar (datos privados), una vía de entrada para las órdenes del atacante (contenido no confiable) y una vía de salida para el botín (comunicación externa). La defensa estructural niega al menos un vértice: la Cuadrilla leía un portal público (vértice 2 presente), pero sus contenedores no tenían credenciales (1 negado) ni salida de red fuera de lista blanca (3 negado). Dos vallas, cada una suficiente — por eso «la caja era de cristal» y el intento quedó en anécdota registrada."
+              },
+              {
+                "id": "q5",
+                "text": "En el ataque del capítulo, la Cuadrilla «se creyó» las instrucciones incrustadas en el volcado de log porque...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Su modelo era antiguo y vulnerable"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El atacante conocía las contraseñas internas de Vega"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Para un modelo, todo lo que entra por el contexto habla con la misma voz: no distingue estructuralmente entre las instrucciones de su operador y un texto malicioso que procesa"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El arnés le daba permiso para obedecer a usuarios externos"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Nadia lo explica ante la traza: nosotros oímos «esto lo dice un desconocido» y «esto lo dice mi jefa» como voces distintas; el modelo oye texto que continúa texto. No es un defecto reparable con un parche: es la naturaleza actual de la pieza (sección 2: todo es contexto). De ahí las dos consecuencias de diseño: tratar todo contenido externo que el agente procese como entrada de atacante potencial, y que la contención viva en el arnés (permisos, red, credenciales) — que fue exactamente lo que funcionó."
+              },
+              {
+                "id": "q6",
+                "text": "El «slopsquatting» es el ataque que consiste en...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Publicar paquetes con nombres casi idénticos a los populares"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Registrar con malware los nombres de paquetes inexistentes que los modelos alucinan con frecuencia, esperando el pip install de quien confíe en la sugerencia"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Envenenar los datos de entrenamiento de los modelos de código"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Suplantar la identidad de mantenedores de paquetes legítimos"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El estudio de Spracklen et al. (USENIX 2025) midió el fenómeno base: los modelos alucinan paquetes en ≥5,2% de los casos (comerciales) y 21,7% (abiertos), con más de 205.000 nombres inexistentes únicos — materia prima que el atacante registra y espera. Es typosquatting con la IA generando las erratas a escala. Defensas: verificar que cada dependencia nueva existe y es la que crees antes de instalar, y en flujos agénticos tratar la instalación como acción privilegiada (lista blanca o confirmación) — más la higiene general: SBOM, firmas, SLSA."
+              },
+              {
+                "id": "q7",
+                "text": "Sobre el copyright del código generado por IA, la posición actual de la Oficina de Copyright de EE. UU. es que...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Todo código generado por IA es de dominio público automáticamente"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El código generado pertenece al proveedor del modelo"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La protección exige creatividad humana: usar IA como asistencia no la anula, pero el prompt por sí solo no proporciona control suficiente para reclamar autoría de lo generado"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La cuestión quedó resuelta definitivamente en Doe v. GitHub"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Política de 2023 («solo material producto de la creatividad humana») e informe de 2025: la asistencia de IA no impide la protección del resultado dirigido y trabajado por humanos, pero el volcado en bruto de un prompt probablemente no es de nadie. Y Doe v. GitHub no resuelve nada todavía: sigue pendiente de decisión en apelación — quien la cite como ganada o perdida no la ha seguido. Postura operativa mientras tanto: revisar lo que se integra, filtros de coincidencia activados, respeto de licencias identificables y transparencia."
+              },
+              {
+                "id": "q8",
+                "text": "El principio 2.6 del Código Ético de la ACM (trabajar solo en las áreas de competencia propias) aplicado a la era de los agentes exige...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "No usar herramientas de IA fuera de tu especialidad"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Evaluar honestamente si tú — y tus herramientas — estáis a la altura de cada encargo antes de aceptarlo, incluyendo si comprendes lo suficiente el sistema del que vas a responder"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Obtener certificaciones oficiales antes de usar agentes"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Delegar en la IA lo que exceda tu competencia"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El código pide una evaluación honesta de la propia capacidad para cada trabajo — y en 2026 «la propia capacidad» incluye la de tu utillaje: ¿sabes qué puede y qué no puede hacer tu agente? ¿Posees la teoría del sistema que vas a modificar con él? La opción de delegar en la IA lo que te excede es exactamente la trampa: la responsabilidad no se transfiere a la herramienta (la máquina no responde de nada), así que aceptar un encargo que solo tu agente «entiende» es firmar sin competencia — lo que el código prohíbe desde 2018, y el sentido común desde antes."
+              },
+              {
+                "id": "q9",
+                "text": "La condición de Tomás para firmar — «papel que no se pueda auditar, papel que no se escribe» — establece que...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Cada afirmación de la memoria técnica debe corresponderse con algo demostrable: si dice que los agentes no acceden a credenciales, se enseña el contenedor; si dice que todo se revisa, se enseñan los registros"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Los documentos técnicos deben redactarlos auditores externos"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Solo se puede firmar lo que haya pasado una auditoría oficial"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Las memorias técnicas no deben incluir detalles de seguridad"
+                  }
+                ],
+                "correctChoiceId": "a",
+                "explanation": "Es el principio de verificabilidad aplicado al documento legal: la firma vale porque cada afirmación tiene su evidencia ejecutable detrás — la versión documental de los sentidos del arnés (sección 5) y de los criterios de «hecho» verificables (sección 7). El reverso define la mala práctica: el documento de seguridad aspiracional, que describe controles que nadie puede enseñar funcionando, es la versión corporativa del «llevaba años funcionando» del Therac-25 — papel que tapa en lugar de responder."
+              },
+              {
+                "id": "q10",
+                "text": "La respuesta de Nadia a la cuarta pregunta del mapa — «¿quién posee la teoría de este sistema?» no era una pregunta de arquitectura, sino «¿quién puede firmar?» — sintetiza el curso porque...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Reduce la responsabilidad a un trámite administrativo"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Une la tesis técnica (la teoría vive en personas) con la ética (responder es cosa de personas): la máquina escribe pero no responde, y por eso la comprensión humana no es opcional — es la condición de posibilidad de la responsabilidad"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Demuestra que los agentes no deben usarse en sistemas críticos"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Establece que solo los CTO deben firmar memorias técnicas"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Todo el curso converge aquí: la teoría de Naur (sección 3) parecía una idea sobre conocimiento; la firma revela que es una idea sobre responsabilidad. Un sistema cuya teoría nadie posee no es solo frágil — es un sistema del que nadie puede responder, y el mundo (clientes, contratos, leyes, el agua de Paca) exige que alguien responda. La máquina escribe, propone, acelera; responder — con nombre y consecuencias — es humano por definición. Por eso el oficio no se acaba: porque alguien tiene que poder poner su nombre debajo, y merecer ponerlo se estudia."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "El futuro imaginado",
+      "materials": [
+        {
+          "id": "mat-10-01",
+          "title": "Historia — Un año después",
+          "type": "markdown",
+          "markdownFile": "materials/10-01-historia-un-anyo-despues.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-10-02",
+          "title": "Teoría — El futuro imaginado",
+          "type": "markdown",
+          "markdownFile": "materials/10-02-teoria-el-futuro-imaginado.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "mat-10-03",
+          "title": "Ampliación — El flujo completo, hoy",
+          "type": "markdown",
+          "markdownFile": "materials/10-03-ampliacion-el-flujo-completo-hoy.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        },
+        {
+          "id": "exam-10",
+          "title": "Examen: el futuro imaginado",
+          "type": "exam",
+          "markdownFile": null,
+          "mediaPath": null,
+          "exam": {
+            "passingScore": 0.7,
+            "questionsPerAttempt": 5,
+            "questions": [
+              {
+                "id": "q1",
+                "text": "La regla que el capítulo y la teoría se imponen al hablar del futuro es...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "No hacer ninguna predicción para no equivocarse"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Mezclar hechos y extrapolación solo marcando explícitamente cada cruce de frontera entre lo verificable y lo imaginado"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Citar únicamente predicciones de analistas reconocidos"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Limitar las predicciones a un horizonte de un año"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Ni mudez ni profecía: la destreza profesional que la sección modela es distinguir hecho de conjetura *y decirlo* — «aviso: flipada», la versión de Bruno. Un ingeniero necesita razonar sobre el futuro (toda arquitectura es una apuesta sobre él), y necesita no confundir sus apuestas con datos. La sección pide extender esa exigencia a todo lo que leas: quien te venda el futuro sin marcar las fronteras no está informando — está vendiendo."
+              },
+              {
+                "id": "q2",
+                "text": "En la escalera prompt → agente → cuadrilla → flota, lo que ocurre con el criterio humano en cada peldaño es que...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Se reduce hasta desaparecer en el último peldaño"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Permanece idéntico en todos los niveles"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Asciende de nivel: de escribir código a dar contexto y verificación, de ahí a diseñar flujos, y de ahí a operar sistemas de agentes"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Se transfiere gradualmente a los propios agentes"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Es la tesis de la sección 1 proyectada hacia delante: cada salto de automatización desplaza el criterio en vez de eliminarlo. Con el prompt, el criterio era qué pedir; con el agente, qué contexto y herramientas dar; con la cuadrilla, cómo diseñar el flujo (qué en paralelo, qué se verifica, dónde las esclusas humanas); con la flota — ya en terreno imaginado — operar el sistema: umbrales, presupuestos, qué merece atención humana. En ningún peldaño sobra el ingeniero; en cada uno trabaja más arriba."
+              },
+              {
+                "id": "q3",
+                "text": "El «autonomy slider» de Karpathy propone que la autonomía de la IA...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Debe maximizarse en cuanto la tecnología lo permita"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Es un dial continuo que se gradúa tarea a tarea, según el riesgo y la verificabilidad de cada una"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Debe fijarse por política de empresa a un nivel único"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Es una ilusión: siempre hay un humano decidiendo"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Ni interruptor ni carrera: un dial. Para el prototipo desechable, autonomía alta (el vibe coding legítimo de la sección 2); para el sistema que toca válvulas, autonomía baja con esclusas humanas. La graduación depende de dos variables que ya conoces: coste del error y capacidad de verificación automática (sentidos, sección 5). Vega implementó el dial sin llamarlo así: la Cuadrilla proponía todo, ejecutaba lo listado y no mergeaba jamás — tres posiciones distintas del mismo dial, elegidas por riesgo."
+              },
+              {
+                "id": "q4",
+                "text": "«Puedes externalizar tu pensamiento, pero no puedes externalizar tu comprensión» (Karpathy). En términos del curso, esto reafirma que...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "No conviene usar IA para tareas de razonamiento"
+                  },
+                  {
+                    "id": "b",
+                    "text": "La generación de código y de análisis se puede delegar, pero la teoría del sistema — la que permite verificar, decidir y responder — tiene que vivir en personas"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La comprensión es transferible mediante buena documentación"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Pensar y comprender son la misma actividad"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Es Naur (sección 3) con vocabulario de 2026: la máquina produce pensamiento-texto a coste marginal cero — borradores, análisis, código —, pero la comprensión es un estado de la persona, intransferible por construcción (por eso la resurrección desde la documentación era «estrictamente imposible»). La consecuencia práctica de toda la parte final del curso: delega la escritura cuanto quieras; la comprensión de lo delegado hay que pagarla igual — o aceptar que estás firmando lo que no entiendes, que es la definición exacta de lo que la sección 9 prohíbe."
+              },
+              {
+                "id": "q5",
+                "text": "¿Por qué la teoría considera que el «ingeniero de producto» solo funciona sobre una base de ingeniería?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Porque los títulos universitarios lo exigen"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque el mercado laboral penaliza los perfiles generalistas"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque decidir qué construir y orquestar su construcción sin poder bajar a la sala de máquinas es orquestación sin comprensión — y la fuga de la abstracción se cobra la factura el peor día posible"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Porque los agentes aún no saben hablar con los clientes"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "El desplazamiento hacia producto es real y deseable: menos teclear, más decidir, verificar y responder. Pero la sección advierte contra el atajo: Élia decidiendo vale porque puede abrir cualquier caja; Nadia orquestando vale porque escribió un agente con sus manos. El ingeniero de producto es un ingeniero al que la automatización liberó las manos — no alguien que se saltó la ingeniería. Quien intente la segunda vía descubrirá que las abstracciones ahorran trabajo pero no aprendizaje (Spolsky, sección 3), con intereses."
+              },
+              {
+                "id": "q6",
+                "text": "¿Cuál de estos argumentos del optimismo de la sección está formulado correctamente?",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La IA eliminará los errores de software en una década"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El trabajo que la automatización absorbe primero (boilerplate, migraciones mecánicas, el CRUD número mil) es el menos querido del oficio, y lo que queda en el lado humano es la parte noble: entender, diseñar, poseer teorías, responder"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Los agentes harán innecesaria la formación de nuevos ingenieros"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El software generado será siempre más barato de mantener"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "El optimismo de la sección es argumentado, no eufórico: (1) crear nunca fue tan accesible — software viable para mercados diminutos e hiperlocales; (2) lo automatizado primero es lo menos amado; (3) el conocimiento profundo se revaloriza — las cajas están más abiertas que nunca para quien decida mirar dentro. Las otras opciones son el optimismo mal formulado que la sección precisamente evita: promesas absolutas sin marca de especulación. Hasta el optimismo, en este curso, lleva las fronteras marcadas."
+              },
+              {
+                "id": "q7",
+                "text": "Si la imaginación de las «flotas» acierta, la disciplina que gana protagonismo es...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La memorización de sintaxis de más lenguajes"
+                  },
+                  {
+                    "id": "b",
+                    "text": "El diseño de interfaces de usuario"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La ingeniería de sistemas: fiabilidad, observabilidad, colas, presupuestos — aplicada a trabajadores no deterministas"
+                  },
+                  {
+                    "id": "d",
+                    "text": "La administración de bases de datos"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Operar muchos agentes en paralelo es, estructuralmente, un problema de sistemas distribuidos con una vuelta de tuerca (los trabajadores no son deterministas): qué se paraleliza, cómo se detecta el fallo, dónde están los límites de presupuesto, qué merece escalar a un humano. La sala de control de Tomás como imagen del futuro del oficio. Y la apuesta formativa que se deriva — saber de sistemas vale más que memorizar sintaxis — es exactamente la que el curso hizo desde la sección 1, lo cual no es casualidad: la imaginación honesta alarga tendencias, no las inventa."
+              },
+              {
+                "id": "q8",
+                "text": "El «juego de la retro» de Vega — imaginar avisando que se imagina — modela una práctica profesional valiosa porque...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Las predicciones de equipo aciertan más que las individuales"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Los equipos necesitan razonar sobre el futuro para decidir arquitecturas y carreras, y hacerlo con las fronteras marcadas permite explorar sin contaminar las decisiones con ficciones tomadas por hechos"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Es una dinámica de cohesión sin valor técnico"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Evita que los juniors hagan preguntas incómodas"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "Toda decisión de arquitectura es una apuesta sobre el futuro (¿durará este proveedor? ¿escalará este patrón?), así que negarse a imaginar es negarse a decidir bien. El riesgo no está en imaginar sino en olvidar que se imagina — en construir sobre la flipada como si fuera dato. El protocolo de Élia («todo lo que se diga a partir de ahora es imaginación») es la versión conversacional de marcar lo especulativo en un documento técnico: baratísimo, y suficiente para poder jugar sin hacerse trampas."
+              },
+              {
+                "id": "q9",
+                "text": "La respuesta de Nadia a Leire — «esa pregunta es la correcta, hecha exactamente al revés» (sobre por qué saberse el código si los agentes ya se lo saben) apunta a que...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "Los agentes todavía cometen demasiados errores de sintaxis"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Es precisamente porque los agentes generan y modifican el código por lo que la comprensión humana se vuelve más crítica: alguien tiene que poder verificar, decidir y responder de lo que las máquinas producen"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Los juniors deben ganarse el derecho a usar agentes"
+                  },
+                  {
+                    "id": "d",
+                    "text": "El conocimiento del código es un requisito temporal que desaparecerá"
+                  }
+                ],
+                "correctChoiceId": "b",
+                "explanation": "La intuición de Leire (si la máquina sabe, yo no necesito saber) es la fuga lógica más natural de la época, y el curso entero es su refutación: la máquina produce código sin teoría (Naur), sin responder de nada (sección 9), con fallos que solo detecta quien comprende (secciones 2 y 7). Cuanto más produce la máquina, más escasa y valiosa es la comprensión que la verifica. Nadia no le contesta porque la respuesta no se transfiere: se construye — con el mapa, el cuaderno y las manos. Como la teoría de Naur, exactamente."
+              },
+              {
+                "id": "q10",
+                "text": "«El agua no entiende de excusas» — la frase de Paca como cierre del curso significa que...",
+                "choices": [
+                  {
+                    "id": "a",
+                    "text": "La tecnología agrícola es más exigente que otras industrias"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Los sistemas físicos no admiten automatización"
+                  },
+                  {
+                    "id": "c",
+                    "text": "La realidad a la que sirve el software es indiferente a las modas y herramientas: el oficio se mide por estar a la altura de esa realidad — lo demás son herramientas"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Hay que evitar los proyectos con requisitos duros"
+                  }
+                ],
+                "correctChoiceId": "c",
+                "explanation": "Paca ha visto mulas, motores, aspersores, ordenadores y máquinas que escriben, y con cada ola llegaron «unos listos diciendo que ya no hacía falta saber» — mientras el agua seguía bajando cuando le toca, sin leerse ni un folleto. Es la tesis del curso en lenguaje de acequia: las herramientas cambian (y hay que aprenderlas: Vega las aprendió todas); el oficio — saber lo que hay que saber, estar cuando hay que estar, responder de lo que se firma — es la parte que no rota con el stack. Con el agua se está o no se está. Que te encuentre en tu puesto."
+              }
+            ]
+          },
+          "required": true,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "s11-cierre",
+      "title": "Cierre",
+      "materials": [
+        {
+          "id": "mat-11-01",
+          "title": "El agua y el oficio",
+          "type": "markdown",
+          "markdownFile": "materials/11-01-cierre-el-agua-y-el-oficio.md",
+          "mediaPath": null,
+          "exam": null,
+          "required": true,
+          "sources": []
+        }
+      ]
+    }
+  ]
+}
