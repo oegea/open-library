@@ -143,6 +143,12 @@ The four material types:
    optional notes rendered below the player.
 3. **`"type": "audio"`** — same as video with an audio file
    (`media/talk.mp3`). The player shows the course artwork.
+   Audio and video materials may also set `"transcriptPath"` to a **timed
+   transcript** JSON (`media/audio/talk.transcript.json`,
+   `{ "words": [{ "text": "El", "start": 0.06, "end": 0.16 }, …] }`): the
+   study view then highlights each word as it is narrated, keeps it in view
+   and lets visitors tap a word to seek. Omit it or set `null` for plain
+   playback; exports ignore it.
 4. **`"type": "exam"`** — keep the questions inline in `course.json` (they
    are structure, not prose). Set `exam` to:
 
@@ -184,6 +190,14 @@ player). Existing mp3 files are skipped, so delete one to regenerate it.
 ```
 ELEVENLABS_API_KEY=... python3 scripts/narrate.py --course <dir> --voice <voice_id> [--dry-run] [--only <material-id>]
 ELEVENLABS_API_KEY=... python3 scripts/narrate.py --sample <voice_id>   # ~30 s voice sample in scratch-samples/
+```
+
+`scripts/align.py` then produces the timed transcript of each narrated
+chapter with ElevenLabs forced alignment (no TTS credits) and fills
+`transcriptPath`:
+
+```
+ELEVENLABS_API_KEY=... python3 scripts/align.py --course <dir> [--only <material-id>] [--force] [--dry-run]
 ```
 
 Full API notes (endpoints, credits, voice ids) in `scripts/README.md`. Never

@@ -95,6 +95,35 @@ curl -s -H "xi-api-key: $ELEVENLABS_API_KEY" https://api.elevenlabs.io/v1/voices
 | `OUTPUT_FORMAT` | `mp3_44100_64` | Voz mono: indistinguible de 128 kbps y la mitad de peso (~5 MB por 10 min) |
 | `CHUNK_LIMIT` | 4000 | Por debajo del límite por petición del modelo, con margen |
 
+## Transcripción sincronizada — `scripts/align.py`
+
+Open Knowledge resalta palabra a palabra el texto de un capítulo narrado si
+el material declara `transcriptPath` (JSON `{ "words": [{ "text", "start",
+"end" }] }`, tiempos en segundos). `align.py` lo genera a partir del mp3 ya
+publicado y del mismo texto limpio que narró `narrate.py`, con el endpoint de
+*forced alignment*:
+
+```sh
+export ELEVENLABS_API_KEY=sk_...
+python3 scripts/align.py --course <directorio-del-curso> --dry-run   # qué se alinearía
+python3 scripts/align.py --course <directorio-del-curso>             # todos los «Historia» con audio
+python3 scripts/align.py --course <dir> --only mat-03-01 --force     # rehacer uno
+```
+
+Salida: `media/audio/<capítulo>.transcript.json` (≈ 90 KB por capítulo,
+~2.000 palabras) y `transcriptPath` en `course.json`. Los ya alineados se
+saltan salvo `--force`.
+
+| Uso | Endpoint |
+| --- | --- |
+| Alinear audio + texto | `POST /forced-alignment` (multipart: `file` = mp3, `text` = texto narrado) → `words[]` con `text/start/end/loss` |
+
+En nuestras pruebas la alineación **no descontó créditos de TTS**
+(`character_count` no cambió tras cada llamada); el script imprime el
+contador antes y después por si la política cambia. La pérdida (`loss`)
+global de cada capítulo quedó entre 0,18 y 0,21 y ~99,5 % de las palabras
+mostradas encontraron su pareja narrada.
+
 ## Voz usada en la librería
 
 - *El oficio y la máquina* (`ingeniero-de-software-en-la-era-de-la-ia`):
