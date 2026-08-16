@@ -83,7 +83,7 @@
   "aiAssisted": true,
   "published": true,
   "createdAt": "2026-08-12T20:00:00Z",
-  "updatedAt": "2026-08-13T10:10:00Z",
+  "updatedAt": "2026-08-16T23:55:23Z",
   "sections": [
     {
       "id": "s00-introduccion",
@@ -118,12 +118,13 @@
         {
           "id": "mat-01-01",
           "title": "Historia — La noche de las voces",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/01-01-historia-la-noche-de-las-voces.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/radioaficion-en-espana-01-la-noche-de-las-voces.mp3",
           "exam": null,
           "required": true,
-          "sources": []
+          "sources": [],
+          "transcriptPath": "media/audio/radioaficion-en-espana-01-la-noche-de-las-voces.transcript.json"
         },
         {
           "id": "mat-01-02",
@@ -409,12 +410,13 @@
         {
           "id": "mat-02-01",
           "title": "Historia — Doce voltios de vida",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/02-01-historia-doce-voltios-de-vida.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/radioaficion-en-espana-02-doce-voltios-de-vida.mp3",
           "exam": null,
           "required": true,
-          "sources": []
+          "sources": [],
+          "transcriptPath": "media/audio/radioaficion-en-espana-02-doce-voltios-de-vida.transcript.json"
         },
         {
           "id": "mat-02-02",
@@ -700,12 +702,13 @@
         {
           "id": "mat-03-01",
           "title": "Historia — El idioma del dial",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/03-01-historia-el-idioma-del-dial.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/radioaficion-en-espana-03-el-idioma-del-dial.mp3",
           "exam": null,
           "required": true,
-          "sources": []
+          "sources": [],
+          "transcriptPath": "media/audio/radioaficion-en-espana-03-el-idioma-del-dial.transcript.json"
         },
         {
           "id": "mat-03-02",
@@ -991,12 +994,13 @@
         {
           "id": "mat-04-01",
           "title": "Historia — La caja de Amparo",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/04-01-historia-la-caja-de-amparo.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/radioaficion-en-espana-04-la-caja-de-amparo.mp3",
           "exam": null,
           "required": true,
-          "sources": []
+          "sources": [],
+          "transcriptPath": "media/audio/radioaficion-en-espana-04-la-caja-de-amparo.transcript.json"
         },
         {
           "id": "mat-04-02",
@@ -1282,12 +1286,13 @@
         {
           "id": "mat-05-01",
           "title": "Historia — El club de las goteras",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/05-01-historia-el-club-de-las-goteras.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/radioaficion-en-espana-05-el-club-de-las-goteras.mp3",
           "exam": null,
           "required": true,
-          "sources": []
+          "sources": [],
+          "transcriptPath": "media/audio/radioaficion-en-espana-05-el-club-de-las-goteras.transcript.json"
         },
         {
           "id": "mat-05-02",
@@ -1573,12 +1578,13 @@
         {
           "id": "mat-06-01",
           "title": "Historia — Las voces de pato",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/06-01-historia-las-voces-de-pato.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/radioaficion-en-espana-06-las-voces-de-pato.mp3",
           "exam": null,
           "required": true,
-          "sources": []
+          "sources": [],
+          "transcriptPath": "media/audio/radioaficion-en-espana-06-las-voces-de-pato.transcript.json"
         },
         {
           "id": "mat-06-02",
@@ -1864,12 +1870,13 @@
         {
           "id": "mat-07-01",
           "title": "Historia — Lo que guarda una caja",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/07-01-historia-lo-que-guarda-una-caja.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/radioaficion-en-espana-07-lo-que-guarda-una-caja.mp3",
           "exam": null,
           "required": true,
-          "sources": []
+          "sources": [],
+          "transcriptPath": "media/audio/radioaficion-en-espana-07-lo-que-guarda-una-caja.transcript.json"
         },
         {
           "id": "mat-07-02",
@@ -2155,12 +2162,13 @@
         {
           "id": "mat-08-01",
           "title": "Historia — La azotea en discordia",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/08-01-historia-la-azotea-en-discordia.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/radioaficion-en-espana-08-la-azotea-en-discordia.mp3",
           "exam": null,
           "required": true,
-          "sources": []
+          "sources": [],
+          "transcriptPath": "media/audio/radioaficion-en-espana-08-la-azotea-en-discordia.transcript.json"
         },
         {
           "id": "mat-08-02",
@@ -2446,12 +2454,13 @@
         {
           "id": "mat-09-01",
           "title": "Historia — La noche que el cielo fue un espejo",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/09-01-historia-la-noche-que-el-cielo-fue-un-espejo.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/radioaficion-en-espana-09-la-noche-que-el-cielo-fue-un-espejo.mp3",
           "exam": null,
           "required": true,
-          "sources": []
+          "sources": [],
+          "transcriptPath": "media/audio/radioaficion-en-espana-09-la-noche-que-el-cielo-fue-un-espejo.transcript.json"
         },
         {
           "id": "mat-09-02",
@@ -2737,12 +2746,13 @@
         {
           "id": "mat-10-01",
           "title": "Historia — La tormenta y el televisor",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/10-01-historia-la-tormenta-y-el-televisor.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/radioaficion-en-espana-10-la-tormenta-y-el-televisor.mp3",
           "exam": null,
           "required": true,
-          "sources": []
+          "sources": [],
+          "transcriptPath": "media/audio/radioaficion-en-espana-10-la-tormenta-y-el-televisor.transcript.json"
         },
         {
           "id": "mat-10-02",
@@ -3028,12 +3038,13 @@
         {
           "id": "mat-11-01",
           "title": "Historia — El simulacro",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/11-01-historia-el-simulacro.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/radioaficion-en-espana-11-el-simulacro.mp3",
           "exam": null,
           "required": true,
-          "sources": []
+          "sources": [],
+          "transcriptPath": "media/audio/radioaficion-en-espana-11-el-simulacro.transcript.json"
         },
         {
           "id": "mat-11-02",
@@ -3319,12 +3330,13 @@
         {
           "id": "mat-12-01",
           "title": "Historia — El día del examen",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/12-01-historia-el-dia-del-examen.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/radioaficion-en-espana-12-el-dia-del-examen.mp3",
           "exam": null,
           "required": true,
-          "sources": []
+          "sources": [],
+          "transcriptPath": "media/audio/radioaficion-en-espana-12-el-dia-del-examen.transcript.json"
         },
         {
           "id": "mat-12-02",
