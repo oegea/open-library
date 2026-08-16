@@ -172,6 +172,23 @@ The four material types:
 - Write real `explanation`s: the product's exam philosophy is feedback, not
   scores.
 
+### Narrated chapters (ElevenLabs)
+
+`scripts/narrate.py` turns the "Historia" chapters of a course into `audio`
+materials: it cleans each Markdown lesson for narration, synthesizes it with
+ElevenLabs (paragraph-aligned chunks stitched together), concatenates the
+result with `ffmpeg` into `media/audio/<course>-<nn>-<slug>.mp3` and points
+the material's `mediaPath` at it (the full text stays as notes below the
+player). Existing mp3 files are skipped, so delete one to regenerate it.
+
+```
+ELEVENLABS_API_KEY=... python3 scripts/narrate.py --course <dir> --voice <voice_id> [--dry-run] [--only <material-id>]
+ELEVENLABS_API_KEY=... python3 scripts/narrate.py --sample <voice_id>   # ~30 s voice sample in scratch-samples/
+```
+
+Full API notes (endpoints, credits, voice ids) in `scripts/README.md`. Never
+commit the API key. Narrated courses must have `aiAssisted: true`.
+
 ## Adding a category
 
 Categories are derived from the courses themselves: any `category` string

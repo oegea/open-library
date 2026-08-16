@@ -119,7 +119,7 @@
   "aiAssisted": true,
   "published": true,
   "createdAt": "2026-08-14T12:00:00Z",
-  "updatedAt": "2026-08-14T12:00:00Z",
+  "updatedAt": "2026-08-16T21:57:57Z",
   "sections": [
     {
       "id": "s00-introduccion",
@@ -154,9 +154,9 @@
         {
           "id": "mat-01-01",
           "title": "Historia — El riego fantasma",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/01-01-historia-el-riego-fantasma.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/ingeniero-de-software-en-la-era-de-la-ia-01-el-riego-fantasma.mp3",
           "exam": null,
           "required": true,
           "sources": []
@@ -435,9 +435,9 @@
         {
           "id": "mat-02-01",
           "title": "Historia — Autopsia de un commit",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/02-01-historia-autopsia-de-un-commit.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/ingeniero-de-software-en-la-era-de-la-ia-02-autopsia-de-un-commit.mp3",
           "exam": null,
           "required": true,
           "sources": []
@@ -716,9 +716,9 @@
         {
           "id": "mat-03-01",
           "title": "Historia — La hora de acequia",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/03-01-historia-la-hora-de-acequia.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/ingeniero-de-software-en-la-era-de-la-ia-03-la-hora-de-acequia.mp3",
           "exam": null,
           "required": true,
           "sources": []
@@ -997,9 +997,9 @@
         {
           "id": "mat-04-01",
           "title": "Historia — Ábreme la caja",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/04-01-historia-abreme-la-caja.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/ingeniero-de-software-en-la-era-de-la-ia-04-abreme-la-caja.mp3",
           "exam": null,
           "required": true,
           "sources": []
@@ -1288,9 +1288,9 @@
         {
           "id": "mat-05-01",
           "title": "Historia — La Cuadrilla",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/05-01-historia-la-cuadrilla.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/ingeniero-de-software-en-la-era-de-la-ia-05-la-cuadrilla.mp3",
           "exam": null,
           "required": true,
           "sources": []
@@ -1603,9 +1603,9 @@
         {
           "id": "mat-06-01",
           "title": "Historia — El parte de las siete",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/06-01-historia-el-parte-de-las-siete.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/ingeniero-de-software-en-la-era-de-la-ia-06-el-parte-de-las-siete.mp3",
           "exam": null,
           "required": true,
           "sources": []
@@ -1884,9 +1884,9 @@
         {
           "id": "mat-07-01",
           "title": "Historia — El barro y el plano",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/07-01-historia-el-barro-y-el-plano.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/ingeniero-de-software-en-la-era-de-la-ia-07-el-barro-y-el-plano.mp3",
           "exam": null,
           "required": true,
           "sources": []
@@ -2199,9 +2199,9 @@
         {
           "id": "mat-08-01",
           "title": "Historia — Sesenta días",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/08-01-historia-sesenta-dias.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/ingeniero-de-software-en-la-era-de-la-ia-08-sesenta-dias.mp3",
           "exam": null,
           "required": true,
           "sources": []
@@ -2480,9 +2480,9 @@
         {
           "id": "mat-09-01",
           "title": "Historia — La firma",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/09-01-historia-la-firma.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/ingeniero-de-software-en-la-era-de-la-ia-09-la-firma.mp3",
           "exam": null,
           "required": true,
           "sources": []
@@ -2771,9 +2771,9 @@
         {
           "id": "mat-10-01",
           "title": "Historia — Un año después",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/10-01-historia-un-anyo-despues.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/ingeniero-de-software-en-la-era-de-la-ia-10-un-anyo-despues.mp3",
           "exam": null,
           "required": true,
           "sources": []
