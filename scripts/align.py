@@ -57,6 +57,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--course", required=True)
     ap.add_argument("--only"); ap.add_argument("--force", action="store_true"); ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--titles", default="Historia", help="align materials whose title starts with this (default: Historia)")
     a = ap.parse_args()
     key = os.environ.get("ELEVENLABS_API_KEY")
     if not key and not a.dry_run: sys.exit("ELEVENLABS_API_KEY not set")
@@ -71,7 +72,7 @@ def main():
         for m in s["materials"]:
             if m.get("type") not in ("audio", "video") or not m.get("markdownFile") or not m.get("mediaPath"):
                 continue
-            if not m["title"].startswith("Historia"): continue
+            if not m["title"].startswith(a.titles): continue
             if a.only and m["id"] != a.only: continue
             audio = ROOT / m["mediaPath"]
             out_rel = re.sub(r"\.(mp3|m4a|ogg|wav|mp4|webm)$", "", m["mediaPath"]) + ".transcript.json"

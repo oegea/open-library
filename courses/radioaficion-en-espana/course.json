@@ -83,7 +83,7 @@
   "aiAssisted": true,
   "published": true,
   "createdAt": "2026-08-12T20:00:00Z",
-  "updatedAt": "2026-08-16T23:55:23Z",
+  "updatedAt": "2026-08-17T10:50:14Z",
   "sections": [
     {
       "id": "s00-introduccion",
@@ -129,12 +129,13 @@
         {
           "id": "mat-01-02",
           "title": "Teoría — Qué es el servicio de aficionados",
-          "type": "markdown",
+          "type": "audio",
           "markdownFile": "materials/01-02-teoria-que-es-el-servicio-de-aficionados.md",
-          "mediaPath": null,
+          "mediaPath": "media/audio/radioaficion-en-espana-01-02-teoria-que-es-el-servicio-de-aficionados.mp3",
           "exam": null,
           "required": true,
-          "sources": []
+          "sources": [],
+          "transcriptPath": "media/audio/radioaficion-en-espana-01-02-teoria-que-es-el-servicio-de-aficionados.transcript.json"
         },
         {
           "id": "mat-01-03",

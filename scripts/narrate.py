@@ -35,7 +35,19 @@ def clean_markdown(md: str) -> str:
         if re.fullmatch(r"\s*(-{3,}|\*{3,}|_{3,})\s*", s):
             out.append('<break time="1.2s" />')
             continue
-        s = re.sub(r"^\s{0,3}#{1,6}\s+", "", s)             # headings
+        if re.match(r"^\s*\|", s):                              # tables
+            if re.fullmatch(r"\s*\|?(\s*:?-{2,}:?\s*\|)+\s*", s):
+                continue                                          # header separator row
+            cells = [c.strip() for c in s.strip().strip("|").split("|")]
+            cells = [re.sub(r"\*\*(.+?)\*\*", r"\1", c).replace("`", "") for c in cells if c]
+            if cells:
+                out.append(", ".join(cells) + ".")
+            continue
+        heading = re.match(r"^\s{0,3}#{1,6}\s+(.*)", s)
+        if heading:                                               # headings: read, then a beat
+            out.append(heading.group(1).strip().rstrip(".") + ".")
+            out.append('<break time="0.8s" />')
+            continue
         s = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", s)           # images
         s = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", s)       # links -> text
         s = re.sub(r"^\s*[-*+]\s+", "", s)                    # bullets
@@ -99,6 +111,7 @@ def main():
     ap.add_argument("--only"); ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--sample"); ap.add_argument("--chars", type=int, default=700)
     ap.add_argument("--prefix", default=None, help="mp3 filename prefix (default: course dir name)")
+    ap.add_argument("--titles", default="Historia", help="narrate materials whose title starts with this (default: Historia)")
     a = ap.parse_args()
     key = os.environ.get("ELEVENLABS_API_KEY")
     if not key and not a.dry_run: sys.exit("ELEVENLABS_API_KEY not set")
@@ -119,12 +132,13 @@ def main():
     total = 0; changed = False
     for s in data["sections"]:
         for m in s["materials"]:
-            if not m["title"].startswith("Historia") or not m.get("markdownFile"): continue
+            if not m["title"].startswith(a.titles) or not m.get("markdownFile"): continue
             if a.only and m["id"] != a.only: continue
             text = clean_markdown((course / m["markdownFile"]).read_text())
-            slug = re.sub(r"^\d+-\d+-historia-", "", pathlib.Path(m["markdownFile"]).stem)
+            stem = pathlib.Path(m["markdownFile"]).stem
+            slug = re.sub(r"^\d+-\d+-historia-", "", stem)
             num = m["id"].split("-")[1]
-            rel = f"media/audio/{prefix}-{num}-{slug}.mp3"
+            rel = f"media/audio/{prefix}-{num}-{slug}.mp3" if slug != stem else f"media/audio/{prefix}-{stem}.mp3"
             out = ROOT / rel
             total += len(text)
             print(f"{m['id']}  {len(text):6d} chars  {len(chunk(text))} chunks -> {rel}")

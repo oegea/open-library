@@ -34,6 +34,11 @@ python3 scripts/narrate.py --course <directorio-del-curso> --voice <voice_id>
 python3 scripts/narrate.py --course <dir> --voice <voice_id> --only mat-03-01
 ```
 
+Por defecto narra los materiales cuyo título empieza por «Historia»; con
+`--titles "Teoría"` (o cualquier prefijo) narra otros. Las tablas Markdown se
+leen fila a fila como frases («A, Alfa, N, November.») y los encabezados
+llevan una pausa detrás.
+
 Salida: `media/audio/<directorio-del-curso>-<nn>-<slug>.mp3` y, en
 `course.json`, `"type": "audio"` + `"mediaPath"` en cada capítulo (los `id`
 y `markdownFile` no se tocan). Los mp3 ya existentes se saltan, así que
