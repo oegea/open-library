@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 620" width="640" height="620" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" role="img"><title>Cómo funciona el interruptor diferencial</title><defs><marker id="arr-2563EB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2563EB"/></marker><marker id="arr-92400E" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#92400E"/></marker></defs><rect x="1" y="1" width="638" height="618" rx="18" fill="#FAF6EC" stroke="#E7DFCC" stroke-width="2"/><text x="320" y="40" font-size="22" text-anchor="middle" font-weight="bold" fill="#1F2933">El diferencial compara la ida y la vuelta</text>
+<rect x="24" y="60" width="592" height="190" rx="14" fill="#EFE7D6" stroke="none" stroke-width="2"/>
+<rect x="44" y="110" width="140" height="100" rx="10" fill="#FFFFFF" stroke="#059669" stroke-width="3"/>
+<text x="114.0" y="167.0" font-size="19" text-anchor="middle" font-weight="bold" fill="#1F2933">diferencial</text>
+<rect x="440" y="110" width="150" height="100" rx="10" fill="#FFFFFF" stroke="#1F2933" stroke-width="3"/>
+<text x="515.0" y="167.0" font-size="19" text-anchor="middle" font-weight="bold" fill="#1F2933">aparato</text>
+<line x1="184" y1="136" x2="440" y2="136" stroke="#92400E" stroke-width="5" stroke-linecap="round" marker-end="url(#arr-92400E)"/>
+<line x1="440" y1="186" x2="186" y2="186" stroke="#2563EB" stroke-width="5" stroke-linecap="round" marker-end="url(#arr-2563EB)"/>
+<text x="312" y="124" font-size="19" text-anchor="middle" font-weight="bold" fill="#92400E">fase: van 5 A</text>
+<text x="312" y="176" font-size="19" text-anchor="middle" font-weight="bold" fill="#2563EB">neutro: vuelven 5 A</text>
+<text x="320" y="236" font-size="19" text-anchor="middle" font-weight="bold" fill="#059669">Iguales: no hay fuga y no actúa</text>
+<rect x="24" y="330" width="592" height="256" rx="14" fill="#EFE7D6" stroke="none" stroke-width="2"/>
+<rect x="44" y="380" width="140" height="100" rx="10" fill="#FFFFFF" stroke="#DC2626" stroke-width="3"/>
+<text x="114.0" y="437.0" font-size="19" text-anchor="middle" font-weight="bold" fill="#1F2933">diferencial</text>
+<rect x="440" y="380" width="150" height="100" rx="10" fill="#FFFFFF" stroke="#1F2933" stroke-width="3"/>
+<text x="515.0" y="437.0" font-size="19" text-anchor="middle" font-weight="bold" fill="#1F2933">aparato</text>
+<line x1="184" y1="406" x2="440" y2="406" stroke="#92400E" stroke-width="5" stroke-linecap="round" marker-end="url(#arr-92400E)"/>
+<line x1="440" y1="456" x2="186" y2="456" stroke="#2563EB" stroke-width="5" stroke-linecap="round" marker-end="url(#arr-2563EB)"/>
+<text x="312" y="394" font-size="19" text-anchor="middle" font-weight="bold" fill="#92400E">fase: van 5,05 A</text>
+<text x="312" y="446" font-size="19" text-anchor="middle" font-weight="bold" fill="#2563EB">neutro: vuelven 5 A</text>
+<circle cx="515" cy="492" r="11" fill="#FFFFFF" stroke="#1F2933" stroke-width="3"/>
+<line x1="515" y1="503" x2="515" y2="538" stroke="#1F2933" stroke-width="3" stroke-linecap="round"/>
+<line x1="501" y1="518" x2="529" y2="518" stroke="#1F2933" stroke-width="3" stroke-linecap="round"/>
+<line x1="515" y1="538" x2="503" y2="562" stroke="#1F2933" stroke-width="3" stroke-linecap="round"/>
+<line x1="515" y1="538" x2="527" y2="562" stroke="#1F2933" stroke-width="3" stroke-linecap="round"/>
+<line x1="515" y1="480" x2="515" y2="482" stroke="#DC2626" stroke-width="3" stroke-linecap="round"/>
+<line x1="470" y1="566" x2="560" y2="566" stroke="#8A6D3B" stroke-width="5" stroke-linecap="round"/>
+<text x="400" y="534" font-size="19" text-anchor="end" font-weight="bold" fill="#DC2626">0,05 A se fugan</text>
+<text x="400" y="558" font-size="18" text-anchor="end" font-weight="normal" fill="#DC2626">a tierra por la persona</text>
+<text x="114" y="516" font-size="19" text-anchor="middle" font-weight="bold" fill="#DC2626">faltan 50 mA:</text>
+<text x="114" y="540" font-size="22" text-anchor="middle" font-weight="bold" fill="#DC2626">CORTA</text></svg>

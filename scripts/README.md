@@ -137,3 +137,21 @@ mostradas encontraron su pareja narrada.
   en español.
 
 Documentación oficial: https://elevenlabs.io/docs/api-reference/text-to-speech
+
+## Figuras del curso de radioafición (`radio-figures/`)
+
+Los diagramas de «Cuando todo falla» (`media/radioaficion/sNN-*.svg`) no se
+dibujan a mano: los genera un script por sección con las utilidades de
+`radio-figures/figlib.py` (lienzo de 640 unidades de ancho, texto de 18 o más,
+fondo claro propio para que se lean igual en tema claro y oscuro).
+
+```
+python3 scripts/radio-figures/s02.py                      # regenera las figuras de la sección 2
+scripts/radio-figures/render.sh /tmp/png media/radioaficion/s02-*.svg   # PNG de comprobación (macOS, QuickLook)
+```
+
+Dentro de un material, las figuras se referencian con su URL absoluta
+(`https://raw.githubusercontent.com/oegea/open-library/main/media/radioaficion/…`),
+porque el Markdown de los materiales no resuelve rutas relativas, y con un
+texto alternativo que las describa por completo (la exportación a PDF solo
+muestra ese texto).

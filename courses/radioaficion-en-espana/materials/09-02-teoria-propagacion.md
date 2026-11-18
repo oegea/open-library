@@ -1,78 +1,112 @@
-La propagación es la meteorología de la radio: la ciencia de por qué una señal llega hoy a La Plata y mañana no pasa de Cuenca. Es materia fija del examen y, según coinciden generaciones de radioaficionados, la parte más hermosa del temario: donde la electrónica se junta con el sol, la noche y las estaciones del año. Después de esta sección, los «numeritos» del móvil de Dani y el espejo de Vicente serán tuyos.
+Este material es el **resumen de la sección**: lo que has aprendido en las ocho lecciones anteriores sobre propagación, condensado en formato de chuleta para repasar antes del examen. Aquí no se explica nada desde cero; si al leer algún apartado notas que no lo entiendes, vuelve a la lección correspondiente, que es donde está la explicación paso a paso.
 
 ## Los tres caminos de una onda
 
-Cuando tu antena radia, la energía toma hasta tres caminos distintos, y cada banda favorece unos u otros:
+| Camino | Qué hace | Dónde manda |
+|---|---|---|
+| **Onda de superficie** | Avanza pegada al suelo y sigue su curva; pierde energía en él | Frecuencias bajas (onda media, 160 m). Cuanto más baja la frecuencia, más lejos llega; mejor sobre el mar |
+| **Onda directa** | Va en línea recta de antena a antena, hasta el horizonte | VHF y UHF |
+| **Onda ionosférica** | Sube, la ionosfera la curva y vuelve a tierra lejos | HF (3 a 30 MHz) |
 
-1. **Onda de superficie (o de tierra):** bordea el suelo, siguiendo la curvatura terrestre. Funciona bien solo en frecuencias bajas (cuanto más baja la frecuencia, mejor «abraza» el suelo): es el camino de la onda media de radiodifusión de día y de la banda de 160 m a media distancia. En HF alta apenas da unas decenas de kilómetros.
-2. **Onda directa (y reflejada en el suelo):** en línea recta de antena a antena, como la luz. Es el camino casi único de **VHF/UHF**: por eso su alcance normal es «un poco más allá del horizonte» (la troposfera curva ligeramente los rayos: el alcance radioeléctrico supera al visual en ~15 %), y por eso en esas bandas la altura de la antena lo es casi todo.
-3. **Onda ionosférica (o de cielo):** sube hacia el cielo y regresa doblada por la ionosfera. Es el camino mágico de **HF**: el que trae Argentina de madrugada. Toda la sección gira alrededor de él.
+- **Horizonte radioeléctrico:** distancia (km) = 4,12 × √h, con h en metros sobre el terreno que rodea la antena. Es un 15 % mayor que el horizonte visual. Los horizontes de las dos antenas se suman.
+- En VHF y UHF **la altura de la antena importa más que la potencia**.
+- **Onda espacial:** el conjunto de la onda directa y la reflejada en el suelo. Las ondas también se reflejan en edificios y se difractan en las aristas.
+- Banda **abierta**: sus ondas están llegando a un lugar. Banda **cerrada**: no llegan, se ponga la potencia que se ponga.
 
-## La ionosfera: el espejo que fabrica el sol
+## La ionosfera
 
-Entre unos 60 y 400 km de altura, la radiación solar (ultravioleta y rayos X) arranca electrones a los átomos del aire enrarecido: los ioniza. El resultado es la **ionosfera**: capas de gas electrificado cuya densidad de electrones libres determina su efecto sobre las ondas. No es un espejo metálico: es una **refracción** progresiva —la onda entra en un medio cada vez más ionizado y se va curvando hasta regresar, como la luz en un espejismo de carretera—, pero a efectos prácticos y de examen, «refleja».
+- Región de la atmósfera entre unos 60 y 400 km donde la radiación del sol (ultravioleta y rayos X) **ioniza** el aire: arranca electrones a los átomos. La **recombinación** la deshace, más deprisa cuanto más denso es el aire.
+- No refleja como un espejo: **refracta**. Los electrones libres oscilan con la onda y reemiten; la onda avanza más deprisa donde hay más electrones, y su trayectoria se curva poco a poco hasta volver a tierra.
+- Devuelve la onda con más facilidad cuanto **más ionización** hay, cuanto **más baja** es la frecuencia y cuanto **más tumbada** llega la onda. Las frecuencias demasiado altas (VHF, UHF) la atraviesan.
 
-La regla de oro: **a más densidad de ionización, más alta la frecuencia máxima que la capa puede devolver a tierra**. Las frecuencias que superan esa capacidad atraviesan la capa y se pierden en el espacio (o alcanzan la capa siguiente).
+| Capa | Altura | Cuándo | Qué hace |
+|---|---|---|---|
+| **D** | 60–90 km | Solo de día | **Absorbe** (no refleja), sobre todo las frecuencias bajas |
+| **E** | 90–130 km | De día; de noche, muy débil | Devuelve las frecuencias más bajas de HF, en saltos cortos. Esporádica-E |
+| **F1** | 130–200 km | Solo de día | Papel menor |
+| **F2** (de noche, **F**) | 200–400 km | Día y noche | Devuelve las frecuencias más altas y da los saltos más largos |
 
-Las capas, de abajo arriba, con su personalidad (esto cae en el examen con nombres):
+- La capa F aguanta toda la noche porque en aire tan tenue los electrones tardan horas en recombinarse.
+- Las bandas bajas se abren de noche **porque desaparece la capa D**, no porque aparezca la F.
 
-- **Capa D (60-90 km):** la villana diurna, el «secante» de Dani. Existe solo de día (se recombina en minutos al anochecer). Está demasiado baja y densa en aire neutro para reflejar: en su lugar, **absorbe**, y absorbe tanto más cuanto más baja la frecuencia. Es la razón de que las bandas bajas (160, 80, 40 m) estén *muertas de día* a larga distancia: sus ondas mueren en la D antes de llegar al espejo. Las frecuencias altas (desde ~10-14 MHz) la atraviesan casi sin peaje.
-- **Capa E (90-130 km):** intermedia, diurna sobre todo. Refleja frecuencias medias en distancias cortas. Su fenómeno estrella es la **esporádica-E (Es)**: nubes densísimas e impredecibles de ionización que aparecen sobre todo en mayo-agosto (en el hemisferio norte) y devuelven a tierra frecuencias altísimas —50 MHz, 144 MHz a veces— regalando aperturas espectaculares de 1.000-2.000 km en bandas que «no deberían» propagar así. El caramelo del verano en 6 metros, la «banda mágica».
-- **Capa F (130-400 km):** la reina del DX. De día se divide en **F1** (transitoria, menor) y **F2**; de noche se funden en una sola **F** que, al estar en aire tan tenue, tarda horas en recombinarse: **por eso el espejo aguanta toda la noche** aunque el sol se haya ido. La F2 es la capa que devuelve las frecuencias más altas y produce los saltos más largos.
+## La ventana de frecuencias
 
-## El vocabulario del rebote
+- **Frecuencia crítica:** la más alta que una capa devuelve con incidencia **vertical**.
+- **MUF** (frecuencia máxima utilizable): la más alta que la ionosfera devuelve para un **trayecto** concreto. Hasta unas 3 veces la crítica en saltos largos; apenas algo más que la crítica en trayectos cortos. Por encima, la onda escapa al espacio, con cualquier potencia.
+- **LUF** (frecuencia mínima utilizable): por debajo, la absorción de la capa D debilita demasiado la señal. De día es alta; de noche cae.
+- Entre LUF y MUF está la ventana útil. Las mejores señales, algo por debajo de la MUF: en torno al 85 % (frecuencia óptima de trabajo, FOT).
+- **NVIS:** para distancias cortas, frecuencia por debajo de la crítica y onda casi vertical, con antena horizontal baja (80 y 40 m).
 
-- **Frecuencia crítica:** la máxima que una capa devuelve cuando la onda incide *verticalmente* (disparo a plomo). Se mide continuamente con ionosondas.
-- **MUF** (frecuencia máxima utilizable): la máxima que la ionosfera devuelve para un *trayecto concreto* con incidencia oblicua. Es mayor que la crítica (los rayos rasantes se reflejan más fácil, como una piedra plana en el agua: hasta ~3 veces la crítica en trayectos largos). Trabajar cerca de la MUF es ir en primera clase: mínima absorción, señales fuertes.
-- **LUF** (frecuencia mínima utilizable): por debajo de ella, la absorción de la capa D se come la señal. Entre LUF y MUF está la ventana útil de cada momento y trayecto.
-- **Salto (skip):** un rebote ionosfera-tierra. Alcance máximo por salto: ~4.000 km con la F2 (~2.000 con la E). Los grandes DX son **multisalto**: tierra-cielo-tierra-cielo (La Plata desde Vallverd: tres saltos). Cada rebote en tierra o mar (el mar refleja mejor) cobra su peaje en decibelios: por eso el eco «acuoso» del DX largo.
-- **Zona de silencio (o de salto):** el anillo donde una estación NO se oye: más lejos del alcance de su onda de superficie, más cerca de donde cae su primer rebote. Explica la paradoja clásica: oyes Berlín y no oyes Teruel.
-- **Ángulo de radiación:** cuanto más bajo sale el rayo, más lejos cae el salto: la conexión con la altura de las antenas de la sección 8.
-- **Desvanecimiento (QSB):** la señal que sube y baja respirando. Causa principal: a tu antena llegan varios caminos a la vez (dos saltos distintos, onda alta y baja) y sus fases se suman o cancelan alternativamente (¡la oposición de fase de la sección 3, cobrándose su relevancia!).
+## Saltos, zona de silencio y desvanecimiento
 
-## El sol manda: ciclo, índices y tormentas
+- **Salto:** recorrido antena–ionosfera–tierra. Máximo aproximado: **4.000 km** con la capa F2, **2.000 km** con la E. Más lejos, **multisalto** (el mar refleja mejor que la tierra seca).
+- Ángulo de radiación (o de salida) bajo: salto más largo.
+- **Distancia de salto:** la distancia **mínima** a la que la onda ionosférica de una frecuencia vuelve a tierra.
+- **Zona de silencio:** franja donde no se recibe la estación: más allá de su onda de superficie y más cerca que la distancia de salto. Crece con la frecuencia; en las bandas bajas, de noche, puede no existir.
+- **Desvanecimiento (QSB):** la señal llega por varios caminos (multitrayecto) cuyas ondas se suman o se anulan según su fase. Es también la causa del eco de las señales lejanas.
 
-La ionosfera es hija del sol, y el sol tiene humores:
+## El sol
 
-- **El ciclo de ~11 años:** la actividad solar (visible en sus **manchas**) sube y baja en ciclos de unos once años, numerados desde 1755 (estamos en el ciclo 25, con máximo reciente en 2024-2025: buena época para estudiar radio, en serio). En el **máximo solar**, más radiación = ionosfera más densa = MUF altísimas: las bandas altas (15, 12, 10 m) se abren a todo el planeta con potencias ridículas. En el **mínimo**, las bandas altas agonizan y la vida se refugia en 40, 30 y 20 m.
-- **SFI (Solar Flux Index, flujo solar):** medida diaria de la radiación solar en 10,7 cm; el primer numerito de Dani. En cristiano: >100, bandas altas animándose; >150, fiesta; <80, invierno interior.
-- **Índices K y A:** miden la agitación del **campo geomagnético** (K: escala 0-9 cada 3 horas; A: resumen diario). El segundo numerito (K=1: balsa de aceite). ¿Por qué importa? Porque el sol, además de luz, escupe materia: las **tormentas geomagnéticas** (por eyecciones de masa coronal y fulguraciones) agitan y degradan la ionosfera: señales polares que desaparecen, ruido, la famosa **atenuación repentina** (SID/Dellinger: apagón brusco de HF en el lado diurno tras una fulguración de rayos X). Regla del aficionado: **SFI alto y K bajo = día grande**. SFI alto y K alto = el sol da y el sol quita.
+- **Ciclo solar:** unos **11 años**. Más manchas, más radiación ionizante, MUF más alta. En el máximo se abren las bandas altas; en el mínimo, se cierran. El ciclo 25 empezó a finales de 2019 y tuvo su máximo hacia 2024.
+- **Flujo solar (SFI):** medida diaria de la emisión del sol en 10,7 cm. Cuanto más alto, mejor para las bandas altas (más de 100, bueno; más de 150, excelente).
+- **Índice K:** agitación del campo magnético terrestre en las últimas 3 horas, de 0 a 9; de 5 en adelante, tormenta geomagnética. **Índice A:** lo mismo, resumido para el día entero. Cuanto más bajos, mejor.
+- **SFI alto y K bajo:** las mejores condiciones.
 
-## La vida diaria de las bandas (la parte más útil del temario)
+| | Perturbación ionosférica súbita (efecto Dellinger) | Tormenta geomagnética |
+|---|---|---|
+| Causa | Rayos X de una fulguración | Partículas lanzadas por el sol |
+| Tarda en llegar | 8 minutos | De 1 a 3 días |
+| Afecta a | El lado diurno | Todo el planeta, sobre todo rutas polares |
+| Capa | La D absorbe mucho más | La F2 pierde ionización: baja la MUF |
+| Dura | De minutos a un par de horas | De horas a días |
 
-Con todo lo anterior, el comportamiento de cada banda se deduce; el examen lo pregunta y tu vida de operador lo confirmará cada semana. Guía rápida:
+- Otros ritmos: día y noche; rotación del sol cada 27 días; estaciones. La capa F2 está más ionizada a mediodía en invierno que en verano: las bandas altas rinden más de otoño a primavera.
 
-- **160 m y 80 m (bandas «bajas»):** de día, solo cercanías (la D devora). De noche, regionales y, con paciencia e invierno (noches largas, poca estática), DX serio. Ruidosas en verano (estática de tormentas: la vigilia de agosto lo sufrió).
-- **40 m:** la banda todoterreno de la historia: de día, España y vecinos (500-800 km vía E/F con ángulos altos); de noche, continentes. La banda de las vigilias.
-- **30 y 20 m:** las bandas del DX profesional. El 20 m (14 MHz) es la autopista mundial: abierta de día casi siempre, a menudo también de noche en máximos solares. Atraviesa la D con peaje bajo.
-- **17, 15, 12 y 10 m (bandas «altas»):** hijas del ciclo solar. En máximo solar, gloria pura con vatios de risa (10 m da la vuelta al mundo con 10 W); en mínimo, cerradas semanas enteras, salvo esporádica-E veraniega.
-- **6 m:** «la banda mágica»: casi VHF, normalmente muda a distancia... hasta que la esporádica-E o un máximo solar excepcional la abren y enloquece a todo el continente.
-- **2 m y 70 cm:** línea de vista + tropo. Sin ionosfera (salvo rarezas Es en 2 m una vez al año). Su propagación especial es **troposférica**: con anticiclones estables (inversiones térmicas), se forman **ductos** que guían VHF/UHF cientos de kilómetros (Valencia-Baleares-Italia es un clásico mediterráneo de verano). Además: **meteor scatter** (rebotes en las estelas ionizadas de meteoros, ráfagas de segundos que los modos digitales aprovechan) y **EME** (rebote lunar: 2,5 segundos de viaje de ida y vuelta, el DX definitivo: 768.000 km).
-- **La línea gris:** en la franja del amanecer/anochecer, la capa D de un lado acaba de morir (o no ha nacido) mientras la F sigue cargada: durante unos minutos se abren trayectos largos a lo largo de la línea día-noche con señales anómalamente fuertes. El «Australia a esta hora» de Vicente: los DXistas madrugan por esto.
+## Las bandas de HF
 
-## Para llevar
+Bandas **bajas**: 160, 80 y 40 m. Bandas **altas**: de 17 a 10 m.
 
-- Tres caminos: superficie (bandas bajas, corto), directa (VHF/UHF, horizonte + 15 %), ionosférica (HF, el mundo).
-- La ionosfera la fabrica el sol ionizando la alta atmósfera; refleja (refracta) tanto mejor cuanto más densa; las frecuencias que la superan se van al espacio.
-- **Capa D:** diurna, no refleja: ABSORBE las bandas bajas (por eso 40/80 m mueren de día). **E:** intermedia + esporádica-E veraniega. **F (F2):** la del DX, aguanta toda la noche.
-- **MUF/LUF:** ventana útil del momento; cerca de la MUF, señales óptimas. Salto de hasta ~4.000 km (F2); DX largo = multisalto; zona de silencio entre onda de superficie y primer rebote.
-- **Ciclo solar de 11 años**; SFI alto = MUF altas = bandas altas abiertas; índice K alto = geomagnetismo agitado = propagación degradada. SFI alto + K bajo = día grande.
-- Bandas bajas de noche/invierno; 20 m siempre; altas con máximo solar; 6 m mágica con Es; VHF/UHF línea de vista + ductos troposféricos.
-- QSB = interferencia de multitrayecto; línea gris = minutos dorados del amanecer.
+| Banda | De día | De noche | Ciclo solar |
+|---|---|---|---|
+| 160 y 80 m | Solo local (capa D) | Regional y lejana; mejor en invierno | Influye poco |
+| 40 m | España y países vecinos | Lejana, con zona de silencio de cientos de km | Influye poco |
+| 30 y 20 m | Larga distancia, casi siempre | A ratos; más con sol activo | Influye algo |
+| 17 a 10 m | Excelentes con sol activo | Cerradas | Influye mucho |
+
+- De noche, para hablar con alguien cercano, 80 m.
+- **Balizas:** emisoras automáticas en frecuencias fijas; permiten saber si una banda está abierta aunque esté vacía.
+- **Línea gris:** franja de amanecer y anochecer; sin capa D y con la F aún ionizada, abre trayectos muy largos en las bandas bajas.
+
+## VHF y UHF más allá del horizonte
+
+| Fenómeno | Dónde | Alcance | Cuándo |
+|---|---|---|---|
+| **Conducto troposférico** | Troposfera, por inversión térmica | De cientos a más de 1.000 km | Anticiclón estable |
+| **Esporádica-E** | Nubes densas en la capa E | 1.000 a 2.000 km (50 y hasta 144 MHz) | Mayo a agosto; no depende del ciclo solar |
+| **Aurora** | Unos 100 km, cerca del polo | De cientos a más de 1.000 km | Tormenta geomagnética; antenas al norte, señal ronca |
+| **Dispersión meteórica** | Estelas de meteoros | Hasta 2.000 km, en ráfagas | Mejor en lluvias de estrellas |
+| **Rebote lunar (EME)** | La Luna | Unos 770.000 km de ida y vuelta; 2,5 s | Con la Luna visible |
+
+## Ruido y balance de enlace
+
+- En HF domina el **ruido atmosférico** (tormentas), más el de origen doméstico. En la parte baja de VHF cuenta el **galáctico**; en UHF, el **térmico** del receptor.
+- Una señal solo se entiende si supera al ruido: **relación señal/ruido**.
+- **Balance de enlace**, en decibelios: potencia + ganancia de antenas − pérdidas de cables − pérdidas del trayecto = señal que llega.
 
 ## Para el examen
 
-- Nombres, alturas relativas y comportamiento de las capas D/E/F1/F2 (día vs noche): pregunta fija. La D absorbe (no refleja): ese matiz es trampa favorita.
-- Definiciones de MUF, LUF y frecuencia crítica.
-- Distancia máxima de un salto F2 (~4.000 km) y qué es la zona de silencio.
-- El ciclo solar de 11 años y el efecto de las manchas/actividad sobre la MUF y las bandas altas.
-- Qué es la esporádica-E y a qué bandas afecta (50/144 MHz, verano).
-- Propagación VHF/UHF: línea de vista, ductos troposféricos con inversión térmica.
-- Causa del desvanecimiento (QSB): multitrayecto e interferencia de fases.
+- La capa D **absorbe**; no refleja. Solo existe de día.
+- La capa de la larga distancia nocturna es la F (F2).
+- Definiciones de frecuencia crítica (vertical), MUF (trayecto) y LUF.
+- Salto máximo vía F2: unos 4.000 km. Zona de silencio: entre la onda de superficie y la distancia de salto.
+- Ciclo solar de 11 años; K alto significa perturbación geomagnética; el apagón súbito afecta al lado diurno.
+- Esporádica-E: verano, 50 y 144 MHz, 1.000 a 2.000 km.
+- VHF y UHF: línea de vista, y conductos troposféricos con inversión térmica.
+- QSB: multitrayecto e interferencia de fases.
 
 ## Para profundizar
 
-- El blog y los recursos de telecomunicaciones de emergencia de Ismael Pellejero (EA4FSI) incluyen introducciones a la propagación HF en español, con aplicación directa a emergencias: emercomms.ipellejero.es.
-- Webs de índices en vivo: solarham.com, hamqsl.com/solar (el «semáforo» de bandas que consultaba Dani). Compara el SFI/K de hoy con lo que oigas esta noche en un websdr: la teoría, autocorrigiéndose en vivo.
-- pskreporter.info + FT8: el mapa mundial de qué caminos están abiertos ahora mismo desde tu localizador. La mejor clase de propagación es mirarlo una semana a distintas horas.
-- Wikipedia (CC BY-SA): «Ionosfera», «Propagación por onda de cielo» y «Sporadic E propagation», bien referenciadas para ampliar la física.
+- El blog de telecomunicaciones de emergencia de Ismael Pellejero (EA4FSI), emercomms.ipellejero.es, tiene introducciones en español a la propagación en HF aplicadas a emergencias.
+- Índices en vivo: swpc.noaa.gov (meteorología espacial de la NOAA), solarham.com y hamqsl.com/solar. Compara el SFI y el K de hoy con lo que oigas esta noche en un receptor por Internet.
+- pskreporter.info muestra en un mapa qué trayectos están abiertos en cada banda en este momento. Mirarlo a distintas horas durante una semana vale por un repaso entero.
+- Wikipedia (CC BY-SA): «Ionosfera» y «Propagación por onda de cielo», para ampliar la física.

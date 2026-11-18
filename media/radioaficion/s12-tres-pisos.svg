@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 560" width="640" height="560" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" role="img"><title>Los tres pisos de normas del espectro: UIT, CEPT y España</title><defs><marker id="arr-1F2933" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1F2933"/></marker></defs><rect x="1" y="1" width="638" height="558" rx="18" fill="#FAF6EC" stroke="#E7DFCC" stroke-width="2"/><text x="320" y="42" font-size="22" text-anchor="middle" font-weight="bold" fill="#1F2933">Quién decide qué en el espectro</text>
+<rect x="40" y="70" width="560" height="124" rx="14" fill="#FFFFFF" stroke="#2563EB" stroke-width="4"/>
+<rect x="40" y="70" width="560" height="40" rx="14" fill="#2563EB" stroke="none" stroke-width="2"/>
+<rect x="40" y="92" width="560" height="18" rx="0" fill="#2563EB" stroke="none" stroke-width="2"/>
+<text x="320" y="98" font-size="20" text-anchor="middle" font-weight="bold" fill="#FFFFFF">EL MUNDO: la UIT</text>
+<text x="320" y="144" font-size="20" text-anchor="middle" font-weight="bold" fill="#1F2933">Reglamento de Radiocomunicaciones</text>
+<text x="320" y="174" font-size="19" text-anchor="middle" font-weight="normal" fill="#5B6673">Reparte el espectro entre servicios y Regiones</text>
+<line x1="320" y1="198" x2="320" y2="226" stroke="#1F2933" stroke-width="4" stroke-linecap="round" marker-end="url(#arr-1F2933)"/>
+<rect x="40" y="232" width="560" height="124" rx="14" fill="#FFFFFF" stroke="#D97706" stroke-width="4"/>
+<rect x="40" y="232" width="560" height="40" rx="14" fill="#D97706" stroke="none" stroke-width="2"/>
+<rect x="40" y="254" width="560" height="18" rx="0" fill="#D97706" stroke="none" stroke-width="2"/>
+<text x="320" y="260" font-size="20" text-anchor="middle" font-weight="bold" fill="#FFFFFF">EUROPA: la CEPT</text>
+<text x="320" y="306" font-size="20" text-anchor="middle" font-weight="bold" fill="#1F2933">Recomendaciones T/R 61-01 y T/R 61-02</text>
+<text x="320" y="336" font-size="19" text-anchor="middle" font-weight="normal" fill="#5B6673">Licencias y exámenes que valen entre países</text>
+<line x1="320" y1="360" x2="320" y2="388" stroke="#1F2933" stroke-width="4" stroke-linecap="round" marker-end="url(#arr-1F2933)"/>
+<rect x="40" y="394" width="560" height="124" rx="14" fill="#FFFFFF" stroke="#059669" stroke-width="4"/>
+<rect x="40" y="394" width="560" height="40" rx="14" fill="#059669" stroke="none" stroke-width="2"/>
+<rect x="40" y="416" width="560" height="18" rx="0" fill="#059669" stroke="none" stroke-width="2"/>
+<text x="320" y="422" font-size="20" text-anchor="middle" font-weight="bold" fill="#FFFFFF">ESPAÑA: el Estado</text>
+<text x="320" y="468" font-size="20" text-anchor="middle" font-weight="bold" fill="#1F2933">Ley 11/2022, Orden IET/1311/2013 y CNAF</text>
+<text x="320" y="498" font-size="19" text-anchor="middle" font-weight="normal" fill="#5B6673">Quién emite, en qué bandas y con cuánta potencia</text></svg>

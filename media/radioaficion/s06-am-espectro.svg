@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430" width="640" height="430" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" role="img"><title>Espectro de una señal de AM con voz</title><defs><marker id="arr-1F2933" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1F2933"/></marker><marker id="arr-D97706" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#D97706"/></marker></defs><rect x="1" y="1" width="638" height="428" rx="18" fill="#FAF6EC" stroke="#E7DFCC" stroke-width="2"/><text x="320" y="42" font-size="22" text-anchor="middle" font-weight="bold" fill="#1F2933">AM con voz: las tres jorobas de Dani</text>
+<line x1="50" y1="290" x2="590" y2="290" stroke="#1F2933" stroke-width="3" stroke-linecap="round" marker-end="url(#arr-1F2933)"/>
+<text x="590" y="342" font-size="18" text-anchor="end" font-weight="normal" fill="#5B6673">kHz</text>
+<path d="M140 290 L140 249.5 L302 200 L302 290 Z" stroke="#1F2933" stroke-width="3" fill="#BFDBFE" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M338 290 L338 200 L500 249.5 L500 290 Z" stroke="#1F2933" stroke-width="3" fill="#BFDBFE" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="320" y1="290" x2="320" y2="100" stroke="#DC2626" stroke-width="8" stroke-linecap="butt"/>
+<text x="320" y="88" font-size="19" text-anchor="middle" font-weight="bold" fill="#DC2626">portadora</text>
+<text x="190" y="154" font-size="19" text-anchor="middle" font-weight="bold" fill="#2563EB">banda lateral</text>
+<text x="190" y="178" font-size="19" text-anchor="middle" font-weight="bold" fill="#2563EB">inferior (LSB)</text>
+<text x="456" y="154" font-size="19" text-anchor="middle" font-weight="bold" fill="#2563EB">banda lateral</text>
+<text x="456" y="178" font-size="19" text-anchor="middle" font-weight="bold" fill="#2563EB">superior (USB)</text>
+<line x1="140" y1="290" x2="140" y2="298" stroke="#1F2933" stroke-width="2" stroke-linecap="round"/>
+<text x="140" y="320" font-size="19" text-anchor="middle" font-weight="normal" fill="#1F2933">6.997</text>
+<line x1="320" y1="290" x2="320" y2="298" stroke="#1F2933" stroke-width="2" stroke-linecap="round"/>
+<text x="320" y="320" font-size="19" text-anchor="middle" font-weight="normal" fill="#1F2933">7.000</text>
+<line x1="500" y1="290" x2="500" y2="298" stroke="#1F2933" stroke-width="2" stroke-linecap="round"/>
+<text x="500" y="320" font-size="19" text-anchor="middle" font-weight="normal" fill="#1F2933">7.003</text>
+<line x1="142" y1="372" x2="498" y2="372" stroke="#D97706" stroke-width="3" stroke-linecap="round" marker-end="url(#arr-D97706)"/>
+<line x1="498" y1="372" x2="144" y2="372" stroke="#D97706" stroke-width="3" stroke-linecap="round" marker-end="url(#arr-D97706)"/>
+<text x="320" y="404" font-size="20" text-anchor="middle" font-weight="bold" fill="#D97706">ancho de banda: 6 kHz (2 × 3 kHz)</text></svg>

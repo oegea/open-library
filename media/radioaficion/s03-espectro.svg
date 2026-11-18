@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 620" width="640" height="620" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" role="img"><title>Los tramos del espectro radioeléctrico</title><defs><marker id="arr-2563EB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2563EB"/></marker></defs><rect x="1" y="1" width="638" height="618" rx="18" fill="#FAF6EC" stroke="#E7DFCC" stroke-width="2"/><text x="320" y="42" font-size="22" text-anchor="middle" font-weight="bold" fill="#1F2933">El espectro, tramo a tramo</text>
+<text x="130" y="78" font-size="18" text-anchor="middle" font-weight="normal" fill="#5B6673">tramo</text>
+<text x="300" y="78" font-size="18" text-anchor="middle" font-weight="normal" fill="#5B6673">frecuencias</text>
+<text x="500" y="78" font-size="18" text-anchor="middle" font-weight="normal" fill="#5B6673">longitud de onda</text>
+<rect x="84" y="92" width="500" height="48" rx="10" fill="#FFFFFF" stroke="#1F2933" stroke-width="2"/>
+<text x="130" y="125" font-size="24" text-anchor="middle" font-weight="bold" fill="#1F2933">VLF</text>
+<text x="300" y="124" font-size="20" text-anchor="middle" font-weight="normal" fill="#1F2933">3 a 30 kHz</text>
+<text x="500" y="124" font-size="19" text-anchor="middle" font-weight="normal" fill="#5B6673">100 a 10 km</text>
+<rect x="84" y="150" width="500" height="48" rx="10" fill="#FFFFFF" stroke="#1F2933" stroke-width="2"/>
+<text x="130" y="183" font-size="24" text-anchor="middle" font-weight="bold" fill="#1F2933">LF</text>
+<text x="300" y="182" font-size="20" text-anchor="middle" font-weight="normal" fill="#1F2933">30 a 300 kHz</text>
+<text x="500" y="182" font-size="19" text-anchor="middle" font-weight="normal" fill="#5B6673">10 a 1 km</text>
+<rect x="84" y="208" width="500" height="48" rx="10" fill="#FFFFFF" stroke="#1F2933" stroke-width="2"/>
+<text x="130" y="241" font-size="24" text-anchor="middle" font-weight="bold" fill="#1F2933">MF</text>
+<text x="300" y="240" font-size="20" text-anchor="middle" font-weight="normal" fill="#1F2933">300 kHz a 3 MHz</text>
+<text x="500" y="240" font-size="19" text-anchor="middle" font-weight="normal" fill="#5B6673">1.000 a 100 m</text>
+<rect x="84" y="266" width="500" height="48" rx="10" fill="#FDE68A" stroke="#1F2933" stroke-width="2"/>
+<text x="130" y="299" font-size="24" text-anchor="middle" font-weight="bold" fill="#9A3412">HF</text>
+<text x="300" y="298" font-size="20" text-anchor="middle" font-weight="bold" fill="#1F2933">3 a 30 MHz</text>
+<text x="500" y="298" font-size="19" text-anchor="middle" font-weight="normal" fill="#5B6673">100 a 10 m</text>
+<rect x="84" y="324" width="500" height="48" rx="10" fill="#FDE68A" stroke="#1F2933" stroke-width="2"/>
+<text x="130" y="357" font-size="24" text-anchor="middle" font-weight="bold" fill="#9A3412">VHF</text>
+<text x="300" y="356" font-size="20" text-anchor="middle" font-weight="bold" fill="#1F2933">30 a 300 MHz</text>
+<text x="500" y="356" font-size="19" text-anchor="middle" font-weight="normal" fill="#5B6673">10 a 1 m</text>
+<rect x="84" y="382" width="500" height="48" rx="10" fill="#FDE68A" stroke="#1F2933" stroke-width="2"/>
+<text x="130" y="415" font-size="24" text-anchor="middle" font-weight="bold" fill="#9A3412">UHF</text>
+<text x="300" y="414" font-size="20" text-anchor="middle" font-weight="bold" fill="#1F2933">300 MHz a 3 GHz</text>
+<text x="500" y="414" font-size="19" text-anchor="middle" font-weight="normal" fill="#5B6673">1 m a 10 cm</text>
+<rect x="84" y="440" width="500" height="48" rx="10" fill="#FFFFFF" stroke="#1F2933" stroke-width="2"/>
+<text x="130" y="473" font-size="24" text-anchor="middle" font-weight="bold" fill="#1F2933">SHF</text>
+<text x="300" y="472" font-size="20" text-anchor="middle" font-weight="normal" fill="#1F2933">3 a 30 GHz</text>
+<text x="500" y="472" font-size="19" text-anchor="middle" font-weight="normal" fill="#5B6673">10 a 1 cm</text>
+<rect x="84" y="498" width="500" height="48" rx="10" fill="#FFFFFF" stroke="#1F2933" stroke-width="2"/>
+<text x="130" y="531" font-size="24" text-anchor="middle" font-weight="bold" fill="#1F2933">EHF</text>
+<text x="300" y="530" font-size="20" text-anchor="middle" font-weight="normal" fill="#1F2933">30 a 300 GHz</text>
+<text x="500" y="530" font-size="19" text-anchor="middle" font-weight="normal" fill="#5B6673">1 cm a 1 mm</text>
+<line x1="48" y1="100" x2="48" y2="548" stroke="#2563EB" stroke-width="5" stroke-linecap="round" marker-end="url(#arr-2563EB)"/>
+<text x="34" y="324" font-size="19" text-anchor="middle" font-weight="bold" fill="#2563EB" transform="rotate(-90 34 324)">más frecuencia</text>
+<text x="320" y="592" font-size="19" text-anchor="middle" font-weight="normal" fill="#5B6673">Cada tramo: diez veces más frecuencia que el anterior</text></svg>

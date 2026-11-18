@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 834" width="640" height="834" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" role="img"><title>Bandas de aficionado en España: categoría y potencia máxima</title><rect x="1" y="1" width="638" height="832" rx="18" fill="#FAF6EC" stroke="#E7DFCC" stroke-width="2"/><text x="320" y="40" font-size="22" text-anchor="middle" font-weight="bold" fill="#1F2933">Bandas, categoría y potencia máxima</text>
+<text x="30" y="78" font-size="18" text-anchor="start" font-weight="bold" fill="#5B6673">Banda</text>
+<text x="120" y="78" font-size="18" text-anchor="start" font-weight="bold" fill="#5B6673">Frecuencias</text>
+<text x="398" y="78" font-size="18" text-anchor="middle" font-weight="bold" fill="#5B6673">Categoría</text>
+<text x="610" y="78" font-size="18" text-anchor="end" font-weight="bold" fill="#5B6673">Máximo</text>
+<rect x="20" y="92" width="600" height="32" rx="6" fill="#FEF3C7" stroke="none" stroke-width="2"/>
+<text x="30" y="115" font-size="18" text-anchor="start" font-weight="bold" fill="#1F2933">2.200 m</text>
+<text x="120" y="115" font-size="18" text-anchor="start" font-weight="normal" fill="#1F2933">135,7–137,8 kHz</text>
+<rect x="340" y="96" width="116" height="24" rx="12" fill="#D97706" stroke="none" stroke-width="2"/>
+<text x="398" y="114" font-size="18" text-anchor="middle" font-weight="bold" fill="#FFFFFF">secundaria</text>
+<text x="610" y="115" font-size="18" text-anchor="end" font-weight="bold" fill="#1F2933">1 W PIRE</text>
+<rect x="20" y="128" width="600" height="32" rx="6" fill="#FEF3C7" stroke="none" stroke-width="2"/>
+<text x="30" y="151" font-size="18" text-anchor="start" font-weight="bold" fill="#1F2933">630 m</text>
+<text x="120" y="151" font-size="18" text-anchor="start" font-weight="normal" fill="#1F2933">472–479 kHz</text>
+<rect x="340" y="132" width="116" height="24" rx="12" fill="#D97706" stroke="none" stroke-width="2"/>
+<text x="398" y="150" font-size="18" text-anchor="middle" font-weight="bold" fill="#FFFFFF">secundaria</text>
+<text x="610" y="151" font-size="18" text-anchor="end" font-weight="bold" fill="#1F2933">1 W PIRE*</text>
+<rect x="20" y="164" width="600" height="32" rx="6" fill="#FEF3C7" stroke="none" stroke-width="2"/>
+<text x="30" y="187" font-size="18" text-anchor="start" font-weight="bold" fill="#1F2933">160 m</text>
+<text x="120" y="187" font-size="18" text-anchor="start" font-weight="normal" fill="#1F2933">1.810–1.830 kHz</text>
+<rect x="340" y="168" width="116" height="24" rx="12" fill="#D97706" stroke="none" stroke-width="2"/>
+<text x="398" y="186" font-size="18" text-anchor="middle" font-weight="bold" fill="#FFFFFF">secundaria</text>
+<text x="610" y="187" font-size="18" text-anchor="end" font-weight="bold" fill="#1F2933">500 W PEP</text>
+<rect x="20" y="200" width="600" height="32" rx="6" fill="#FFFFFF" stroke="none" stroke-width="2"/>
+<text x="30" y="223" font-size="18" text-anchor="start" font-weight="bold" fill="#1F2933">160 m</text>
+<text x="120" y="223" font-size="18" text-anchor="start" font-weight="normal" fill="#1F2933">1.830–1.850 kHz</text>
+<rect x="340" y="204" width="116" height="24" rx="12" fill="#059669" stroke="none" stroke-width="2"/>
+<text x="398" y="222" font-size="18" text-anchor="middle" font-weight="bold" fill="#FFFFFF">primaria</text>
+<text x="610" y="223" font-size="18" text-anchor="end" font-weight="bold" fill="#1F2933">1.000 W PEP</text>
+<rect x="20" y="236" width="600" height="32" rx="6" fill="#FFFFFF" stroke="none" stroke-width="2"/>
+<text x="30" y="259" font-size="18" text-anchor="start" font-weight="bold" fill="#1F2933">80 m</text>
+<text x="120" y="259" font-size="18" text-anchor="start" font-weight="normal" fill="#1F2933">3.500–3.800 kHz</text>
+<rect x="340" y="240" width="116" height="24" rx="12" fill="#059669" stroke="none" stroke-width="2"/>
+<text x="398" y="258" font-size="18" text-anchor="middle" font-weight="bold" fill="#FFFFFF">primaria</text>
+<text x="610" y="259" font-size="18" text-anchor="end" font-weight="bold" fill="#1F2933">1.000 W PEP</text>
+<rect x="20" y="272" width="600" height="32" rx="6" fill="#FEF3C7" stroke="none" stroke-width="2"/>
+<text x="30" y="295" font-size="18" text-anchor="start" font-weight="bold" fill="#1F2933">60 m</text>
+<text x="120" y="295" font-size="18" text-anchor="start" font-weight="normal" fill="#1F2933">5.351,5–5.366,5 kHz</text>
+<rect x="340" y="276" width="116" height="24" rx="12" fill="#D97706" stroke="none" stroke-width="2"/>
+<text x="398" y="294" font-size="18" text-anchor="middle" font-weight="bold" fill="#FFFFFF">secundaria</text>
+<text x="610" y="295" font-size="18" text-anchor="end" font-weight="bold" fill="#1F2933">15 W PIRE</text>
+<rect x="20" y="308" width="600" height="32" rx="6" fill="#FFFFFF" stroke="none" stroke-width="2"/>
+<text x="30" y="331" font-size="18" text-anchor="start" font-weight="bold" fill="#1F2933">40 m</text>
+<text x="120" y="331" font-size="18" text-anchor="start" font-weight="normal" fill="#1F2933">7.000–7.200 kHz</text>
+<rect x="340" y="312" width="116" height="24" rx="12" fill="#059669" stroke="none" stroke-width="2"/>
+<text x="398" y="330" font-size="18" text-anchor="middle" font-weight="bold" fill="#FFFFFF">primaria</text>
+<text x="610" y="331" font-size="18" text-anchor="end" font-weight="bold" fill="#1F2933">1.000 W PEP</text>
+<rect x="20" y="344" width="600" height="32" rx="6" fill="#FEF3C7" stroke="none" stroke-width="2"/>
+<text x="30" y="367" font-size="18" text-anchor="start" font-weight="bold" fill="#1F2933">30 m</text>
+<text x="120" y="367" font-size="18" text-anchor="start" font-weight="normal" fill="#1F2933">10.100–10.150 kHz</text>
+<rect x="340" y="348" width="116" height="24" rx="12" fill="#D97706" stroke="none" stroke-width="2"/>
+<text x="398" y="366" font-size="18" text-anchor="middle" font-weight="bold" fill="#FFFFFF">secundaria</text>
+<text x="610" y="367" font-size="18" text-anchor="end" font-weight="bold" fill="#1F2933">500 W PEP</text>
+<rect x="20" y="380" width="600" height="32" rx="6" fill="#FFFFFF" stroke="none" stroke-width="2"/>
+<text x="30" y="403" font-size="18" text-anchor="start" font-weight="bold" fill="#1F2933">20 m</text>
+<text x="120" y="403" font-size="18" text-anchor="start" font-weight="normal" fill="#1F2933">14.000–14.350 kHz</text>
+<rect x="340" y="384" width="116" height="24" rx="12" fill="#059669" stroke="none" stroke-width="2"/>
+<text x="398" y="402" font-size="18" text-anchor="middle" font-weight="bold" fill="#FFFFFF">primaria</text>
+<text x="610" y="403" font-size="18" text-anchor="end" font-weight="bold" fill="#1F2933">1.000 W PEP</text>
+<rect x="20" y="416" width="600" height="32" rx="6" fill="#FFFFFF" stroke="none" stroke-width="2"/>
+<text x="30" y="439" font-size="18" text-anchor="start" font-weight="bold" fill="#1F2933">17 m</text>
+<text x="120" y="439" font-size="18" text-anchor="start" font-weight="normal" fill="#1F2933">18.068–18.168 kHz</text>
+<rect x="340" y="420" width="116" height="24" rx="12" fill="#059669" stroke="none" stroke-width="2"/>
+<text x="398" y="438" font-size="18" text-anchor="middle" font-weight="bold" fill="#FFFFFF">primaria</text>
+<text x="610" y="439" font-size="18" text-anchor="end" font-weight="bold" fill="#1F2933">1.000 W PEP</text>
+<rect x="20" y="452" width="600" height="32" rx="6" fill="#FFFFFF" stroke="none" stroke-width="2"/>
+<text x="30" y="475" font-size="18" text-anchor="start" font-weight="bold" fill="#1F2933">15 m</text>
+<text x="120" y="475" font-size="18" text-anchor="start" font-weight="normal" fill="#1F2933">21.000–21.450 kHz</text>
+<rect x="340" y="456" width="116" height="24" rx="12" fill="#059669" stroke="none" stroke-width="2"/>
+<text x="398" y="474" font-size="18" text-anchor="middle" font-weight="bold" fill="#FFFFFF">primaria</text>
+<text x="610" y="475" font-size="18" text-anchor="end" font-weight="bold" fill="#1F2933">1.000 W PEP</text>
+<rect x="20" y="488" width="600" height="32" rx="6" fill="#FFFFFF" stroke="none" stroke-width="2"/>
+<text x="30" y="511" font-size="18" text-anchor="start" font-weight="bold" fill="#1F2933">12 m</text>
+<text x="120" y="511" font-size="18" text-anchor="start" font-weight="normal" fill="#1F2933">24.890–24.990 kHz</text>
+<rect x="340" y="492" width="116" height="24" rx="12" fill="#059669" stroke="none" stroke-width="2"/>
+<text x="398" y="510" font-size="18" text-anchor="middle" font-weight="bold" fill="#FFFFFF">primaria</text>
+<text x="610" y="511" font-size="18" text-anchor="end" font-weight="bold" fill="#1F2933">1.000 W PEP</text>
+<rect x="20" y="524" width="600" height="32" rx="6" fill="#FFFFFF" stroke="none" stroke-width="2"/>
+<text x="30" y="547" font-size="18" text-anchor="start" font-weight="bold" fill="#1F2933">10 m</text>
+<text x="120" y="547" font-size="18" text-anchor="start" font-weight="normal" fill="#1F2933">28.000–29.700 kHz</text>
+<rect x="340" y="528" width="116" height="24" rx="12" fill="#059669" stroke="none" stroke-width="2"/>
+<text x="398" y="546" font-size="18" text-anchor="middle" font-weight="bold" fill="#FFFFFF">primaria</text>
+<text x="610" y="547" font-size="18" text-anchor="end" font-weight="bold" fill="#1F2933">1.000 W PEP</text>
+<rect x="20" y="560" width="600" height="32" rx="6" fill="#FEF3C7" stroke="none" stroke-width="2"/>
+<text x="30" y="583" font-size="18" text-anchor="start" font-weight="bold" fill="#1F2933">6 m</text>
+<text x="120" y="583" font-size="18" text-anchor="start" font-weight="normal" fill="#1F2933">50–52 MHz</text>
+<rect x="340" y="564" width="116" height="24" rx="12" fill="#D97706" stroke="none" stroke-width="2"/>
+<text x="398" y="582" font-size="18" text-anchor="middle" font-weight="bold" fill="#FFFFFF">secundaria</text>
+<text x="610" y="583" font-size="18" text-anchor="end" font-weight="bold" fill="#1F2933">300 W PEP*</text>
+<rect x="20" y="596" width="600" height="32" rx="6" fill="#FEF3C7" stroke="none" stroke-width="2"/>
+<text x="30" y="619" font-size="18" text-anchor="start" font-weight="bold" fill="#1F2933">4 m</text>
+<text x="120" y="619" font-size="18" text-anchor="start" font-weight="normal" fill="#1F2933">70,150–70,250 MHz</text>
+<rect x="340" y="600" width="116" height="24" rx="12" fill="#D97706" stroke="none" stroke-width="2"/>
+<text x="398" y="618" font-size="18" text-anchor="middle" font-weight="bold" fill="#FFFFFF">secundaria</text>
+<text x="610" y="619" font-size="18" text-anchor="end" font-weight="bold" fill="#1F2933">300 W PEP</text>
+<rect x="20" y="632" width="600" height="32" rx="6" fill="#FFFFFF" stroke="none" stroke-width="2"/>
+<text x="30" y="655" font-size="18" text-anchor="start" font-weight="bold" fill="#1F2933">2 m</text>
+<text x="120" y="655" font-size="18" text-anchor="start" font-weight="normal" fill="#1F2933">144–146 MHz</text>
+<rect x="340" y="636" width="116" height="24" rx="12" fill="#059669" stroke="none" stroke-width="2"/>
+<text x="398" y="654" font-size="18" text-anchor="middle" font-weight="bold" fill="#FFFFFF">primaria</text>
+<text x="610" y="655" font-size="18" text-anchor="end" font-weight="bold" fill="#1F2933">600 W PEP</text>
+<rect x="20" y="668" width="600" height="32" rx="6" fill="#FFFFFF" stroke="none" stroke-width="2"/>
+<text x="30" y="691" font-size="18" text-anchor="start" font-weight="bold" fill="#1F2933">70 cm</text>
+<text x="120" y="691" font-size="18" text-anchor="start" font-weight="normal" fill="#1F2933">430–440 MHz</text>
+<rect x="340" y="672" width="116" height="24" rx="12" fill="#059669" stroke="none" stroke-width="2"/>
+<text x="398" y="690" font-size="18" text-anchor="middle" font-weight="bold" fill="#FFFFFF">primaria</text>
+<text x="610" y="691" font-size="18" text-anchor="end" font-weight="bold" fill="#1F2933">300 W PEP</text>
+<rect x="20" y="704" width="600" height="32" rx="6" fill="#FEF3C7" stroke="none" stroke-width="2"/>
+<text x="30" y="727" font-size="18" text-anchor="start" font-weight="bold" fill="#1F2933">23 cm</text>
+<text x="120" y="727" font-size="18" text-anchor="start" font-weight="normal" fill="#1F2933">1.240–1.300 MHz</text>
+<rect x="340" y="708" width="116" height="24" rx="12" fill="#D97706" stroke="none" stroke-width="2"/>
+<text x="398" y="726" font-size="18" text-anchor="middle" font-weight="bold" fill="#FFFFFF">secundaria</text>
+<text x="610" y="727" font-size="18" text-anchor="end" font-weight="bold" fill="#1F2933">ver el texto</text>
+<text x="320" y="762" font-size="18" text-anchor="middle" font-weight="normal" fill="#5B6673">En las bandas secundarias el máximo es la mitad</text>
+<text x="320" y="786" font-size="18" text-anchor="middle" font-weight="normal" fill="#5B6673">del valor de la tabla del reglamento.</text>
+<text x="320" y="814" font-size="18" text-anchor="middle" font-weight="normal" fill="#5B6673">* Con matices: ver el texto.</text></svg>

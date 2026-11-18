@@ -1,135 +1,117 @@
-Todo aparato de radio, del walkie más barato al transceptor de la mesa de Vicente, está hecho combinando un puñado de tipos de componentes. Esta sección te los presenta uno a uno: qué hacen, cómo se leen, en qué unidades se miden y qué papel jugarán después. Es la sección más «de catálogo» del curso; a cambio, cada pieza que fiches aquí te la encontrarás trabajando en las secciones siguientes.
+Este material es el **resumen de la sección**: lo esencial de las nueve lecciones anteriores, en formato de chuleta para repasar antes del examen. Aquí no se explica nada desde cero; si algún apartado no te suena, la explicación paso a paso está en la lección que se indica entre paréntesis.
 
-## Resistencias: las que frenan
+## Resistencias (lección 1)
 
-La **resistencia** (el componente; también llamada *resistor*) es un cilindro o pastilla fabricado para oponer una resistencia concreta al paso de la corriente. Sus dos datos vitales:
+- Pieza de dos patas, sin polaridad, con un valor fijo en ohmios. Limita la corriente, reparte la tensión o produce calor.
+- **Código de colores** (4 franjas): cifra, cifra, número de ceros, tolerancia. Se empieza por el lado contrario a la franja de tolerancia.
 
-- **Valor** en ohmios (Ω), de fracciones de ohmio a millones (MΩ).
-- **Potencia máxima** que puede disipar sin quemarse (recuerda P = I²R): las comunes de electrónica son de 0,25 W o 0,5 W; las «de potencia», cerámicas y gordas, aguantan decenas de vatios.
+| Negro | Marrón | Rojo | Naranja | Amarillo | Verde | Azul | Violeta | Gris | Blanco |
+|---|---|---|---|---|---|---|---|---|---|
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 
-Sus usos: limitar corrientes (proteger un LED), repartir tensiones (el divisor que verás en la sección 5), cargar circuitos para pruebas... Es el componente más numeroso de cualquier placa.
+- Tercera franja dorada: dividir entre 10; plateada: entre 100. Negro en tercera posición: ningún cero.
+- **Tolerancia:** marrón ± 1 %, rojo ± 2 %, dorado ± 5 %, plateado ± 10 %, sin franja ± 20 %.
+- **Potencia:** depende del tamaño, no del valor. P = I² × R. Regla práctica: que no trabaje a más de la mitad de lo que aguanta.
+- **LED con resistencia en serie:** R = (tensión de la fuente − tensión del LED) / corriente del LED.
+- **Variables:** potenciómetro (tres patas, la central es el cursor), LDR (baja con la luz), termistor NTC (baja al calentarse) y PTC (sube al calentarse).
 
-**El código de colores** identifica el valor mediante franjas pintadas. En el formato clásico de 4 franjas: las dos primeras son cifras, la tercera es el multiplicador (cuántos ceros añadir) y la cuarta, la tolerancia (precisión del valor: dorado ±5 %, plateado ±10 %).
+## Condensadores (lecciones 2 y 3)
 
-| Color | Cifra | Multiplicador |
-|---|---|---|
-| Negro | 0 | ×1 |
-| Marrón | 1 | ×10 |
-| Rojo | 2 | ×100 |
-| Naranja | 3 | ×1.000 |
-| Amarillo | 4 | ×10.000 |
-| Verde | 5 | ×100.000 |
-| Azul | 6 | ×1.000.000 |
-| Violeta | 7 | — |
-| Gris | 8 | — |
-| Blanco | 9 | — |
+- Dos placas separadas por un aislante (**dieléctrico**). Almacena carga, y con ella energía, en un campo **eléctrico**.
+- **Capacidad:** C = Q / U, en **faradios**. Crece con la superficie de las placas, al acercarlas y con un mejor dieléctrico.
+- **1 µF = 1.000 nF = 1.000.000 pF.**
+- **Constante de tiempo:** R × C, en segundos (ohmios × faradios). En una constante alcanza el 63 % de la tensión; en cinco, se considera cargado. La descarga tarda lo mismo.
+- **En continua:** se carga (tarda del orden de R × C) y después bloquea el paso.
+- **En alterna:** se carga y descarga continuamente y por el circuito circula corriente, sin que ningún electrón cruce el dieléctrico.
+- **Reactancia capacitiva:** **XC = 1 / (6,28 × f × C)**, en ohmios. Baja al subir la frecuencia o la capacidad. La corriente va **adelantada 90°** respecto a la tensión. No gasta energía.
+- **Tipos:** cerámico, de plástico, variable (sintonía) y **electrolítico**, que tiene polaridad, revienta si se conecta al revés y envejece. Todos tienen una tensión máxima.
+- Usos: acoplo (deja pasar la señal y detiene la continua), desacoplo (deriva a masa las frecuencias altas), filtros y sintonía.
 
-Ejemplos: **marrón-negro-rojo** = 1, 0, ×100 = 1.000 Ω = 1 kΩ (la que levantó Vicente en el rastro). **Amarillo-violeta-naranja** = 4, 7, ×1.000 = 47 kΩ. **Rojo-rojo-negro** = 22 Ω. Regla nemotécnica veterana para el orden de los colores: son los del arcoíris con negro y marrón delante y gris y blanco detrás.
+## Bobinas (lecciones 4 y 5)
 
-Variantes con nombre propio: el **potenciómetro** es una resistencia variable con un eje (el mando de volumen clásico); la **LDR** baja su resistencia con la luz; el **termistor** la cambia con la temperatura (así mide tu equipo su propia calentura).
+- **Campo:** zona en la que un objeto ejerce fuerza a distancia. Toda corriente crea un campo magnético (Ørsted); un campo magnético **que cambia** induce tensión (Faraday).
+- **Bobina** (o inductor): hilo enrollado en espiras. Se opone a los **cambios** de corriente y almacena energía en un campo **magnético**.
+- **Inductancia:** L, en **henrios** (en radio, mH y µH). Crece con el número de espiras (el doble de espiras, cuatro veces más), con el diámetro, al apretarla y con un núcleo de hierro o ferrita.
+- **En continua:** deja pasar. **En alterna:** se opone, más cuanto mayor es la frecuencia.
+- **Reactancia inductiva:** **XL = 6,28 × f × L**, en ohmios. Sube con la frecuencia y con la inductancia. La corriente va **retrasada 90°** respecto a la tensión. No gasta energía.
+- Una bobina puesta en serie para frenar la radiofrecuencia y dejar pasar la continua se llama **choque**.
+- **Impedancia (Z):** oposición total de un circuito a la alterna, en ohmios, combinando resistencias y reactancias (no es una simple suma).
 
-## Condensadores: los que almacenan campo eléctrico
-
-Un **condensador** son dos placas conductoras enfrentadas y separadas por un aislante (el **dieléctrico**: aire, cerámica, plástico...). Al conectarlo a una tensión, las placas se cargan (una +, otra −) y entre ellas queda almacenada energía en forma de **campo eléctrico**. Es un almacén diminuto y rapidísimo de electricidad.
-
-- **Magnitud: capacidad (C)**, medida en **faradios (F)**. El faradio es descomunal, así que vivirás entre **microfaradios (µF), nanofaradios (nF) y picofaradios (pF)**. (1 µF = 1.000 nF = 1.000.000 pF: conversión que cae en exámenes.)
-- La capacidad crece con la superficie de las placas, y crece al acercarlas o al usar mejor dieléctrico.
-
-El comportamiento que lo hace precioso para la radio:
-
-- **En corriente continua, no conduce.** Se carga en un instante y luego bloquea el paso: es un muro para la CC.
-- **En corriente alterna, «deja pasar»**: como la tensión no para de invertirse, el condensador se carga y descarga sin cesar, y la corriente circula por el circuito (aunque ningún electrón cruce el dieléctrico). Cuanto **mayor la frecuencia o mayor la capacidad, más fácil pasa**. Esa oposición variable con la frecuencia se llama **reactancia capacitiva** (Xc, en ohmios): baja cuando la frecuencia sube.
-
-Ese doble carácter —muro para la CC, puerta para la CA que se abre con la frecuencia— convierte al condensador en el portero de los circuitos: separa la señal de la alimentación, desvía a tierra las frecuencias indeseadas, y forma filtros y circuitos resonantes (sección 5).
-
-Tipos que conviene reconocer: **cerámicos** (pequeños, pF a nF, para RF), **de plástico/film** (estables, audio y filtros), **electrolíticos** (los cilindros con polaridad: µF grandes para alisar alimentaciones; OJO: tienen + y −, y conectarlos al revés los hace literalmente explotar; son además los que peor envejecen: se secan, y por eso la lata de Amparo avisaba «¡MIRAR FECHA!» y el receptor del rastro «olía a condensador reventado»), y **variables** (el clásico mando de sintonía de las radios antiguas: placas que se enfrentan más o menos al girar).
-
-## Bobinas: las que almacenan campo magnético
-
-Una **bobina** (o **inductor**, o *choque*) es un hilo enrollado, a veces alrededor de un núcleo de hierro o **ferrita** (cerámica magnética). Su secreto es que **toda corriente crea un campo magnético** (lo descubrió Ørsted en 1820 al ver moverse una brújula junto a un cable), y un campo magnético que cambia induce a su vez tensión en los conductores que abraza (Faraday, 1831). La bobina almacena energía en su **campo magnético** y, por esa inercia magnética, *se resiste a los cambios de corriente*.
-
-- **Magnitud: inductancia (L)**, medida en **henrios (H)**; en la práctica, milihenrios (mH) y microhenrios (µH).
-- Comportamiento espejo del condensador: **deja pasar la CC** (es solo un hilo enrollado) y **se opone a la CA**, tanto más cuanto mayor la frecuencia. Su oposición es la **reactancia inductiva** (XL, en ohmios): sube cuando la frecuencia sube.
-
-Memoriza el dúo como pareja de opuestos, porque el examen lo pregunta y toda la radio se apoya en él:
-
-| | Corriente continua | CA de baja frecuencia | CA de alta frecuencia |
+| | Corriente continua | Alterna de baja frecuencia | Alterna de alta frecuencia |
 |---|---|---|---|
-| **Condensador** | Bloquea | Pasa a regañadientes | Pasa fácil |
-| **Bobina** | Pasa | Pasa a regañadientes* | Bloquea |
+| **Condensador** | La bloquea | Estorba mucho | Pasa con facilidad |
+| **Bobina** | La deja pasar | Estorba poco | La bloquea |
 
-(*con oposición creciente con la frecuencia)
+## Transformadores (lección 6)
 
-Juntos forman el matrimonio más productivo de la electrónica: el circuito resonante LC, corazón de la sintonía, que es el plato fuerte de la sección 5.
+- Dos bobinas, **primario** y **secundario**, sobre un mismo núcleo, sin conexión eléctrica entre ellas.
+- **Tensiones:** U secundario = U primario × (N secundario / N primario). Menos espiras en el secundario: reductor; más: elevador.
+- **Corrientes**, al revés: I secundario = I primario × (N primario / N secundario). La potencia se conserva, salvo pérdidas.
+- **Impedancias:** se transforman con el **cuadrado** de la relación de espiras.
+- **Solo funciona con alterna:** un campo que no cambia no induce nada.
+- Además aísla (aislamiento galvánico) y adapta impedancias.
 
-## Transformadores: las bobinas casadas
+## Semiconductores y diodos (lección 7)
 
-Pon dos bobinas juntas, compartiendo núcleo, y tendrás un **transformador**: la corriente alterna del **primario** crea un campo magnético cambiante que induce tensión en el **secundario**, sin contacto eléctrico alguno. Dos consecuencias:
+- Silicio **dopado**: tipo **N** (con electrones libres de sobra) y tipo **P** (con *huecos*, vacantes que se comportan como cargas positivas móviles). Los dos son eléctricamente neutros.
+- **Unión PN:** conduce en **directa** (positivo al lado P) y bloquea en **inversa**, salvo una corriente de fuga minúscula.
+- **Diodo:** una unión PN con dos patas. **Ánodo** (P) y **cátodo** (N, marcado con una raya). La corriente pasa de ánodo a cátodo.
+- **Tensión umbral:** unos 0,6 a 0,7 V en silicio; 0,2 a 0,3 V en germanio. No limita la corriente por sí mismo.
 
-1. **Cambia tensiones:** la relación de tensiones es igual a la relación de espiras (vueltas de hilo). Un primario de 1.000 espiras a 230 V con un secundario de 50 espiras entrega 230 × 50/1.000 = **11,5 V**. (La potencia no se multiplica, ni gratis ni nunca: si la tensión baja 20 veces, la corriente disponible sube hasta 20 veces, menos las pérdidas.)
-2. **Aísla:** como no hay conexión física entre primario y secundario, separa circuitos galvánicamente (seguridad) y adapta impedancias (concepto que florecerá en la sección 8: los baluns de antena son transformadores).
+| Diodo | Cómo trabaja | Para qué sirve |
+|---|---|---|
+| Rectificador | En directa conduce, en inversa bloquea | Convertir alterna en continua |
+| De señal | Igual, con señales débiles | Detectar señales de radio |
+| LED | En directa, emite luz | Indicadores |
+| Zéner | En inversa, a su tensión zéner | Tensión fija y estable |
+| Varicap | En inversa, como condensador | Capacidad ajustable con una tensión: sintonía |
 
-Solo funciona con **corriente alterna**: con CC el campo no cambia y no induce nada (un transformador conectado a una batería es un calentador caro). Esta es la razón profunda de que la red eléctrica sea alterna, como viste en la ampliación anterior.
+## Transistores (lección 8)
 
-## Diodos: las válvulas antirretorno
+- Una señal pequeña en la pata de control gobierna una corriente grande, cuya energía aporta la fuente de alimentación.
 
-Con el **diodo** entramos en los **semiconductores**. Recuerda de la sección 2: silicio, conducción «a medias» y controlable. El control se consigue **dopando** el cristal: añadiendo impurezas que le sobran electrones (material **tipo N**) o que le faltan (material **tipo P**; a los huecos que dejan los electrones ausentes se les trata como cargas positivas móviles, los famosos «huecos»).
+| | Bipolar (BJT) | De efecto de campo (FET) |
+|---|---|---|
+| Patas | Emisor, **base**, colector | Fuente, **puerta**, drenador |
+| Tipos | NPN y PNP | JFET y MOSFET |
+| Se controla por | **Corriente** de base | **Tensión** de puerta |
 
-Al unir un trozo P con un trozo N se forma la **unión PN**, y ocurre el milagro asimétrico: **la corriente solo puede cruzarla en un sentido**. Polarizado en **directa** (P al +, N al −), el diodo conduce en cuanto se supera una pequeña tensión umbral (~0,7 V en silicio, ~0,3 V en germanio); en **inversa**, bloquea. Es una válvula antirretorno para electrones.
+- **Ganancia** del bipolar: corriente de colector = β × corriente de base. Entre base y emisor hacen falta unos 0,7 V.
+- **Símbolo:** la flecha está en el emisor; hacia fuera, NPN; hacia dentro, PNP.
+- **Dos oficios:** amplificador (en un punto intermedio) e interruptor (entre **corte** y **saturación**).
+- **Tres montajes:** emisor común (el más usado; amplifica tensión y corriente), colector común o seguidor de emisor (entrada de impedancia alta, salida baja), base común (entrada baja, salida alta; radiofrecuencia).
 
-Usos y parientes que debes conocer:
+## Válvulas, circuitos integrados y símbolos (lección 9)
 
-- **Rectificar:** convertir CA en CC dejando pasar solo los semiciclos de un sentido: el primer paso de toda fuente de alimentación (sección 5).
-- **Detectar:** extraer el sonido de una señal de radio AM (así funcionaban las radios de galena: la galena era un diodo mineral; los «diodos Ge, tesoro» de la lata de Amparo son sus nietos de germanio, apreciados justo por su umbral bajo).
-- **LED:** diodo que emite luz al conducir. Como todo diodo, no se autolimita: se conecta siempre con una resistencia en serie que fije su corriente (ley de Ohm en acto de servicio).
-- **Zéner:** diodo diseñado para conducir en inversa a una tensión exacta y estable: se usa como referencia y regulador de tensión.
-- **Varicap:** diodo que, en inversa, se comporta como un pequeño condensador cuya capacidad depende de la tensión aplicada: es el «mando de sintonía electrónico» de los equipos modernos.
+- **Válvula:** ampolla al vacío con un **cátodo** caliente que emite electrones, una **placa** (ánodo) que los atrae y una **rejilla** que controla su paso. Sin rejilla, diodo; con una, **triodo**; con dos, tetrodo; con tres, pentodo.
+- **Circuito integrado:** un circuito completo fabricado en una sola pieza de silicio. Ejemplo sencillo: el amplificador operacional.
+- **Símbolos:** resistencia, zigzag (o rectángulo); condensador, dos rayas paralelas (con «+» el electrolítico); bobina, bucles; transformador, dos bobinas con rayas entre ellas; diodo, triángulo contra una barra (barra doblada: zéner; barra doble: varicap; flechitas: LED). Una flecha atravesada indica que es ajustable.
 
-## Transistores: los que amplifican
+## Cómo se estropea cada familia
 
-El componente que cambió el mundo (Bell Labs, 1947; Nobel para Bardeen, Brattain y Shockley). Un **transistor** es un semiconductor de tres capas y tres patas en el que **una corriente o tensión pequeña en una pata controla una corriente grande entre las otras dos**. Es un grifo electrónico: la manecilla apenas requiere esfuerzo, y gobierna un caudal enorme.
+No entra en el examen, pero ahorra tiempo en una reparación.
 
-Dos grandes familias:
+| Componente | Avería típica | Cómo se nota |
+|---|---|---|
+| Resistencia | Se abre (deja de conducir) | A menudo se ve tostada |
+| Condensador electrolítico | Se seca y pierde capacidad, o se hincha | Parte superior abombada; primer sospechoso en aparatos viejos |
+| Diodo o transistor | Queda en cortocircuito, por calor o sobretensión | Conduce en los dos sentidos al medirlo con el polímetro |
+| Bobina o transformador | Rara vez fallan, salvo sobrecalentamiento | Olor a quemado, hilo abierto |
 
-- **Bipolar (BJT):** capas NPN o PNP; patas **emisor, base y colector**. Una corriente pequeña de base controla una corriente de colector decenas o cientos de veces mayor (esa proporción es la **ganancia de corriente**, llamada beta o hFE). Controlado por *corriente*.
-- **De efecto de campo (FET, y su variante MOSFET):** patas **fuente, puerta y drenador**. La *tensión* en la puerta controla la corriente fuente-drenador, casi sin consumir nada. Controlado por *tensión*. Los amplificadores de potencia de RF modernos y prácticamente toda la informática son MOSFET.
-
-Del grifo salen los dos empleos universales:
-
-1. **Amplificador:** la señal débil mueve la manecilla, y el caudal grande reproduce sus movimientos ampliados. De la antena al altavoz, tu receptor es una cadena de grifos cada vez mayores.
-2. **Conmutador:** manecilla solo abierta o cerrada: un interruptor sin partes móviles, capaz de abrir y cerrar millones de veces por segundo. Sobre ese uso está construida toda la electrónica digital.
-
-**La media familia: las válvulas.** Antes del transistor, amplificaban las **válvulas termoiónicas** (tubos de vacío): un filamento incandescente libera electrones que vuelan hasta una placa, y una rejilla intermedia los gobierna. Mismo principio de grifo, con botella de cristal, cientos de voltios y calor de estufa. Sobreviven dignamente en dos reductos: amplificadores de gran potencia de HF y equipos de audio de culto. El examen todavía les guarda una pregunta ocasional; tu curso, este párrafo y el cariño.
-
-## Circuitos integrados: la ciudad en un grano
-
-Un **circuito integrado (CI, chip)** no es un componente nuevo: son miles, millones o miles de millones de transistores, diodos, resistencias y condensadores fabricados de una vez sobre una lasca de silicio. Desde el amplificadorcito de ocho patas hasta el procesador de tu móvil. En radio los encontrarás haciendo de amplificadores, mezcladores, sintetizadores de frecuencia o radios completas en un chip (los walkies baratos son básicamente *un* chip con micrófono). Para el examen basta el concepto; para el asombro, el dato: el primer CI (Kilby, 1958) tenía un transistor; los actuales superan los cien mil millones.
-
-## Cómo se muere cada familia (el regalo de Vicente)
-
-No cae en el examen, pero vale una reparación: cada componente tiene su muerte típica. Las **resistencias** se abren (se queman y dejan de conducir; a menudo se ve el tostado). Los **electrolíticos** se secan con los años y pierden capacidad, o se hinchan por arriba y hasta revientan: son el sospechoso número uno en aparatos viejos, como el receptor del rastro. Los **semiconductores** mueren de golpe y en silencio, casi siempre por calor o sobretensión: un diodo o transistor muerto suele estar en cortocircuito (conduce en ambos sentidos: se delata con el polímetro). Las **bobinas y transformadores** casi nunca mueren... salvo que algo los haya cocinado antes. Orden de sospecha en un aparato antiguo: electrolíticos, semiconductores calientes, soldaduras agrietadas, y solo al final lo demás.
-
-## Para llevar
-
-- **Resistencia** (Ω): frena corriente; valor por código de colores (cifra-cifra-multiplicador-tolerancia); vigila su potencia máxima.
-- **Condensador** (F → µF/nF/pF): almacena campo *eléctrico*; bloquea CC, pasa CA tanto mejor cuanto mayor la frecuencia (reactancia capacitiva ↓ con f).
-- **Bobina** (H → mH/µH): almacena campo *magnético*; pasa CC, frena CA tanto más cuanto mayor la frecuencia (reactancia inductiva ↑ con f).
-- **Transformador:** dos bobinas acopladas; cambia tensión según relación de espiras; solo CA; aísla y adapta.
-- **Diodo:** conduce en un solo sentido (umbral ~0,7 V silicio); rectifica y detecta; variantes zéner (tensión estable), LED (luz), varicap (capacidad variable).
-- **Transistor:** señal pequeña controla corriente grande; bipolar (emisor/base/colector, controlado por corriente) y FET (fuente/puerta/drenador, controlado por tensión); amplifica o conmuta.
-- **CI:** miles/millones de todo lo anterior en un chip.
+Orden de sospecha en un aparato antiguo: electrolíticos, semiconductores que se calientan, soldaduras agrietadas y, solo al final, lo demás.
 
 ## Para el examen
 
-- Código de colores: cae con enorme frecuencia. Practica una docena de combinaciones en ambos sentidos.
-- El dúo reactancias: condensador y bobina frente a CC/CA y frente a la frecuencia. Pregunta segura, a menudo formulada como «¿qué componente bloquea la CC y deja pasar la CA?».
-- Unidades: faradio (y sus submúltiplos µF/nF/pF con conversiones), henrio, y a quién pertenece cada una.
-- Nombres de las patas: emisor/base/colector (bipolar), fuente/puerta/drenador (FET), primario/secundario (transformador).
-- Relación de espiras del transformador con un cálculo sencillo.
-- Umbral del diodo de silicio (~0,6-0,7 V) y funciones del zéner y el varicap.
+- **Código de colores:** practica una docena de combinaciones en los dos sentidos.
+- **Condensador frente a bobina:** quién bloquea la continua, quién frena la alta frecuencia, qué reactancia sube y cuál baja con la frecuencia, y el desfase de cada uno.
+- **Cálculos:** XC y XL (pasando antes a faradios, henrios y hercios), constante de tiempo R × C, conversiones entre µF, nF y pF.
+- **Transformador:** relación de espiras para tensiones, la inversa para corrientes y el cuadrado para impedancias. Solo alterna.
+- **Diodos:** umbral del silicio y función del zéner, el LED y el varicap.
+- **Transistores:** nombres de las patas de cada tipo, quién se controla por corriente y quién por tensión, cálculo con β, sentido de la flecha y los tres montajes.
+- **Símbolos:** reconocer cada componente por su dibujo.
 
 ## Para profundizar
 
-- OpenStax, *Física universitaria* vol. 2 (CC BY 4.0): capacidad, inductancia e inducción electromagnética, con los experimentos de Faraday contados como merecen.
-- Cualquier «kit de iniciación a la electrónica» (protoboard, resistencias, LEDs, pila) por menos de 20 €: montar un LED con su resistencia calculada por ti convierte esta sección de catálogo en memoria muscular.
-- El simulador gratuito falstad.com/circuit: dibujas circuitos y *ves* las corrientes animadas moverse por ellos, condensadores cargándose incluidos. Juega con un condensador y una bobina; la sección 5 te espera.
+- OpenStax, *Física universitaria* vol. 2 (CC BY 4.0, en español): capacidad, inductancia e inducción electromagnética, con los experimentos de Faraday.
+- Un kit de iniciación a la electrónica (placa de pruebas, resistencias, LED y pila) por menos de 20 €: montar un LED con la resistencia que tú mismo has calculado fija la sección mejor que cualquier relectura.
+- El simulador gratuito falstad.com/circuit: dibujas un circuito y ves las corrientes moverse por él. Prueba con un condensador y con una bobina; la sección 5 empieza justo ahí.

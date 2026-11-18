@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" role="img"><title>Una bobina y su campo magnético</title><defs><marker id="arr-2563EB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2563EB"/></marker></defs><rect x="1" y="1" width="638" height="418" rx="18" fill="#FAF6EC" stroke="#E7DFCC" stroke-width="2"/><text x="320" y="42" font-size="22" text-anchor="middle" font-weight="bold" fill="#1F2933">Una bobina y su campo magnético</text>
+<path d="M470 178 C 640 70, 0 70, 170 178" stroke="#2563EB" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="9 7"/>
+<path d="M470 242 C 640 350, 0 350, 170 242" stroke="#2563EB" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="9 7"/>
+<line x1="110" y1="210" x2="532" y2="210" stroke="#2563EB" stroke-width="4" stroke-linecap="round" marker-end="url(#arr-2563EB)" stroke-dasharray="9 7"/>
+<ellipse cx="200" cy="210" rx="20" ry="58" fill="none" stroke="#B4682A" stroke-width="6"/>
+<ellipse cx="248" cy="210" rx="20" ry="58" fill="none" stroke="#B4682A" stroke-width="6"/>
+<ellipse cx="296" cy="210" rx="20" ry="58" fill="none" stroke="#B4682A" stroke-width="6"/>
+<ellipse cx="344" cy="210" rx="20" ry="58" fill="none" stroke="#B4682A" stroke-width="6"/>
+<ellipse cx="392" cy="210" rx="20" ry="58" fill="none" stroke="#B4682A" stroke-width="6"/>
+<ellipse cx="440" cy="210" rx="20" ry="58" fill="none" stroke="#B4682A" stroke-width="6"/>
+<path d="M180 210 C150 300, 120 330, 80 350" stroke="#B4682A" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M460 210 C490 300, 520 330, 560 350" stroke="#B4682A" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="320" y="92" font-size="20" text-anchor="middle" font-weight="bold" fill="#2563EB">campo magnético</text>
+<text x="96" y="384" font-size="18" text-anchor="middle" font-weight="normal" fill="#5B6673">entra la corriente</text>
+<text x="544" y="384" font-size="18" text-anchor="middle" font-weight="normal" fill="#5B6673">sale la corriente</text>
+<text x="320" y="316" font-size="19" text-anchor="middle" font-weight="bold" fill="#B4682A">espiras de hilo</text></svg>

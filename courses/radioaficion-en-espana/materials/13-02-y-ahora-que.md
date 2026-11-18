@@ -16,11 +16,11 @@ Criterio de «estoy listo»: cuando saques de forma estable más de 25/30 en tes
 1. Entra en la **sede electrónica del Ministerio** (sedediatid.digital.gob.es) y busca el procedimiento de radioaficionados («participación en exámenes para la obtención del diploma de operador de estación de aficionado»). Se solicita telemáticamente (con certificado digital, DNIe o Cl@ve; si no tienes, es el momento: lo usarás para todo).
 2. Paga la **tasa de examen** (modelo de tasas de telecomunicaciones; importe moderado).
 3. Elige convocatoria y **Jefatura Provincial** (hay convocatorias periódicas; las fechas se publican en la sede y las difunde la URE).
-4. El examen: por ordenador, presencial, 90 minutos, 2×30 preguntas, 15 aciertos por prueba, los errores no restan: **contesta todo**. Si apruebas una sola prueba, se te guarda para la siguiente convocatoria.
+4. El examen: por ordenador, presencial, 90 minutos, 2×30 preguntas, 15 aciertos por prueba, los errores no restan: **contesta todo**. Si apruebas una sola prueba, se te convalida, si lo solicitas, en convocatorias posteriores.
 
 ## Paso 3: autorización y distintivo
 
-Aprobado el examen, recibirás el **diploma de operador** (con tu HAREC). Con él, en la misma sede, solicita la **autorización administrativa**; la resolución te asignará tu **distintivo de llamada** EA + distrito + sufijo. Desde ese momento puedes montar tu estación y salir al aire. Todo el proceso es telemático y las tasas, contenidas.
+Aprobado el examen, recibirás el **diploma de operador** (con tu HAREC). Con él, en la misma sede, solicita la **autorización administrativa**; la resolución te asignará tu **distintivo de llamada** EA + distrito + sufijo. Desde ese momento puedes salir al aire con equipos portátiles o móviles; para una estación fija en casa hace falta además la **licencia de estación** (arts. 18-20 del reglamento) y, para las antenas en el exterior, un seguro en vigor. Todo el proceso es telemático y las tasas, contenidas.
 
 Mientras esperas papeles: escucha, escucha, escucha (ya sabes que es legal, gratuito y la mejor escuela).
 

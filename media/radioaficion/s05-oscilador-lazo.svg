@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" width="640" height="460" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" role="img"><title>Un oscilador: amplificador realimentado a través de un circuito resonante</title><defs><marker id="arr-059669" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#059669"/></marker><marker id="arr-2563EB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2563EB"/></marker></defs><rect x="1" y="1" width="638" height="458" rx="18" fill="#FAF6EC" stroke="#E7DFCC" stroke-width="2"/><text x="320" y="42" font-size="22" text-anchor="middle" font-weight="bold" fill="#1F2933">Un oscilador es un lazo</text>
+<path d="M250 100 L360 150 L250 200 Z" stroke="#1F2933" stroke-width="4" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="286" y="157" font-size="24" text-anchor="middle" font-weight="bold" fill="#1F2933">A</text>
+<text x="305" y="86" font-size="20" text-anchor="middle" font-weight="bold" fill="#1F2933">amplificador</text>
+<text x="305" y="230" font-size="18" text-anchor="middle" font-weight="normal" fill="#5B6673">repone las pérdidas</text>
+<path d="M360 150 H480 V330 H430" stroke="#2563EB" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr-2563EB)"/>
+<rect x="210" y="296" width="220" height="68" rx="10" fill="#FFFFFF" stroke="#D97706" stroke-width="4"/>
+<text x="320" y="326" font-size="20" text-anchor="middle" font-weight="bold" fill="#D97706">circuito resonante</text>
+<text x="320" y="352" font-size="18" text-anchor="middle" font-weight="normal" fill="#5B6673">elige la frecuencia</text>
+<path d="M210 330 H130 V150 H242" stroke="#2563EB" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr-2563EB)"/>
+<text x="92" y="250" font-size="19" text-anchor="middle" font-weight="bold" fill="#2563EB" transform="rotate(-90 92 250)">realimentación</text>
+<circle cx="480" cy="150" r="6" fill="#2563EB" stroke="#2563EB" stroke-width="3"/>
+<line x1="480" y1="150" x2="570" y2="150" stroke="#059669" stroke-width="4" stroke-linecap="round" marker-end="url(#arr-059669)"/>
+<text x="540" y="134" font-size="20" text-anchor="middle" font-weight="bold" fill="#059669">salida</text>
+<text x="320" y="420" font-size="19" text-anchor="middle" font-weight="normal" fill="#5B6673">La señal da vueltas: vuelve a favor y con ganancia suficiente</text></svg>

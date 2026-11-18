@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" width="640" height="380" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" role="img"><title>Rectificación de media onda con un diodo</title><rect x="1" y="1" width="638" height="378" rx="18" fill="#FAF6EC" stroke="#E7DFCC" stroke-width="2"/><text x="320" y="42" font-size="22" text-anchor="middle" font-weight="bold" fill="#1F2933">Rectificar: dejar pasar solo un sentido</text>
+<line x1="40" y1="180" x2="250" y2="180" stroke="#5B6673" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 6"/>
+<line x1="390" y1="180" x2="600" y2="180" stroke="#5B6673" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 6"/>
+<path d="M45 180.0 L49 164.6 L53 150.1 L57 137.6 L61 127.7 L65 121.0 L69 118.1 L73 119.1 L77 123.9 L81 132.2 L85 143.6 L89 157.2 L93 172.2 L97 187.8 L101 202.8 L105 216.4 L109 227.8 L113 236.1 L117 240.9 L121 241.9 L125 239.0 L129 232.3 L133 222.4 L137 209.9 L141 195.4 L145 180.0 L149 164.6 L153 150.1 L157 137.6 L161 127.7 L165 121.0 L169 118.1 L173 119.1 L177 123.9 L181 132.2 L185 143.6 L189 157.2 L193 172.2 L197 187.8 L201 202.8 L205 216.4 L209 227.8 L213 236.1 L217 240.9 L221 241.9 L225 239.0 L229 232.3 L233 222.4 L237 209.9 L241 195.4 L245 180.0" stroke="#2563EB" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M395 180.0 L399 164.6 L403 150.1 L407 137.6 L411 127.7 L415 121.0 L419 118.1 L423 119.1 L427 123.9 L431 132.2 L435 143.6 L439 157.2 L443 172.2 L447 180.0 L451 180.0 L455 180.0 L459 180.0 L463 180.0 L467 180.0 L471 180.0 L475 180.0 L479 180.0 L483 180.0 L487 180.0 L491 180.0 L495 180.0 L499 164.6 L503 150.1 L507 137.6 L511 127.7 L515 121.0 L519 118.1 L523 119.1 L527 123.9 L531 132.2 L535 143.6 L539 157.2 L543 172.2 L547 180.0 L551 180.0 L555 180.0 L559 180.0 L563 180.0 L567 180.0 L571 180.0 L575 180.0 L579 180.0 L583 180.0 L587 180.0 L591 180.0 L595 180.0" stroke="#059669" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="262" y1="180" x2="300" y2="180" stroke="#374151" stroke-width="4" stroke-linecap="round"/>
+<line x1="340" y1="180" x2="378" y2="180" stroke="#374151" stroke-width="4" stroke-linecap="round"/>
+<path d="M300 158 L300 202 L340 180 Z" stroke="#1F2933" stroke-width="3" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="342" y1="156" x2="342" y2="204" stroke="#1F2933" stroke-width="5" stroke-linecap="round"/>
+<text x="320" y="140" font-size="19" text-anchor="middle" font-weight="bold" fill="#1F2933">diodo</text>
+<text x="145" y="290" font-size="20" text-anchor="middle" font-weight="bold" fill="#2563EB">entra: alterna</text>
+<text x="145" y="316" font-size="18" text-anchor="middle" font-weight="normal" fill="#5B6673">(va y viene)</text>
+<text x="495" y="290" font-size="20" text-anchor="middle" font-weight="bold" fill="#059669">sale: un solo sentido</text>
+<text x="495" y="316" font-size="18" text-anchor="middle" font-weight="normal" fill="#5B6673">(a impulsos)</text>
+<text x="495" y="214" font-size="18" text-anchor="middle" font-weight="normal" fill="#5B6673">bloqueado</text></svg>

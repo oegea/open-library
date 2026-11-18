@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="640" height="640" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" role="img"><title>El triángulo de la ley de Ohm</title><rect x="1" y="1" width="638" height="638" rx="18" fill="#FAF6EC" stroke="#E7DFCC" stroke-width="2"/><text x="320" y="44" font-size="22" text-anchor="middle" font-weight="bold" fill="#1F2933">El triángulo de Ohm</text>
+<path d="M320 66 L437.8 256 L202.2 256 Z" stroke="#1F2933" stroke-width="3" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="261.1" y1="161.0" x2="378.9" y2="161.0" stroke="#1F2933" stroke-width="3" stroke-linecap="round"/>
+<line x1="320" y1="161.0" x2="320" y2="256" stroke="#1F2933" stroke-width="3" stroke-linecap="round"/>
+<text x="320" y="145.8" font-size="44" text-anchor="middle" font-weight="bold" fill="#DC2626">U</text>
+<text x="270.524" y="233.2" font-size="44" text-anchor="middle" font-weight="bold" fill="#2563EB">I</text>
+<text x="369.476" y="233.2" font-size="44" text-anchor="middle" font-weight="bold" fill="#1F2933">R</text>
+<text x="320" y="290" font-size="20" text-anchor="middle" font-weight="normal" fill="#5B6673">Tapa la letra que buscas y lee lo que queda</text>
+<rect x="50" y="318" width="540" height="92" rx="14" fill="#EFE7D6" stroke="none" stroke-width="2"/>
+<path d="M120 328 L164.64 400 L75.36 400 Z" stroke="#1F2933" stroke-width="3" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="97.68" y1="364.0" x2="142.32" y2="364.0" stroke="#1F2933" stroke-width="3" stroke-linecap="round"/>
+<line x1="120" y1="364.0" x2="120" y2="400" stroke="#1F2933" stroke-width="3" stroke-linecap="round"/>
+<text x="120" y="358.24" font-size="26" text-anchor="middle" font-weight="bold" fill="#DC2626">U</text>
+<circle cx="101.2512" cy="382.78000000000003" r="16.12" fill="#D97706" stroke="#D97706" stroke-width="3"/>
+<text x="101.2512" y="391.36" font-size="26" text-anchor="middle" font-weight="bold" fill="#FFFFFF">?</text>
+<text x="138.7488" y="391.36" font-size="26" text-anchor="middle" font-weight="bold" fill="#1F2933">R</text>
+<text x="200" y="360" font-size="28" text-anchor="start" font-weight="bold" fill="#1F2933">I = U / R</text>
+<text x="200" y="390" font-size="19" text-anchor="start" font-weight="normal" fill="#5B6673">U encima de R: se dividen</text>
+<rect x="50" y="422" width="540" height="92" rx="14" fill="#EFE7D6" stroke="none" stroke-width="2"/>
+<path d="M120 432 L164.64 504 L75.36 504 Z" stroke="#1F2933" stroke-width="3" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="97.68" y1="468.0" x2="142.32" y2="468.0" stroke="#1F2933" stroke-width="3" stroke-linecap="round"/>
+<line x1="120" y1="468.0" x2="120" y2="504" stroke="#1F2933" stroke-width="3" stroke-linecap="round"/>
+<text x="120" y="462.24" font-size="26" text-anchor="middle" font-weight="bold" fill="#DC2626">U</text>
+<text x="101.2512" y="495.36" font-size="26" text-anchor="middle" font-weight="bold" fill="#2563EB">I</text>
+<circle cx="138.7488" cy="486.78000000000003" r="16.12" fill="#D97706" stroke="#D97706" stroke-width="3"/>
+<text x="138.7488" y="495.36" font-size="26" text-anchor="middle" font-weight="bold" fill="#FFFFFF">?</text>
+<text x="200" y="464" font-size="28" text-anchor="start" font-weight="bold" fill="#1F2933">R = U / I</text>
+<text x="200" y="494" font-size="19" text-anchor="start" font-weight="normal" fill="#5B6673">U encima de I: se dividen</text>
+<rect x="50" y="526" width="540" height="92" rx="14" fill="#EFE7D6" stroke="none" stroke-width="2"/>
+<path d="M120 536 L164.64 608 L75.36 608 Z" stroke="#1F2933" stroke-width="3" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="97.68" y1="572.0" x2="142.32" y2="572.0" stroke="#1F2933" stroke-width="3" stroke-linecap="round"/>
+<line x1="120" y1="572.0" x2="120" y2="608" stroke="#1F2933" stroke-width="3" stroke-linecap="round"/>
+<circle cx="120" cy="557.66" r="16.12" fill="#D97706" stroke="#D97706" stroke-width="3"/>
+<text x="120" y="566.24" font-size="26" text-anchor="middle" font-weight="bold" fill="#FFFFFF">?</text>
+<text x="101.2512" y="599.36" font-size="26" text-anchor="middle" font-weight="bold" fill="#2563EB">I</text>
+<text x="138.7488" y="599.36" font-size="26" text-anchor="middle" font-weight="bold" fill="#1F2933">R</text>
+<text x="200" y="568" font-size="28" text-anchor="start" font-weight="bold" fill="#1F2933">U = I × R</text>
+<text x="200" y="598" font-size="19" text-anchor="start" font-weight="normal" fill="#5B6673">I al lado de R: se multiplican</text></svg>

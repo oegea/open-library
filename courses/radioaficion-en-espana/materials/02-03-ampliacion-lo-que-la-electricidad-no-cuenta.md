@@ -1,4 +1,4 @@
-La teoría te ha dado las cuatro magnitudes y su ley. Esta ampliación añade el contexto, las esquinas curiosas y un par de verdades prácticas que algún día te ahorrarán un susto o una avería.
+Las lecciones te han dado las cuatro magnitudes y su ley. Esta ampliación añade el contexto, las esquinas curiosas y un par de verdades prácticas que algún día te ahorrarán un susto o una avería.
 
 ## Los apellidos de las unidades: una pequeña galería de retratos
 
@@ -12,7 +12,7 @@ Todas las unidades eléctricas son apellidos, y sus dueños se conocieron, se pe
 
 ## La resistividad, con números de verdad
 
-La teoría te dijo que la resistencia depende del material. El dato preciso es la **resistividad** (ρ, en Ω·mm²/m): la resistencia de un hilo de ese material de un metro de largo y un milímetro cuadrado de sección.
+En la lección 5 viste que la resistencia depende del material y conociste la **resistividad** (ρ, en Ω·mm²/m): la resistencia de un hilo de ese material de un metro de largo y un milímetro cuadrado de sección.
 
 | Material | ρ (Ω·mm²/m) aprox. | Comentario |
 |---|---|---|
@@ -25,7 +25,7 @@ La teoría te dijo que la resistencia depende del material. El dato preciso es l
 
 Dos sorpresas útiles ahí: el oro **no** es el mejor conductor (se usa por inoxidable, no por conductor), y el aluminio, aunque peor que el cobre a igual sección, conduce *mejor a igual peso*: por eso las antenas grandes y los tendidos eléctricos son de aluminio.
 
-La fórmula completa, por si la ves: `R = ρ × L / S` (longitud entre sección, por la resistividad). Un ejemplo con sentido radioaficionado: 30 metros de cable de cobre de 1,5 mm² para alimentar tu equipo desde una batería lejana suponen R = 0,017 × 30 / 1,5 = 0,34 Ω *por conductor*, 0,68 Ω contando ida y vuelta. A 10 amperios, la ley de Ohm te roba U = 10 × 0,68 = 6,8 V... ¡de tus 12! El equipo se apagaría al transmitir. Moraleja de oro para siempre: **la batería cerca del equipo, y los cables de alimentación cortos y gordos**. Este error (cable fino y largo en 12 V) es posiblemente la avería fantasma más común entre principiantes.
+La fórmula ya la conoces (lección 5): `R = ρ × L / S` (longitud entre sección, por la resistividad). Un ejemplo con sentido radioaficionado: 30 metros de cable de cobre de 1,5 mm² para alimentar tu equipo desde una batería lejana suponen R = 0,017 × 30 / 1,5 = 0,34 Ω *por conductor*, 0,68 Ω contando ida y vuelta. A 10 amperios, la ley de Ohm te roba U = 10 × 0,68 = 6,8 V... ¡de tus 12! El equipo se apagaría al transmitir. Moraleja de oro para siempre: **la batería cerca del equipo, y los cables de alimentación cortos y gordos**. Este error (cable fino y largo en 12 V) es posiblemente la avería fantasma más común entre principiantes.
 
 ## Superconductores: cuando la resistencia se rinde
 
@@ -39,14 +39,14 @@ Conviene decirlo pronto y claro, porque vas a montar instalaciones: **lo que mat
 
 - ~1 mA: umbral de percepción (cosquilleo).
 - 10-20 mA: contracción muscular; puede impedir soltar el cable («umbral de no soltar»).
-- ~30 mA: el valor al que disparan los diferenciales domésticos. No es casual.
-- 50-100 mA a través del tórax: riesgo grave de fibrilación cardíaca.
+- A partir de ~30 mA a través del pecho: riesgo grave. Es el valor al que disparan los diferenciales domésticos, y no es casual: marca dónde empieza el peligro serio, no un nivel «seguro».
+- Más de 100 mA: muy probablemente mortal. Bastan, por tanto, unas decenas de miliamperios.
 
-¿Y los voltios? Los voltios son el empujón que decide cuántos miliamperios pasan por tu resistencia corporal (decenas o cientos de kΩ con piel seca; muchísima menos mojada — ley de Ohm otra vez). Por eso 12 V de batería no se sienten al tocarlos (I = 12/50.000 = 0,24 mA), pero esa misma batería puede soldarte una llave inglesa a los bornes con cientos de amperios si la cortocircuitas: tensión inofensiva al tacto + resistencia interna bajísima = corrientes de soldadura. Las dos caras del peligro eléctrico, y ninguna es «los voltios» a secas. En la sección 10 haremos la seguridad completa (condensadores cargados, alta tensión de válvulas, RF, rayos); esta miniatura era solo para que empieces a mirar la ley de Ohm como lo que también es: una norma de seguridad.
+¿Y los voltios? Los voltios son el empujón que decide cuántos miliamperios pasan por tu resistencia corporal (decenas o cientos de kΩ con piel seca; muchísima menos mojada — ley de Ohm otra vez; y con los 230 V de la red la piel deja de proteger en un instante aunque esté seca: un enchufe es siempre peligroso). Por eso 12 V de batería no se sienten al tocarlos (I = 12/50.000 = 0,24 mA), pero esa misma batería puede soldarte una llave inglesa a los bornes con cientos de amperios si la cortocircuitas: tensión inofensiva al tacto + resistencia interna bajísima = corrientes de soldadura. Las dos caras del peligro eléctrico, y ninguna es «los voltios» a secas. En la sección 10 haremos la seguridad completa (condensadores cargados, alta tensión de válvulas, RF, rayos); esta miniatura era solo para que empieces a mirar la ley de Ohm como lo que también es: una norma de seguridad.
 
 ## El mito del sentido de la corriente (y por qué no importa)
 
-A cualquier persona que estudie electricidad le llega el momento incómodo: «entonces, ¿la corriente va del + al − o del − al +?». Respuesta completa: los electrones van del − al +; el convenio dice del + al −; y **ninguna fórmula cambia** por ello, porque una carga negativa moviéndose hacia la izquierda es matemáticamente idéntica a una positiva moviéndose hacia la derecha. Benjamin Franklin eligió los nombres «positivo» y «negativo» en el siglo XVIII, con una moneda al aire conceptual, un siglo antes de que J.J. Thomson descubriera el electrón (1897) y se viera que había salido cruz. Cambiar el convenio habría exigido reescribir toda la ciencia publicada; se decidió que no valía la pena, y se sigue decidiendo. En algunos campos (física de semiconductores, que verás en la sección 4) hasta resulta útil: allí se habla con toda seriedad de «huecos» positivos que se mueven de verdad.
+A cualquier persona que estudie electricidad le llega el momento incómodo: «entonces, ¿la corriente va del + al − o del − al +?». Respuesta completa: los electrones van del − al +; el convenio dice del + al −; y **ninguna fórmula cambia** por ello, porque una carga negativa moviéndose hacia la izquierda es matemáticamente idéntica a una positiva moviéndose hacia la derecha. Benjamin Franklin eligió los nombres «positivo» y «negativo» en el siglo XVIII, con una moneda al aire conceptual, un siglo antes de que J.J. Thomson descubriera el electrón (1897) y se viera que había salido cruz. Cambiar el convenio habría exigido reescribir toda la ciencia publicada; se decidió que no valía la pena, y se sigue decidiendo. En algunos campos (física de semiconductores, que verás en la sección 4) hasta resulta útil: allí se habla con toda seriedad de «huecos» que se comportan como cargas positivas móviles.
 
 ## Tres hábitos de electricista viejo, de regalo
 

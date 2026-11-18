@@ -10,7 +10,7 @@ A las once y media llamó a Vicente.
 
 —¿Preparado?
 
-—Desde las seis. La vertical aguanta lo que venga y he bajado el dipolo por precaución, que abril es traicionero. —Una pausa, y Marina oyó de fondo el chasquido familiar del equipo encendiéndose—. ¿Nerviosa?
+—Desde las seis. La vertical aguanta lo que venga y he bajado el dipolo por precaución, que abril es traicionero. Y si truena cerca, desconecto las antenas y sigo con el portátil. —Una pausa, y Marina oyó de fondo el chasquido familiar del equipo encendiéndose—. ¿Nerviosa?
 
 —Menos que aquella noche.
 
@@ -20,7 +20,7 @@ La riada, esta vez, no llegó. Llovió durísimo tres horas, el barranco bajó l
 
 —...y Eco Alfa Cinco Juliett Mike Sierra, gracias por el turno de tres a seis. Buen trabajo, señores. QRT de la red hasta nueva activación, y que sea tarde.
 
-Marina se quitó los auriculares con ese cansancio limpio de las guardias sin desgracia. Por la ventana del salón —su estación cabía en una mesa plegable junto a la ventana, como tantas primeras estaciones— entraba el gris perla del amanecer sobre los naranjos mojados. En el log, con su letra de maestra, quedó la última línea de la noche: *06:04 UTC+2, cierre de red, sin novedad en Vallverd.*
+Marina se quitó los auriculares con ese cansancio limpio de las guardias sin desgracia. Por la ventana del salón —su estación cabía en una mesa plegable junto a la ventana, como tantas primeras estaciones— entraba el gris perla del amanecer sobre los naranjos mojados. En el log, con su letra de maestra, quedó la última línea de la noche: *04:04 UTC, cierre de red, sin novedad en Vallverd.*
 
 Sin novedad. Escribió las dos palabras y se quedó mirándolas.
 

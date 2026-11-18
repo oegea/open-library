@@ -1,82 +1,105 @@
-Un transceptor moderno tiene dos mil componentes y una docena de ideas. Esta sección te da las ideas: los bloques del receptor y del transmisor, el truco central que Vicente llama «el taller de frecuencia fija», y las tres o cuatro cifras de mérito con las que se juzga a los equipos. Es una sección densa en conceptos de examen: receptores y transmisores son dos capítulos completos del temario oficial.
+Este material es el **resumen de la sección**: todo lo que has aprendido en las diez lecciones anteriores sobre receptores y transmisores, condensado en formato de chuleta para repasar antes del examen. Aquí no se explica nada desde cero; si al leer algún apartado notas que no lo entiendes, vuelve a la lección correspondiente, que es donde está la explicación paso a paso.
 
-## El problema del receptor
+## Lo que se le pide a un receptor
 
-Un receptor tiene un trabajo brutal: en su antena entran *a la vez* todas las señales del planeta —emisoras de megavatios y susurros de picovatios, separadas a veces por un pelo de frecuencia— y debe quedarse con una sola, amplificarla millones de veces y convertirla en audio limpio. Sus tres virtudes se llaman:
+| Cualidad | Qué es | Quién la da o la limita |
+|---|---|---|
+| **Sensibilidad** | Oír lo débil. Se da en µV o dBm para una relación señal/ruido dada; cifra baja = mejor | La limita el **ruido**, no la amplificación |
+| **Selectividad** | Separar lo cercano | Los **filtros** (CW 250 a 500 Hz, SSB 2,4 a 2,7 kHz, AM 6 kHz, FM 12 a 15 kHz) |
+| **Estabilidad** | No moverse de la frecuencia (lo contrario es la **deriva**) | El oscilador: cristal de cuarzo y sintetizador |
 
-- **Sensibilidad:** capacidad de oír señales débiles. Se mide en microvoltios (µV) o dBm: cuanto menor la señal utilizable, más sensible el receptor. El límite no lo pone la amplificación (amplificar es barato), sino el **ruido**: el generado por el propio receptor y el que entra por la antena. Amplificar una señal enterrada en ruido amplifica también el ruido: la clave es añadir el mínimo ruido propio.
-- **Selectividad:** capacidad de separar la señal deseada de las vecinas pegadas a ella. La dan los filtros (paso banda, ya los conoces) y es la diferencia entre copiar una señal débil o que te la pise el vozarrón de al lado.
-- **Estabilidad:** quedarse clavado en la frecuencia sintonizada sin derivar con la temperatura o el tiempo. La resuelve el cristal de cuarzo y sus descendientes (PLL/DDS).
+- **Relación señal/ruido:** cuántas veces supera la señal al ruido, en dB de potencia. Amplificar sube las dos por igual y no la mejora; cuenta el ruido de la **primera etapa** (amplificador de bajo ruido; su calidad se llama *figura de ruido*).
+- Un filtro que se mueve con el dial no puede ser estrecho: para 3 kHz en 30 MHz haría falta un Q de 10.000, y una bobina con su condensador se queda en unos cientos. Un cristal llega, pero su frecuencia es fija.
 
-## La solución elegante: el superheterodino
+## El mezclador
 
-Podrías intentar el enfoque directo: un filtro sintonizable que siga al dial y amplificadores detrás. Se hizo (receptores de radiofrecuencia sintonizada, años veinte) y era un tormento: filtros buenos *y* móviles es pedir peras al olmo; a frecuencias altas, ni con peras.
+- Circuito **no lineal** al que entran dos frecuencias y del que salen su **suma** y su **diferencia**; un filtro colocado detrás elige una. Ejemplo: 7.100 kHz y 16.100 kHz dan 23.200 y 9.000 kHz.
+- **Mezclar es trasladar:** la señal cambia de frecuencia con su ancho y su mensaje intactos (del revés, si el oscilador está por encima).
+- **Oscilador local (OL):** el que acompaña al mezclador del receptor. Es lo que mueve el dial.
 
-En 1918, Edwin Armstrong (sí, otra vez él) invirtió el problema con el **receptor superheterodino**, el diseño que domina desde entonces: *si no puedes llevar el taller a la señal, trae la señal al taller*.
+## El superheterodino
 
-La pieza clave es el **mezclador**: un circuito no lineal al que entran dos señales y del que salen, además de las originales, su **suma y su diferencia** de frecuencias (el «heterodinaje» que ya conociste en el BFO). El receptor funciona así:
+Traslada cualquier emisora a una **frecuencia intermedia (FI) fija**, donde filtros de cristal que no necesitan moverse dan la selectividad. El OL se pone a una FI de distancia de la emisora: con FI de 9 MHz, para oír 7,1 MHz, OL en 16,1 MHz.
 
-1. **Frente de entrada:** un filtro paso banda ancho selecciona la banda de interés y un amplificador de RF de bajo ruido da un primer empujón educado.
-2. **Mezclador + oscilador local (OL):** la señal entrante se mezcla con la señal de un oscilador local *ajustable* (el que de verdad mueves con el dial). De la mezcla interesa la **diferencia**: se elige el OL de modo que, sea cual sea la emisora sintonizada, la diferencia caiga siempre en la misma frecuencia fija, la **frecuencia intermedia (FI)**. Ejemplo con números: FI = 9 MHz; para escuchar 14,2 MHz, el OL se pone a 23,2 MHz (23,2 − 14,2 = 9). ¿Quieres 7,1 MHz? OL a 16,1. La emisora cambia; la diferencia, jamás.
-3. **La cadena de FI: el taller.** Como la FI es fija, sus filtros son fijos: cristales de cuarzo tallados para esa frecuencia exacta, con selectividades soberbias imposibles en un filtro móvil (el filtro estrecho de CW que Amparo soldó era uno de estos). Aquí vive la selectividad del receptor, y aquí se amplifica la señal a placer.
-4. **Demodulador:** según el modo: detector de envolvente para AM, discriminador para FM, mezcla con el BFO para CW/SSB (la reinserción de portadora de la sección 6).
-5. **Amplificador de audio → altavoz.** Fin del viaje.
+> **Antena → filtro de entrada y amplificador de RF → mezclador (con el oscilador local) → filtro de FI → amplificador de FI → demodulador → amplificador de audio → altavoz.**
 
-**El peaje del invento: la frecuencia imagen.** El mezclador es honesto: da la diferencia con *cualquiera* que diste 9 MHz del OL, por arriba o por abajo. Con OL en 23,2 y FI de 9, la deseada es 14,2... pero una señal en 32,2 MHz (23,2 + 9) también produce 9 MHz de diferencia y entraría como un fantasma indistinguible. Esa intrusa es la **frecuencia imagen** (siempre a 2×FI de la deseada), y se combate con el filtro del frente de entrada (que deje pasar 14,2 y aplaste 32,2) y eligiendo FI altas (cuanto más lejos esté la imagen, más fácil filtrarla). Muchos equipos usan **doble conversión** (dos FI: una alta para alejar la imagen, otra baja para filtrar fino): más mezcladores, más osciladores, mismo principio en cadena. La frecuencia imagen es pregunta clásica de examen: sabérsela es distinguir un receptor de una caja mágica.
+| Modo | Demodulador |
+|---|---|
+| AM | Detector de envolvente (un diodo) |
+| FM | Limitador + discriminador |
+| SSB y CW | Detector de producto, con su BFO |
 
-**Los parientes:** el receptor de **conversión directa** mezcla la señal directamente a audio (FI = 0): sencillez deliciosa, popular en equipos QRP artesanales. Y la **SDR** (*Software Defined Radio*, radio definida por software) digitaliza la señal cuanto antes y hace mezclas, filtros y demodulación con matemáticas en un procesador: filtros imposibles para el hardware, cascada visual incluida (la que Marina miraba de madrugada), y el diseño dominante en los equipos nuevos. Los bloques son los mismos; ahora algunos son código.
+- **CAG (AGC):** mide la señal detectada y ajusta la ganancia de RF y FI para que el volumen no dependa de lo fuerte que llegue cada estación.
+- **Medidor de señal (S-meter):** de S1 a S9, 6 dB por punto; S9 = 50 µV en HF.
+- **Silenciador (squelch):** en FM, corta el audio mientras no llega señal.
 
-## El transmisor: el viaje inverso
+## La frecuencia imagen y la doble conversión
 
-El transmisor es conceptualmente más simple: generar una portadora impecable, modularla y darle músculo.
+- **Frecuencia imagen:** la que está al otro lado del oscilador local, a la misma distancia que la deseada; es decir, a **2 × FI** de la deseada. Con FI de 9 MHz y OL en 16,1 MHz: deseada 7,1 MHz, imagen 25,1 MHz.
+- Tras el mezclador, deseada e imagen están en la misma frecuencia: hay que quitarla **antes**, con el **filtro de entrada**. Una FI alta la aleja y lo facilita, pero dificulta el filtro estrecho.
+- **Doble conversión:** primera FI alta (aleja la imagen) y segunda FI baja (filtros estrechos). Ejemplo para 7.100 kHz: primer OL en 52.100 → 45.000 kHz; segundo OL fijo en 45.455 → 455 kHz.
 
-1. **Oscilador (VFO/sintetizador):** nace la portadora, con estabilidad de cristal (PLL/DDS). Toda la limpieza posterior depende de esta cuna.
-2. **Modulador:** se le sube la información. En FM, la voz empuja directamente la frecuencia del oscilador. En SSB, el método clásico es elegante: un **modulador balanceado** mezcla voz y portadora *cancelando la portadora* a su salida (quedan las dos bandas laterales) y un **filtro de cristal** corta la banda lateral sobrante. Queda la «sombra»: SSB pura.
-3. **Etapas excitadoras:** amplificaciones intermedias hasta el nivel que necesita la etapa final.
-4. **Amplificador de potencia (PA):** el músculo final (los MOSFET grandes, o válvulas en amplificadores externos). Aquí mandan las clases de la sección 5: **AB para SSB** (la forma de la señal ES la información: hay que respetarla), **C solo para FM/CW** (la información va en la frecuencia o en el on/off: deformar no la daña y el rendimiento se agradece).
-5. **Filtro paso bajo → antena:** la última aduana mata los armónicos del PA antes de que salgan al mundo. Obligatoria por ley y por vergüenza torera.
+> **Antena → filtro de entrada y amplificador de RF → primer mezclador (OL variable) → filtro de primera FI → segundo mezclador (OL fijo) → filtro de segunda FI → amplificador de FI → demodulador → amplificador de audio.**
 
-**La potencia y sus apellidos.** En CW o FM la potencia es constante y se mide sin drama. Pero la SSB no tiene potencia fija: sube y baja con la voz (¡sin voz no hay emisión!). Por eso se usa la **PEP** (*Peak Envelope Power*, potencia de cresta de la envolvente): la potencia en los picos de modulación. Es la medida que usa la normativa española para los límites legales (el anexo de la Orden IET/1311/2013 fija los máximos «p.c.e.» —potencia de cresta, PEP— por bandas: en HF, hasta 1 kW). Cuando leas «100 W PEP», ya sabes: crestas de 100, promedio muy inferior.
+## Conversión directa y SDR
 
-## Los pecados del transmisor
+- **Conversión directa:** el OL está en la frecuencia de la emisora y del mezclador sale ya el audio (FI cero). Cinco bloques: filtro de entrada, mezclador, oscilador local, filtro de audio y amplificador de audio. Muy sencillo, pero oye a los dos lados del oscilador a la vez.
+- **SDR (radio definida por software):** un conversor analógico-digital convierte la señal en números, y un programa mezcla, filtra y demodula. Mismas operaciones, hechas con cálculos; permite ver la banda en cascada.
 
-El examen (y la convivencia en las bandas) exige conocer las formas en que un transmisor ensucia:
+## Cómo se juzga un receptor
 
-- **Armónicos:** múltiplos de tu frecuencia (viejos conocidos). Nacen en los amplificadores, sobre todo si están saturados; los mata el filtro paso bajo. Transmitir en 7 MHz y aparecer en 21 es delito técnico flagrante.
-- **Espurias:** cualquier emisión fuera de tu canal que no sea armónico: productos de mezcla que se escapan, oscilaciones parásitas. Delatan diseño pobre o avería.
-- **Sobremodulación y splatter:** el pecado del ansia. Si le das más micrófono del que el modulador admite (o más excitación de la que el PA amplifica limpio), las crestas se recortan; el recorte —Fourier, siempre Fourier— genera frecuencias nuevas que **ensanchan tu señal** sobre los vecinos: el *splatter*, la mancha. En AM, sobremodular más del 100 % rompe la envolvente; en SSB, saturar el PA embarra tres kilohercios a cada lado. La norma del buen operador: micrófono con moderación y vigilar el **ALC** (control automático de nivel, el circuito del equipo que frena el exceso; su indicador es el chivato de tu limpieza).
-- **Deriva de frecuencia:** irse resbalando de la frecuencia con el calentamiento. Los sintetizadores modernos casi lo extinguieron; los equipos antiguos mal cuidados aún se deslizan como caracoles.
+- **Rango dinámico** (dB, cifra alta = mejor): capacidad de oír lo débil junto a lo muy fuerte sin que las primeras etapas deformen.
+- **Intermodulación:** dos señales fuertes A y B fabrican dentro del receptor señales que no existen, en **2 × A − B** y **2 × B − A**. Con 7.200 y 7.210 kHz: 7.190 y 7.220 kHz.
+- **Desensibilización o bloqueo:** una sola señal fuerte hace que las débiles bajen o desaparezcan. **Modulación cruzada:** su modulación se oye encima de otra estación.
+- **Remedio:** el **atenuador** (o apagar el preamplificador). Con 10 dB de atenuación, los productos de intermodulación bajan unos 30 dB.
+- **Estabilidad** en partes por millón: 1 ppm en 14 MHz son 14 Hz.
 
-Regla de oro heredada de un siglo de convivencia: **tu transmisor no es solo tuyo; sus defectos son de todos.** Un receptor mediocre castiga a su dueño; un transmisor sucio castiga al vecindario entero. Por eso el examen insiste tanto en esta parte.
+## Los transmisores
 
-## Cifras que juzgan un equipo (miniglosario del comprador futuro)
+Todo transmisor genera una portadora, la modula, la amplifica y la limpia.
 
-- **Sensibilidad** (µV o dBm): qué susurro es utilizable. En HF sobra sensibilidad en casi cualquier equipo: manda el ruido de la banda.
-- **Selectividad** (ancho del filtro a −6 dB): 2,4 kHz para SSB, 500 Hz o menos para CW.
-- **Rango dinámico:** la joya oculta: capacidad de oír al débil *con un fortísimo al lado* sin emborracharse (la borrachera técnica se llama **intermodulación**: señales fuertes mezclándose dentro de tu propio receptor y engendrando fantasmas). Distingue equipos buenos de anuncios buenos.
-- **Estabilidad** (partes por millón, ppm): cuánto deriva. Con TCXO (cristal compensado en temperatura), el asunto está resuelto para uso normal.
-- **Potencia** (W, PEP en SSB): la cifra más cacareada y la menos decisiva: los primeros 100 W los da cualquier equipo; los siguientes 6 dB los da la antena (sección 8) mucho más barato.
+> **CW:** oscilador → separador → excitador → amplificador de potencia (clase C) → filtro paso bajo → antena. La llave actúa después del oscilador.
 
-## Para llevar
+> **FM:** micrófono → amplificador de micrófono → limitador de desviación → oscilador modulado en frecuencia → (multiplicadores) → amplificador de potencia (clase C) → filtro paso bajo → antena.
 
-- Receptor: **sensibilidad** (oír lo débil: la limita el ruido), **selectividad** (separar vecinos: la dan los filtros de FI), **estabilidad** (no derivar: cuarzo y PLL).
-- **Superheterodino:** mezclador + oscilador local trasladan cualquier emisora a una **FI fija**, donde filtros de cristal fijos hacen el trabajo fino. Peaje: la **frecuencia imagen** (a 2×FI de la deseada), combatida con filtros de entrada y FI altas/doble conversión.
-- Cadena RX: filtro/ampli RF → mezclador (OL) → FI → demodulador → audio.
-- Cadena TX: oscilador → modulador (balanceado + filtro para SSB) → excitador → **PA** (AB para SSB, C solo FM/CW) → **filtro paso bajo** → antena.
-- **PEP**: potencia de cresta; la unidad de los límites legales españoles en SSB.
-- Pecados: armónicos, espurias, sobremodulación/splatter, deriva. El ALC es tu chivato; el filtro paso bajo, tu civismo.
+> **SSB:** micrófono → modulador balanceado (con el oscilador de portadora) → filtro de cristal → mezclador (con el oscilador variable) → filtro paso banda → excitador → amplificador de potencia (clase AB) → filtro paso bajo → antena.
+
+- **Multiplicadores de frecuencia:** se quedan con un armónico; multiplican también la desviación. Solo para CW y FM.
+- **Modulador balanceado:** suprime la **portadora**. **Filtro de cristal:** suprime **una banda lateral**.
+- **Clase AB (lineal) para SSB; clase C solo para CW y FM.**
+- **Filtro paso bajo:** elimina los armónicos de la etapa final.
+- **Rendimiento:** potencia útil / potencia consumida. Un equipo que toma 20 A a 13,8 V (276 W) y entrega 100 W rinde un 36 %.
+- **PEP, potencia de cresta de envolvente:** la potencia en los picos de la modulación. Es la medida de los límites legales (sección 12). Cálculo: tensión de pico × 0,707, y luego U² / R. Con 100 V de pico sobre 50 Ω: 100 W. La potencia media con la voz es entre 20 y 30 W por cada 100 W PEP.
+
+## Los defectos del transmisor
+
+**Emisiones no deseadas**, en dos familias:
+
+| Familia | Dónde | Qué incluye | Remedio |
+|---|---|---|---|
+| **Espurias** (no esenciales) | Lejos de tu señal | Armónicos, oscilaciones parásitas, productos de mezcla | Filtro paso bajo, buen diseño y ajuste |
+| **Fuera de banda** | Pegadas a tu señal | Splatter, sobredesviación, chasquidos de manipulación | No forzar el micrófono ni la etapa final |
+
+- **Splatter:** la etapa saturada mezcla entre sí los tonos de la voz (intermodulación del transmisor) y la señal de 2,7 kHz pasa a ocupar ocho o diez kilohercios.
+- **ALC:** frena el exceso de excitación. Su indicador debe moverse solo en los picos de voz y sin salirse de su zona.
+- **Sobredesviación:** FM ancha (±5 kHz) en un canal de FM estrecha (±2,5 kHz), o limitador mal ajustado.
+- **Chasquidos de manipulación:** portadora que sube y baja con demasiada brusquedad.
+- **Deriva:** desplazamiento lento de la frecuencia. **Chirp:** la frecuencia resbala en cada signo de morse; se evita con el oscilador siempre en marcha, bien alimentado y con su separador.
+- **Zumbido:** rizado de 100 Hz de una fuente que filtra mal.
+- Doblar la potencia son 3 dB: **medio punto** del medidor de señal.
 
 ## Para el examen
 
-- Bloques del superheterodino en orden, y qué hace cada uno: pregunta segura, a veces como diagrama.
-- **Frecuencia imagen:** definición y cálculo simple (imagen = señal ± 2×FI). La pregunta estrella de receptores.
-- Para qué sirve la FI (filtrado fino con filtros fijos de gran selectividad).
-- Definiciones de sensibilidad y selectividad (no confundirlas: llegan a preguntarlas del derecho y del revés).
-- Bloques del transmisor SSB (modulador balanceado + filtro) y qué clase de amplificador exige la SSB (AB; nunca C).
-- Qué es la PEP y qué es la sobremodulación/splatter y sus consecuencias (ensanchamiento, interferencia a canales vecinos).
+- Definiciones de sensibilidad y selectividad: las preguntan cruzadas.
+- Bloques del superheterodino en orden y función de cada uno (la selectividad, en los filtros de FI); a veces como diagrama.
+- Cálculo del oscilador local (emisora ± FI) y de la **frecuencia imagen** (deseada ± 2 × FI). Es la pregunta estrella de receptores.
+- Para qué sirve la doble conversión, y qué hacen el CAG, el silenciador y el detector de producto.
+- Bloques del transmisor de SSB: modulador balanceado (portadora) y filtro de cristal (banda lateral); clase AB, nunca C.
+- Qué es la PEP, qué es el splatter y qué lo causa, y para qué sirve el filtro paso bajo.
+- Intermodulación frente a frecuencia imagen: no confundirlas.
 
 ## Para profundizar
 
-- Ejercicio de un minuto que fija el superheterodino para siempre: elige FI = 9 MHz y calcula OL e imagen para tres emisoras cualesquiera. Cuando veas que la imagen siempre cae a 18 MHz de la señal (2×FI), el concepto es tuyo.
-- En un websdr (que es una SDR literal), abre el máximo de ancho visual: estás viendo la «FI» digital entera de un receptor de conversión directa gigante. Filtra estrecho y ancho sobre una señal de CW y observa el compromiso selectividad/comodidad en vivo.
-- Wikipedia (CC BY-SA): «Receptor superheterodino» (con los diagramas de bloques clásicos) y «Software-defined radio» para el presente y futuro del asunto.
+- Ejercicio de un minuto que fija el superheterodino: elige una FI de 9 MHz y calcula el oscilador local y la imagen para tres emisoras cualesquiera. Verás que la imagen cae siempre a 18 MHz de la deseada.
+- En un receptor por Internet (websdr.org, que es una SDR real), abre la cascada al máximo de ancho: estás viendo de golpe todo el trozo de banda que la SDR ha digitalizado.
+- Wikipedia (CC BY-SA): «Receptor superheterodino», con los diagramas de bloques clásicos, y «Radio definida por software».

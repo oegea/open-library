@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" role="img"><title>El ruido de fondo entierra las señales débiles</title><rect x="1" y="1" width="638" height="438" rx="18" fill="#FAF6EC" stroke="#E7DFCC" stroke-width="2"/><text x="320" y="40" font-size="22" text-anchor="middle" font-weight="bold" fill="#1F2933">El ruido de fondo decide qué se oye</text>
+<rect x="30" y="60" width="280" height="320" rx="14" fill="#EFE7D6" stroke="none" stroke-width="2"/>
+<text x="170" y="92" font-size="21" text-anchor="middle" font-weight="bold" fill="#059669">Lugar tranquilo</text>
+<rect x="91" y="180" width="18" height="170" rx="4" fill="#2563EB" fill-opacity="1"/>
+<rect x="161" y="250" width="18" height="100" rx="4" fill="#2563EB" fill-opacity="1"/>
+<rect x="231" y="295" width="18" height="55" rx="4" fill="#2563EB" fill-opacity="1"/>
+<path d="M44 350 L44 324 L53 318 L62 323 L71 318 L80 317 L89 319 L98 324 L107 324 L116 323 L125 318 L134 322 L143 328 L152 329 L161 319 L170 323 L179 324 L188 321 L197 322 L206 319 L215 329 L224 330 L233 324 L242 327 L251 329 L260 330 L269 323 L278 319 L287 317 L296 320 L296 350 Z" stroke="#6B7280" stroke-width="2" fill="#9CA3AF" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="44" y1="350" x2="296" y2="350" stroke="#1F2933" stroke-width="3" stroke-linecap="round"/>
+<text x="226" y="214" font-size="18" text-anchor="middle" font-weight="bold" fill="#5B6673">ruido de</text>
+<text x="226" y="236" font-size="18" text-anchor="middle" font-weight="bold" fill="#5B6673">fondo: bajo</text>
+<rect x="330" y="60" width="280" height="320" rx="14" fill="#EFE7D6" stroke="none" stroke-width="2"/>
+<text x="470" y="92" font-size="21" text-anchor="middle" font-weight="bold" fill="#DC2626">Lugar ruidoso</text>
+<rect x="391" y="180" width="18" height="170" rx="4" fill="#2563EB" fill-opacity="1"/>
+<rect x="461" y="250" width="18" height="100" rx="4" fill="#2563EB" fill-opacity="0.25"/>
+<rect x="531" y="295" width="18" height="55" rx="4" fill="#2563EB" fill-opacity="0.25"/>
+<path d="M344 350 L344 229 L353 239 L362 230 L371 233 L380 232 L389 229 L398 228 L407 230 L416 229 L425 237 L434 230 L443 239 L452 226 L461 231 L470 238 L479 239 L488 239 L497 236 L506 225 L515 236 L524 230 L533 239 L542 227 L551 232 L560 234 L569 232 L578 230 L587 226 L596 236 L596 350 Z" stroke="#6B7280" stroke-width="2" fill="#9CA3AF" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="344" y1="350" x2="596" y2="350" stroke="#1F2933" stroke-width="3" stroke-linecap="round"/>
+<text x="470" y="297.0" font-size="18" text-anchor="middle" font-weight="bold" fill="#FFFFFF">ruido de fondo</text>
+<text x="170" y="410" font-size="19" text-anchor="middle" font-weight="bold" fill="#059669">se oyen las tres señales</text>
+<text x="470" y="410" font-size="19" text-anchor="middle" font-weight="bold" fill="#DC2626">solo se oye la más fuerte</text></svg>

@@ -10,12 +10,17 @@ Al terminar sabrás tres cosas, y las sabrás de verdad:
 
 ## Cómo está organizado
 
-El curso tiene catorce secciones. Cada sección temática se compone de hasta cuatro materiales, siempre en el mismo orden:
+El curso tiene catorce secciones. Cada sección temática sigue siempre el mismo recorrido:
 
-1. **La historia.** Un episodio de una única historia que recorre todo el curso. Puedes leerla como una novela por entregas; cada episodio te presenta, en carne y hueso, el problema que la teoría resolverá después.
-2. **La teoría.** La explicación rigurosa y completa, desde cero. Todo término nuevo se define la primera vez que aparece. Cada fórmula se presenta, se traduce a palabras llanas y se usa en un ejemplo resuelto. Al final de cada teoría encontrarás tres apartados fijos: *Para llevar* (lo esencial en pocas líneas), *Para el examen* (avisos concretos sobre qué suele caer) y *Para profundizar* (fuentes abiertas de calidad).
-3. **La ampliación.** Matices, historia, trucos de la práctica real y esas curiosidades que hacen decir «esto no lo sabía» incluso a los veteranos. Si vas justo de tiempo puedes saltártela sin perder el hilo del temario; si no vas justo, suele ser la parte más sabrosa.
-4. **El examen.** Un test al estilo del examen oficial español: preguntas con cuatro opciones y una sola correcta. Cada pregunta viene con su explicación razonada, porque la filosofía de esta casa es que un examen sirve para aprender, no para poner nota.
+1. **La historia.** Un episodio de una única historia que recorre todo el curso. Puedes leerla (o escucharla) como una novela por entregas; cada episodio te presenta, en carne y hueso, el problema que las lecciones resolverán después.
+2. **Las lecciones.** La explicación desde cero, repartida en lecciones cortas: **una idea por lección**, para leer de una sentada. Cada lección parte de una pregunta, la responde paso a paso con ejemplos y dibujos, avisa de los errores más habituales (*Donde la gente se lía*) y termina con unos ejercicios resueltos (*Compruébalo tú*) para que compruebes que lo has entendido antes de seguir. Todo término nuevo se explica la primera vez que aparece.
+3. **El resumen.** Toda la sección condensada en una chuleta, con dos apartados fijos: *Para el examen* (avisos concretos sobre qué suele caer) y *Para profundizar* (fuentes abiertas de calidad). Sirve para repasar, no para aprender: si algo del resumen no te suena, la explicación está en la lección correspondiente.
+4. **La ampliación.** Matices, historia, trucos de la práctica real y esas curiosidades que hacen decir «esto no lo sabía» incluso a los veteranos. Si vas justo de tiempo puedes saltártela sin perder el hilo del temario; si no vas justo, suele ser la parte más sabrosa.
+5. **El examen.** Un test al estilo del examen oficial español: preguntas con cuatro opciones y una sola correcta. Cada pregunta viene con su explicación razonada, porque la filosofía de esta casa es que un examen sirve para aprender, no para poner nota.
+
+(La introducción, la sección 1 y el cierre tienen un recorrido más corto, sin lecciones separadas.)
+
+**Si en algún punto te pierdes, no es culpa tuya: es que nos hemos saltado un paso.** La electricidad y las ondas tienen partes que van contra la intuición, y por eso el curso prefiere ir despacio a dar nada por sabido. No hace falta ningún conocimiento previo de física ni de matemáticas más allá de sumar, restar, multiplicar y dividir.
 
 Nuestro consejo: sigue el orden. El curso está construido como una escalera y cada peldaño se apoya en el anterior. Si ya sabes electricidad, las primeras secciones se te harán rápidas igualmente, y es fácil que alguna esquina te sorprenda.
 

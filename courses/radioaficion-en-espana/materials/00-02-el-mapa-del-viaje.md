@@ -5,7 +5,7 @@ Antes de arrancar conviene saber a dónde vamos. Este capítulo te enseña el ma
 En España, para transmitir como radioaficionado necesitas tres cosas, en este orden:
 
 1. **El diploma de operador de estación de aficionado.** Se obtiene aprobando un examen oficial. Es tuyo para siempre: no caduca.
-2. **La autorización administrativa.** Con el diploma en la mano, la solicitas y te habilita para instalar y usar estaciones de radioaficionado.
+2. **La autorización administrativa.** Con el diploma en la mano, la solicitas y te habilita para instalar y usar estaciones de radioaficionado. (Si montas una estación fija, hace falta además una licencia para esa estación; los detalles, en la sección 12.)
 3. **El distintivo de llamada.** Tu nombre en el aire: un indicativo único (del estilo `EA5XYZ`) que te asigna la Administración y que te identifica ante el mundo entero.
 
 Todo esto lo regula el **Reglamento de uso del dominio público radioeléctrico por radioaficionados**, aprobado por la **Orden IET/1311/2013, de 9 de julio**. Lo estudiaremos a fondo en la sección 12; por ahora basta con que sepas que existe y que es sorprendentemente legible.
@@ -24,7 +24,7 @@ El examen oficial consta de **dos pruebas independientes**:
 - Duración total: **90 minutos**.
 - Se hace **por ordenador**, presencialmente, en las Jefaturas Provinciales de Inspección de Telecomunicaciones.
 - Las respuestas en blanco o erróneas **no restan**: contesta siempre todo.
-- Si apruebas una prueba y suspendes la otra, la aprobada se te guarda para la siguiente convocatoria.
+- Si apruebas una prueba y suspendes la otra, la aprobada se te convalida, si lo solicitas, en convocatorias posteriores.
 - La solicitud se presenta telemáticamente en la sede electrónica del Ministerio (busca «diploma de operador de estación de aficionado», procedimiento de radioaficionados). Hay una tasa de examen, de importe modesto.
 
 El temario oficial no se lo inventa España: es el programa **HAREC** (*Harmonised Amateur Radio Examination Certificate*), definido en la Recomendación **T/R 61-02** de la CEPT, el organismo que coordina las telecomunicaciones europeas. Por eso, cuando apruebes, tu diploma incluirá el certificado HAREC y te valdrá para conseguir licencia en decenas de países casi sin trámites. Apruebas en Valencia y te reconocen en Viena.
@@ -35,7 +35,7 @@ El programa HAREC tiene dos mitades, igual que el examen. Así se reparten en la
 
 **Prueba primera — electricidad y radioelectricidad:**
 
-- Electricidad y electromagnetismo básicos → secciones 2 y 3
+- Electricidad y electromagnetismo básicos → secciones 2 y 3 (y el magnetismo, en la 4)
 - Componentes (resistencias, condensadores, bobinas, diodos, transistores…) → sección 4
 - Circuitos (filtros, fuentes, amplificadores, osciladores) → sección 5
 - Señales y modulación → sección 6

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 560" width="640" height="560" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" role="img"><title>Filtro ancho y filtro estrecho</title><defs><marker id="arr-1F2933" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1F2933"/></marker></defs><rect x="1" y="1" width="638" height="558" rx="18" fill="#FAF6EC" stroke="#E7DFCC" stroke-width="2"/><text x="320" y="48" font-size="21" text-anchor="middle" font-weight="bold" fill="#DC2626">Filtro ancho: entran las dos</text>
+<rect x="190" y="68" width="260" height="152" rx="6" fill="#FDE68A" stroke="#D97706" stroke-width="3" stroke-dasharray="8 6"/>
+<line x1="280" y1="220" x2="280" y2="174" stroke="#059669" stroke-width="12" stroke-linecap="butt"/>
+<line x1="380" y1="220" x2="380" y2="80" stroke="#DC2626" stroke-width="12" stroke-linecap="butt"/>
+<line x1="50" y1="220" x2="590" y2="220" stroke="#1F2933" stroke-width="3" stroke-linecap="round" marker-end="url(#arr-1F2933)"/>
+<text x="250" y="248" font-size="19" text-anchor="middle" font-weight="bold" fill="#059669">deseada</text>
+<text x="400" y="248" font-size="19" text-anchor="middle" font-weight="bold" fill="#DC2626">vecina fuerte</text>
+<text x="560" y="248" font-size="18" text-anchor="middle" font-weight="normal" fill="#5B6673">frec.</text>
+<text x="120" y="96" font-size="19" text-anchor="middle" font-weight="bold" fill="#D97706">ventana</text>
+<text x="120" y="120" font-size="19" text-anchor="middle" font-weight="bold" fill="#D97706">del filtro</text>
+<text x="320" y="316" font-size="21" text-anchor="middle" font-weight="bold" fill="#059669">Filtro estrecho: solo entra la deseada</text>
+<rect x="244" y="336" width="72" height="152" rx="6" fill="#FDE68A" stroke="#D97706" stroke-width="3" stroke-dasharray="8 6"/>
+<line x1="280" y1="488" x2="280" y2="442" stroke="#059669" stroke-width="12" stroke-linecap="butt"/>
+<line x1="380" y1="488" x2="380" y2="348" stroke="#DC2626" stroke-width="12" stroke-linecap="butt"/>
+<line x1="50" y1="488" x2="590" y2="488" stroke="#1F2933" stroke-width="3" stroke-linecap="round" marker-end="url(#arr-1F2933)"/>
+<text x="250" y="516" font-size="19" text-anchor="middle" font-weight="bold" fill="#059669">deseada</text>
+<text x="400" y="516" font-size="19" text-anchor="middle" font-weight="bold" fill="#DC2626">vecina fuerte</text>
+<text x="560" y="516" font-size="18" text-anchor="middle" font-weight="normal" fill="#5B6673">frec.</text>
+<text x="120" y="364" font-size="19" text-anchor="middle" font-weight="bold" fill="#D97706">ventana</text>
+<text x="120" y="388" font-size="19" text-anchor="middle" font-weight="bold" fill="#D97706">del filtro</text>
+<line x1="60" y1="284" x2="580" y2="284" stroke="#E7DFCC" stroke-width="2" stroke-linecap="round"/></svg>

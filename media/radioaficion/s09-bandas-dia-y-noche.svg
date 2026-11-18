@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" role="img"><title>Las bandas de HF de día y de noche</title><rect x="1" y="1" width="638" height="438" rx="18" fill="#FAF6EC" stroke="#E7DFCC" stroke-width="2"/><text x="320" y="40" font-size="22" text-anchor="middle" font-weight="bold" fill="#1F2933">Qué esperar de cada banda de HF</text>
+<text x="84" y="86" font-size="19" text-anchor="middle" font-weight="normal" fill="#5B6673">Banda</text>
+<text x="280" y="86" font-size="19" text-anchor="middle" font-weight="bold" fill="#1F2933">De día</text>
+<text x="500" y="86" font-size="19" text-anchor="middle" font-weight="bold" fill="#1F2933">De noche</text>
+<text x="84" y="141" font-size="20" text-anchor="middle" font-weight="bold" fill="#1F2933">160 y 80 m</text>
+<rect x="170" y="104" width="210" height="56" rx="10" fill="#FECACA" stroke="#DC2626" stroke-width="2"/>
+<text x="275" y="139" font-size="19" text-anchor="middle" font-weight="normal" fill="#1F2933">solo local</text>
+<rect x="392" y="104" width="210" height="56" rx="10" fill="#BBF7D0" stroke="#059669" stroke-width="2"/>
+<text x="497" y="139" font-size="19" text-anchor="middle" font-weight="normal" fill="#1F2933">larga distancia</text>
+<text x="84" y="211" font-size="20" text-anchor="middle" font-weight="bold" fill="#1F2933">40 m</text>
+<rect x="170" y="174" width="210" height="56" rx="10" fill="#FDE68A" stroke="#D97706" stroke-width="2"/>
+<text x="275" y="209" font-size="19" text-anchor="middle" font-weight="normal" fill="#1F2933">media distancia</text>
+<rect x="392" y="174" width="210" height="56" rx="10" fill="#BBF7D0" stroke="#059669" stroke-width="2"/>
+<text x="497" y="209" font-size="19" text-anchor="middle" font-weight="normal" fill="#1F2933">larga distancia</text>
+<text x="84" y="281" font-size="20" text-anchor="middle" font-weight="bold" fill="#1F2933">20 m</text>
+<rect x="170" y="244" width="210" height="56" rx="10" fill="#BBF7D0" stroke="#059669" stroke-width="2"/>
+<text x="275" y="279" font-size="19" text-anchor="middle" font-weight="normal" fill="#1F2933">larga distancia</text>
+<rect x="392" y="244" width="210" height="56" rx="10" fill="#FDE68A" stroke="#D97706" stroke-width="2"/>
+<text x="497" y="279" font-size="19" text-anchor="middle" font-weight="normal" fill="#1F2933">a ratos</text>
+<text x="84" y="351" font-size="20" text-anchor="middle" font-weight="bold" fill="#1F2933">17 a 10 m</text>
+<rect x="170" y="314" width="210" height="56" rx="10" fill="#BBF7D0" stroke="#059669" stroke-width="2"/>
+<text x="275" y="349" font-size="19" text-anchor="middle" font-weight="normal" fill="#1F2933">larga, con sol activo</text>
+<rect x="392" y="314" width="210" height="56" rx="10" fill="#FECACA" stroke="#DC2626" stroke-width="2"/>
+<text x="497" y="349" font-size="19" text-anchor="middle" font-weight="normal" fill="#1F2933">cerradas</text>
+<text x="320" y="414" font-size="20" text-anchor="middle" font-weight="bold" fill="#1F2933">Bandas bajas, de noche. Bandas altas, de día.</text></svg>

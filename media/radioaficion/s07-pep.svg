@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" role="img"><title>Potencia de cresta de la envolvente (PEP)</title><rect x="1" y="1" width="638" height="438" rx="18" fill="#FAF6EC" stroke="#E7DFCC" stroke-width="2"/><text x="225" y="44" font-size="21" text-anchor="middle" font-weight="bold" fill="#1F2933">SSB: sube y baja con la voz</text>
+<path d="M36 250 L36 246 L50 230 L64 188 L78 154 L92 196 L106 180 L120 140 L134 174 L148 220 L162 244 L176 246 L190 216 L204 166 L218 192 L232 158 L246 140 L260 184 L274 210 L288 178 L302 222 L316 242 L330 246 L344 228 L358 190 L372 162 L386 204 L400 234 L414 246 L414 254 L400 266 L386 296 L372 338 L358 310 L344 272 L330 254 L316 258 L302 278 L288 322 L274 290 L260 316 L246 360 L232 342 L218 308 L204 334 L190 284 L176 254 L162 256 L148 280 L134 326 L120 360 L106 320 L92 304 L78 346 L64 312 L50 270 L36 254 Z" stroke="#2563EB" stroke-width="3" fill="#BFDBFE" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="30" y1="140" x2="424" y2="140" stroke="#DC2626" stroke-width="3" stroke-linecap="round" stroke-dasharray="9 6"/>
+<text x="36" y="130" font-size="19" text-anchor="start" font-weight="bold" fill="#DC2626">100 W PEP: los picos</text>
+<line x1="30" y1="195" x2="424" y2="195" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 6"/>
+<line x1="36" y1="394" x2="76" y2="394" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 6"/>
+<text x="86" y="400" font-size="19" text-anchor="start" font-weight="bold" fill="#059669">potencia media: unos 25 W</text>
+<line x1="440" y1="70" x2="440" y2="400" stroke="#E7DFCC" stroke-width="2" stroke-linecap="round"/>
+<text x="535" y="44" font-size="21" text-anchor="middle" font-weight="bold" fill="#1F2933">FM o CW</text>
+<rect x="462" y="140" width="146" height="220" rx="0" fill="#BFDBFE" stroke="#2563EB" stroke-width="3"/>
+<text x="535" y="400" font-size="19" text-anchor="middle" font-weight="bold" fill="#2563EB">constante</text>
+<text x="320" y="424" font-size="18" text-anchor="middle" font-weight="normal" fill="#5B6673">La silueta es la envolvente de la señal</text></svg>

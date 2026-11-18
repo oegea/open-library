@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430" width="640" height="430" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" role="img"><title>Operación en split: la estación de DX transmite en una frecuencia y escucha en otra</title><defs><marker id="arr-059669" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#059669"/></marker><marker id="arr-1F2933" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1F2933"/></marker></defs><rect x="1" y="1" width="638" height="428" rx="18" fill="#FAF6EC" stroke="#E7DFCC" stroke-width="2"/><text x="320" y="40" font-size="22" text-anchor="middle" font-weight="bold" fill="#1F2933">Split: transmite aquí, escucha allí</text>
+<line x1="40" y1="300" x2="606" y2="300" stroke="#1F2933" stroke-width="3" stroke-linecap="round" marker-end="url(#arr-1F2933)"/>
+<rect x="118" y="120" width="34" height="180" rx="5" fill="#2563EB" stroke="none" stroke-width="2"/>
+<text x="40" y="112" font-size="19" text-anchor="start" font-weight="bold" fill="#2563EB">estación de DX</text>
+<text x="135" y="328" font-size="19" text-anchor="middle" font-weight="bold" fill="#1F2933">14.195 kHz</text>
+<rect x="352" y="96" width="200" height="204" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+<rect x="364" y="230" width="14" height="70" rx="3" fill="#D97706" stroke="none" stroke-width="2"/>
+<rect x="387" y="222" width="14" height="78" rx="3" fill="#D97706" stroke="none" stroke-width="2"/>
+<rect x="410" y="247" width="14" height="53" rx="3" fill="#D97706" stroke="none" stroke-width="2"/>
+<rect x="433" y="210" width="14" height="90" rx="3" fill="#D97706" stroke="none" stroke-width="2"/>
+<rect x="456" y="199" width="14" height="101" rx="3" fill="#D97706" stroke="none" stroke-width="2"/>
+<rect x="479" y="241" width="14" height="59" rx="3" fill="#D97706" stroke="none" stroke-width="2"/>
+<rect x="502" y="249" width="14" height="51" rx="3" fill="#D97706" stroke="none" stroke-width="2"/>
+<rect x="525" y="252" width="14" height="48" rx="3" fill="#D97706" stroke="none" stroke-width="2"/>
+<text x="452" y="124" font-size="19" text-anchor="middle" font-weight="bold" fill="#92400E">los que llaman</text>
+<text x="452" y="328" font-size="19" text-anchor="middle" font-weight="bold" fill="#1F2933">14.200 – 14.205 kHz</text>
+<path d="M156 150 C230 70, 290 70, 348 140" stroke="#059669" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr-059669)" stroke-dasharray="9 6"/>
+<text x="262" y="82" font-size="18" text-anchor="middle" font-weight="bold" fill="#059669">escucha «de 5 a 10 arriba»</text>
+<rect x="40" y="350" width="560" height="56" rx="12" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+<text x="320" y="385" font-size="19" text-anchor="middle" font-weight="bold" fill="#991B1B">Nunca transmitas en la frecuencia de la estación de DX</text></svg>

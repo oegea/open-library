@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" role="img"><title>Productos de intermodulación</title><defs><marker id="arr-1F2933" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1F2933"/></marker></defs><rect x="1" y="1" width="638" height="398" rx="18" fill="#FAF6EC" stroke="#E7DFCC" stroke-width="2"/><text x="320" y="42" font-size="22" text-anchor="middle" font-weight="bold" fill="#1F2933">Intermodulación: señales que no existen</text>
+<line x1="40" y1="300" x2="606" y2="300" stroke="#1F2933" stroke-width="3" stroke-linecap="round" marker-end="url(#arr-1F2933)"/>
+<line x1="270" y1="300" x2="270" y2="130" stroke="#DC2626" stroke-width="14" stroke-linecap="butt"/>
+<text x="270" y="330" font-size="19" text-anchor="middle" font-weight="bold" fill="#DC2626">7.200</text>
+<line x1="370" y1="300" x2="370" y2="130" stroke="#DC2626" stroke-width="14" stroke-linecap="butt"/>
+<text x="370" y="330" font-size="19" text-anchor="middle" font-weight="bold" fill="#DC2626">7.210</text>
+<rect x="163" y="230" width="14" height="70" fill="#FDE68A" stroke="#D97706" stroke-width="3" stroke-dasharray="6 4"/>
+<text x="170" y="330" font-size="19" text-anchor="middle" font-weight="bold" fill="#D97706">7.190</text>
+<text x="170" y="216" font-size="19" text-anchor="middle" font-weight="bold" fill="#D97706">fantasma</text>
+<rect x="463" y="230" width="14" height="70" fill="#FDE68A" stroke="#D97706" stroke-width="3" stroke-dasharray="6 4"/>
+<text x="470" y="330" font-size="19" text-anchor="middle" font-weight="bold" fill="#D97706">7.220</text>
+<text x="470" y="216" font-size="19" text-anchor="middle" font-weight="bold" fill="#D97706">fantasma</text>
+<text x="320" y="114" font-size="19" text-anchor="middle" font-weight="bold" fill="#DC2626">dos señales muy fuertes</text>
+<text x="580" y="330" font-size="18" text-anchor="middle" font-weight="normal" fill="#5B6673">kHz</text>
+<text x="320" y="372" font-size="19" text-anchor="middle" font-weight="normal" fill="#5B6673">Los fantasmas se fabrican dentro del receptor</text></svg>

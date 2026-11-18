@@ -6,7 +6,7 @@ Las primeras radios domésticas de los años veinte no tenían pilas, ni enchufe
 
 Generaciones enteras de radioaficionados —incluida la de los maestros de Vicente— empezaron construyéndose una. Y el concepto no ha muerto: esas etiquetas antirrobo de las tiendas y las tarjetas NFC de tu cartera también viven de la energía de la onda que las interroga. La galena fue la primera *energy harvester* de la historia doméstica.
 
-Si algún día montas una (hay kits y planos por todas partes, y es tarde bien gastada), entenderás de golpe tres secciones de este curso: antena, circuito resonante y detección, sin un solo componente activo.
+Si algún día montas una (hay kits y planos por todas partes, y es tarde bien gastada; eso sí, el cable de antena se desconecta cuando hay tormenta, como verás en la sección 10), entenderás de golpe tres secciones de este curso: antena, circuito resonante y detección, sin un solo componente activo.
 
 ## El transistor: tres Nobel en la palma de la mano
 
@@ -24,22 +24,22 @@ Para el radioaficionado las ferritas son munición básica: unas vueltas de cabl
 
 El código de colores de las resistencias se estandarizó en los años veinte (asociación de fabricantes RMA, luego EIA). Las nemotecnias para recordar el orden de los colores son legión en todos los idiomas; muchas de las tradicionales eran impublicables, y su sustitución por versiones civilizadas es un pequeño caso de estudio de cómo evoluciona la cultura técnica. Una española inocua: «**N**egritos **M**arrones **R**íen **N**aranjas **Am**arillas, **V**erdes **A**zules **V**iolinistas **G**rises **B**lancos» — o invéntate la tuya, que para eso están.
 
-Detalle práctico que ahorra disgustos: en resistencias de 5 franjas (precisión), las *tres* primeras son cifras. Y el sentido de lectura se decide buscando la franja de tolerancia (dorada/plateada), que va al final y suele estar más separada. Si una resistencia parece de 82 MΩ en un circuito de lógica, dale la vuelta: probablemente es de 28 kΩ leída al revés. El polímetro es el juez de paz de todas estas dudas.
+Detalle práctico que ahorra disgustos: en resistencias de 5 franjas (precisión), las *tres* primeras son cifras. Y el sentido de lectura se decide buscando la franja de tolerancia (dorada/plateada), que va al final y suele estar más separada. Si una resistencia parece de 200 Ω donde esperabas 1 kΩ, dale la vuelta: rojo-negro-marrón leído al revés es marrón-negro-rojo. El polímetro es el juez de paz de todas estas dudas.
 
 ## Supercondensadores: el condensador que quiso ser batería
 
-La teoría te dijo que el faradio es una unidad descomunal. Pues se venden condensadores de **3.000 faradios**. Los *supercondensadores* logran capacidades monstruosas con trucos de química de superficie (carbón activo con hectáreas internas de superficie en gramos de material). No sustituyen a las baterías —almacenan mucha menos energía por kilo—, pero se cargan y descargan en segundos, millones de veces, sin desgaste. Alimentan desde el flash de cámaras hasta frenadas regenerativas de autobuses. En el mundo del radioaficionado asoman en fuentes de respaldo para memorias y relojes de equipos. Sirven aquí, sobre todo, para recalibrar tu asombro: entre el picofaradio del condensador de sintonía y el kilofaradio del super hay *quince órdenes de magnitud*, los mismos que median entre un milímetro y la distancia Tierra-Sol.
+La lección 2 te dijo que el faradio es enorme. Pues se venden condensadores de **3.000 faradios**. Los *supercondensadores* logran capacidades monstruosas con trucos de química de superficie (carbón activo con hectáreas internas de superficie en gramos de material). No sustituyen a las baterías —almacenan mucha menos energía por kilo—, pero se cargan y descargan en segundos, millones de veces, sin desgaste. Alimentan desde el flash de cámaras hasta frenadas regenerativas de autobuses. En el mundo del radioaficionado asoman en fuentes de respaldo para memorias y relojes de equipos. Sirven aquí, sobre todo, para recalibrar tu asombro: entre el picofaradio del condensador de sintonía y el kilofaradio del super hay *quince órdenes de magnitud*, los mismos que median entre un milímetro y la distancia Tierra-Sol.
 
 ## El MOSFET, el objeto más fabricado por el ser humano
 
-Ningún artefacto humano se ha producido en más unidades que el transistor MOSFET: se estima que se han fabricado más de 10^22 (un uno seguido de veintidós ceros). Cada chip de tu móvil contiene miles de millones. Y sin embargo su principio cabe en una frase de esta misma sección: una tensión en la puerta abre o cierra el paso de corriente. Cuando en la sección 7 veas que el amplificador de potencia de un transceptor moderno son «un par de MOSFET grandes», sabrás que lo más exótico de tu equipo es, a la vez, el objeto más común del planeta.
+Ningún artefacto humano se ha producido en más unidades que el transistor MOSFET: se estima que se han fabricado más de 10^22 (un uno seguido de veintidós ceros). Cada chip de tu móvil contiene miles de millones. Y sin embargo su principio cabe en una frase de esta misma sección: una tensión en la puerta abre o cierra el paso de corriente. Cuando abras un transceptor moderno y veas que su amplificador de potencia son «un par de MOSFET grandes», sabrás que lo más exótico de tu equipo es, a la vez, el objeto más común del planeta.
 
 ## Trucos de taller heredados (sección no oficial)
 
 - **Los electrolíticos tienen fecha de caducidad aunque estén sin usar.** Un aparato guardado 30 años en un desván no está «como nuevo»: está como un yogur de 1995. Encenderlo directamente a la red puede ser su ejecución. Los restauradores los reforman (subida lenta de tensión) o los sustituyen en bloque. El «huele a condensador reventado» de Vicente en el rastro era diagnóstico olfativo real: el electrolito derramado tiene un olor dulzón inconfundible, dicen que a pescado en los peores casos.
-- **Un diodo se comprueba en segundos**: casi todos los polímetros tienen posición «diodo» que muestra la caída directa (~0,5-0,7 V en silicio) y nada en inversa. Igual en ambos sentidos = muerto en corto; nada en ambos = muerto en abierto.
+- **Un diodo se comprueba en segundos**: casi todos los polímetros tienen posición «diodo» que muestra la caída directa (~0,6-0,7 V en silicio) y nada en inversa. Igual en ambos sentidos = muerto en corto; nada en ambos = muerto en abierto.
 - **Los transistores también se prueban como dos diodos** (base-emisor y base-colector) para un diagnóstico de urgencia. No es un test completo, pero descarta cadáveres.
-- **Respeta los condensadores grandes**: los de las fuentes pueden guardar carga letal días después de desenchufar. Es tema de la sección 10, pero el hábito —descargar antes de tocar— empieza hoy.
+- **Respeta los condensadores grandes**: los de las fuentes pueden guardar carga letal días después de desenchufar. Es tema de la sección 10, pero el hábito —comprobar con el voltímetro que están descargados antes de tocar— empieza hoy.
 
 ## Para seguir tirando del hilo
 

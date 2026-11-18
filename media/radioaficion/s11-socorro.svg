@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760" width="640" height="760" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" role="img"><title>Qué hacer al oír una llamada de socorro</title><defs><marker id="arr-1F2933" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1F2933"/></marker></defs><rect x="1" y="1" width="638" height="758" rx="18" fill="#FAF6EC" stroke="#E7DFCC" stroke-width="2"/><text x="320" y="40" font-size="22" text-anchor="middle" font-weight="bold" fill="#1F2933">Si oyes una llamada de socorro</text>
+<rect x="60" y="62" width="520" height="104" rx="12" fill="#DBEAFE" stroke="#2563EB" stroke-width="2.5"/>
+<text x="320.0" y="96.65" font-size="19" text-anchor="middle" font-weight="bold" fill="#1F2933">1. No transmitas: escucha y apunta</text>
+<text x="320.0" y="120.65" font-size="19" text-anchor="middle" font-weight="normal" fill="#1F2933">hora, frecuencia, quién, dónde, qué ha pasado,</text>
+<text x="320.0" y="144.65" font-size="19" text-anchor="middle" font-weight="normal" fill="#1F2933">cuántas personas y qué necesitan</text>
+<line x1="320" y1="166" x2="320" y2="196" stroke="#1F2933" stroke-width="4" stroke-linecap="round" marker-end="url(#arr-1F2933)"/>
+<path d="M320 200 L500 250 L320 300 L140 250 Z" stroke="#D97706" stroke-width="3" fill="#FEF3C7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="320" y="244" font-size="19" text-anchor="middle" font-weight="bold" fill="#1F2933">2. ¿Contesta</text>
+<text x="320" y="268" font-size="19" text-anchor="middle" font-weight="bold" fill="#1F2933">otra estación?</text>
+<path d="M500 250 H560 V330" stroke="#1F2933" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr-1F2933)"/>
+<text x="566" y="240" font-size="19" text-anchor="start" font-weight="bold" fill="#059669">sí</text>
+<rect x="400" y="334" width="220" height="104" rx="12" fill="#DCFCE7" stroke="#059669" stroke-width="2.5"/>
+<text x="510.0" y="368.65" font-size="19" text-anchor="middle" font-weight="bold" fill="#1F2933">Sigue a la escucha</text>
+<text x="510.0" y="392.65" font-size="19" text-anchor="middle" font-weight="normal" fill="#1F2933">en silencio</text>
+<text x="510.0" y="416.65" font-size="19" text-anchor="middle" font-weight="normal" fill="#1F2933">y apuntando</text>
+<path d="M140 250 H90 V330" stroke="#1F2933" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr-1F2933)"/>
+<text x="84" y="240" font-size="19" text-anchor="end" font-weight="bold" fill="#DC2626">no</text>
+<rect x="20" y="334" width="340" height="104" rx="12" fill="#FFFFFF" stroke="#1F2933" stroke-width="2.5"/>
+<text x="190.0" y="368.65" font-size="19" text-anchor="middle" font-weight="bold" fill="#1F2933">3. Contesta tú</text>
+<text x="190.0" y="392.65" font-size="19" text-anchor="middle" font-weight="normal" fill="#1F2933">con calma; completa los datos</text>
+<text x="190.0" y="416.65" font-size="19" text-anchor="middle" font-weight="normal" fill="#1F2933">y léelos de vuelta</text>
+<line x1="190" y1="438" x2="190" y2="470" stroke="#1F2933" stroke-width="4" stroke-linecap="round" marker-end="url(#arr-1F2933)"/>
+<rect x="20" y="474" width="600" height="104" rx="12" fill="#FEE2E2" stroke="#DC2626" stroke-width="2.5"/>
+<text x="320.0" y="508.65" font-size="19" text-anchor="middle" font-weight="bold" fill="#1F2933">4. Avisa al 112</text>
+<text x="320.0" y="532.65" font-size="19" text-anchor="middle" font-weight="normal" fill="#1F2933">di que eres radioaficionado y pasa los datos</text>
+<text x="320.0" y="556.65" font-size="19" text-anchor="middle" font-weight="normal" fill="#1F2933">tal como los has apuntado</text>
+<line x1="320" y1="578" x2="320" y2="610" stroke="#1F2933" stroke-width="4" stroke-linecap="round" marker-end="url(#arr-1F2933)"/>
+<rect x="20" y="614" width="600" height="104" rx="12" fill="#FFFFFF" stroke="#1F2933" stroke-width="2.5"/>
+<text x="320.0" y="648.65" font-size="19" text-anchor="middle" font-weight="bold" fill="#1F2933">5. Vuelve a la frecuencia y quédate</text>
+<text x="320.0" y="672.65" font-size="19" text-anchor="middle" font-weight="normal" fill="#1F2933">confirma que el aviso está dado</text>
+<text x="320.0" y="696.65" font-size="19" text-anchor="middle" font-weight="normal" fill="#1F2933">y mantén la frecuencia limpia</text>
+<text x="320" y="744" font-size="18" text-anchor="middle" font-weight="normal" fill="#5B6673">El socorro tiene prioridad sobre cualquier otra comunicación</text></svg>
